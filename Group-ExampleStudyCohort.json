@@ -1,0 +1,14 @@
+{
+  "resourceType" : "Group",
+  "id" : "ExampleStudyCohort",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group ExampleStudyCohort</b></p><a name=\"ExampleStudyCohort\"> </a><a name=\"hcExampleStudyCohort\"> </a><a name=\"ExampleStudyCohort-en-US\"> </a><p><b>type</b>: Person</p><p><b>membership</b>: Definitional</p><p><b>quantity</b>: 20</p></div>"
+  },
+  "type" : "person",
+  "membership" : "definitional",
+  "quantity" : 20
+}

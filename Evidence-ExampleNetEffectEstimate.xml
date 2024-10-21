@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Evidence xmlns="http://hl7.org/fhir">
+  <id value="ExampleNetEffectEstimate"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Evidence ExampleNetEffectEstimate</b></p><a name="ExampleNetEffectEstimate"> </a><a name="hcExampleNetEffectEstimate"> </a><a name="ExampleNetEffectEstimate-en-US"> </a><p><b>url</b>: <a href="Evidence-ExampleNetEffectEstimate.html">Evidence NetEffectExample</a></p><p><b>name</b>: NetEffectExample</p><p><b>status</b>: Unknown</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><h3>VariableDefinitions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>VariableRole</b></td><td><b>Intended</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}">measured variable</span></td><td><a href="EvidenceVariable-ExampleOutcome.html">EvidenceVariable Mortality</a></td></tr></table><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Net Effect</p>
+</div><p><b>statisticType</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}">Net Effect</span></p><p><b>quantity</b>: 1.7 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p><h3>AttributeEstimates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Level</b></td><td><b>Range</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/attribute-estimate-type C53324}">Confidence interval</span></td><td>0.95</td><td>1.5-1.9</td></tr></table><blockquote><p><b>modelCharacteristic</b></p><p><b>code</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system relative-importance-weighting}">Relative importance weighting for use in weighted linear combinations</span></p><p><b>value</b>: 1</p><h3>Variables</h3><table class="grid"><tr><td style="display: none">-</td><td><b>VariableDefinition</b></td></tr><tr><td style="display: none">*</td><td><a href="EvidenceVariable-ExampleOutcome.html">EvidenceVariable Mortality</a></td></tr></table></blockquote></blockquote></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleNetEffectEstimate"/>
+  <name value="NetEffectExample"/>
+  <status value="unknown"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <variableDefinition>
+    <variableRole>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/variable-role"/>
+        <code value="measuredVariable"/>
+      </coding>
+    </variableRole>
+    <intended>
+      <reference value="EvidenceVariable/ExampleOutcome"/>
+    </intended>
+  </variableDefinition>
+  <statistic>
+    <description value="Net Effect"/>
+    <statisticType>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="net-effect"/>
+        <display value="Net Effect"/>
+      </coding>
+    </statisticType>
+    <quantity>
+      <value value="1.7"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </quantity>
+    <attributeEstimate>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/attribute-estimate-type"/>
+          <code value="C53324"/>
+          <display value="Confidence interval"/>
+        </coding>
+      </type>
+      <level value="0.95"/>
+      <range>
+        <low>
+          <value value="1.5"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="%"/>
+        </low>
+        <high>
+          <value value="1.9"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="%"/>
+        </high>
+      </range>
+    </attributeEstimate>
+    <modelCharacteristic>
+      <code>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+          <code value="relative-importance-weighting"/>
+        </coding>
+      </code>
+      <value>
+        <value value="1"/>
+      </value>
+      <variable>
+        <variableDefinition>
+          <reference value="EvidenceVariable/ExampleOutcome"/>
+        </variableDefinition>
+      </variable>
+    </modelCharacteristic>
+  </statistic>
+</Evidence>

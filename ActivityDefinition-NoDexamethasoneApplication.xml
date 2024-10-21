@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="NoDexamethasoneApplication"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition NoDexamethasoneApplication</b></p><a name="NoDexamethasoneApplication"> </a><a name="hcNoDexamethasoneApplication"> </a><a name="NoDexamethasoneApplication-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="ActivityDefinition-NoDexamethasoneApplication.html">ActivityDefinition NoDexamethasoneApplicationActivity</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: NoDexamethasoneApplicationActivity</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Patient}">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>No Application of Dexamethasone</p>
+</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>doNotPerform</b>: true</p><p><b>product</b>: <span title="Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}">Dexamethasone (substance)</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-dexamethasone-application"/>
+  <version value="1.0"/>
+  <name value="NoDexamethasoneApplicationActivity"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <publisher value="CPGonEBMonFHIR"/>
+  <description value="No Application of Dexamethasone"/>
+  <kind value="MedicationRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="432102000"/>
+      <display value="Administration of substance (procedure)"/>
+    </coding>
+  </code>
+  <doNotPerform value="true"/>
+  <productCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="372584003"/>
+      <display value="Dexamethasone (substance)"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <code value="C05AA09"/>
+      <display value="Dexamethason"/>
+    </coding>
+  </productCodeableConcept>
+</ActivityDefinition>

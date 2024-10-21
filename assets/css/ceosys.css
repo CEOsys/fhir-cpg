@@ -1,0 +1,62 @@
+table.grid thead {
+  background-color: #f5f5f5;
+}
+
+table.grid td, table.grid th, td {
+  font-size: 15px;
+}
+
+p {
+  overflow:auto;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+.navbar .nav li > a {
+  font-size: 20px;
+  padding: 18px 15px;
+}
+
+.breadcrumb li {
+  font-size: 15px;
+}
+
+
+div.markdown-toc {
+  width:250px;
+}
+
+body {
+  font-size:18px;
+}
+
+h2 {
+  font-size:25px;
+}
+
+h3 {
+  font-size:22px;
+}
+
+h4 {
+  font-size:20px;
+}
+
+td.hierarchy {
+  line-height: 26px;
+  font-size:14px;
+}
+
+table.list {
+  width:100%;
+}
+
+table.dict p, table.dict td, table.dict td.structure {
+  font-size:15px;
+}
+
+pre.json, pre.language-json {
+  width:100%;
+}

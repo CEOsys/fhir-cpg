@@ -1,0 +1,19 @@
+{
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg",
+  "name" : "CPGonEBMonFHIR",
+  "title" : "Clinical Practice Guidelines (CPG) on EBMonFHIR",
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "de.netzwerk-universitaetsmedizin.ebm-cpg",
+  "ig-ver" : "1.0.2",
+  "date" : "Mon, 21 Oct, 2024 14:50:59 +0000",
+  "dateISO8601" : "2024-10-21T14:50:59+00:00",
+  "errs" : 610,
+  "warnings" : 1468,
+  "hints" : 586,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 3371468752
+}

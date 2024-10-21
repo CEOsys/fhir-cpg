@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Citation",
+  "id" : "ExampleGuidelineCitation",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Citation ExampleGuidelineCitation</b></p><a name=\"ExampleGuidelineCitation\"> </a><a name=\"hcExampleGuidelineCitation\"> </a><a name=\"ExampleGuidelineCitation-en-US\"> </a><p><b>url</b>: <a href=\"Citation-ExampleGuidelineCitation.html\">Citation ExampleGuidelineCitation</a></p><p><b>name</b>: ExampleGuidelineCitation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: ceoysy/exampleIdentifier</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.0-alpha1</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type archived}\">Archived</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Example Citation</p>\n</div></td></tr></table><h3>WebLocations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://example.com/guideline/exampleIdentifier\">https://example.com/guideline/exampleIdentifier</a></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleGuidelineCitation",
+  "name" : "ExampleGuidelineCitation",
+  "status" : "active",
+  "date" : "2024-10-21T14:50:59+00:00",
+  "citedArtifact" : {
+    "identifier" : [{
+      "value" : "ceoysy/exampleIdentifier"
+    }],
+    "version" : {
+      "value" : "1.0-alpha1"
+    },
+    "currentState" : [{
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+        "code" : "archived",
+        "display" : "Archived"
+      }]
+    }],
+    "title" : [{
+      "text" : "Example Citation"
+    }],
+    "webLocation" : [{
+      "url" : "https://example.com/guideline/exampleIdentifier"
+    }],
+    "classification" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+          "code" : "publication-type",
+          "display" : "Publication Type"
+        }]
+      },
+      "classifier" : [{
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+          "code" : "clinical-practice-guideline",
+          "display" : "Clinical practice guideline"
+        }]
+      }]
+    }]
+  }
+}

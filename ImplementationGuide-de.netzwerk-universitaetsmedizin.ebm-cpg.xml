@@ -1,0 +1,1990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="de.netzwerk-universitaetsmedizin.ebm-cpg"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide de.netzwerk-universitaetsmedizin.ebm-cpg</b></p><a name="de.netzwerk-universitaetsmedizin.ebm-cpg"> </a><a name="hcde.netzwerk-universitaetsmedizin.ebm-cpg"> </a><a name="de.netzwerk-universitaetsmedizin.ebm-cpg-en-US"> </a><h2>CPGonEBMonFHIR</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg</pre></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg"/>
+  <version value="1.0.2"/>
+  <name value="CPGonEBMonFHIR"/>
+  <title value="Clinical Practice Guidelines (CPG) on EBMonFHIR"/>
+  <status value="draft"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <publisher value="Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizin.uni-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <packageId value="de.netzwerk-universitaetsmedizin.ebm-cpg"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="6.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_cpg">
+    <uri value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
+    <packageId value="hl7.fhir.uv.cpg"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ext-action-combination-method"/>
+      </reference>
+      <name value="Action Combination Method"/>
+      <description value="Extension used on PlanDefinition.action to specify a method for combining the actions."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-action-combination-method"/>
+      </reference>
+      <name value="Action Combination Method"/>
+      <description value="Value set for the method used to combine actions in a PlanDefinition."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-action-combination-method"/>
+      </reference>
+      <name value="Action Combination Method"/>
+      <description value="Code system for the combination of actions in a PlanDefinition."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-action-selection-behavior-required"/>
+      </reference>
+      <name value="Action Selection Behavior Required"/>
+      <description value="Action selection behavior with only codes that require at least one action to be performed."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/OutcomeAllCauseMortality"/>
+      </reference>
+      <name value="All-cause mortality"/>
+      <description value="All-cause mortality."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-allergic-disposition-sct"/>
+      </reference>
+      <name value="Allergic Disposition SCT"/>
+      <description value="Allergic Dispositions from SNOMED CT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/AWMFOrganization"/>
+      </reference>
+      <name value="Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V"/>
+      <description value="Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ceosys-extension-artifact-assessment-publication-status"/>
+      </reference>
+      <name value="ArtifactAssessment Publication Status"/>
+      <description value="Adds publication status attribute to ArtifactAssessment."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ceosys-extension-artifact-assessment-version"/>
+      </reference>
+      <name value="ArtifactAssessment Version"/>
+      <description value="Adds version attribute to Artifact Assessment."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-assessment"/>
+      </reference>
+      <name value="Assessment"/>
+      <description value="Assessments"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/assessment-action"/>
+      </reference>
+      <name value="Assessment Action"/>
+      <description value="Definition of an assessment action."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-assessment-scales"/>
+      </reference>
+      <name value="Assessment Scales"/>
+      <description value="Codes for assessment scales (scores etc.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/body-positioning-action"/>
+      </reference>
+      <name value="Body Positioning Action"/>
+      <description value="Definition of a body positioning action as part of a recommended intervention."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-body-positioning-snomed"/>
+      </reference>
+      <name value="Body Positioning SNOMED CT"/>
+      <description value="Body positioning procedure codes from SNOMED CT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ceosys-code-system"/>
+      </reference>
+      <name value="CEOsys Code System"/>
+      <description value="Codes for clinical guideline recommendation representation missing from other code systems."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ArtifactAssessment"/>
+      </extension>
+      <reference>
+        <reference value="ArtifactAssessment/DexamethasoneRatingOutcomeMortality"/>
+      </reference>
+      <name value="Certainty of Evidence for outcome: mortality of Dexamethasone application"/>
+      <description value="Certainty of evidence rating for mortality outcome of Dexamethasonse application recommendation"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/certainty-of-evidence-rating"/>
+      </reference>
+      <name value="Certainty of Evidence Rating"/>
+      <description value="Rating of a single outcome (evidence) underlying a clinical practice guideline recommendation"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ext-characteristic-dosage"/>
+      </reference>
+      <name value="Characteristic Dosage"/>
+      <description value="Adds Dosage type to characteristic"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-clinical-importance"/>
+      </reference>
+      <name value="Clinical Importance of Outcome"/>
+      <description value="Clinical Importance of Outcome"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-clinical-importance"/>
+      </reference>
+      <name value="Clinical Importance of Outcome"/>
+      <description value="Clinical Importance of Outcome"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/guideline"/>
+      </reference>
+      <name value="Clinical Practice Guideline"/>
+      <description value="Representation of an evidence-based clinical practice guideline."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cochrane-core-ontology"/>
+      </reference>
+      <name value="Cochrane Core Ontology"/>
+      <description value="The Cochrane Core ontology describes the entities and concepts that exist in the domain of evidence based healthcare."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cochrane-pico"/>
+      </reference>
+      <name value="Cochrane PICO"/>
+      <description value="All codes from the Cochrane PICO ontology."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cochrane-pico-intervention"/>
+      </reference>
+      <name value="Cochrane PICO Intervention"/>
+      <description value="All intervention codes from the Cochrane PICO ontology."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cochrane-pico-ontology"/>
+      </reference>
+      <name value="Cochrane PICO Ontology"/>
+      <description value="The PICO ontology describes questions in evidence based healthcare with the intention of supporting the publishing of evidence as linked data."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cochrane-pico-outcome"/>
+      </reference>
+      <name value="Cochrane PICO Outcome"/>
+      <description value="All outcome codes from the Cochrane PICO ontology."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cochrane-pico-population"/>
+      </reference>
+      <name value="Cochrane PICO Population"/>
+      <description value="All population codes from the Cochrane PICO ontology."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cohorts"/>
+      </reference>
+      <name value="Cohorts"/>
+      <description value="The actual group observed in a study or groups of groups in an evidence synthesis."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/COVID19IntensiveCareTreatmentGuideline"/>
+      </reference>
+      <name value="COVID19 Intensive Care Treatment Guideline"/>
+      <description value="COVID19 Intensive Care Treatment Guideline."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/COVID19IntensiveCareTreatmentGuidelineBundle"/>
+      </reference>
+      <name value="COVID19 Intensive Care Treatment Guideline"/>
+      <description value="COVID19 Intensive Care Treatment Guideline (Bundle)."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cpg-computableplandefinition"/>
+      </reference>
+      <name value="CPGComputablePlanDefinition"/>
+      <description value="Defines the minimum expectations and behavior for a computable plan definition"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cpg-recommendationdefinition"/>
+      </reference>
+      <name value="CPGRecommendationDefinition"/>
+      <description value="Profile of PlanDefinition as a Recommendation Definition for use with CPG Implementation Guide"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cpg-shareableplandefinition"/>
+      </reference>
+      <name value="CPGShareablePlanDefinition"/>
+      <description value="Defines the minimum expectations for a shareable plan definition for use with computable guideline content. This profile derives from the ShareablePlanDefinition profile defined in the base FHIR specification, and adds support for declaring knowledge representation level and knowledge artifact capabilities."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cpg-strategydefinition"/>
+      </reference>
+      <name value="CPGStrategyDefinition"/>
+      <description value="Profile of PlanDefinition as a Strategy Definition for use with CPG Implementation Guide. Strategies are used to group recommendations together, typically focused on a particular condition or state within the overall guideline or pathway"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cqfm-artifactComment"/>
+      </reference>
+      <name value="CQFM Artifact Comment"/>
+      <description value="A comment containing additional documentation, a review comment, usage guidance, or other relevant information from a particular user."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/COVID19DexamethasoneApplication"/>
+      </reference>
+      <name value="Dexamethasone Application"/>
+      <description value="Application of Dexamethasone for ventilated patients only"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan"/>
+      </reference>
+      <name value="Dexamethasone Application"/>
+      <description value="Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/DexamethasoneApplicationActionIntravenous"/>
+      </reference>
+      <name value="Dexamethasone Application (Intravenous)"/>
+      <description value="Application of Dexamethasone: 6 mg once per day for 10 days (intravenous route)"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/DexamethasoneApplicationActionOral"/>
+      </reference>
+      <name value="Dexamethasone Application (Oral)"/>
+      <description value="Application of Dexamethasone: 6 mg once per day for 10 days (oral route)"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ArtifactAssessment"/>
+      </extension>
+      <reference>
+        <reference value="ArtifactAssessment/DexamethasoneRecommendationJustification"/>
+      </reference>
+      <name value="Dexamethasone for critically ill COVID-19 patients"/>
+      <description value="Dexamethasone in critically ill patients with COVID-19."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/DexamethasoneRecommendationCitation"/>
+      </reference>
+      <name value="Dexamethasone Recommendation"/>
+      <description value="Citation of Dexamethasone Recommenation from COVID-19 intensive care patients treatment guideline"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ext-dosage-condition"/>
+      </reference>
+      <name value="Dosage Condition"/>
+      <description value="Adds type/value pair to elements of datatype Dosage to express a condition on the dosage."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/drug-administration-action"/>
+      </reference>
+      <name value="Drug Administration Action"/>
+      <description value="Definition of a drug administration action as part of a recommended intervention."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-drugs"/>
+      </reference>
+      <name value="Drugs"/>
+      <description value="Drugs"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eligibility-criteria"/>
+      </reference>
+      <name value="Eligibility Criteria"/>
+      <description value="Definition of a population (e.g. for guideline recommendation, clinical study) via the eligibility criteria."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-episode-of-care-type"/>
+      </reference>
+      <name value="Episode Of Care Type"/>
+      <description value="Episode Of Care Type"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/certainty-rating"/>
+      </reference>
+      <name value="Evidence Certainty Rating"/>
+      <description value="The assessment of quality, confidence, or certainty."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/evidence-data-set"/>
+      </reference>
+      <name value="Evidence Data Set"/>
+      <description value="Definition of the outcome used as the observed measured variable for an evidence synthesis."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/evidence-synthesis-cohorts"/>
+      </reference>
+      <name value="Evidence Synthesis Cohorts"/>
+      <description value="The actual group of Groups observed in an evidence synthesis."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-evidence-to-decision-certainty-rating"/>
+      </reference>
+      <name value="Evidence To Decision Certainty Rating"/>
+      <description value="GRADE Evidence to Decision (EtD) Framework Certainty Ratings"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-evidence-to-decision-certainty-type"/>
+      </reference>
+      <name value="Evidence To Decision Certainty type"/>
+      <description value="GRADE Evidence to Decision (EtD) Framework Certainty Type"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ExampleAssessmentAction"/>
+      </reference>
+      <name value="Example Assessment Action"/>
+      <description value="Example of an assessment action."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ExampleBodyPositioningAction"/>
+      </reference>
+      <name value="Example Body Positioning Action"/>
+      <description value="Example of a body positioning action."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/body-positioning-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ArtifactAssessment"/>
+      </extension>
+      <reference>
+        <reference value="ArtifactAssessment/ExampleCertaintyOfEvidenceRating"/>
+      </reference>
+      <name value="Example Certainty Of Evidence Rating"/>
+      <description value="Example Certainty Of Evidence Rating"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ExampleDrugAdministrationAction"/>
+      </reference>
+      <name value="Example DrugAdministration Action"/>
+      <description value="A drug administration that should be performed."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/ExampleEvidenceDataSet"/>
+      </reference>
+      <name value="Example Evidence Data Set"/>
+      <description value="Example of an evidence data set"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-data-set"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/ExampleEvidenceSynthesisCohorts"/>
+      </reference>
+      <name value="Example Evidence Synthesis Cohorts"/>
+      <description value="Example of a cohort in an evidence synthesis"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/GuidelineExample"/>
+      </reference>
+      <name value="Example Guideline"/>
+      <description value="Example of a guideline resource."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/ExampleGuidelineCitation"/>
+      </reference>
+      <name value="Example Guideline Citation"/>
+      <description value="Example of a Citation of a clinical practice guideline"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/ExampleIntervention"/>
+      </reference>
+      <name value="Example Intervention"/>
+      <description value="Example of an intervention definition."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/intervention-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Evidence"/>
+      </extension>
+      <reference>
+        <reference value="Evidence/ExampleNetEffectEstimate"/>
+      </reference>
+      <name value="Example Net Effect Estimate"/>
+      <description value="Example of a net effect estimate"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ExampleNoDrugAdministrationAction"/>
+      </reference>
+      <name value="Example No DrugAdministration Action"/>
+      <description value="A drug administration that should not be performed."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ExampleOrganization"/>
+      </reference>
+      <name value="Example Organization"/>
+      <description value="Example of a organization resource."/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/ExampleOutcome"/>
+      </reference>
+      <name value="Example Outcome"/>
+      <description value="Example of an outcome evidence variable."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Evidence"/>
+      </extension>
+      <reference>
+        <reference value="Evidence/ExampleOutcomeEvidenceSynthesis"/>
+      </reference>
+      <name value="Example Outcome Evidence Synthesis"/>
+      <description value="Example Outcome Evidence Synthesis"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ExampleProcedureAction"/>
+      </reference>
+      <name value="Example Procedure Action"/>
+      <description value="Example of a procedure action."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/procedure-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/ExampleRecommendationCitation"/>
+      </reference>
+      <name value="Example Recommendation Citation"/>
+      <description value="Example of a Citation of a clinical practice guideline recommendation"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/ExampleRecommendationEligibilityCriteria"/>
+      </reference>
+      <name value="Example Recommendation Eligibility Criteria"/>
+      <description value="Example of a population element of a PICO construct that evidence is about."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/ExampleRecommendationEligibilityCriteria5Levels"/>
+      </reference>
+      <name value="Example Recommendation Eligibility Criteria"/>
+      <description value="Example of a population element of a PICO construct that evidence is about."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/ExampleRecommendationEligibilityCriteriaDrugs"/>
+      </reference>
+      <name value="Example Recommendation Eligibility Criteria"/>
+      <description value="Example of a population element of a PICO construct that evidence is about."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ArtifactAssessment"/>
+      </extension>
+      <reference>
+        <reference value="ArtifactAssessment/ExampleRecommendationJustification"/>
+      </reference>
+      <name value="Example Recommendation Justification"/>
+      <description value="Example of a recommendation justification"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/ExampleRecommendationPlan"/>
+      </reference>
+      <name value="Example Recommendation plan"/>
+      <description value="An active recommendation plan."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/ExampleStudyCitation"/>
+      </reference>
+      <name value="Example Study Citation"/>
+      <description value="Example Study Citation"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/ExampleStudyCohort"/>
+      </reference>
+      <name value="Example Study Cohort"/>
+      <description value="Example study cohort of 20 patients"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/ExampleStudyEligibilityCriteria"/>
+      </reference>
+      <name value="Example Study Eligibility Criteria"/>
+      <description value="Example of Study Eligbility Criteria"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Evidence"/>
+      </extension>
+      <reference>
+        <reference value="Evidence/ExampleStudyOutcomeEvidence"/>
+      </reference>
+      <name value="Example Study Outcome Evidence"/>
+      <description value="Example Study Outcome Evidence"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/guideline-bundle"/>
+      </reference>
+      <name value="Guideline Bundle"/>
+      <description value="Collection of all resources that represent a single clinical practice guideline."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/guideline-citation"/>
+      </reference>
+      <name value="Guideline Citation"/>
+      <description value="Citation of a clinical practice guideline"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/GuidelineRecommendationExample"/>
+      </reference>
+      <name value="Guideline Recommendation Example"/>
+      <description value="Example of a clinical practice guideline representation bundle."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-guideline-recommendation-status"/>
+      </reference>
+      <name value="Guideline Recommendation Status"/>
+      <description value="Current status of a clinical practice guideline recommendation"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-guideline-stage-classification"/>
+      </reference>
+      <name value="Guideline Stage Classification"/>
+      <description value="Stage classification according to systematics"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-guideline-stage-classification"/>
+      </reference>
+      <name value="Guideline Stage Classification"/>
+      <description value="As part of the project planning for the creation or updating of a guideline,&#xA;    a decision should be made at an early stage about the planned level classification (&quot;S classification&quot;) according to the AWMF's system of rules (1-3).&#xA;    The S-classification scheme of the AWMF differentiates between the classes S1 treatment recommendation as well as S2e, S2k and S3 guideline.&#xA;    The &quot;S&quot; stands for the extent of the applied systematic approach in the development process of a guideline.&#xA;    Each class thus stands for a specific methodological concept that must be presented in a way that is comprehensible to the users.&#xA;    The choice of class is based on the question of how much effort is appropriate and feasible.&#xA;    The need for legitimacy for the implementation of the guideline (convincing the target group) must be taken into account.&#xA;    When choosing a higher S-classification in the context of updating a guideline, the adaptation to the corresponding methodology has to be considered."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/intervention-definition"/>
+      </reference>
+      <name value="Intervention Definition"/>
+      <description value="Description of the intervention element of a PICO construct that evidence is about."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KontaktArtDe"/>
+      </reference>
+      <name value="KontaktArtDe"/>
+      <description value="Klassifizierung eines Kontaktes mit einer Gesundheitseinrichtung"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-mean-difference-type"/>
+      </reference>
+      <name value="Mean Difference Type"/>
+      <description value="Mean difference types"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Evidence"/>
+      </extension>
+      <reference>
+        <reference value="Evidence/DexamethasoneOutcomeMortality"/>
+      </reference>
+      <name value="Mortality Outcome for Dexamethasone application"/>
+      <description value="Mortality Outcome for Dexamethasone application in hospitalized COVID-19 patients"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/net-effect-estimate"/>
+      </reference>
+      <name value="Net Effect Estimate"/>
+      <description value="The net effect is the overall expected effect of a recommendation, calculated by an importance-weighted average of the individual outcome effects"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/NoDexamethasoneApplication"/>
+      </reference>
+      <name value="No Dexamethasone Application"/>
+      <description value="No Application of Dexamethasone"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan"/>
+      </reference>
+      <name value="No dexamethasone application for non-ventilated COVID-19 patients"/>
+      <description value="No application of Dexamethasone for non-ventilated COVID-19 patients"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ArtifactAssessment"/>
+      </extension>
+      <reference>
+        <reference value="ArtifactAssessment/NoDexamethasoneRecommendationJustification"/>
+      </reference>
+      <name value="NO Dexamethasone for moderately ill COVID-19 patients"/>
+      <description value="No Dexamethasone in moderately ill patients with COVID-19."/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-observations"/>
+      </reference>
+      <name value="Observations"/>
+      <description value="Observations are measurements of a patient's state of health. They are typically made by a healthcare professional, but can also be self-reported by the patient."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/outcome-definition"/>
+      </reference>
+      <name value="Outcome Definition"/>
+      <description value="Description of the outcome element of a PICO construct that evidence is about."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/outcome-evidence"/>
+      </reference>
+      <name value="Outcome Evidence"/>
+      <description value="A single evidence for an outcome from a specific study, meta analysis or systematic review."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/outcome-evidence-synthesis"/>
+      </reference>
+      <name value="Outcome Evidence Synthesis"/>
+      <description value="A single evidence for an outcome from an evidence synthesis."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pico-evidence-variable"/>
+      </reference>
+      <name value="PICO Evidence Variable"/>
+      <description value="Description of the a PICO element that knowledge is about. This abstract resource is used as parent for all PICO (population, intervention, comparison, outcome) evidence variables."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopulationCOVID19NonVentilated"/>
+      </reference>
+      <name value="Population: COVID19 Non-Ventilated"/>
+      <description value="Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, not ventilated"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopulationCOVID19Ventilated"/>
+      </reference>
+      <name value="Population: COVID19 Ventilated"/>
+      <description value="Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, Ventilated"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/procedure-action"/>
+      </reference>
+      <name value="Procedure Action"/>
+      <description value="Definition of a procedure action."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-procedures"/>
+      </reference>
+      <name value="Procedures"/>
+      <description value="Procedures"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cqf-qualityOfEvidence"/>
+      </reference>
+      <name value="qualityOfEvidence"/>
+      <description value="The quality of the evidence described. The code system used specifies the quality scale used to grade this evidence source while the code specifies the actual quality score (represented as a coded value) associated with the evidence."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-radiologic-finding-sct"/>
+      </reference>
+      <name value="Radiologic Finding SCT"/>
+      <description value="Radiologic findings from SNOMED CT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-acceptability"/>
+      </reference>
+      <name value="Rating Acceptability"/>
+      <description value="Are the alternatives acceptable for the target population and its implementors?"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-benefit-and-harms"/>
+      </reference>
+      <name value="Rating Benefit And Harms"/>
+      <description value="Summary of most important benefits and harms"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-certainty-of-evidence"/>
+      </reference>
+      <name value="Rating Certainty Of Evidence"/>
+      <description value="Codes from EvidenceCertaintyRating related to certainty of evidence"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-concern-degree"/>
+      </reference>
+      <name value="Rating Concern Degree"/>
+      <description value="Codes from EvidenceCertaintyRating related to degree of concern"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-consensus"/>
+      </reference>
+      <name value="Rating Consensus"/>
+      <description value="Degree of consensus reached"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-equity"/>
+      </reference>
+      <name value="Rating Equity"/>
+      <description value="How do the different alternatives affect equity?"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-feasibility"/>
+      </reference>
+      <name value="Rating Feasibility"/>
+      <description value="How feasible will it be to implement the different alternatives? Any issues?"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-preference-and-values"/>
+      </reference>
+      <name value="Rating Preference And Values"/>
+      <description value="Typical patient preferences and values? Common issues or expected variability?"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-resources"/>
+      </reference>
+      <name value="Rating Resources"/>
+      <description value="Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-uprating-one-level"/>
+      </reference>
+      <name value="Rating Up Rating One Level"/>
+      <description value="Ratings for factors that might cause rating up the certainty"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-rating-uprating-two-levels"/>
+      </reference>
+      <name value="Rating Up Rating Two Levels"/>
+      <description value="Ratings for factors that might cause rating up the certainty"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/recommendation"/>
+      </reference>
+      <name value="Recommendation"/>
+      <description value="A recommendation as part of a clinical practice guideline."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/ExampleRecommendation"/>
+      </reference>
+      <name value="recommendation"/>
+      <description value="Recommendation"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/recommendation-action"/>
+      </reference>
+      <name value="Recommendation Action"/>
+      <description value="Definition of an activity that is part of an intervention in the context of a clinical practice guideline recommendation."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/recommendation-citation"/>
+      </reference>
+      <name value="Recommendation Citation"/>
+      <description value="Citation of a clinical practice guideline recommendation"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/recommendation-eligibility-criteria"/>
+      </reference>
+      <name value="Recommendation Eligibility Criteria"/>
+      <description value="Eligibility Criteria for a Clinical Guideline Recommendation"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/recommendation-justification"/>
+      </reference>
+      <name value="Recommendation Justification"/>
+      <description value="Justification of a clinical guideline recommendation through the underlying evidence and their ratings"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/recommendation-plan"/>
+      </reference>
+      <name value="Recommendation Plan"/>
+      <description value="Definition of an activity that is part of an intervention in the context of a clinical practice guideline recommendation."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ceosys-vs-recommendation-strength"/>
+      </reference>
+      <name value="Recommendation Strength"/>
+      <description value="Strength of a clinical guideline recommendation."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ceosys-cs-recommendation-strength"/>
+      </reference>
+      <name value="Recommendation Strength"/>
+      <description value="Strength of a clinical guideline recommendation."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-relative-effect-type"/>
+      </reference>
+      <name value="Relative Effect Type"/>
+      <description value="Relative effect types"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relative-time"/>
+      </reference>
+      <name value="RelativeTime"/>
+      <description value="Timing in which the characteristic is determined."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shareableplandefinition"/>
+      </reference>
+      <name value="Shareable PlanDefinition"/>
+      <description value="Enforces the minimum information set for the plan definition metadata required by HL7 and other organizations that share and publish plan definitions"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cqf-strengthOfRecommendation"/>
+      </reference>
+      <name value="strengthOfRecommendation"/>
+      <description value="The strength of the recommendation assigned to this reference. The code system used specifies the rating scale used to rate this recommendation while the code specifies the actual recommendation rating (represented as a coded value) associated with this recommendation."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-citation"/>
+      </reference>
+      <name value="Study Citation"/>
+      <description value="Citation of a study from which evidence is determined."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-cohort"/>
+      </reference>
+      <name value="Study Cohort"/>
+      <description value="The actual group observed in a study."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/StudyCohortCorticosteroidsCOVID19"/>
+      </reference>
+      <name value="Study cohort for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)"/>
+      <description value="Study cohort for for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-eligibility-criteria"/>
+      </reference>
+      <name value="Study Eligibility Criteria"/>
+      <description value="Eligibility Criteria for a clinical study"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"/>
+      </reference>
+      <name value="Study eligibility criteria for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)"/>
+      <description value="Study eligibility criteria for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-outcome-evidence"/>
+      </reference>
+      <name value="Study Outcome Evidence"/>
+      <description value="A single evidence for an outcome from a primary study."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-substances-snomed"/>
+      </reference>
+      <name value="Substances SNOMED CT"/>
+      <description value="All substance codes from SNOMED CT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/synthesis-type"/>
+      </reference>
+      <name value="SynthesisType"/>
+      <description value="Types of combining results from a body of evidence (eg. summary data meta-analysis)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19"/>
+      </reference>
+      <name value="Systemic corticosteroids for the treatment of COVID-19"/>
+      <description value="Systemic corticosteroids for the treatment of COVID-19"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/COVID19IntensiveCareTreatmentGuidelineCitation"/>
+      </reference>
+      <name value="Therapy of hospitalized COVID-19 patients"/>
+      <description value="Guideline for therapy of hospitalized COVID-19 patients"/>
+      <isExample value="true"/>
+      <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-mii-icu-code-observation-beatmung-loinc"/>
+      </reference>
+      <name value="VS MII ICU Code Observation Beatmung [LOINC]"/>
+      <description value="Dieses ValueSet enthält Codes für die im Kontext einer Beatmung eingestellten oder gemessenen Parametern."/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Clinical Practice Guidelines (CPG) on EBMonFHIR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="profiles.html"/>
+        <name value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="codesystems.html"/>
+        <name value="codesystems.html"/>
+        <title value="Code Systems"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="valuesets.html"/>
+        <name value="valuesets.html"/>
+        <title value="Value Sets"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions.html"/>
+        <name value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="examples.html"/>
+        <name value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="history.html"/>
+        <name value="history.html"/>
+        <title value="History"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2021+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="qa-preview"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="show-inherited-invariants"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="usage-stats-opt-out"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludexml"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludejsn"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludettl"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludemap"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludeexample"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="extension-domain"/>
+      </code>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="extension-domain"/>
+      </code>
+      <value value="https://simplifier.net"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

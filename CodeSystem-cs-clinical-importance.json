@@ -1,0 +1,91 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-clinical-importance",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-clinical-importance</b></p><a name=\"cs-clinical-importance\"> </a><a name=\"hccs-clinical-importance\"> </a><a name=\"cs-clinical-importance-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">not-important<a name=\"cs-clinical-importance-not-important\"> </a></td><td>Low importance for decision making</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a01<a name=\"cs-clinical-importance-1\"> </a></td><td>Not important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02<a name=\"cs-clinical-importance-2\"> </a></td><td>Not important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a03<a name=\"cs-clinical-importance-3\"> </a></td><td>Not important</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">important<a name=\"cs-clinical-importance-important\"> </a></td><td>Important, but not critical for decision making</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04<a name=\"cs-clinical-importance-4\"> </a></td><td>Important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05<a name=\"cs-clinical-importance-5\"> </a></td><td>Important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a06<a name=\"cs-clinical-importance-6\"> </a></td><td>Important</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">critical<a name=\"cs-clinical-importance-critical\"> </a></td><td>Critical for decision making</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a07<a name=\"cs-clinical-importance-7\"> </a></td><td>Critical</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a08<a name=\"cs-clinical-importance-8\"> </a></td><td>Critical</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a09<a name=\"cs-clinical-importance-9\"> </a></td><td>Critical</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance",
+  "version" : "0.1.1",
+  "name" : "ClinicalImportance",
+  "title" : "Clinical Importance of Outcome",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Clinical Importance of Outcome",
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "not-important",
+    "display" : "Low importance for decision making",
+    "concept" : [{
+      "code" : "1",
+      "display" : "Not important"
+    },
+    {
+      "code" : "2",
+      "display" : "Not important"
+    },
+    {
+      "code" : "3",
+      "display" : "Not important"
+    }]
+  },
+  {
+    "code" : "important",
+    "display" : "Important, but not critical for decision making",
+    "concept" : [{
+      "code" : "4",
+      "display" : "Important"
+    },
+    {
+      "code" : "5",
+      "display" : "Important"
+    },
+    {
+      "code" : "6",
+      "display" : "Important"
+    }]
+  },
+  {
+    "code" : "critical",
+    "display" : "Critical for decision making",
+    "concept" : [{
+      "code" : "7",
+      "display" : "Critical"
+    },
+    {
+      "code" : "8",
+      "display" : "Critical"
+    },
+    {
+      "code" : "9",
+      "display" : "Critical"
+    }]
+  }]
+}

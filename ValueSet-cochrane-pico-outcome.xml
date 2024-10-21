@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cochrane-pico-outcome"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet cochrane-pico-outcome</b></p><a name="cochrane-pico-outcome"> </a><a name="hccochrane-pico-outcome"> </a><a name="cochrane-pico-outcome-en-US"> </a><ul><li>Include codes from<a href="CodeSystem-cochrane-pico-ontology.html"><code>http://data.cochrane.org/ontologies/pico/</code></a> where concept  is-a <a href="CodeSystem-cochrane-pico-ontology.html#cochrane-pico-ontology-Outcome">Outcome</a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-outcome"/>
+  <version value="0.1.1"/>
+  <name value="CochranePICOOutcome"/>
+  <title value="Cochrane PICO Outcome"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="All outcome codes from the Cochrane PICO ontology."/>
+  <compose>
+    <include>
+      <system value="http://data.cochrane.org/ontologies/pico/"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="Outcome"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

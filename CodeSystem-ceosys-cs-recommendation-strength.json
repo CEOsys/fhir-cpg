@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ceosys-cs-recommendation-strength",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ceosys-cs-recommendation-strength</b></p><a name=\"ceosys-cs-recommendation-strength\"> </a><a name=\"hcceosys-cs-recommendation-strength\"> </a><a name=\"ceosys-cs-recommendation-strength-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">strong-for<a name=\"ceosys-cs-recommendation-strength-strong-for\"> </a></td><td>Strong for an intervention</td></tr><tr><td style=\"white-space:nowrap\">weak-for<a name=\"ceosys-cs-recommendation-strength-weak-for\"> </a></td><td>Weak for an intervention</td></tr><tr><td style=\"white-space:nowrap\">strong-against<a name=\"ceosys-cs-recommendation-strength-strong-against\"> </a></td><td>Strong against an intervention</td></tr><tr><td style=\"white-space:nowrap\">weak-against<a name=\"ceosys-cs-recommendation-strength-weak-against\"> </a></td><td>Weak against an intervention</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength",
+  "version" : "0.1.1",
+  "name" : "RecommendationStrength",
+  "title" : "Recommendation Strength",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Strength of a clinical guideline recommendation.",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "strong-for",
+    "display" : "Strong for an intervention"
+  },
+  {
+    "code" : "weak-for",
+    "display" : "Weak for an intervention"
+  },
+  {
+    "code" : "strong-against",
+    "display" : "Strong against an intervention"
+  },
+  {
+    "code" : "weak-against",
+    "display" : "Weak against an intervention"
+  }]
+}

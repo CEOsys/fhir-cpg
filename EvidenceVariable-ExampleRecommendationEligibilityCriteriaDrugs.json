@@ -1,0 +1,103 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "ExampleRecommendationEligibilityCriteriaDrugs",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable ExampleRecommendationEligibilityCriteriaDrugs</b></p><a name=\"ExampleRecommendationEligibilityCriteriaDrugs\"> </a><a name=\"hcExampleRecommendationEligibilityCriteriaDrugs\"> </a><a name=\"ExampleRecommendationEligibilityCriteriaDrugs-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-ExampleRecommendationEligibilityCriteria.html\">EvidenceVariable PopulationExample</a></p><p><b>name</b>: PopulationExample</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 372877000}\">Heparin (substance)</span></td></tr></table></blockquote></blockquote></blockquote></blockquote></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria",
+  "name" : "PopulationExample",
+  "status" : "active",
+  "date" : "2024-10-21T14:50:59+00:00",
+  "characteristic" : [{
+    "definitionByCombination" : {
+      "code" : "all-of",
+      "characteristic" : [{
+        "definitionByCombination" : {
+          "code" : "all-of",
+          "characteristic" : [{
+            "definitionByTypeAndValue" : {
+              "extension" : [{
+                "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-characteristic-dosage",
+                "valueDosage" : {
+                  "extension" : [{
+                    "extension" : [{
+                      "url" : "type",
+                      "valueCodeableConcept" : {
+                        "coding" : [{
+                          "system" : "http://loinc.org",
+                          "code" : "29463-7",
+                          "display" : "Body weight"
+                        }]
+                      }
+                    },
+                    {
+                      "url" : "value",
+                      "valueRange" : {
+                        "high" : {
+                          "value" : 70,
+                          "unit" : "kg",
+                          "system" : "http://unitsofmeasure.org",
+                          "code" : "kg"
+                        }
+                      }
+                    }],
+                    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"
+                  }],
+                  "timing" : {
+                    "repeat" : {
+                      "count" : 10,
+                      "duration" : 10,
+                      "durationUnit" : "d",
+                      "frequency" : 1,
+                      "period" : 1,
+                      "periodUnit" : "d"
+                    }
+                  },
+                  "route" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "26643006",
+                      "display" : "Oral route"
+                    }]
+                  },
+                  "doseAndRate" : [{
+                    "doseQuantity" : {
+                      "value" : 6,
+                      "unit" : "mg",
+                      "system" : "http://unitsofmeasure.org",
+                      "code" : "mg"
+                    },
+                    "rateQuantity" : {
+                      "value" : 1,
+                      "unit" : "/d",
+                      "system" : "http://unitsofmeasure.org",
+                      "code" : "/d"
+                    }
+                  }]
+                }
+              }],
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "432102000",
+                  "display" : "Administration of substance (procedure)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "372877000",
+                  "display" : "Heparin (substance)"
+                }]
+              }
+            }
+          }]
+        }
+      }]
+    }
+  }]
+}

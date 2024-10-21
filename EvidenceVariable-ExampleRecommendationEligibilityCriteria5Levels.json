@@ -1,0 +1,53 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "ExampleRecommendationEligibilityCriteria5Levels",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable ExampleRecommendationEligibilityCriteria5Levels</b></p><a name=\"ExampleRecommendationEligibilityCriteria5Levels\"> </a><a name=\"hcExampleRecommendationEligibilityCriteria5Levels\"> </a><a name=\"ExampleRecommendationEligibilityCriteria5Levels-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-ExampleRecommendationEligibilityCriteria.html\">EvidenceVariable PopulationExample</a></p><p><b>name</b>: PopulationExample</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria",
+  "name" : "PopulationExample",
+  "status" : "active",
+  "date" : "2024-10-21T14:50:59+00:00",
+  "characteristic" : [{
+    "definitionByCombination" : {
+      "code" : "all-of",
+      "characteristic" : [{
+        "definitionByCombination" : {
+          "code" : "all-of",
+          "characteristic" : [{
+            "definitionByCombination" : {
+              "code" : "all-of",
+              "characteristic" : [{
+                "definitionByCombination" : {
+                  "code" : "all-of",
+                  "characteristic" : [{
+                    "definitionByTypeAndValue" : {
+                      "type" : {
+                        "coding" : [{
+                          "system" : "http://snomed.info/sct",
+                          "code" : "404684003",
+                          "display" : "Clinical finding (finding)"
+                        }]
+                      },
+                      "valueCodeableConcept" : {
+                        "coding" : [{
+                          "system" : "http://snomed.info/sct",
+                          "code" : "840539006",
+                          "display" : "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+                        }]
+                      }
+                    }
+                  }]
+                }
+              }]
+            }
+          }]
+        }
+      }]
+    }
+  }]
+}

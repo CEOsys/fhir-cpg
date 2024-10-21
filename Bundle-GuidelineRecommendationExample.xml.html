@@ -1,0 +1,1514 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Guideline Recommendation Example - XML Representation - Clinical Practice Guidelines (CPG) on EBMonFHIR v1.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/ceosys.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"9.125"}
+    h3,h4,h5,h6{--heading-prefix:"9.125"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a no-external="true" id="project-logo" href="https://www.ceosys.de/">
+    <img src="assets/images/logo_ceosys.jpg" alt="Project home" height="71"/>
+  </a>
+</div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://www.netzwerk-universitaetsmedizin.de">
+    <img src="assets/images/logo_num.svg" alt="FHIR website" height="70"/>
+  </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines (CPG) on EBMonFHIR</span>
+            <br/>
+            <span style="display:inline-block;">1.0.2 - qa-preview
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="codesystems.html">Code Systems</a>
+  </li>
+  <li>
+    <a href="valuesets.html">Value Sets</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="history.html">History</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Guideline Recommendation Example</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">This page is part of the CPG-on-EBMonFHIR Implementation Guide (1.0.2).</p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-GuidelineRecommendationExample.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-GuidelineRecommendationExample.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Guideline Recommendation Example - XML Representation</h2>
+
+
+<p><a href="Bundle-GuidelineRecommendationExample.xml" no-download="true">Raw xml</a> | <a download="null" href="Bundle-GuidelineRecommendationExample.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle">Bundle</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="GuidelineRecommendationExample"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle"/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="collection"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition">Composition</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="GuidelineExample"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Composition_GuidelineExample"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Composition GuidelineExample&lt;/b&gt;&lt;/p&gt;&lt;a name="GuidelineExample"&gt; &lt;/a&gt;&lt;a name="hcGuidelineExample"&gt; &lt;/a&gt;&lt;a name="GuidelineExample-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Resource identifier/guideline example&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}, {https://data.cochrane.org/concepts/ e07eN1w1Rwswg4}"&gt;Guidelines&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification S3}"&gt;Evidence- and consensus-based guideline&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-01-28&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href="Organization-ExampleOrganization.html"&gt;Organization Example Organization&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Example Guideline&lt;/p&gt;&lt;h3&gt;RelatesTos&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ResourceReference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;&lt;a href="Citation-ExampleGuidelineCitation.html"&gt;Citation ExampleGuidelineCitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v2-0203"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="RI"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Resource identifier"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.ceosys.de"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="guideline example"/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="0.1.0"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="clinical-practice-guideline"/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://data.cochrane.org/concepts/"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="e07eN1w1Rwswg4"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Guidelines"/&gt;
+          &lt;/coding&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.category">category</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="S3"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Evidence- and consensus-based guideline"/&gt;
+          &lt;/coding&gt;
+        &lt;/category&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2022-01-28"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.author">author</a>&gt;<a style="color: Maroon" href="Organization-ExampleOrganization.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Organization/ExampleOrganization"/&gt;
+        &lt;/author&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Example Guideline"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.relatesTo">relatesTo</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="citation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="Citation-ExampleGuidelineCitation.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Citation/ExampleGuidelineCitation"/&gt;
+          &lt;/resourceReference&gt;
+        &lt;/relatesTo&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.section">section</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Example Guideline Recommendation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.section.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="guideline-recommendation"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical practice guideline recommendation"/&gt;
+            &lt;/coding&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.section.focus">focus</a>&gt;<a style="color: Maroon" href="PlanDefinition-ExampleRecommendation.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="PlanDefinition/ExampleRecommendation"/&gt;
+          &lt;/focus&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/composition.html#Composition.section.text">text</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+            &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;This is an example guideline recommendation.&lt;/div&gt;
+          &lt;/text&gt;
+        &lt;/section&gt;
+      &lt;/Composition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/citation"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation">Citation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleGuidelineCitation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Citation_ExampleGuidelineCitation"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Citation ExampleGuidelineCitation&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleGuidelineCitation"&gt; &lt;/a&gt;&lt;a name="hcExampleGuidelineCitation"&gt; &lt;/a&gt;&lt;a name="ExampleGuidelineCitation-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExampleGuidelineCitation&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;citedArtifact&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: ceoysy/exampleIdentifier&lt;/p&gt;&lt;h3&gt;Versions&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;1.0-alpha1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;currentState&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/cited-artifact-status-type archived}"&gt;Archived&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Titles&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Example Citation&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;WebLocations&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href="https://example.com/guideline/exampleIdentifier"&gt;https://example.com/guideline/exampleIdentifier&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Classifications&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Classifier&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}"&gt;Publication Type&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}"&gt;Clinical practice guideline&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ExampleGuidelineCitation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact">citedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.identifier">identifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ceoysy/exampleIdentifier"/&gt;
+          &lt;/identifier&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.version">version</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.version.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1.0-alpha1"/&gt;
+          &lt;/version&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.currentState">currentState</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/cited-artifact-status-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="archived"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Archived"/&gt;
+            &lt;/coding&gt;
+          &lt;/currentState&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.title">title</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.title.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Example Citation"/&gt;
+          &lt;/title&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.webLocation">webLocation</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.webLocation.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://example.com/guideline/exampleIdentifier"/&gt;
+          &lt;/webLocation&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification">classification</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification.type">type</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/cited-artifact-classification-type"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="publication-type"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Publication Type"/&gt;
+              &lt;/coding&gt;
+            &lt;/type&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification.classifier">classifier</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="clinical-practice-guideline"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical practice guideline"/&gt;
+              &lt;/coding&gt;
+            &lt;/classifier&gt;
+          &lt;/classification&gt;
+        &lt;/citedArtifact&gt;
+      &lt;/Citation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition">PlanDefinition</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleRecommendation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="extensions"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="PlanDefinition_ExampleRecommendation"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: PlanDefinition ExampleRecommendation&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleRecommendation"&gt; &lt;/a&gt;&lt;a name="hcExampleRecommendation"&gt; &lt;/a&gt;&lt;a name="ExampleRecommendation-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;knowledgeCapability&lt;/b&gt;: computable&lt;/p&gt;&lt;p&gt;&lt;b&gt;knowledgeRepresentationLevel&lt;/b&gt;: structured&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Action Combination Method&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;method: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method at-least}"&gt;At Least&lt;/span&gt;&lt;/li&gt;&lt;li&gt;threshold: 2&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href="PlanDefinition-ExampleRecommendation.html"&gt;PlanDefinition Recommendation&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Recommendation&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Recommendation&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}"&gt;Workflow Definition&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;experimental&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-02-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: CPGonEBMonFHIR&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;Example Recommendation&lt;/p&gt;
+&lt;/div&gt;&lt;h3&gt;RelatedArtifacts&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Classifier&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ResourceReference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Justification&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system recommendation-rating}"&gt;Recommendation rating&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="ArtifactAssessment-ExampleRecommendationJustification.html"&gt;ArtifactAssessment: extension = 0.1.0,active; date = 2020-01-03; artifact[x] = -&amp;gt;PlanDefinition Recommendation Plan&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}"&gt;Clinical practice guideline recommendation&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="Citation-ExampleRecommendationCitation.html"&gt;Citation ExampleRecommendationCitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}"&gt;Clinical practice guideline&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="Citation-ExampleGuidelineCitation.html"&gt;Citation ExampleGuidelineCitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: example recommendation&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;Example recommendation&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}"&gt;Guideline-based Care&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href="PlanDefinition-ExampleRecommendationPlan.html"&gt;Recommendation Plan&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: example recommendation&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;Example recommendation&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}"&gt;Guideline-based Care&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href="PlanDefinition-ExampleRecommendationPlan.html"&gt;Recommendation Plan&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="computable"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="structured"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="method"&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="at-least"/&gt;
+              &lt;/coding&gt;
+            &lt;/valueCodeableConcept&gt;
+          &lt;/extension&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="threshold"&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valuePositiveInt</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>="2"/&gt;
+          &lt;/extension&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.url">url</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1.0"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Recommendation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Recommendation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/plan-definition-type"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="workflow-definition"/&gt;
+          &lt;/coding&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>="true"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2022-02-14"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="CPGonEBMonFHIR"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Example Recommendation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.relatedArtifact">relatedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="justification"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="recommendation-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Recommendation rating"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="ArtifactAssessment-ExampleRecommendationJustification.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ArtifactAssessment/ExampleRecommendationJustification"/&gt;
+          &lt;/resourceReference&gt;
+        &lt;/relatedArtifact&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.relatedArtifact">relatedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="citation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="guideline-recommendation"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical practice guideline recommendation"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="Citation-ExampleRecommendationCitation.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Citation/ExampleRecommendationCitation"/&gt;
+          &lt;/resourceReference&gt;
+        &lt;/relatedArtifact&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.relatedArtifact">relatedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="citation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="clinical-practice-guideline"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical practice guideline"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="Citation-ExampleGuidelineCitation.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Citation/ExampleGuidelineCitation"/&gt;
+          &lt;/resourceReference&gt;
+        &lt;/relatedArtifact&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action">action</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="example recommendation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Example recommendation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="guideline-based-care"/&gt;
+            &lt;/coding&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.definition[x]">definitionCanonical</a>
+                               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"/&gt;
+        &lt;/action&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action">action</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="example recommendation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Example recommendation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="guideline-based-care"/&gt;
+            &lt;/coding&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.definition[x]">definitionCanonical</a>
+                               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"/&gt;
+        &lt;/action&gt;
+      &lt;/PlanDefinition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-plan"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition">PlanDefinition</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleRecommendationPlan"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="extensions"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="PlanDefinition_ExampleRecommendationPlan"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: PlanDefinition ExampleRecommendationPlan&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleRecommendationPlan"&gt; &lt;/a&gt;&lt;a name="hcExampleRecommendationPlan"&gt; &lt;/a&gt;&lt;a name="ExampleRecommendationPlan-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;knowledgeCapability&lt;/b&gt;: computable&lt;/p&gt;&lt;p&gt;&lt;b&gt;knowledgeRepresentationLevel&lt;/b&gt;: structured&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href="PlanDefinition-ExampleRecommendation.html"&gt;Recommendation&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Action Combination Method&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;method: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}"&gt;Exactly&lt;/span&gt;&lt;/li&gt;&lt;li&gt;threshold: 1&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href="PlanDefinition-ExampleRecommendationPlan.html"&gt;PlanDefinition Recommendation Plan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: RecommendationPlan&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Recommendation Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}"&gt;ECA Rule&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;experimental&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href="EvidenceVariable-ExampleRecommendationEligibilityCriteria5Levels.html"&gt;PopulationExample&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-02-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: CPGonEBMonFHIR&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;Example Recommendation Plan&lt;/p&gt;
+&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;goal&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;&lt;/p&gt;ventilator-management-goal&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 385857005}"&gt;Ventilator care and adjustment (regime/therapy)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;span title="Codes:"&gt;The ventilator should be set up to provide a breath reate of at least 20 and at most per minute.&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Measure&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Detail[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://loinc.org 33438-3}"&gt;Breath rate mechanical --on ventilator&lt;/span&gt;&lt;/td&gt;&lt;td&gt;20-24&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;goal&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;&lt;/p&gt;lab-ddimer-concentration-goal&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 410394004}"&gt;Lab findings surveillance (regime/therapy)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;span title="Codes:"&gt;D-Dimer concentration shall be below 250 ng/mL&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Measure&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Detail[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://loinc.org 48066-5}"&gt;Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma&lt;/span&gt;&lt;/td&gt;&lt;td&gt;?-250&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 432102000}"&gt;Administration of substance (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href="Bundle-GuidelineRecommendationExample.html"&gt;DrugAdministrationAction&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 229824005}"&gt;Positioning patient (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;goalId&lt;/b&gt;: ventilator-management-goal&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: &lt;a href="ActivityDefinition-ExampleBodyPositioningAction.html"&gt;DrugAdministrationAction&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 410210009}"&gt;Ventilator care management (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;goalId&lt;/b&gt;: ventilator-management-goal&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Action Combination Method&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;method: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method one-or-more}"&gt;One or More&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 89780004}"&gt;Combined (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;GoalId&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 410210009}"&gt;Ventilator care management (procedure)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;ventilator-management-goal&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="computable"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="structured"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCanonical</a>
+                          <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="method"&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="exactly"/&gt;
+              &lt;/coding&gt;
+            &lt;/valueCodeableConcept&gt;
+          &lt;/extension&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="threshold"&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valuePositiveInt</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>="1"/&gt;
+          &lt;/extension&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.url">url</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1.0"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="RecommendationPlan"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Recommendation Plan"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/plan-definition-type"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="eca-rule"/&gt;
+          &lt;/coding&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>="true"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.subject[x]">subjectCanonical</a>
+                          <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2022-02-14"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="CPGonEBMonFHIR"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Example Recommendation Plan"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal">goal</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">id</a>="ventilator-management-goal"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.category">category</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="385857005"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Ventilator care and adjustment (regime/therapy)"/&gt;
+            &lt;/coding&gt;
+          &lt;/category&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.description">description</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
+                  <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="The ventilator should be set up to provide a breath reate of at least 20 and at most per minute."/&gt;
+          &lt;/description&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.target">target</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.target.measure">measure</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://loinc.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="33438-3"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Breath rate mechanical --on ventilator"/&gt;
+              &lt;/coding&gt;
+            &lt;/measure&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.target.detail[x]">detailRange</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#Range.low">low</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="20"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="/min"/&gt;
+              &lt;/low&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#Range.high">high</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="24"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="/min"/&gt;
+              &lt;/high&gt;
+            &lt;/detailRange&gt;
+          &lt;/target&gt;
+        &lt;/goal&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal">goal</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">id</a>="lab-ddimer-concentration-goal"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.category">category</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="410394004"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Lab findings surveillance (regime/therapy)"/&gt;
+            &lt;/coding&gt;
+          &lt;/category&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.description">description</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="D-Dimer concentration shall be below 250 ng/mL"/&gt;
+          &lt;/description&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.target">target</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.target.measure">measure</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://loinc.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="48066-5"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>
+                         <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"/&gt;
+              &lt;/coding&gt;
+            &lt;/measure&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.goal.target.detail[x]">detailRange</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#Range.high">high</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="250"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="ng/mL"/&gt;
+              &lt;/high&gt;
+            &lt;/detailRange&gt;
+          &lt;/target&gt;
+        &lt;/goal&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action">action</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="432102000"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Administration of substance (procedure)"/&gt;
+            &lt;/coding&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.definition[x]">definitionCanonical</a>
+                               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/drug-administration-example"/&gt;
+        &lt;/action&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action">action</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="229824005"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Positioning patient (procedure)"/&gt;
+            &lt;/coding&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.goalId">goalId</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ventilator-management-goal"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.definition[x]">definitionCanonical</a>
+                               <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/body-positioning-example"/&gt;
+        &lt;/action&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action">action</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="410210009"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Ventilator care management (procedure)"/&gt;
+            &lt;/coding&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.goalId">goalId</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ventilator-management-goal"/&gt;
+        &lt;/action&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action">action</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="method"&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                          <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="one-or-more"/&gt;
+                &lt;/coding&gt;
+              &lt;/valueCodeableConcept&gt;
+            &lt;/extension&gt;
+          &lt;/extension&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="89780004"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Combined (qualifier value)"/&gt;
+            &lt;/coding&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.action">action</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.code">code</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="410210009"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Ventilator care management (procedure)"/&gt;
+              &lt;/coding&gt;
+            &lt;/code&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/plandefinition.html#PlanDefinition.action.goalId">goalId</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ventilator-management-goal"/&gt;
+          &lt;/action&gt;
+        &lt;/action&gt;
+      &lt;/PlanDefinition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-action"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition">ActivityDefinition</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleDrugAdministrationAction"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="extensions"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="ActivityDefinition_ExampleDrugAdministrationAction"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: ActivityDefinition ExampleDrugAdministrationAction&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleDrugAdministrationAction"&gt; &lt;/a&gt;&lt;a name="hcExampleDrugAdministrationAction"&gt; &lt;/a&gt;&lt;a name="ExampleDrugAdministrationAction-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;knowledgeCapability&lt;/b&gt;: computable&lt;/p&gt;&lt;p&gt;&lt;b&gt;knowledgeRepresentationLevel&lt;/b&gt;: structured&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href="ActivityDefinition-ExampleDrugAdministrationAction.html"&gt;ActivityDefinition DrugAdministrationAction&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: DrugAdministrationAction&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;experimental&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/fhir-types Patient}"&gt;Patient&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: CPGonEBMonFHIR&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;A drug administration that should be performed.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;kind&lt;/b&gt;: MedicationRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 432102000}"&gt;Administration of substance (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;product&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}"&gt;Dexamethasone (substance)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dosage&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dosage Condition&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;type: &lt;span title="Codes:{http://loinc.org 29463-7}"&gt;Body weight&lt;/span&gt;&lt;/li&gt;&lt;li&gt;value: ?-70&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: Count 10  times, Duration 10days , Once per 1 days&lt;/p&gt;&lt;p&gt;&lt;b&gt;route&lt;/b&gt;: &lt;span title="Codes:{http://snomed.info/sct 26643006}"&gt;Oral route&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;DoseAndRates&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dose[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Rate[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;6 mg&lt;span style="background: LightGoldenRodYellow"&gt; (Details: UCUM  codemg = 'mg')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1 /d&lt;span style="background: LightGoldenRodYellow"&gt; (Details: UCUM  code/d = '/d')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="computable"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="structured"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.url">url</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/drug-administration-example"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1.0"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="DrugAdministrationAction"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>="true"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.subject[x]">subjectCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/fhir-types"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="Patient"/&gt;
+          &lt;/coding&gt;
+        &lt;/subjectCodeableConcept&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="CPGonEBMonFHIR"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="A drug administration that should be performed."/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.kind">kind</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="MedicationRequest"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="432102000"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Administration of substance (procedure)"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.product[x]">productCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="372584003"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Dexamethasone (substance)"/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://fhir.de/CodeSystem/bfarm/atc"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="C05AA09"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Dexamethason"/&gt;
+          &lt;/coding&gt;
+        &lt;/productCodeableConcept&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/activitydefinition.html#ActivityDefinition.dosage">dosage</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="type"&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://loinc.org"/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="29463-7"/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Body weight"/&gt;
+                &lt;/coding&gt;
+              &lt;/valueCodeableConcept&gt;
+            &lt;/extension&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="value"&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueRange</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#Range.high">high</a>&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="70"/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="kg"/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="kg"/&gt;
+                &lt;/high&gt;
+              &lt;/valueRange&gt;
+            &lt;/extension&gt;
+          &lt;/extension&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.timing">timing</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat">repeat</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.count">count</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>="10"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.duration">duration</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="10"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.durationUnit">durationUnit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="d"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.frequency">frequency</a> <a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt">value</a>="1"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.period">period</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Timing#Timing.repeat.periodUnit">periodUnit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="d"/&gt;
+            &lt;/repeat&gt;
+          &lt;/timing&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.route">route</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="26643006"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Oral route"/&gt;
+            &lt;/coding&gt;
+          &lt;/route&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.doseAndRate">doseAndRate</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.doseAndRate.dose[x]">doseQuantity</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="6"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="mg"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="mg"/&gt;
+            &lt;/doseQuantity&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/dosage.html#Dosage#Dosage.doseAndRate.rate[x]">rateQuantity</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="/d"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="/d"/&gt;
+            &lt;/rateQuantity&gt;
+          &lt;/doseAndRate&gt;
+        &lt;/dosage&gt;
+      &lt;/ActivityDefinition&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/population"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable">EvidenceVariable</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleRecommendationEligibilityCriteria"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="EvidenceVariable_ExampleRecommendationEligibilityCriteria"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: EvidenceVariable ExampleRecommendationEligibilityCriteria&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleRecommendationEligibilityCriteria"&gt; &lt;/a&gt;&lt;a name="hcExampleRecommendationEligibilityCriteria"&gt; &lt;/a&gt;&lt;a name="ExampleRecommendationEligibilityCriteria-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href="EvidenceVariable-ExampleRecommendationEligibilityCriteria.html"&gt;EvidenceVariable PopulationExample&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: PopulationExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;characteristic&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;DefinitionByTypeAndValues&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 404684003}"&gt;Clinical finding (finding)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 840539006}"&gt;Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.url">url</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="PopulationExample"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic">characteristic</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue">definitionByTypeAndValue</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue.type">type</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="404684003"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical finding (finding)"/&gt;
+              &lt;/coding&gt;
+            &lt;/type&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue.value[x]">valueCodeableConcept</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="840539006"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>
+                         <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"/&gt;
+              &lt;/coding&gt;
+            &lt;/valueCodeableConcept&gt;
+          &lt;/definitionByTypeAndValue&gt;
+        &lt;/characteristic&gt;
+      &lt;/EvidenceVariable&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-justification"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment">ArtifactAssessment</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleRecommendationJustification"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="extensions"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="ArtifactAssessment_ExampleRecommendationJustification"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: ArtifactAssessment ExampleRecommendationJustification&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleRecommendationJustification"&gt; &lt;/a&gt;&lt;a name="hcExampleRecommendationJustification"&gt; &lt;/a&gt;&lt;a name="ExampleRecommendationJustification-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;ArtifactAssessment Version&lt;/b&gt;: 0.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;ArtifactAssessment Publication Status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2020-01-03&lt;/p&gt;&lt;p&gt;&lt;b&gt;artifact&lt;/b&gt;: &lt;a href="PlanDefinition-ExampleRecommendationPlan.html"&gt;PlanDefinition Recommendation Plan&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system strength}"&gt;Strength of recommendation&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength strong-for}"&gt;Strong for an intervention&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-type Overall}"&gt;Overall certainty&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-rating very-low}"&gt;Very low quality&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system consensus}"&gt;Consensus&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/recommendation-strength strong}"&gt;Strong&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Container&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}"&gt;Certainty of evidence rating&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;RelatedArtifacts&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Classifier&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ResourceReference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Justification&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}"&gt;Certainty of evidence rating&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="ArtifactAssessment-ExampleCertaintyOfEvidenceRating.html"&gt;ArtifactAssessment: extension = 0.1.1,active; date = 2022-03-11; artifact[x] = -&amp;gt;Evidence ExampleStudyOutcomeEvidence&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Container&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}"&gt;Net effect&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;RelatedArtifacts&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Classifier&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ResourceReference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Supported With&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}"&gt;Net effect&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="Evidence-ExampleNetEffectEstimate.html"&gt;Evidence NetEffectExample&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="0.1.0"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2020-01-03"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.artifact[x]">artifactReference</a>&gt;<a style="color: Maroon" href="PlanDefinition-ExampleRecommendationPlan.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="PlanDefinition/ExampleRecommendationPlan"/&gt;
+        &lt;/artifactReference&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="strength"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Strength of recommendation"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="strong-for"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="Overall"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Overall certainty"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="very-low"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Very low quality"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="consensus"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Consensus"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/recommendation-strength"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="strong"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Strong"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="container"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="certainty-of-evidence-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Certainty of evidence rating"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.relatedArtifact">relatedArtifact</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="justification"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.classifier">classifier</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="certainty-of-evidence-rating"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Certainty of evidence rating"/&gt;
+              &lt;/coding&gt;
+            &lt;/classifier&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="ArtifactAssessment-ExampleCertaintyOfEvidenceRating.html">&#x1F517;</a> 
+              &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>
+                         <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ArtifactAssessment/ExampleCertaintyOfEvidenceRating"/&gt;
+            &lt;/resourceReference&gt;
+          &lt;/relatedArtifact&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="container"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="net-effect"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Net effect"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.relatedArtifact">relatedArtifact</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="supported-with"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.classifier">classifier</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="net-effect"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Net effect"/&gt;
+              &lt;/coding&gt;
+            &lt;/classifier&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="Evidence-ExampleNetEffectEstimate.html">&#x1F517;</a> 
+              &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Evidence/ExampleNetEffectEstimate"/&gt;
+            &lt;/resourceReference&gt;
+          &lt;/relatedArtifact&gt;
+        &lt;/content&gt;
+      &lt;/ArtifactAssessment&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/certainty-of-evidence-rating"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment">ArtifactAssessment</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleCertaintyOfEvidenceRating"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="extensions"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="ArtifactAssessment_ExampleCertaintyOfEvidenceRating"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: ArtifactAssessment ExampleCertaintyOfEvidenceRating&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleCertaintyOfEvidenceRating"&gt; &lt;/a&gt;&lt;a name="hcExampleCertaintyOfEvidenceRating"&gt; &lt;/a&gt;&lt;a name="ExampleCertaintyOfEvidenceRating-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;ArtifactAssessment Version&lt;/b&gt;: 0.1.1&lt;/p&gt;&lt;p&gt;&lt;b&gt;ArtifactAssessment Publication Status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-03-11&lt;/p&gt;&lt;p&gt;&lt;b&gt;artifact&lt;/b&gt;: &lt;a href="Evidence-ExampleStudyOutcomeEvidence.html"&gt;Evidence ExampleStudyOutcomeEvidence&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-type Overall}"&gt;Overall certainty&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-rating moderate}"&gt;Moderate quality&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-type RiskOfBias}"&gt;Risk of bias&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-rating serious-concern}"&gt;serious concern&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-type Imprecision}"&gt;Imprecision&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-rating serious-concern}"&gt;serious concern&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-type LargeEffect}"&gt;Large effect&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-rating upcode2}"&gt;increase rating: +2&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;informationType&lt;/b&gt;: Rating&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-type PlausibleConfounding}"&gt;Plausible confounding&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classifier&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/certainty-rating upcode1}"&gt;increase rating: +1&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="0.1.1"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#uri">url</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status"&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2022-03-11"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.artifact[x]">artifactReference</a>&gt;<a style="color: Maroon" href="Evidence-ExampleStudyOutcomeEvidence.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Evidence/ExampleStudyOutcomeEvidence"/&gt;
+        &lt;/artifactReference&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="Overall"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Overall certainty"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="moderate"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Moderate quality"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="RiskOfBias"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Risk of bias"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="serious-concern"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="serious concern"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="Imprecision"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Imprecision"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="serious-concern"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="serious concern"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="LargeEffect"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Large effect"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="upcode2"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="increase rating: +2"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.informationType">informationType</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="rating"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="PlausibleConfounding"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Plausible confounding"/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/artifactassessment.html#ArtifactAssessment.content.classifier">classifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/certainty-rating"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="upcode1"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="increase rating: +1"/&gt;
+            &lt;/coding&gt;
+          &lt;/classifier&gt;
+        &lt;/content&gt;
+      &lt;/ArtifactAssessment&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/study-outcome-evidence"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence">Evidence</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleStudyOutcomeEvidence"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Evidence_ExampleStudyOutcomeEvidence"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Evidence ExampleStudyOutcomeEvidence&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleStudyOutcomeEvidence"&gt; &lt;/a&gt;&lt;a name="hcExampleStudyOutcomeEvidence"&gt; &lt;/a&gt;&lt;a name="ExampleStudyOutcomeEvidence-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExampleStudyOutcomeEvidence&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;h3&gt;RelatedArtifacts&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ResourceReference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;&lt;a href="Citation-ExampleStudyCitation.html"&gt;Citation ExampleCitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;variableDefinition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;variableRole&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}"&gt;population&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;observed&lt;/b&gt;: &lt;a href="Group-ExampleStudyCohort.html"&gt;Group: type = person; membership = definitional; quantity = 20&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;intended&lt;/b&gt;: &lt;a href="EvidenceVariable-ExampleStudyEligibilityCriteria.html"&gt;EvidenceVariable ExampleStudyEligibilityCriteria&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;variableDefinition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;variableRole&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}"&gt;measured variable&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;observed&lt;/b&gt;: &lt;a href="EvidenceVariable-ExampleOutcome.html"&gt;EvidenceVariable Mortality&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;synthesisType&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}"&gt;not applicable&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ExampleStudyOutcomeEvidence"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.relatedArtifact">relatedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="citation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="Citation-ExampleStudyCitation.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Citation/ExampleStudyCitation"/&gt;
+          &lt;/resourceReference&gt;
+        &lt;/relatedArtifact&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition">variableDefinition</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.variableRole">variableRole</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/variable-role"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="population"/&gt;
+            &lt;/coding&gt;
+          &lt;/variableRole&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.observed">observed</a>&gt;<a style="color: Maroon" href="Group-ExampleStudyCohort.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Group/ExampleStudyCohort"/&gt;
+          &lt;/observed&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.intended">intended</a>&gt;<a style="color: Maroon" href="EvidenceVariable-ExampleStudyEligibilityCriteria.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="EvidenceVariable/ExampleStudyEligibilityCriteria"/&gt;
+          &lt;/intended&gt;
+        &lt;/variableDefinition&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition">variableDefinition</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.variableRole">variableRole</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/variable-role"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="measuredVariable"/&gt;
+            &lt;/coding&gt;
+          &lt;/variableRole&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.observed">observed</a>&gt;<a style="color: Maroon" href="EvidenceVariable-ExampleOutcome.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="EvidenceVariable/ExampleOutcome"/&gt;
+          &lt;/observed&gt;
+        &lt;/variableDefinition&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.synthesisType">synthesisType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/synthesis-type"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="NotApplicable"/&gt;
+          &lt;/coding&gt;
+        &lt;/synthesisType&gt;
+      &lt;/Evidence&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/outcome-evidence-synthesis"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence">Evidence</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleOutcomeEvidenceSynthesis"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Evidence_ExampleOutcomeEvidenceSynthesis"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Evidence ExampleOutcomeEvidenceSynthesis&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleOutcomeEvidenceSynthesis"&gt; &lt;/a&gt;&lt;a name="hcExampleOutcomeEvidenceSynthesis"&gt; &lt;/a&gt;&lt;a name="ExampleOutcomeEvidenceSynthesis-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExampleOutcomeEvidenceSynthesis&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;h3&gt;RelatedArtifacts&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ResourceReference&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;&lt;a href="Citation-ExampleStudyCitation.html"&gt;Citation ExampleCitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;variableDefinition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;variableRole&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}"&gt;population&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;observed&lt;/b&gt;: &lt;a href="Group-ExampleEvidenceSynthesisCohorts.html"&gt;Group: type = person; membership = definitional; quantity = 20&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;intended&lt;/b&gt;: &lt;a href="EvidenceVariable-ExampleStudyEligibilityCriteria.html"&gt;EvidenceVariable ExampleStudyEligibilityCriteria&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;variableDefinition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;variableRole&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}"&gt;measured variable&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;observed&lt;/b&gt;: &lt;a href="EvidenceVariable-ExampleOutcome.html"&gt;EvidenceVariable Mortality&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;synthesisType&lt;/b&gt;: &lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}"&gt;not applicable&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ExampleOutcomeEvidenceSynthesis"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.relatedArtifact">relatedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="citation"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#RelatedArtifact#RelatedArtifact.resourceReference">resourceReference</a>&gt;<a style="color: Maroon" href="Citation-ExampleStudyCitation.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Citation/ExampleStudyCitation"/&gt;
+          &lt;/resourceReference&gt;
+        &lt;/relatedArtifact&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition">variableDefinition</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.variableRole">variableRole</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/variable-role"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="population"/&gt;
+            &lt;/coding&gt;
+          &lt;/variableRole&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.observed">observed</a>&gt;<a style="color: Maroon" href="Group-ExampleEvidenceSynthesisCohorts.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Group/ExampleEvidenceSynthesisCohorts"/&gt;
+          &lt;/observed&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.intended">intended</a>&gt;<a style="color: Maroon" href="EvidenceVariable-ExampleStudyEligibilityCriteria.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="EvidenceVariable/ExampleStudyEligibilityCriteria"/&gt;
+          &lt;/intended&gt;
+        &lt;/variableDefinition&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition">variableDefinition</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.variableRole">variableRole</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/variable-role"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="measuredVariable"/&gt;
+            &lt;/coding&gt;
+          &lt;/variableRole&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.observed">observed</a>&gt;<a style="color: Maroon" href="EvidenceVariable-ExampleOutcome.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="EvidenceVariable/ExampleOutcome"/&gt;
+          &lt;/observed&gt;
+        &lt;/variableDefinition&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.synthesisType">synthesisType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/synthesis-type"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="NotApplicable"/&gt;
+          &lt;/coding&gt;
+        &lt;/synthesisType&gt;
+      &lt;/Evidence&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/study-eligbility-criteria"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable">EvidenceVariable</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleStudyEligibilityCriteria"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="EvidenceVariable_ExampleStudyEligibilityCriteria"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: EvidenceVariable ExampleStudyEligibilityCriteria&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleStudyEligibilityCriteria"&gt; &lt;/a&gt;&lt;a name="hcExampleStudyEligibilityCriteria"&gt; &lt;/a&gt;&lt;a name="ExampleStudyEligibilityCriteria-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExampleStudyEligibilityCriteria&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;characteristic&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;DefinitionByTypeAndValues&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 404684003}"&gt;Clinical finding (finding)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 840539006}"&gt;Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ExampleStudyEligibilityCriteria"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic">characteristic</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue">definitionByTypeAndValue</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue.type">type</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="404684003"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical finding (finding)"/&gt;
+              &lt;/coding&gt;
+            &lt;/type&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue.value[x]">valueCodeableConcept</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="840539006"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>
+                         <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"/&gt;
+              &lt;/coding&gt;
+            &lt;/valueCodeableConcept&gt;
+          &lt;/definitionByTypeAndValue&gt;
+        &lt;/characteristic&gt;
+      &lt;/EvidenceVariable&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/study-citation"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation">Citation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleStudyCitation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Citation_ExampleStudyCitation"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Citation ExampleStudyCitation&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleStudyCitation"&gt; &lt;/a&gt;&lt;a name="hcExampleStudyCitation"&gt; &lt;/a&gt;&lt;a name="ExampleStudyCitation-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExampleCitation&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;citedArtifact&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: ceoysy/exampleIdentifier&lt;/p&gt;&lt;h3&gt;Titles&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Example Citation&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Classifications&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Classifier&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}"&gt;Publication Type&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://hl7.org/fhir/citation-artifact-classifier D016428}"&gt;Journal Article&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ExampleCitation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact">citedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.identifier">identifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ceoysy/exampleIdentifier"/&gt;
+          &lt;/identifier&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.title">title</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.title.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Example Citation"/&gt;
+          &lt;/title&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification">classification</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification.type">type</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/cited-artifact-classification-type"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="publication-type"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Publication Type"/&gt;
+              &lt;/coding&gt;
+            &lt;/type&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification.classifier">classifier</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/citation-artifact-classifier"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="D016428"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Journal Article"/&gt;
+              &lt;/coding&gt;
+            &lt;/classifier&gt;
+          &lt;/classification&gt;
+        &lt;/citedArtifact&gt;
+      &lt;/Citation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/outcome"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable">EvidenceVariable</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleOutcome"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="EvidenceVariable_ExampleOutcome"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: EvidenceVariable ExampleOutcome&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleOutcome"&gt; &lt;/a&gt;&lt;a name="hcExampleOutcome"&gt; &lt;/a&gt;&lt;a name="ExampleOutcome-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://www.ceosys.de&lt;/code&gt;/outcome-example&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Mortality&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;characteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;exclude&lt;/b&gt;: false&lt;/p&gt;&lt;h3&gt;DefinitionByTypeAndValues&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://snomed.info/sct 409651001}"&gt;Mortality rate (observable entity)&lt;/span&gt;&lt;/td&gt;&lt;td&gt; percent&lt;span style="background: LightGoldenRodYellow"&gt; (Details: UCUM  code% = '%')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;handling&lt;/b&gt;: dichotomous variable&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.ceosys.de"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="outcome-example"/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Mortality"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic">characteristic</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.exclude">exclude</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>="false"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue">definitionByTypeAndValue</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue.type">type</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="409651001"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Mortality rate (observable entity)"/&gt;
+              &lt;/coding&gt;
+            &lt;/type&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.characteristic.definitionByTypeAndValue.value[x]">valueQuantity</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="percent"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="%"/&gt;
+            &lt;/valueQuantity&gt;
+          &lt;/definitionByTypeAndValue&gt;
+        &lt;/characteristic&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidencevariable.html#EvidenceVariable.handling">handling</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="dichotomous"/&gt;
+      &lt;/EvidenceVariable&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-citation"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation">Citation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleRecommendationCitation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Citation_ExampleRecommendationCitation"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Citation ExampleRecommendationCitation&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleRecommendationCitation"&gt; &lt;/a&gt;&lt;a name="hcExampleRecommendationCitation"&gt; &lt;/a&gt;&lt;a name="ExampleRecommendationCitation-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExampleRecommendationCitation&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;citedArtifact&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: ceoysy/exampleIdentifier&lt;/p&gt;&lt;h3&gt;Versions&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;1.0-alpha1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;currentState&lt;/b&gt;: &lt;span title="Codes:{http://hl7.org/fhir/cited-artifact-status-type archived}"&gt;Archived&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Titles&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Example Citation&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Classifications&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Classifier&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}"&gt;Publication Type&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}"&gt;Clinical practice guideline recommendation&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ExampleRecommendationCitation"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact">citedArtifact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.identifier">identifier</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ceoysy/exampleIdentifier"/&gt;
+          &lt;/identifier&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.version">version</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.version.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1.0-alpha1"/&gt;
+          &lt;/version&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.currentState">currentState</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/cited-artifact-status-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="archived"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Archived"/&gt;
+            &lt;/coding&gt;
+          &lt;/currentState&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.title">title</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.title.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Example Citation"/&gt;
+          &lt;/title&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification">classification</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification.type">type</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://hl7.org/fhir/cited-artifact-classification-type"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="publication-type"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Publication Type"/&gt;
+              &lt;/coding&gt;
+            &lt;/type&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/citation.html#Citation.citedArtifact.classification.classifier">classifier</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="guideline-recommendation"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Clinical practice guideline recommendation"/&gt;
+              &lt;/coding&gt;
+            &lt;/classifier&gt;
+          &lt;/classification&gt;
+        &lt;/citedArtifact&gt;
+      &lt;/Citation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/net-effect-estimate"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence">Evidence</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="ExampleNetEffectEstimate"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="Evidence_ExampleNetEffectEstimate"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Evidence ExampleNetEffectEstimate&lt;/b&gt;&lt;/p&gt;&lt;a name="ExampleNetEffectEstimate"&gt; &lt;/a&gt;&lt;a name="hcExampleNetEffectEstimate"&gt; &lt;/a&gt;&lt;a name="ExampleNetEffectEstimate-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: NetEffectExample&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Unknown&lt;/p&gt;&lt;h3&gt;VariableDefinitions&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;VariableRole&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Intended&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}"&gt;measured variable&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="EvidenceVariable-ExampleOutcome.html"&gt;EvidenceVariable Mortality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;statistic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;Net Effect&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;statisticType&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}"&gt;Net Effect&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1.7 %&lt;span style="background: LightGoldenRodYellow"&gt; (Details: UCUM  code% = '%')&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;AttributeEstimates&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Range&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Codes:{http://terminology.hl7.org/CodeSystem/attribute-estimate-type C53324}"&gt;Confidence interval&lt;/span&gt;&lt;/td&gt;&lt;td&gt;0.95&lt;/td&gt;&lt;td&gt;1.5-1.9&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;modelCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system relative-importance-weighting}"&gt;Relative importance weighting for use in weighted linear combinations&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;h3&gt;Variables&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;VariableDefinition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href="EvidenceVariable-ExampleOutcome.html"&gt;EvidenceVariable Mortality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="NetEffectExample"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="unknown"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition">variableDefinition</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.variableRole">variableRole</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/variable-role"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="measuredVariable"/&gt;
+            &lt;/coding&gt;
+          &lt;/variableRole&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.variableDefinition.intended">intended</a>&gt;<a style="color: Maroon" href="EvidenceVariable-ExampleOutcome.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="EvidenceVariable/ExampleOutcome"/&gt;
+          &lt;/intended&gt;
+        &lt;/variableDefinition&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic">statistic</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Net Effect"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.statisticType">statisticType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="net-effect"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Net Effect"/&gt;
+            &lt;/coding&gt;
+          &lt;/statisticType&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.quantity">quantity</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1.7"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="%"/&gt;
+          &lt;/quantity&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.attributeEstimate">attributeEstimate</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.attributeEstimate.type">type</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/attribute-estimate-type"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="C53324"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Confidence interval"/&gt;
+              &lt;/coding&gt;
+            &lt;/type&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.attributeEstimate.level">level</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="0.95"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.attributeEstimate.range">range</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#Range.low">low</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1.5"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="%"/&gt;
+              &lt;/low&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Range#Range.high">high</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1.9"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://unitsofmeasure.org"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="%"/&gt;
+              &lt;/high&gt;
+            &lt;/range&gt;
+          &lt;/attributeEstimate&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.modelCharacteristic">modelCharacteristic</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.modelCharacteristic.code">code</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="relative-importance-weighting"/&gt;
+              &lt;/coding&gt;
+            &lt;/code&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.modelCharacteristic.value">value</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+            &lt;/value&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.modelCharacteristic.variable">variable</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/evidence.html#Evidence.statistic.modelCharacteristic.variable.variableDefinition">variableDefinition</a>&gt;<a style="color: Maroon" href="EvidenceVariable-ExampleOutcome.html">&#x1F517;</a> 
+                &lt;<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="EvidenceVariable/ExampleOutcome"/&gt;
+              &lt;/variableDefinition&gt;
+            &lt;/variable&gt;
+          &lt;/modelCharacteristic&gt;
+        &lt;/statistic&gt;
+      &lt;/Evidence&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+&lt;/Bundle&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizin.uni-greifswald.de/">Universitätsmedizin Greifswald</a>.  Package de.netzwerk-universitaetsmedizin.ebm-cpg#1.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Oct 21, 2024 14:50+0000">2024-10-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <p style="color: white"><a name="l4183">​</a>
+       Links: <a href="toc.html">Table of Contents</a> |
+       <a href="qa.html">QA Report</a> |
+       <a href="https://github.com/CEOsys/de.netzwerk-universitaetsmedizin.ebm-cpg/issues/" target="_blank">Issues</a> |
+       <a href="https://github.com/CEOsys/de.netzwerk-universitaetsmedizin.ebm-cpg/issues/new" target="_blank">Submit an issue</a> |
+       <a href="http://hl7.org/fhir/R5//history.html" target="_blank">Version History</a> |
+       <a rel="license" href="http://hl7.org/fhir/R5/license.html"><img src="assets/images/cc-by.svg" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+</p>
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

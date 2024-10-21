@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-action-combination-method"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-action-combination-method</b></p><a name=\"cs-action-combination-method\"> </a><a name=\"hccs-action-combination-method\"> </a><a name=\"cs-action-combination-method-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">all<a name=\"cs-action-combination-method-all\"> </a></td><td>All</td><td>All actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">any<a name=\"cs-action-combination-method-any\"> </a></td><td>Any</td><td>Any action must be performed.</td></tr><tr><td style=\"white-space:nowrap\">at-least<a name=\"cs-action-combination-method-at-least\"> </a></td><td>At Least</td><td>At least the specified number of actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">exactly<a name=\"cs-action-combination-method-exactly\"> </a></td><td>Exactly</td><td>Exactly the specified number of actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">at-most<a name=\"cs-action-combination-method-at-most\"> </a></td><td>At Most</td><td>At most the specified number of actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">one-or-more<a name=\"cs-action-combination-method-one-or-more\"> </a></td><td>One or More</td><td>One or more actions must be performed.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ActionCombinationMethod"] ; # 
+  fhir:title [ fhir:v "Action Combination Method"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-02-16"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system for the combination of actions in a PlanDefinition."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "all" ] ;
+     fhir:display [ fhir:v "All" ] ;
+     fhir:definition [ fhir:v "All actions must be performed." ]
+  ] [
+     fhir:code [ fhir:v "any" ] ;
+     fhir:display [ fhir:v "Any" ] ;
+     fhir:definition [ fhir:v "Any action must be performed." ]
+  ] [
+     fhir:code [ fhir:v "at-least" ] ;
+     fhir:display [ fhir:v "At Least" ] ;
+     fhir:definition [ fhir:v "At least the specified number of actions must be performed." ]
+  ] [
+     fhir:code [ fhir:v "exactly" ] ;
+     fhir:display [ fhir:v "Exactly" ] ;
+     fhir:definition [ fhir:v "Exactly the specified number of actions must be performed." ]
+  ] [
+     fhir:code [ fhir:v "at-most" ] ;
+     fhir:display [ fhir:v "At Most" ] ;
+     fhir:definition [ fhir:v "At most the specified number of actions must be performed." ]
+  ] [
+     fhir:code [ fhir:v "one-or-more" ] ;
+     fhir:display [ fhir:v "One or More" ] ;
+     fhir:definition [ fhir:v "One or more actions must be performed." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

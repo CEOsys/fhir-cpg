@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ceosys-cs-recommendation-strength"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ceosys-cs-recommendation-strength</b></p><a name=\"ceosys-cs-recommendation-strength\"> </a><a name=\"hcceosys-cs-recommendation-strength\"> </a><a name=\"ceosys-cs-recommendation-strength-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">strong-for<a name=\"ceosys-cs-recommendation-strength-strong-for\"> </a></td><td>Strong for an intervention</td></tr><tr><td style=\"white-space:nowrap\">weak-for<a name=\"ceosys-cs-recommendation-strength-weak-for\"> </a></td><td>Weak for an intervention</td></tr><tr><td style=\"white-space:nowrap\">strong-against<a name=\"ceosys-cs-recommendation-strength-strong-against\"> </a></td><td>Strong against an intervention</td></tr><tr><td style=\"white-space:nowrap\">weak-against<a name=\"ceosys-cs-recommendation-strength-weak-against\"> </a></td><td>Weak against an intervention</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "RecommendationStrength"] ; # 
+  fhir:title [ fhir:v "Recommendation Strength"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Strength of a clinical guideline recommendation."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "strong-for" ] ;
+     fhir:display [ fhir:v "Strong for an intervention" ]
+  ] [
+     fhir:code [ fhir:v "weak-for" ] ;
+     fhir:display [ fhir:v "Weak for an intervention" ]
+  ] [
+     fhir:code [ fhir:v "strong-against" ] ;
+     fhir:display [ fhir:v "Strong against an intervention" ]
+  ] [
+     fhir:code [ fhir:v "weak-against" ] ;
+     fhir:display [ fhir:v "Weak against an intervention" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

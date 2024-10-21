@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Value Sets - Clinical Practice Guidelines (CPG) on EBMonFHIR v1.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/ceosys.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a no-external="true" id="project-logo" href="https://www.ceosys.de/">
+    <img src="assets/images/logo_ceosys.jpg" alt="Project home" height="71"/>
+  </a>
+</div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://www.netzwerk-universitaetsmedizin.de">
+    <img src="assets/images/logo_num.svg" alt="FHIR website" height="70"/>
+  </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines (CPG) on EBMonFHIR</span>
+            <br/>
+            <span style="display:inline-block;">1.0.2 - qa-preview
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="codesystems.html">Code Systems</a>
+  </li>
+  <li>
+    <a href="valuesets.html">Value Sets</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="history.html">History</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Value Sets</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the CPG-on-EBMonFHIR Implementation Guide (1.0.2).</p>  <!-- EndReleaseHeader -->
+  <h2>Value Sets</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#recommendation--evidence-ratings" id="markdown-toc-recommendation--evidence-ratings">Recommendation &amp; evidence ratings</a></li>
+  <li><a href="#eligibility-criteria" id="markdown-toc-eligibility-criteria">Eligibility criteria</a></li>
+  <li><a href="#recommended-actions" id="markdown-toc-recommended-actions">Recommended actions</a></li>
+  <li><a href="#cochrane-pico-ontology" id="markdown-toc-cochrane-pico-ontology">Cochrane PICO ontology</a></li>
+  <li><a href="#outcome-effect-types" id="markdown-toc-outcome-effect-types">Outcome effect types</a></li>
+  <li><a href="#other" id="markdown-toc-other">Other</a></li>
+</ul>
+
+</div>
+<h3 id="recommendation--evidence-ratings">Recommendation &amp; evidence ratings</h3>
+
+<tr>
+  <td>
+    <a href="ValueSet-ceosys-vs-recommendation-strength.html">Recommendation Strength</a>
+  </td>
+  <td>
+    <p>Strength of a clinical guideline recommendation.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-consensus.html">Rating Consensus</a>
+  </td>
+  <td>
+    <p>Degree of consensus reached</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-benefit-and-harms.html">Rating Benefit And Harms</a>
+  </td>
+  <td>
+    <p>Summary of most important benefits and harms</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-certainty-of-evidence.html">Rating Certainty Of Evidence</a>
+  </td>
+  <td>
+    <p>Codes from EvidenceCertaintyRating related to certainty of evidence</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-preference-and-values.html">Rating Preference And Values</a>
+  </td>
+  <td>
+    <p>Typical patient preferences and values? Common issues or expected variability?</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-resources.html">Rating Resources</a>
+  </td>
+  <td>
+    <p>Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-equity.html">Rating Equity</a>
+  </td>
+  <td>
+    <p>How do the different alternatives affect equity?</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-acceptability.html">Rating Acceptability</a>
+  </td>
+  <td>
+    <p>Are the alternatives acceptable for the target population and its implementors?</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-feasibility.html">Rating Feasibility</a>
+  </td>
+  <td>
+    <p>How feasible will it be to implement the different alternatives? Any issues?</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-concern-degree.html">Rating Concern Degree</a>
+  </td>
+  <td>
+    <p>Codes from EvidenceCertaintyRating related to degree of concern</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-uprating-one-level.html">Rating Up Rating One Level</a>
+  </td>
+  <td>
+    <p>Ratings for factors that might cause rating up the certainty</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-uprating-two-levels.html">Rating Up Rating Two Levels</a>
+  </td>
+  <td>
+    <p>Ratings for factors that might cause rating up the certainty</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-rating-clinical-importance.html">Clinical Importance of Outcome</a>
+  </td>
+  <td>
+    <p>Clinical Importance of Outcome</p>
+  </td>
+</tr>
+
+<h3 id="eligibility-criteria">Eligibility criteria</h3>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-allergic-disposition-sct.html">Allergic Disposition SCT</a>
+  </td>
+  <td>
+    <p>Allergic Dispositions from SNOMED CT</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-episode-of-care-type.html">Episode Of Care Type</a>
+  </td>
+  <td>
+    <p>Episdoe Of Care Type</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-radiologic-finding-sct.html">Radiologic Finding SCT</a>
+  </td>
+  <td>
+    <p>Radiologic findings from SNOMED CT</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-drugs.html">Drugs</a>
+  </td>
+  <td>
+    <p>Drugs</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-observations.html">Observations</a>
+  </td>
+  <td>
+    <p>Observations are measurements of a patient's state of health. They are typically made by a healthcare professional, but can also be self-reported by the patient.</p>
+  </td>
+</tr>
+
+<h3 id="recommended-actions">Recommended actions</h3>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-body-positioning-snomed.html">Body Positioning SNOMED CT</a>
+  </td>
+  <td>
+    <p>Body positioning procedure codes from SNOMED CT</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-substances-snomed.html">Substances SNOMED CT</a>
+  </td>
+  <td>
+    <p>All substance codes from SNOMED CT</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-action-selection-behavior-required.html">Action Selection Behavior Required</a>
+  </td>
+  <td>
+    <p>Action selection behavior with only codes that require at least one action to be performed.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-action-combination-method.html">Action Combination Method</a>
+  </td>
+  <td>
+    <p>Value set for the method used to combine actions in a PlanDefinition.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-assessment.html">Assessment</a>
+  </td>
+  <td>
+    <p>Assessments</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-assessment-scales.html">Assessment Scales</a>
+  </td>
+  <td>
+    <p>Codes for assessment scales (scores etc.)</p>
+  </td>
+</tr>
+
+<h3 id="cochrane-pico-ontology">Cochrane PICO ontology</h3>
+
+<tr>
+  <td>
+    <a href="ValueSet-cochrane-pico.html">Cochrane PICO</a>
+  </td>
+  <td>
+    <p>All codes from the Cochrane PICO ontology.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-cochrane-pico-population.html">Cochrane PICO Population</a>
+  </td>
+  <td>
+    <p>All population codes from the Cochrane PICO ontology.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-cochrane-pico-intervention.html">Cochrane PICO Intervention</a>
+  </td>
+  <td>
+    <p>All intervention codes from the Cochrane PICO ontology.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-cochrane-pico-outcome.html">Cochrane PICO Outcome</a>
+  </td>
+  <td>
+    <p>All outcome codes from the Cochrane PICO ontology.</p>
+  </td>
+</tr>
+
+<h3 id="outcome-effect-types">Outcome effect types</h3>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-mean-difference-type.html">Mean Difference Type</a>
+  </td>
+  <td>
+    <p>Mean difference types</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-relative-effect-type.html">Relative Effect Type</a>
+  </td>
+  <td>
+    <p>Relative effect types</p>
+  </td>
+</tr>
+
+<h3 id="other">Other</h3>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-guideline-stage-classification.html">Guideline Stage Classification</a>
+  </td>
+  <td>
+    <p>Stage classification according to systematics</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="ValueSet-vs-guideline-recommendation-status.html">Guideline Recommendation Status</a>
+  </td>
+  <td>
+    <p>Current status of a clinical practice guideline recommendation</p>
+  </td>
+</tr>
+
+<hr/>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizin.uni-greifswald.de/">Universitätsmedizin Greifswald</a>.  Package de.netzwerk-universitaetsmedizin.ebm-cpg#1.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Oct 21, 2024 14:50+0000">2024-10-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <p style="color: white"><a name="l867">​</a>
+       Links: <a href="toc.html">Table of Contents</a> |
+       <a href="qa.html">QA Report</a> |
+       <a href="https://github.com/CEOsys/de.netzwerk-universitaetsmedizin.ebm-cpg/issues/" target="_blank">Issues</a> |
+       <a href="https://github.com/CEOsys/de.netzwerk-universitaetsmedizin.ebm-cpg/issues/new" target="_blank">Submit an issue</a> |
+       <a href="http://hl7.org/fhir/R5//history.html" target="_blank">Version History</a> |
+       <a rel="license" href="http://hl7.org/fhir/R5/license.html"><img src="assets/images/cc-by.svg" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+</p>
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-evidence-to-decision-certainty-rating"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-evidence-to-decision-certainty-rating</b></p><a name=\"cs-evidence-to-decision-certainty-rating\"> </a><a name=\"hccs-evidence-to-decision-certainty-rating\"> </a><a name=\"cs-evidence-to-decision-certainty-rating-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">small-net-benefit<a name=\"cs-evidence-to-decision-certainty-rating-small-net-benefit\"> </a></td><td>Small net benefit</td><td>Small net benefit, or little difference between alternatives</td></tr><tr><td style=\"white-space:nowrap\">substantial-net-benefit<a name=\"cs-evidence-to-decision-certainty-rating-substantial-net-benefit\"> </a></td><td>Substantial net benefit</td><td>Substantial net benefits of the recommended alternative</td></tr><tr><td style=\"white-space:nowrap\">important-harms<a name=\"cs-evidence-to-decision-certainty-rating-important-harms\"> </a></td><td>Important harms</td><td>Important harms</td></tr><tr><td style=\"white-space:nowrap\">substantial-variability<a name=\"cs-evidence-to-decision-certainty-rating-substantial-variability\"> </a></td><td>Substantial variability</td><td>Substantial variability is expected or uncertain</td></tr><tr><td style=\"white-space:nowrap\">no-substantial-variability<a name=\"cs-evidence-to-decision-certainty-rating-no-substantial-variability\"> </a></td><td>No substantial variability</td><td>No substantial variability expected</td></tr><tr><td style=\"white-space:nowrap\">few-want-intervention<a name=\"cs-evidence-to-decision-certainty-rating-few-want-intervention\"> </a></td><td>Few want intervention</td><td>We expect few to want the intervention</td></tr><tr><td style=\"white-space:nowrap\">factor-not-considered<a name=\"cs-evidence-to-decision-certainty-rating-factor-not-considered\"> </a></td><td>Factor not considered</td><td>Factor not considered</td></tr><tr><td style=\"white-space:nowrap\">important-issues-or-not-investigated<a name=\"cs-evidence-to-decision-certainty-rating-important-issues-or-not-investigated\"> </a></td><td>Important issues</td><td>Important issues, or potential issues not investigated</td></tr><tr><td style=\"white-space:nowrap\">no-important-issues<a name=\"cs-evidence-to-decision-certainty-rating-no-important-issues\"> </a></td><td>No important issues</td><td>No important issues with the recommended alternative</td></tr><tr><td style=\"white-space:nowrap\">important-negative-issues<a name=\"cs-evidence-to-decision-certainty-rating-important-negative-issues\"> </a></td><td>Important negative issues</td><td>Important negative issues</td></tr><tr><td style=\"white-space:nowrap\">intervention-increases-inequity<a name=\"cs-evidence-to-decision-certainty-rating-intervention-increases-inequity\"> </a></td><td>Intervention increases inequity</td><td>Intervention likely increases inequity</td></tr><tr><td style=\"white-space:nowrap\">intervention-poorly-accepted<a name=\"cs-evidence-to-decision-certainty-rating-intervention-poorly-accepted\"> </a></td><td>Intervention poorly accepted</td><td>Intervention is likely poorly accepted</td></tr><tr><td style=\"white-space:nowrap\">intervention-difficult-to-implement<a name=\"cs-evidence-to-decision-certainty-rating-intervention-difficult-to-implement\"> </a></td><td>Intervention difficult to implement</td><td>Intervention is likely difficult to implement</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "EvidenceToDecisionCertaintyRating"] ; # 
+  fhir:title [ fhir:v "Evidence To Decision Certainty Rating"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "GRADE Evidence to Decision (EtD) Framework Certainty Ratings"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "small-net-benefit" ] ;
+     fhir:display [ fhir:v "Small net benefit" ] ;
+     fhir:definition [ fhir:v "Small net benefit, or little difference between alternatives" ]
+  ] [
+     fhir:code [ fhir:v "substantial-net-benefit" ] ;
+     fhir:display [ fhir:v "Substantial net benefit" ] ;
+     fhir:definition [ fhir:v "Substantial net benefits of the recommended alternative" ]
+  ] [
+     fhir:code [ fhir:v "important-harms" ] ;
+     fhir:display [ fhir:v "Important harms" ] ;
+     fhir:definition [ fhir:v "Important harms" ]
+  ] [
+     fhir:code [ fhir:v "substantial-variability" ] ;
+     fhir:display [ fhir:v "Substantial variability" ] ;
+     fhir:definition [ fhir:v "Substantial variability is expected or uncertain" ]
+  ] [
+     fhir:code [ fhir:v "no-substantial-variability" ] ;
+     fhir:display [ fhir:v "No substantial variability" ] ;
+     fhir:definition [ fhir:v "No substantial variability expected" ]
+  ] [
+     fhir:code [ fhir:v "few-want-intervention" ] ;
+     fhir:display [ fhir:v "Few want intervention" ] ;
+     fhir:definition [ fhir:v "We expect few to want the intervention" ]
+  ] [
+     fhir:code [ fhir:v "factor-not-considered" ] ;
+     fhir:display [ fhir:v "Factor not considered" ] ;
+     fhir:definition [ fhir:v "Factor not considered" ]
+  ] [
+     fhir:code [ fhir:v "important-issues-or-not-investigated" ] ;
+     fhir:display [ fhir:v "Important issues" ] ;
+     fhir:definition [ fhir:v "Important issues, or potential issues not investigated" ]
+  ] [
+     fhir:code [ fhir:v "no-important-issues" ] ;
+     fhir:display [ fhir:v "No important issues" ] ;
+     fhir:definition [ fhir:v "No important issues with the recommended alternative" ]
+  ] [
+     fhir:code [ fhir:v "important-negative-issues" ] ;
+     fhir:display [ fhir:v "Important negative issues" ] ;
+     fhir:definition [ fhir:v "Important negative issues" ]
+  ] [
+     fhir:code [ fhir:v "intervention-increases-inequity" ] ;
+     fhir:display [ fhir:v "Intervention increases inequity" ] ;
+     fhir:definition [ fhir:v "Intervention likely increases inequity" ]
+  ] [
+     fhir:code [ fhir:v "intervention-poorly-accepted" ] ;
+     fhir:display [ fhir:v "Intervention poorly accepted" ] ;
+     fhir:definition [ fhir:v "Intervention is likely poorly accepted" ]
+  ] [
+     fhir:code [ fhir:v "intervention-difficult-to-implement" ] ;
+     fhir:display [ fhir:v "Intervention difficult to implement" ] ;
+     fhir:definition [ fhir:v "Intervention is likely difficult to implement" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

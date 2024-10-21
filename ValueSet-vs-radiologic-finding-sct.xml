@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-radiologic-finding-sct"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-radiologic-finding-sct</b></p><a name="vs-radiologic-finding-sct"> </a><a name="hcvs-radiologic-finding-sct"> </a><a name="vs-radiologic-finding-sct-en-US"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 118247008 (Radiologic finding)</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-radiologic-finding-sct"/>
+  <version value="0.1.1"/>
+  <name value="RadiologicFindingSCT"/>
+  <title value="Radiologic Finding SCT"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Radiologic findings from SNOMED CT"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="118247008"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

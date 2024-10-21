@@ -1,0 +1,2689 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-cardinality-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionCardinalityBehavior",
+      "title" : "Action Cardinality Behavior",
+      "description" : "Defines behavior for an action or a group for how many times that item may be repeated.",
+      "systems" : ["http://hl7.org/fhir/action-cardinality-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.807",
+        "2.16.840.1.113883.4.642.3.790"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.807",
+        "2.16.840.1.113883.4.642.3.790"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionCode",
+      "title" : "Action Code",
+      "description" : "Provides examples of actions to be performed.",
+      "systems" : ["http://hl7.org/fhir/action-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3051"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3051"],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-condition-kind",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionConditionKind",
+      "title" : "Action Condition Kind",
+      "description" : "Defines the kinds of conditions that can appear on actions.",
+      "systems" : ["http://hl7.org/fhir/action-condition-kind"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.798",
+        "2.16.840.1.113883.4.642.3.815"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.798",
+        "2.16.840.1.113883.4.642.3.815"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-grouping-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionGroupingBehavior",
+      "title" : "Action Grouping Behavior",
+      "description" : "Defines organization behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-grouping-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.782",
+        "2.16.840.1.113883.4.642.3.799"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.782",
+        "2.16.840.1.113883.4.642.3.799"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-participant-function",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionParticipantFunction",
+      "title" : "Action Participant Function",
+      "description" : "The function performed by the participant for the action.",
+      "systems" : ["http://hl7.org/fhir/action-participant-function"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3052"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3052"],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-participant-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionParticipantType",
+      "title" : "Action Participant Type",
+      "description" : "The type of participant for the action.",
+      "systems" : ["http://hl7.org/fhir/action-participant-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.811"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.811"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-precheck-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionPrecheckBehavior",
+      "title" : "Action Precheck Behavior",
+      "description" : "Defines selection frequency behavior for an action or group.",
+      "systems" : ["http://hl7.org/fhir/action-precheck-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.788",
+        "2.16.840.1.113883.4.642.3.805"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.788",
+        "2.16.840.1.113883.4.642.3.805"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-reason-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionReasonCode",
+      "title" : "Action Reason Code",
+      "description" : "Provides examples of reasons for actions to be performed.",
+      "systems" : ["http://hl7.org/fhir/action-reason-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3053"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3053"],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-relationship-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionRelationshipType",
+      "title" : "Action Relationship Type",
+      "description" : "Defines the types of relationships between actions.",
+      "systems" : ["http://hl7.org/fhir/action-relationship-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.796",
+        "2.16.840.1.113883.4.642.3.813"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.796",
+        "2.16.840.1.113883.4.642.3.813"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-required-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionRequiredBehavior",
+      "title" : "Action Required Behavior",
+      "description" : "Defines expectations around whether an action or action group is required.",
+      "systems" : ["http://hl7.org/fhir/action-required-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.786",
+        "2.16.840.1.113883.4.642.3.803"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.786",
+        "2.16.840.1.113883.4.642.3.803"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-selection-behavior",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionSelectionBehavior",
+      "title" : "Action Selection Behavior",
+      "description" : "Defines selection behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-selection-behavior"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.784",
+        "2.16.840.1.113883.4.642.3.801"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.784",
+        "2.16.840.1.113883.4.642.3.801"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ActionType",
+      "title" : "Action Type",
+      "description" : "The type of action to be performed.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/action-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.809",
+        "2.16.840.1.113883.4.642.3.792"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.809",
+        "2.16.840.1.113883.4.642.3.792"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-ext-characteristic-dosage.html" : "Characteristic Dosage",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-ext-characteristic-dosage.html" : "Characteristic Dosage",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable",
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline",
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-study-cohort.html" : "Study Cohort",
+      "StructureDefinition-evidence-synthesis-cohorts.html" : "Evidence Synthesis Cohorts",
+      "StructureDefinition-cohorts.html" : "Cohorts",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureAdministrationSites",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-ext-characteristic-dosage.html" : "Characteristic Dosage",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/artifact-contribution-instance-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ArtifactContributionInstanceType",
+      "title" : "Artifact Contribution Instance Type",
+      "description" : "Artifact Contribution Instance Type",
+      "systems" : ["http://hl7.org/fhir/artifact-contribution-instance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2963"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2963"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/artifact-contribution-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ArtifactContributionType",
+      "title" : "Artifact Contribution Type",
+      "description" : "Citation contribution.",
+      "systems" : ["http://hl7.org/fhir/artifact-contribution-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2959"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2959"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/artifact-url-classifier",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ArtifactUrlClassifier",
+      "title" : "Artifact Url Classifier",
+      "description" : "Code the reason for different URLs, eg abstract and full-text.",
+      "systems" : ["http://hl7.org/fhir/artifact-url-classifier"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2966"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2966"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/artifactassessment-disposition",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ArtifactAssessmentDisposition",
+      "title" : "Artifact Assessment Disposition",
+      "description" : "Possible values for the disposition of a comment or change request, typically used for comments and change requests, to indicate the disposition of the responsible party towards the changes suggested by the comment or change request.",
+      "systems" : ["http://hl7.org/fhir/artifactassessment-disposition"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3155"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3155"],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/artifactassessment-information-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ArtifactAssessmentInformationType",
+      "title" : "Artifact Assessment Information Type",
+      "description" : "The type of information contained in a component of an artifact assessment.",
+      "systems" : ["http://hl7.org/fhir/artifactassessment-information-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3156"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3156"],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/artifactassessment-workflow-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ArtifactAssessmentWorkflowStatus",
+      "title" : "Artifact Assessment Workflow Status",
+      "description" : "Possible values for the workflow status of the comment or assessment, typically used to coordinate workflow around the process of accepting and rejecting changes and comments on the artifact.",
+      "systems" : ["http://hl7.org/fhir/artifactassessment-workflow-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3157"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3157"],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/attribute-estimate-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AttributeEstimateType",
+      "title" : "Attribute Estimate Type",
+      "description" : "A statistic about a statistic, e.g.  Confidence interval or p-value",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/attribute-estimate-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3050"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3050"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "Bundle Type",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.620",
+        "2.16.840.1.113883.4.642.2.327",
+        "2.16.840.1.113883.4.642.3.612"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.620",
+        "2.16.840.1.113883.4.642.2.327",
+        "2.16.840.1.113883.4.642.3.612"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/certainty-rating",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EvidenceCertaintyRating",
+      "title" : "Evidence Certainty Rating",
+      "description" : "The assessment of quality, confidence, or certainty.",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3049"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3049"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/certainty-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EvidenceCertaintyType",
+      "title" : "Evidence Certainty Type",
+      "description" : "The aspect of quality, confidence, or certainty.",
+      "systems" : ["http://hl7.org/fhir/certainty-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3043"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3043"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/characteristic-combination",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CharacteristicCombination",
+      "title" : "Characteristic Combination",
+      "description" : "Logical grouping of characteristics.",
+      "systems" : ["http://hl7.org/fhir/characteristic-combination"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3060"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3060"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/characteristic-offset",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CharacteristicOffset",
+      "title" : "Characteristic Offset",
+      "description" : "Reference point for characteristic.valueQuantity.",
+      "systems" : ["http://hl7.org/fhir/characteristic-offset"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3061"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3061"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/citation-artifact-classifier",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitationArtifactClassifier",
+      "title" : "Citation Artifact Classifier",
+      "description" : "Citation artifact classifier",
+      "systems" : ["http://hl7.org/fhir/citation-artifact-classifier"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3092"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3092"],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/citation-classification-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitationClassificationType",
+      "title" : "Citation Classification Type",
+      "description" : "Citation classification type",
+      "systems" : ["http://hl7.org/fhir/citation-classification-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2971"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2971"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/citation-status-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitationStatusType",
+      "title" : "Citation Status Type",
+      "description" : "Citation status type",
+      "systems" : ["http://hl7.org/fhir/citation-status-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2972"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2972"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/citation-summary-style",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitationSummaryStyle",
+      "title" : "Citation Summary Style",
+      "description" : "The format for display of the citation.",
+      "systems" : ["http://hl7.org/fhir/citation-summary-style"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2976"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2976"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitedArtifactAbstractType",
+      "title" : "Cited Artifact Abstract Type",
+      "description" : "Used to express the reason and specific aspect for the variant abstract, such as language and specific language.",
+      "systems" : ["http://hl7.org/fhir/cited-artifact-abstract-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2962"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2962"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/cited-artifact-classification-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitedArtifactClassificationType",
+      "title" : "Cited Artifact Classification Type",
+      "description" : "Cited Artifact Classification Type",
+      "systems" : ["http://hl7.org/fhir/cited-artifact-classification-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2958"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2958"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/cited-artifact-part-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitedArtifactPartType",
+      "title" : "Cited Artifact Part Type",
+      "description" : "To describe the reason for the variant citation, such as version number or subpart specification.",
+      "systems" : ["http://hl7.org/fhir/cited-artifact-part-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2964"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2964"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/cited-artifact-status-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitedArtifactStatusType",
+      "title" : "Cited Artifact Status Type",
+      "description" : "Cited Artifact Status Type",
+      "systems" : ["http://hl7.org/fhir/cited-artifact-status-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2960"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2960"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/cited-medium",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CitedMedium",
+      "title" : "Cited Medium",
+      "description" : "NLM codes Internet or Print.",
+      "systems" : ["http://hl7.org/fhir/cited-medium"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2969"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2969"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.3.227",
+        "2.16.840.1.113883.4.642.2.115"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/common-tags"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "Composition Attestation Mode",
+      "description" : "The way in which a person authenticated a composition.",
+      "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.233",
+        "2.16.840.1.113883.4.642.3.238",
+        "2.16.840.1.113883.4.642.2.120"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.233",
+        "2.16.840.1.113883.4.642.3.238",
+        "2.16.840.1.113883.4.642.2.120"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "Composition Status",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.123",
+        "2.16.840.1.113883.4.642.3.236",
+        "2.16.840.1.113883.4.642.3.241"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.123",
+        "2.16.840.1.113883.4.642.3.236",
+        "2.16.840.1.113883.4.642.3.241"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ConditionProblemDiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contributor-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ContributorRole",
+      "title" : "Contributor Role",
+      "description" : "Used to code the format of the display string.",
+      "systems" : ["http://hl7.org/fhir/contributor-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2961"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2961"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contributor-summary-source",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ContributorSummarySource",
+      "title" : "Contributor Summary Source",
+      "description" : "Used to code the producer or rule for creating the display string.",
+      "systems" : ["http://hl7.org/fhir/contributor-summary-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2965"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2965"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contributor-summary-style",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ContributorSummaryStyle",
+      "title" : "Contributor Summary Style",
+      "description" : "Used to code the format of the display string.",
+      "systems" : ["http://hl7.org/fhir/contributor-summary-style"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2970"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2970"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contributor-summary-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ContributorSummaryType",
+      "title" : "Contributor Summary Type",
+      "description" : "Used to code author list statement, contributorship statement, and such.",
+      "systems" : ["http://hl7.org/fhir/contributor-summary-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2968"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2968"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "Days Of Week",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/definition-method",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DefinitionMethod",
+      "title" : "Definition Method",
+      "description" : "The method used to define, describe, or determine a characteristic value.",
+      "systems" : ["http://hl7.org/fhir/definition-method"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3059"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3059"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/definition-topic",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DefinitionTopic",
+      "title" : "Definition Topic",
+      "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/definition-use",
+        "http://terminology.hl7.org/CodeSystem/definition-topic"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.777"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.794",
+        "2.16.840.1.113883.4.642.3.777"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DeviceType",
+      "title" : "Device Type",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : [
+        "urn:iso:std:iso:11073:10101",
+        "urn:oid:2.16.840.1.113883.6.276",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+      "uses" : {
+      },
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DocumentSectionCodes",
+      "title" : "Document Section Codes",
+      "description" : "Document section codes (LOINC codes used in CCDA sections).",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.2.119",
+        "2.16.840.1.113883.4.642.3.237"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.2.119",
+        "2.16.840.1.113883.4.642.3.237"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "FHIRDocumentTypeCodes",
+      "title" : "FHIR Document Type Codes",
+      "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.235",
+        "2.16.840.1.113883.4.642.2.121",
+        "2.16.840.1.113883.4.642.3.240"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.235",
+        "2.16.840.1.113883.4.642.2.121",
+        "2.16.840.1.113883.4.642.3.240"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-timing",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EventTiming",
+      "title" : "EventTiming",
+      "description" : "Real-world event relating to the schedule.",
+      "systems" : [
+        "http://hl7.org/fhir/event-timing",
+        "http://terminology.hl7.org/CodeSystem/v3-TimingEvent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.75"],
+      "sources" : ["2.16.840.1.113883.4.642.3.75"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/evidence-variable-event",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EvidenceVariableEvent",
+      "title" : "Evidence Variable Event",
+      "description" : "The event used as a base point (reference point) in time.",
+      "systems" : ["http://hl7.org/fhir/evidence-variable-event"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3063"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3063"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GoalCategory",
+      "title" : "Goal Category",
+      "description" : "Example codes for grouping goals to use for filtering or presentation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.411",
+        "2.16.840.1.113883.4.642.3.270",
+        "2.16.840.1.113883.4.642.3.275"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.411",
+        "2.16.840.1.113883.4.642.3.270",
+        "2.16.840.1.113883.4.642.3.275"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GoalPriority",
+      "title" : "Goal Priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-priority"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.268",
+        "2.16.840.1.113883.4.642.3.273",
+        "2.16.840.1.113883.4.642.2.151"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.268",
+        "2.16.840.1.113883.4.642.3.273",
+        "2.16.840.1.113883.4.642.2.151"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-start-event",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GoalStartEvent",
+      "title" : "Goal Start Event",
+      "description" : "Identifies types of events that might trigger the start of a goal.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.413",
+        "2.16.840.1.113883.4.642.3.279",
+        "2.16.840.1.113883.4.642.3.274"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.413",
+        "2.16.840.1.113883.4.642.3.279",
+        "2.16.840.1.113883.4.642.3.274"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/group-membership-basis",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GroupMembershipBasis",
+      "title" : "Group Membership Basis",
+      "description" : "Basis for membership in a group",
+      "systems" : ["http://hl7.org/fhir/group-membership-basis"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3069"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3069"],
+      "uses" : {
+      },
+      "StructureDefinition-study-cohort.html" : "Study Cohort",
+      "StructureDefinition-evidence-synthesis-cohorts.html" : "Evidence Synthesis Cohorts",
+      "StructureDefinition-cohorts.html" : "Cohorts"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/group-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "GroupType",
+      "title" : "Group Type",
+      "description" : "Types of resources that are part of group.",
+      "systems" : ["http://hl7.org/fhir/group-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.277",
+        "2.16.840.1.113883.4.642.2.156",
+        "2.16.840.1.113883.4.642.3.284"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.277",
+        "2.16.840.1.113883.4.642.2.156",
+        "2.16.840.1.113883.4.642.3.284"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-study-cohort.html" : "Study Cohort",
+      "StructureDefinition-evidence-synthesis-cohorts.html" : "Evidence Synthesis Cohorts",
+      "StructureDefinition-cohorts.html" : "Cohorts"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "H T T P Verb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.624",
+        "2.16.840.1.113883.4.642.3.616",
+        "2.16.840.1.113883.4.642.2.329"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.624",
+        "2.16.840.1.113883.4.642.3.616",
+        "2.16.840.1.113883.4.642.2.329"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iana-link-relations",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkRelationTypes",
+      "title" : "Link Relation Types",
+      "description" : "Link Relation Types defined at https://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/iana-link-relations"],
+      "uses" : {
+      },
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierTypeCodes",
+      "title" : "Identifier Type Codes",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "JurisdictionValueSet",
+      "title" : "Jurisdiction ValueSet",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable",
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline",
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-study-cohort.html" : "Study Cohort",
+      "StructureDefinition-evidence-synthesis-cohorts.html" : "Evidence Synthesis Cohorts",
+      "StructureDefinition-cohorts.html" : "Cohorts",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.322",
+        "2.16.840.1.113883.4.642.3.313",
+        "2.16.840.1.113883.4.642.2.176"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.322",
+        "2.16.840.1.113883.4.642.3.313",
+        "2.16.840.1.113883.4.642.2.176"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-order",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.315",
+        "2.16.840.1.113883.4.642.3.324",
+        "2.16.840.1.113883.4.642.2.177"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.315",
+        "2.16.840.1.113883.4.642.3.324",
+        "2.16.840.1.113883.4.642.2.177"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-ext-characteristic-dosage.html" : "Characteristic Dosage",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-resource-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipantResourceTypes",
+      "title" : "Participant Resource Types",
+      "description" : "All Resource Types that represent participant resources",
+      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3301"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3301"],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/plan-definition-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "PlanDefinitionType",
+      "title" : "Plan Definition Type",
+      "description" : "The type of PlanDefinition.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/plan-definition-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.797",
+        "2.16.840.1.113883.4.642.3.780"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.797",
+        "2.16.840.1.113883.4.642.3.780"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ProcedureCodesSNOMEDCT",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.418",
+        "2.16.840.1.113883.4.642.3.427",
+        "2.16.840.1.113883.4.642.2.417"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.418",
+        "2.16.840.1.113883.4.642.3.427",
+        "2.16.840.1.113883.4.642.2.417"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline",
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-ceosys-extension-artifact-assessment-publication-status.html" : "ArtifactAssessment Publication Status",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/published-in-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "PublishedInType",
+      "title" : "Published In Type",
+      "description" : "The type of publication such as book, database, or journal.",
+      "systems" : ["http://hl7.org/fhir/published-in-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2973"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2973"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referenced-item-category",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ReferencedItemCategoryValueSet",
+      "title" : "Referenced Item Category Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Made up of a set of non-healthcare specific codes and all LOINC codes where scale type = 'DOC'.",
+      "systems" : [
+        "http://loinc.org",
+        "http://terminology.hl7.org/CodeSystem/media-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3275"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3275"],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/related-artifact-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RelatedArtifactType",
+      "title" : "RelatedArtifactType",
+      "description" : "The type of relationship to the related artifact.",
+      "systems" : ["http://hl7.org/fhir/related-artifact-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.99"],
+      "sources" : ["2.16.840.1.113883.4.642.3.99"],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/related-artifact-type-all",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RelatedArtifactTypeExpanded",
+      "title" : "Related Artifact Type All",
+      "description" : "The type of relationship to the cited artifact.",
+      "systems" : [
+        "http://hl7.org/fhir/related-artifact-type",
+        "http://hl7.org/fhir/related-artifact-type-expanded"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3316"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3316"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-ext-characteristic-dosage.html" : "Characteristic Dosage",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "Search Entry Mode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.328",
+        "2.16.840.1.113883.4.642.3.622",
+        "2.16.840.1.113883.4.642.3.614"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.328",
+        "2.16.840.1.113883.4.642.3.622",
+        "2.16.840.1.113883.4.642.3.614"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllSecurityLabels",
+      "title" : "All Security Labels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.46",
+        "2.16.840.1.113883.4.642.2.31",
+        "2.16.840.1.113883.4.642.3.47"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.46",
+        "2.16.840.1.113883.4.642.2.31",
+        "2.16.840.1.113883.4.642.3.47"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-guideline-bundle.html" : "Guideline Bundle",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/statistic-model-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "StatisticModelCode",
+      "title" : "Statistic Model Code",
+      "description" : "The handling of the variable in statistical analysis for exposures or outcomes.",
+      "systems" : ["http://hl7.org/fhir/statistic-model-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3046"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3046"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/statistic-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "StatisticType",
+      "title" : "Statistic Type",
+      "description" : "The type of a statistic, e.g. relative risk or mean",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/statistic-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3044"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3044"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/study-design",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "StudyDesign",
+      "title" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "systems" : ["http://hl7.org/fhir/study-design"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3045"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3045"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TimingAbbreviation",
+      "title" : "TimingAbbreviation",
+      "description" : "Code for a known / defined timing pattern.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+        "http://terminology.hl7.org/CodeSystem/timing-abbreviation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.78"],
+      "sources" : ["2.16.840.1.113883.4.642.3.78"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/title-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TitleType",
+      "title" : "Title Type",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "systems" : ["http://hl7.org/fhir/title-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2974"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2974"],
+      "uses" : {
+      },
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "UnitsOfTime",
+      "title" : "UnitsOfTime",
+      "description" : "A unit of time (units from UCUM).",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.77"],
+      "sources" : ["2.16.840.1.113883.4.642.3.77"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/variable-handling",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EvidenceVariableHandling",
+      "title" : "Evidence Variable Handling",
+      "description" : "The handling of the variable in statistical analysis for exposures or outcomes (E.g. Dichotomous, Continuous, Descriptive).",
+      "systems" : ["http://hl7.org/fhir/variable-handling"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3062"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3062"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/variable-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "EvidenceVariableRole",
+      "title" : "Evidence Variable Role",
+      "description" : "The role that the assertion variable plays.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/variable-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3048"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3048"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/version-algorithm",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "VersionAlgorithm",
+      "title" : "Version Algorithm",
+      "description" : "Indicates the mechanism used to compare versions to determine which is more current.",
+      "systems" : ["http://hl7.org/fhir/version-algorithm"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3103"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3103"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-citation.html" : "Study Citation",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-persona",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CPG_Common_Persona",
+      "title" : "CPG Common Persona",
+      "description" : "Common personas used to describe roles and participants in computable content",
+      "systems" : ["http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CPG_Common_Process",
+      "title" : "CPG Common Process",
+      "description" : "Common processes used to describe the high-level, conceptual activities that occur as part of the delivery of guideline-based care",
+      "systems" : ["http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-knowledge-capability",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CPG_Knowledge_Capability",
+      "title" : "CPG Knowledge Capability",
+      "description" : "A capability afforded by a knowledge artifact, e.g. shareable, computable, publishable, executable",
+      "systems" : [
+        "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-knowledge-representation-level",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CPG_Knowledge_Representation_Level",
+      "title" : "CPG Knowledge Representation Level",
+      "description" : "A knowledge representation level, narrative, semi-structured, structured, and executable",
+      "systems" : [
+        "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-representation-level"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/action-participant-role",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ActionParticipantRole",
+      "title" : "Action Participant Role",
+      "description" : "Either a practitioner role or a relationship type.  Note from UTG import - may have been a temporary entry that subsequently disappeared from the FHIR source; unable to locate.   Version set to 0.1.0",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cpg-recommendationdefinition.html" : "CPGRecommendationDefinition",
+      "StructureDefinition-cpg-strategydefinition.html" : "CPGStrategyDefinition",
+      "StructureDefinition-recommendation.html" : "Recommendation",
+      "StructureDefinition-cpg-shareableplandefinition.html" : "CPGShareablePlanDefinition",
+      "StructureDefinition-shareableplandefinition.html" : "Shareable PlanDefinition",
+      "StructureDefinition-cpg-computableplandefinition.html" : "CPGComputablePlanDefinition",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/directness",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EvidenceDirectness",
+      "title" : "EvidenceDirectness",
+      "description" : "The quality of how direct the match is.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/directness"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1458"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1458"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/dose-rate-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-assessment-action.html" : "Assessment Action",
+      "StructureDefinition-ext-characteristic-dosage.html" : "Characteristic Dosage",
+      "StructureDefinition-procedure-action.html" : "Procedure Action",
+      "StructureDefinition-recommendation-action.html" : "Recommendation Action",
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action",
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/evidence-quality",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "QualityOfEvidenceRating",
+      "title" : "QualityOfEvidenceRating",
+      "description" : "A rating system that describes the quality of evidence such as the GRADE, DynaMed, or Oxford CEBM systems.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/evidence-quality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1020"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1020"],
+      "uses" : {
+      },
+      "StructureDefinition-cqf-qualityOfEvidence.html" : "qualityOfEvidence"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/recommendation-strength",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "StrengthOfRecommendationRating",
+      "title" : "StrengthOfRecommendationRating",
+      "description" : "A rating system that describes the strength of the recommendation, such as the GRADE, DynaMed, or HGPS systems.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/recommendation-strength"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1021"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1021"],
+      "uses" : {
+      },
+      "StructureDefinition-cqf-strengthOfRecommendation.html" : "strengthOfRecommendation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/synthesis-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "StatisticSynthesisType",
+      "title" : "StatisticSynthesisType",
+      "description" : "Types of combining results from a body of evidence (eg. summary data meta-analysis).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/synthesis-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1347"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1347"],
+      "uses" : {
+      },
+      "StructureDefinition-net-effect-estimate.html" : "Net Effect Estimate",
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/usage-context-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UsageContextType",
+      "title" : "UsageContextType",
+      "description" : "A code that specifies a type of context being specified by a usage context.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/usage-context-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.101"],
+      "sources" : ["2.16.840.1.113883.4.642.3.101"],
+      "uses" : {
+      },
+      "StructureDefinition-evidence-data-set.html" : "Evidence Data Set",
+      "StructureDefinition-outcome-definition.html" : "Outcome Definition",
+      "StructureDefinition-intervention-definition.html" : "Intervention Definition",
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-pico-evidence-variable.html" : "PICO Evidence Variable"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-LOINC",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VS_MII_ICU_Code_Observation_Beatmung_LOINC",
+      "title" : "VS MII ICU Code Observation Beatmung [LOINC]",
+      "description" : "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung eingestellten oder gemessenen Parametern.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/ceosys-vs-recommendation-strength",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RecommendationStrength",
+      "title" : "Recommendation Strength",
+      "description" : "Strength of a clinical guideline recommendation.",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICO",
+      "title" : "Cochrane PICO",
+      "description" : "All codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-intervention",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICOIntervention",
+      "title" : "Cochrane PICO Intervention",
+      "description" : "All intervention codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-outcome",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICOOutcome",
+      "title" : "Cochrane PICO Outcome",
+      "description" : "All outcome codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-population",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICOPopulation",
+      "title" : "Cochrane PICO Population",
+      "description" : "All population codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-combination-method",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "ActionCombinationMethod",
+      "title" : "Action Combination Method",
+      "description" : "Value set for the method used to combine actions in a PlanDefinition.",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ext-action-combination-method.html" : "Action Combination Method"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-selection-behavior-required",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ActionSelectionBehaviorRequired",
+      "title" : "Action Selection Behavior Required",
+      "description" : "Action selection behavior with only codes that require at least one action to be performed.",
+      "systems" : ["http://hl7.org/fhir/action-selection-behavior"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-allergic-disposition-sct",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "AllergicDispositionSCT",
+      "title" : "Allergic Disposition SCT",
+      "description" : "Allergic Dispositions from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Assessment",
+      "title" : "Assessment",
+      "description" : "Assessments",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment-scales",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AssessmentScales",
+      "title" : "Assessment Scales",
+      "description" : "Codes for assessment scales (scores etc.)",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria",
+      "StructureDefinition-recommendation-plan.html" : "Recommendation Plan"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-body-positioning-snomed",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "BodyPositioningSNOMED",
+      "title" : "Body Positioning SNOMED CT",
+      "description" : "Body positioning procedure codes from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-body-positioning-action.html" : "Body Positioning Action"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-drugs",
+      "version" : null,
+      "status" : "draft",
+      "name" : "Drugs",
+      "title" : "Drugs",
+      "description" : "Drugs",
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://www.whocc.no/atc",
+        "http://fhir.de/CodeSystem/bfarm/atc"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareType",
+      "title" : "Episode Of Care Type",
+      "description" : "Episode Of Care Type",
+      "systems" : ["http://fhir.de/CodeSystem/kontaktart-de"],
+      "uses" : {
+      },
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-recommendation-status",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "GuidelineRecommendationStatus",
+      "title" : "Guideline Recommendation Status",
+      "description" : "Current status of a clinical practice guideline recommendation",
+      "systems" : ["http://hl7.org/fhir/cited-artifact-status-type"],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-citation.html" : "Recommendation Citation",
+      "StructureDefinition-guideline-citation.html" : "Guideline Citation"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-stage-classification",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "GuidelineStageClassification",
+      "title" : "Guideline Stage Classification",
+      "description" : "Stage classification according to systematics",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-guideline.html" : "Clinical Practice Guideline"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-mean-difference-type",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "MeanDifferenceType",
+      "title" : "Mean Difference Type",
+      "description" : "Mean difference types",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/statistic-type"],
+      "uses" : {
+      },
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-observations",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "Observations",
+      "title" : "Observations",
+      "description" : "Observations are measurements of a patient's state of health. They are typically made by a healthcare professional, but can also be self-reported by the patient.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-procedures",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Procedures",
+      "title" : "Procedures",
+      "description" : "Procedures",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-procedure-action.html" : "Procedure Action"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-radiologic-finding-sct",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RadiologicFindingSCT",
+      "title" : "Radiologic Finding SCT",
+      "description" : "Radiologic findings from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-study-eligibility-criteria.html" : "Study Eligibility Criteria",
+      "StructureDefinition-recommendation-eligibility-criteria.html" : "Recommendation Eligibility Criteria",
+      "StructureDefinition-eligibility-criteria.html" : "Eligibility Criteria"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-acceptability",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingAcceptability",
+      "title" : "Rating Acceptability",
+      "description" : "Are the alternatives acceptable for the target population and its implementors?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-benefit-and-harms",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingBenefitAndHarms",
+      "title" : "Rating Benefit And Harms",
+      "description" : "Summary of most important benefits and harms",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-certainty-of-evidence",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingCertaintyofEvidence",
+      "title" : "Rating Certainty Of Evidence",
+      "description" : "Codes from EvidenceCertaintyRating related to certainty of evidence",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification",
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-clinical-importance",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingClinicalImportance",
+      "title" : "Clinical Importance of Outcome",
+      "description" : "Clinical Importance of Outcome",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-concern-degree",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingConcernDegree",
+      "title" : "Rating Concern Degree",
+      "description" : "Codes from EvidenceCertaintyRating related to degree of concern",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"],
+      "uses" : {
+      },
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-consensus",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingConsensus",
+      "title" : "Rating Consensus",
+      "description" : "Degree of consensus reached",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/recommendation-strength"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-equity",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingEquity",
+      "title" : "Rating Equity",
+      "description" : "How do the different alternatives affect equity?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-feasibility",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingFeasibility",
+      "title" : "Rating Feasibility",
+      "description" : "How feasible will it be to implement the different alternatives? Any issues?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-preference-and-values",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingPreferenceAndValues",
+      "title" : "Rating Preference And Values",
+      "description" : "Typical patient preferences and values? Common issues or expected variability?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-resources",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingResources",
+      "title" : "Rating Resources",
+      "description" : "Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-recommendation-justification.html" : "Recommendation Justification"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-one-level",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingUpratingOneLevel",
+      "title" : "Rating Up Rating One Level",
+      "description" : "Ratings for factors that might cause rating up the certainty",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"],
+      "uses" : {
+      },
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-two-levels",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingUpratingTwoLevels",
+      "title" : "Rating Up Rating Two Levels",
+      "description" : "Ratings for factors that might cause rating up the certainty",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"],
+      "uses" : {
+      },
+      "StructureDefinition-certainty-of-evidence-rating.html" : "Certainty of Evidence Rating"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-relative-effect-type",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RelativeEffectType",
+      "title" : "Relative Effect Type",
+      "description" : "Relative effect types",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/statistic-type"],
+      "uses" : {
+      },
+      "StructureDefinition-outcome-evidence.html" : "Outcome Evidence",
+      "StructureDefinition-outcome-evidence-synthesis.html" : "Outcome Evidence Synthesis",
+      "StructureDefinition-study-outcome-evidence.html" : "Study Outcome Evidence"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-substances-snomed",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "SubstancesSNOMED",
+      "title" : "Substances SNOMED CT",
+      "description" : "All substance codes from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-drug-administration-action.html" : "Drug Administration Action"
+    }
+  ]
+}

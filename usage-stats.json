@@ -1,0 +1,512 @@
+{
+  "package": "de.netzwerk-universitaetsmedizin.ebm-cpg",
+  "version": "1.0.2",
+  "fhirVersion": "5.0.0",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-artifactComment",
+      "title": "CQFM Artifact Comment",
+      "types": [
+        "code",
+        "markdown",
+        "uri",
+        "uri",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status",
+      "title": "ArtifactAssessment Publication Status",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version",
+      "title": "ArtifactAssessment Version",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-qualityOfEvidence",
+      "title": "qualityOfEvidence",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-strengthOfRecommendation",
+      "title": "strengthOfRecommendation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method",
+      "title": "Action Combination Method",
+      "types": [
+        "CodeableConcept",
+        "positiveInt",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-characteristic-dosage",
+      "title": "Characteristic Dosage",
+      "types": [
+        "Dosage",
+        "id",
+        "Extension",
+        "Extension",
+        "Extension",
+        "integer",
+        "string",
+        "CodeableConcept",
+        "string",
+        "Timing",
+        "boolean",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "Element",
+        "string",
+        "Extension",
+        "CodeableConcept",
+        "Range",
+        "Quantity",
+        "Ratio",
+        "Range",
+        "Quantity",
+        "Ratio",
+        "Quantity",
+        "Quantity"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition",
+      "title": "Dosage Condition",
+      "types": [
+        "CodeableConcept",
+        "boolean",
+        "CodeableConcept",
+        "Duration",
+        "Quantity",
+        "Range",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time",
+      "title": "RelativeTime",
+      "types": [
+        "Reference",
+        "canonical",
+        "string",
+        "CodeableConcept",
+        "Duration",
+        "Range",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "integer64",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Availability",
+        "ExtendedContactDetail",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "ActivityDefinition": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action",
+        "title": "Recommendation Action"
+      }
+    ],
+    "ArtifactAssessment": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification",
+        "title": "Recommendation Justification"
+      }
+    ],
+    "Group": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort",
+        "title": "Study Cohort"
+      }
+    ],
+    "PlanDefinition": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan",
+        "title": "Recommendation Plan"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/shareableplandefinition",
+        "title": "Shareable PlanDefinition"
+      }
+    ],
+    "EvidenceVariable": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria",
+        "title": "Study Eligibility Criteria"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline",
+        "title": "Clinical Practice Guideline"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle",
+        "title": "Guideline Bundle"
+      }
+    ],
+    "Citation": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation",
+        "title": "Study Citation"
+      }
+    ],
+    "Evidence": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence",
+        "title": "Study Outcome Evidence"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CodeSystem",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "CodeSystem",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-artifactComment": [
+      "PlanDefinition"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-directionOfRecommendation": [
+      "PlanDefinition.action"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled": [
+      "PlanDefinition"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability": [
+      "ActivityDefinition",
+      "Bundle.entry.resource",
+      "CodeSystem",
+      "PlanDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel": [
+      "ActivityDefinition",
+      "Bundle.entry.resource",
+      "CodeSystem",
+      "PlanDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf": [
+      "Bundle.entry.resource",
+      "PlanDefinition"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status": [
+      "ArtifactAssessment",
+      "Bundle.entry.resource"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version": [
+      "ArtifactAssessment",
+      "Bundle.entry.resource"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-qualityOfEvidence": [
+      "PlanDefinition.action"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-strengthOfRecommendation": [
+      "PlanDefinition.action"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.action",
+      "PlanDefinition",
+      "PlanDefinition.action"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-characteristic-dosage": [
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByTypeAndValue",
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByTypeAndValue",
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByTypeAndValue",
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic.definitionByTypeAndValue",
+      "EvidenceVariable.characteristic.definitionByTypeAndValue"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition": [
+      "ActivityDefinition.dosage",
+      "Bundle.entry.resource.dosage",
+      "Extension.value[x]"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time": [
+      "ActivityDefinition.timing[x]",
+      "EvidenceVariable.characteristic",
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic",
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic",
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic",
+      "EvidenceVariable.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic.definitionByCombination.characteristic",
+      "PlanDefinition.action.action.timing[x]",
+      "PlanDefinition.action.timing[x]"
+    ]
+  }
+}

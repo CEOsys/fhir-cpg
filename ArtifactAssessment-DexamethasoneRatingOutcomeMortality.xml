@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ArtifactAssessment xmlns="http://hl7.org/fhir">
+  <id value="DexamethasoneRatingOutcomeMortality"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ArtifactAssessment DexamethasoneRatingOutcomeMortality</b></p><a name="DexamethasoneRatingOutcomeMortality"> </a><a name="hcDexamethasoneRatingOutcomeMortality"> </a><a name="DexamethasoneRatingOutcomeMortality-en-US"> </a><p><b>ArtifactAssessment Version</b>: v4.0</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2020-01-03</p><p><b>artifact</b>: <a href="Evidence-DexamethasoneOutcomeMortality.html">Evidence ExampleOutcomeEvidence</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/certainty-type Overall}">Overall certainty</span></p><p><b>classifier</b>: <span title="Codes:{http://hl7.org/fhir/certainty-rating moderate}">Moderate quality</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-importance}">Clinical Importance</span></p><p><b>classifier</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance 9}">Critical</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/certainty-type RiskOfBias}">Risk of bias</span></p><p><b>classifier</b>: <span title="Codes:{http://hl7.org/fhir/certainty-rating serious-concern}">serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/certainty-type Inconsistency}">Inconsistency</span></p><p><b>classifier</b>: <span title="Codes:{http://hl7.org/fhir/certainty-rating no-concern}">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/certainty-type Indirectness}">Indirectness</span></p><p><b>classifier</b>: <span title="Codes:{http://hl7.org/fhir/certainty-rating no-concern}">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/certainty-type Imprecision}">Imprecision</span></p><p><b>classifier</b>: <span title="Codes:{http://hl7.org/fhir/certainty-rating no-concern}">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/certainty-type PublicationBias}">Publication bias</span></p><p><b>classifier</b>: <span title="Codes:{http://hl7.org/fhir/certainty-rating no-concern}">no serious concern</span></p></blockquote></div>
+  </text>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version">
+    <valueString value="v4.0"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status">
+    <valueCode value="active"/>
+  </extension>
+  <date value="2020-01-03"/>
+  <artifactReference>
+    <reference value="Evidence/DexamethasoneOutcomeMortality"/>
+  </artifactReference>
+  <content>
+    <informationType value="rating"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-type"/>
+        <code value="Overall"/>
+        <display value="Overall certainty"/>
+      </coding>
+    </type>
+    <classifier>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-rating"/>
+        <code value="moderate"/>
+        <display value="Moderate quality"/>
+      </coding>
+    </classifier>
+  </content>
+  <content>
+    <informationType value="rating"/>
+    <type>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="clinical-importance"/>
+        <display value="Clinical Importance"/>
+      </coding>
+    </type>
+    <classifier>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance"/>
+        <code value="9"/>
+        <display value="Critical"/>
+      </coding>
+    </classifier>
+  </content>
+  <content>
+    <informationType value="rating"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-type"/>
+        <code value="RiskOfBias"/>
+        <display value="Risk of bias"/>
+      </coding>
+    </type>
+    <classifier>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-rating"/>
+        <code value="serious-concern"/>
+        <display value="serious concern"/>
+      </coding>
+    </classifier>
+  </content>
+  <content>
+    <informationType value="rating"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-type"/>
+        <code value="Inconsistency"/>
+        <display value="Inconsistency"/>
+      </coding>
+    </type>
+    <classifier>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-rating"/>
+        <code value="no-concern"/>
+        <display value="no serious concern"/>
+      </coding>
+    </classifier>
+  </content>
+  <content>
+    <informationType value="rating"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-type"/>
+        <code value="Indirectness"/>
+        <display value="Indirectness"/>
+      </coding>
+    </type>
+    <classifier>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-rating"/>
+        <code value="no-concern"/>
+        <display value="no serious concern"/>
+      </coding>
+    </classifier>
+  </content>
+  <content>
+    <informationType value="rating"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-type"/>
+        <code value="Imprecision"/>
+        <display value="Imprecision"/>
+      </coding>
+    </type>
+    <classifier>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-rating"/>
+        <code value="no-concern"/>
+        <display value="no serious concern"/>
+      </coding>
+    </classifier>
+  </content>
+  <content>
+    <informationType value="rating"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-type"/>
+        <code value="PublicationBias"/>
+        <display value="Publication bias"/>
+      </coding>
+    </type>
+    <classifier>
+      <coding>
+        <system value="http://hl7.org/fhir/certainty-rating"/>
+        <code value="no-concern"/>
+        <display value="no serious concern"/>
+      </coding>
+    </classifier>
+  </content>
+</ArtifactAssessment>

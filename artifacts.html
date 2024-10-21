@@ -1,0 +1,1381 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Artifacts Summary - Clinical Practice Guidelines (CPG) on EBMonFHIR v1.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/ceosys.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a no-external="true" id="project-logo" href="https://www.ceosys.de/">
+    <img src="assets/images/logo_ceosys.jpg" alt="Project home" height="71"/>
+  </a>
+</div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://www.netzwerk-universitaetsmedizin.de">
+    <img src="assets/images/logo_num.svg" alt="FHIR website" height="70"/>
+  </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines (CPG) on EBMonFHIR</span>
+            <br/>
+            <span style="display:inline-block;">1.0.2 - qa-preview
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="codesystems.html">Code Systems</a>
+  </li>
+  <li>
+    <a href="valuesets.html">Value Sets</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="history.html">History</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the CPG-on-EBMonFHIR Implementation Guide (1.0.2).</p>  <!-- EndReleaseHeader -->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+    <!-- DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten --><div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir" class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Abstract Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Abstract Profiles </h3>
+    <p>These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly.  I.e. instances can conform to profiles <em>based</em> on these abstract profiles, but do not declare conformance to the abstract profiles themselves.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cpg-computableplandefinition.html" title="StructureDefinition/cpg-computableplandefinition">CPGComputablePlanDefinition</a>
+            </td>
+            <td>
+<p>Defines the minimum expectations and behavior for a computable plan definition</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cpg-recommendationdefinition.html" title="StructureDefinition/cpg-recommendationdefinition">CPGRecommendationDefinition</a>
+            </td>
+            <td>
+<p>Profile of PlanDefinition as a Recommendation Definition for use with CPG Implementation Guide</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cpg-shareableplandefinition.html" title="StructureDefinition/cpg-shareableplandefinition">CPGShareablePlanDefinition</a>
+            </td>
+            <td>
+<p>Defines the minimum expectations for a shareable plan definition for use with computable guideline content. This profile derives from the ShareablePlanDefinition profile defined in the base FHIR specification, and adds support for declaring knowledge representation level and knowledge artifact capabilities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cpg-strategydefinition.html" title="StructureDefinition/cpg-strategydefinition">CPGStrategyDefinition</a>
+            </td>
+            <td>
+<p>Profile of PlanDefinition as a Strategy Definition for use with CPG Implementation Guide. Strategies are used to group recommendations together, typically focused on a particular condition or state within the overall guideline or pathway</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cohorts.html" title="StructureDefinition/cohorts">Cohorts</a>
+            </td>
+            <td>
+<p>The actual group observed in a study or groups of groups in an evidence synthesis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-eligibility-criteria.html" title="StructureDefinition/eligibility-criteria">Eligibility Criteria</a>
+            </td>
+            <td>
+<p>Definition of a population (e.g. for guideline recommendation, clinical study) via the eligibility criteria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-outcome-evidence.html" title="StructureDefinition/outcome-evidence">Outcome Evidence</a>
+            </td>
+            <td>
+<p>A single evidence for an outcome from a specific study, meta analysis or systematic review.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pico-evidence-variable.html" title="StructureDefinition/pico-evidence-variable">PICO Evidence Variable</a>
+            </td>
+            <td>
+<p>Description of the a PICO element that knowledge is about. This abstract resource is used as parent for all PICO (population, intervention, comparison, outcome) evidence variables.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-recommendation-action.html" title="StructureDefinition/recommendation-action">Recommendation Action</a>
+            </td>
+            <td>
+<p>Definition of an activity that is part of an intervention in the context of a clinical practice guideline recommendation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-shareableplandefinition.html" title="StructureDefinition/shareableplandefinition">Shareable PlanDefinition</a>
+            </td>
+            <td>
+<p>Enforces the minimum information set for the plan definition metadata required by HL7 and other organizations that share and publish plan definitions</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-assessment-action.html" title="StructureDefinition/assessment-action">Assessment Action</a>
+            </td>
+            <td>
+<p>Definition of an assessment action.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-body-positioning-action.html" title="StructureDefinition/body-positioning-action">Body Positioning Action</a>
+            </td>
+            <td>
+<p>Definition of a body positioning action as part of a recommended intervention.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-certainty-of-evidence-rating.html" title="StructureDefinition/certainty-of-evidence-rating">Certainty of Evidence Rating</a>
+            </td>
+            <td>
+<p>Rating of a single outcome (evidence) underlying a clinical practice guideline recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-guideline.html" title="StructureDefinition/guideline">Clinical Practice Guideline</a>
+            </td>
+            <td>
+<p>Representation of an evidence-based clinical practice guideline.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-drug-administration-action.html" title="StructureDefinition/drug-administration-action">Drug Administration Action</a>
+            </td>
+            <td>
+<p>Definition of a drug administration action as part of a recommended intervention.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-evidence-data-set.html" title="StructureDefinition/evidence-data-set">Evidence Data Set</a>
+            </td>
+            <td>
+<p>Definition of the outcome used as the observed measured variable for an evidence synthesis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-evidence-synthesis-cohorts.html" title="StructureDefinition/evidence-synthesis-cohorts">Evidence Synthesis Cohorts</a>
+            </td>
+            <td>
+<p>The actual group of Groups observed in an evidence synthesis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-guideline-bundle.html" title="StructureDefinition/guideline-bundle">Guideline Bundle</a>
+            </td>
+            <td>
+<p>Collection of all resources that represent a single clinical practice guideline.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-guideline-citation.html" title="StructureDefinition/guideline-citation">Guideline Citation</a>
+            </td>
+            <td>
+<p>Citation of a clinical practice guideline</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-intervention-definition.html" title="StructureDefinition/intervention-definition">Intervention Definition</a>
+            </td>
+            <td>
+<p>Description of the intervention element of a PICO construct that evidence is about.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-net-effect-estimate.html" title="StructureDefinition/net-effect-estimate">Net Effect Estimate</a>
+            </td>
+            <td>
+<p>The net effect is the overall expected effect of a recommendation, calculated by an importance-weighted average of the individual outcome effects</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-outcome-definition.html" title="StructureDefinition/outcome-definition">Outcome Definition</a>
+            </td>
+            <td>
+<p>Description of the outcome element of a PICO construct that evidence is about.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-outcome-evidence-synthesis.html" title="StructureDefinition/outcome-evidence-synthesis">Outcome Evidence Synthesis</a>
+            </td>
+            <td>
+<p>A single evidence for an outcome from an evidence synthesis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-procedure-action.html" title="StructureDefinition/procedure-action">Procedure Action</a>
+            </td>
+            <td>
+<p>Definition of a procedure action.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-recommendation.html" title="StructureDefinition/recommendation">Recommendation</a>
+            </td>
+            <td>
+<p>A recommendation as part of a clinical practice guideline.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-recommendation-citation.html" title="StructureDefinition/recommendation-citation">Recommendation Citation</a>
+            </td>
+            <td>
+<p>Citation of a clinical practice guideline recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-recommendation-eligibility-criteria.html" title="StructureDefinition/recommendation-eligibility-criteria">Recommendation Eligibility Criteria</a>
+            </td>
+            <td>
+<p>Eligibility Criteria for a Clinical Guideline Recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-recommendation-justification.html" title="StructureDefinition/recommendation-justification">Recommendation Justification</a>
+            </td>
+            <td>
+<p>Justification of a clinical guideline recommendation through the underlying evidence and their ratings</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-recommendation-plan.html" title="StructureDefinition/recommendation-plan">Recommendation Plan</a>
+            </td>
+            <td>
+<p>Definition of an activity that is part of an intervention in the context of a clinical practice guideline recommendation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-study-citation.html" title="StructureDefinition/study-citation">Study Citation</a>
+            </td>
+            <td>
+<p>Citation of a study from which evidence is determined.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-study-cohort.html" title="StructureDefinition/study-cohort">Study Cohort</a>
+            </td>
+            <td>
+<p>The actual group observed in a study.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-study-eligibility-criteria.html" title="StructureDefinition/study-eligibility-criteria">Study Eligibility Criteria</a>
+            </td>
+            <td>
+<p>Eligibility Criteria for a clinical study</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-study-outcome-evidence.html" title="StructureDefinition/study-outcome-evidence">Study Outcome Evidence</a>
+            </td>
+            <td>
+<p>A single evidence for an outcome from a primary study.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ext-action-combination-method.html" title="StructureDefinition/ext-action-combination-method">Action Combination Method</a>
+            </td>
+            <td>
+<p>Extension used on PlanDefinition.action to specify a method for combining the actions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ceosys-extension-artifact-assessment-publication-status.html" title="StructureDefinition/ceosys-extension-artifact-assessment-publication-status">ArtifactAssessment Publication Status</a>
+            </td>
+            <td>
+<p>Adds publication status attribute to ArtifactAssessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ceosys-extension-artifact-assessment-version.html" title="StructureDefinition/ceosys-extension-artifact-assessment-version">ArtifactAssessment Version</a>
+            </td>
+            <td>
+<p>Adds version attribute to Artifact Assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cqfm-artifactComment.html" title="StructureDefinition/cqfm-artifactComment">CQFM Artifact Comment</a>
+            </td>
+            <td>
+<p>A comment containing additional documentation, a review comment, usage guidance, or other relevant information from a particular user.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ext-characteristic-dosage.html" title="StructureDefinition/ext-characteristic-dosage">Characteristic Dosage</a>
+            </td>
+            <td>
+<p>Adds Dosage type to characteristic</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ext-dosage-condition.html" title="StructureDefinition/ext-dosage-condition">Dosage Condition</a>
+            </td>
+            <td>
+<p>Adds type/value pair to elements of datatype Dosage to express a condition on the dosage.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-relative-time.html" title="StructureDefinition/relative-time">RelativeTime</a>
+            </td>
+            <td>
+<p>Timing in which the characteristic is determined.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cqf-qualityOfEvidence.html" title="StructureDefinition/cqf-qualityOfEvidence">qualityOfEvidence</a>
+            </td>
+            <td>
+<p>The quality of the evidence described. The code system used specifies the quality scale used to grade this evidence source while the code specifies the actual quality score (represented as a coded value) associated with the evidence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cqf-strengthOfRecommendation.html" title="StructureDefinition/cqf-strengthOfRecommendation">strengthOfRecommendation</a>
+            </td>
+            <td>
+<p>The strength of the recommendation assigned to this reference. The code system used specifies the rating scale used to rate this recommendation while the code specifies the actual recommendation rating (represented as a coded value) associated with this recommendation.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-action-combination-method.html" title="ValueSet/vs-action-combination-method">Action Combination Method</a>
+            </td>
+            <td>
+<p>Value set for the method used to combine actions in a PlanDefinition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-action-selection-behavior-required.html" title="ValueSet/vs-action-selection-behavior-required">Action Selection Behavior Required</a>
+            </td>
+            <td>
+<p>Action selection behavior with only codes that require at least one action to be performed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-allergic-disposition-sct.html" title="ValueSet/vs-allergic-disposition-sct">Allergic Disposition SCT</a>
+            </td>
+            <td>
+<p>Allergic Dispositions from SNOMED CT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-assessment.html" title="ValueSet/vs-assessment">Assessment</a>
+            </td>
+            <td>
+<p>Assessments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-assessment-scales.html" title="ValueSet/vs-assessment-scales">Assessment Scales</a>
+            </td>
+            <td>
+<p>Codes for assessment scales (scores etc.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-body-positioning-snomed.html" title="ValueSet/vs-body-positioning-snomed">Body Positioning SNOMED CT</a>
+            </td>
+            <td>
+<p>Body positioning procedure codes from SNOMED CT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-clinical-importance.html" title="ValueSet/vs-rating-clinical-importance">Clinical Importance of Outcome</a>
+            </td>
+            <td>
+<p>Clinical Importance of Outcome</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cochrane-pico.html" title="ValueSet/cochrane-pico">Cochrane PICO</a>
+            </td>
+            <td>
+<p>All codes from the Cochrane PICO ontology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cochrane-pico-intervention.html" title="ValueSet/cochrane-pico-intervention">Cochrane PICO Intervention</a>
+            </td>
+            <td>
+<p>All intervention codes from the Cochrane PICO ontology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cochrane-pico-outcome.html" title="ValueSet/cochrane-pico-outcome">Cochrane PICO Outcome</a>
+            </td>
+            <td>
+<p>All outcome codes from the Cochrane PICO ontology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cochrane-pico-population.html" title="ValueSet/cochrane-pico-population">Cochrane PICO Population</a>
+            </td>
+            <td>
+<p>All population codes from the Cochrane PICO ontology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-drugs.html" title="ValueSet/vs-drugs">Drugs</a>
+            </td>
+            <td>
+<p>Drugs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-episode-of-care-type.html" title="ValueSet/vs-episode-of-care-type">Episode Of Care Type</a>
+            </td>
+            <td>
+<p>Episode Of Care Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-guideline-recommendation-status.html" title="ValueSet/vs-guideline-recommendation-status">Guideline Recommendation Status</a>
+            </td>
+            <td>
+<p>Current status of a clinical practice guideline recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-guideline-stage-classification.html" title="ValueSet/vs-guideline-stage-classification">Guideline Stage Classification</a>
+            </td>
+            <td>
+<p>Stage classification according to systematics</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-mean-difference-type.html" title="ValueSet/vs-mean-difference-type">Mean Difference Type</a>
+            </td>
+            <td>
+<p>Mean difference types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-observations.html" title="ValueSet/vs-observations">Observations</a>
+            </td>
+            <td>
+<p>Observations are measurements of a patient’s state of health. They are typically made by a healthcare professional, but can also be self-reported by the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-procedures.html" title="ValueSet/vs-procedures">Procedures</a>
+            </td>
+            <td>
+<p>Procedures</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-radiologic-finding-sct.html" title="ValueSet/vs-radiologic-finding-sct">Radiologic Finding SCT</a>
+            </td>
+            <td>
+<p>Radiologic findings from SNOMED CT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-acceptability.html" title="ValueSet/vs-rating-acceptability">Rating Acceptability</a>
+            </td>
+            <td>
+<p>Are the alternatives acceptable for the target population and its implementors?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-benefit-and-harms.html" title="ValueSet/vs-rating-benefit-and-harms">Rating Benefit And Harms</a>
+            </td>
+            <td>
+<p>Summary of most important benefits and harms</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-certainty-of-evidence.html" title="ValueSet/vs-rating-certainty-of-evidence">Rating Certainty Of Evidence</a>
+            </td>
+            <td>
+<p>Codes from EvidenceCertaintyRating related to certainty of evidence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-concern-degree.html" title="ValueSet/vs-rating-concern-degree">Rating Concern Degree</a>
+            </td>
+            <td>
+<p>Codes from EvidenceCertaintyRating related to degree of concern</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-consensus.html" title="ValueSet/vs-rating-consensus">Rating Consensus</a>
+            </td>
+            <td>
+<p>Degree of consensus reached</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-equity.html" title="ValueSet/vs-rating-equity">Rating Equity</a>
+            </td>
+            <td>
+<p>How do the different alternatives affect equity?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-feasibility.html" title="ValueSet/vs-rating-feasibility">Rating Feasibility</a>
+            </td>
+            <td>
+<p>How feasible will it be to implement the different alternatives? Any issues?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-preference-and-values.html" title="ValueSet/vs-rating-preference-and-values">Rating Preference And Values</a>
+            </td>
+            <td>
+<p>Typical patient preferences and values? Common issues or expected variability?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-resources.html" title="ValueSet/vs-rating-resources">Rating Resources</a>
+            </td>
+            <td>
+<p>Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-uprating-one-level.html" title="ValueSet/vs-rating-uprating-one-level">Rating Up Rating One Level</a>
+            </td>
+            <td>
+<p>Ratings for factors that might cause rating up the certainty</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-rating-uprating-two-levels.html" title="ValueSet/vs-rating-uprating-two-levels">Rating Up Rating Two Levels</a>
+            </td>
+            <td>
+<p>Ratings for factors that might cause rating up the certainty</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ceosys-vs-recommendation-strength.html" title="ValueSet/ceosys-vs-recommendation-strength">Recommendation Strength</a>
+            </td>
+            <td>
+<p>Strength of a clinical guideline recommendation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-relative-effect-type.html" title="ValueSet/vs-relative-effect-type">Relative Effect Type</a>
+            </td>
+            <td>
+<p>Relative effect types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-substances-snomed.html" title="ValueSet/vs-substances-snomed">Substances SNOMED CT</a>
+            </td>
+            <td>
+<p>All substance codes from SNOMED CT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-mii-icu-code-observation-beatmung-loinc.html" title="ValueSet/vs-mii-icu-code-observation-beatmung-loinc">VS MII ICU Code Observation Beatmung [LOINC]</a>
+            </td>
+            <td>
+<p>Dieses ValueSet enthält Codes für die im Kontext einer Beatmung eingestellten oder gemessenen Parametern.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-action-combination-method.html" title="CodeSystem/cs-action-combination-method">Action Combination Method</a>
+            </td>
+            <td>
+<p>Code system for the combination of actions in a PlanDefinition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ceosys-code-system.html" title="CodeSystem/ceosys-code-system">CEOsys Code System</a>
+            </td>
+            <td>
+<p>Codes for clinical guideline recommendation representation missing from other code systems.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-clinical-importance.html" title="CodeSystem/cs-clinical-importance">Clinical Importance of Outcome</a>
+            </td>
+            <td>
+<p>Clinical Importance of Outcome</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cochrane-core-ontology.html" title="CodeSystem/cochrane-core-ontology">Cochrane Core Ontology</a>
+            </td>
+            <td>
+<p>The Cochrane Core ontology describes the entities and concepts that exist in the domain of evidence based healthcare.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cochrane-pico-ontology.html" title="CodeSystem/cochrane-pico-ontology">Cochrane PICO Ontology</a>
+            </td>
+            <td>
+<p>The PICO ontology describes questions in evidence based healthcare with the intention of supporting the publishing of evidence as linked data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-certainty-rating.html" title="CodeSystem/certainty-rating">Evidence Certainty Rating</a>
+            </td>
+            <td>
+<p>The assessment of quality, confidence, or certainty.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html" title="CodeSystem/cs-evidence-to-decision-certainty-rating">Evidence To Decision Certainty Rating</a>
+            </td>
+            <td>
+<p>GRADE Evidence to Decision (EtD) Framework Certainty Ratings</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-evidence-to-decision-certainty-type.html" title="CodeSystem/cs-evidence-to-decision-certainty-type">Evidence To Decision Certainty type</a>
+            </td>
+            <td>
+<p>GRADE Evidence to Decision (EtD) Framework Certainty Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-guideline-stage-classification.html" title="CodeSystem/cs-guideline-stage-classification">Guideline Stage Classification</a>
+            </td>
+            <td>
+<p>As part of the project planning for the creation or updating of a guideline,
+    a decision should be made at an early stage about the planned level classification (“S classification”) according to the AWMF’s system of rules (1-3).
+    The S-classification scheme of the AWMF differentiates between the classes S1 treatment recommendation as well as S2e, S2k and S3 guideline.
+    The “S” stands for the extent of the applied systematic approach in the development process of a guideline.
+    Each class thus stands for a specific methodological concept that must be presented in a way that is comprehensible to the users.
+    The choice of class is based on the question of how much effort is appropriate and feasible.
+    The need for legitimacy for the implementation of the guideline (convincing the target group) must be taken into account.
+    When choosing a higher S-classification in the context of updating a guideline, the adaptation to the corresponding methodology has to be considered.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KontaktArtDe.html" title="CodeSystem/KontaktArtDe">KontaktArtDe</a>
+            </td>
+            <td>
+<p>Klassifizierung eines Kontaktes mit einer Gesundheitseinrichtung</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ceosys-cs-recommendation-strength.html" title="CodeSystem/ceosys-cs-recommendation-strength">Recommendation Strength</a>
+            </td>
+            <td>
+<p>Strength of a clinical guideline recommendation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-synthesis-type.html" title="CodeSystem/synthesis-type">SynthesisType</a>
+            </td>
+            <td>
+<p>Types of combining results from a body of evidence (eg. summary data meta-analysis).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-OutcomeAllCauseMortality.html" title="EvidenceVariable/OutcomeAllCauseMortality">All-cause mortality</a>
+            </td>
+            <td>
+<p>All-cause mortality.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-AWMFOrganization.html" title="Organization/AWMFOrganization">Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V</a>
+            </td>
+            <td>
+<p>Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html" title="Bundle/COVID19IntensiveCareTreatmentGuidelineBundle">COVID19 Intensive Care Treatment Guideline</a>
+            </td>
+            <td>
+<p>COVID19 Intensive Care Treatment Guideline (Bundle).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-COVID19IntensiveCareTreatmentGuideline.html" title="Composition/COVID19IntensiveCareTreatmentGuideline">COVID19 Intensive Care Treatment Guideline</a>
+            </td>
+            <td>
+<p>COVID19 Intensive Care Treatment Guideline.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ArtifactAssessment-DexamethasoneRatingOutcomeMortality.html" title="ArtifactAssessment/DexamethasoneRatingOutcomeMortality">Certainty of Evidence for outcome: mortality of Dexamethasone application</a>
+            </td>
+            <td>
+<p>Certainty of evidence rating for mortality outcome of Dexamethasonse application recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PlanDefinition-COVID19DexamethasoneApplication.html" title="PlanDefinition/COVID19DexamethasoneApplication">Dexamethasone Application</a>
+            </td>
+            <td>
+<p>Application of Dexamethasone for ventilated patients only</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PlanDefinition-COVID19VentilatedPatientsDexamethasoneApplicationPlan.html" title="PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan">Dexamethasone Application</a>
+            </td>
+            <td>
+<p>Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-DexamethasoneApplicationActionIntravenous.html" title="ActivityDefinition/DexamethasoneApplicationActionIntravenous">Dexamethasone Application (Intravenous)</a>
+            </td>
+            <td>
+<p>Application of Dexamethasone: 6 mg once per day for 10 days (intravenous route)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-DexamethasoneApplicationActionOral.html" title="ActivityDefinition/DexamethasoneApplicationActionOral">Dexamethasone Application (Oral)</a>
+            </td>
+            <td>
+<p>Application of Dexamethasone: 6 mg once per day for 10 days (oral route)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Citation-DexamethasoneRecommendationCitation.html" title="Citation/DexamethasoneRecommendationCitation">Dexamethasone Recommendation</a>
+            </td>
+            <td>
+<p>Citation of Dexamethasone Recommenation from COVID-19 intensive care patients treatment guideline</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ArtifactAssessment-DexamethasoneRecommendationJustification.html" title="ArtifactAssessment/DexamethasoneRecommendationJustification">Dexamethasone for critically ill COVID-19 patients</a>
+            </td>
+            <td>
+<p>Dexamethasone in critically ill patients with COVID-19.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-ExampleAssessmentAction.html" title="ActivityDefinition/ExampleAssessmentAction">Example Assessment Action</a>
+            </td>
+            <td>
+<p>Example of an assessment action.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-ExampleBodyPositioningAction.html" title="ActivityDefinition/ExampleBodyPositioningAction">Example Body Positioning Action</a>
+            </td>
+            <td>
+<p>Example of a body positioning action.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ArtifactAssessment-ExampleCertaintyOfEvidenceRating.html" title="ArtifactAssessment/ExampleCertaintyOfEvidenceRating">Example Certainty Of Evidence Rating</a>
+            </td>
+            <td>
+<p>Example Certainty Of Evidence Rating</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-ExampleDrugAdministrationAction.html" title="ActivityDefinition/ExampleDrugAdministrationAction">Example DrugAdministration Action</a>
+            </td>
+            <td>
+<p>A drug administration that should be performed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-ExampleEvidenceDataSet.html" title="EvidenceVariable/ExampleEvidenceDataSet">Example Evidence Data Set</a>
+            </td>
+            <td>
+<p>Example of an evidence data set</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Group-ExampleEvidenceSynthesisCohorts.html" title="Group/ExampleEvidenceSynthesisCohorts">Example Evidence Synthesis Cohorts</a>
+            </td>
+            <td>
+<p>Example of a cohort in an evidence synthesis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-GuidelineExample.html" title="Composition/GuidelineExample">Example Guideline</a>
+            </td>
+            <td>
+<p>Example of a guideline resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Citation-ExampleGuidelineCitation.html" title="Citation/ExampleGuidelineCitation">Example Guideline Citation</a>
+            </td>
+            <td>
+<p>Example of a Citation of a clinical practice guideline</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-ExampleIntervention.html" title="EvidenceVariable/ExampleIntervention">Example Intervention</a>
+            </td>
+            <td>
+<p>Example of an intervention definition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Evidence-ExampleNetEffectEstimate.html" title="Evidence/ExampleNetEffectEstimate">Example Net Effect Estimate</a>
+            </td>
+            <td>
+<p>Example of a net effect estimate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-ExampleNoDrugAdministrationAction.html" title="ActivityDefinition/ExampleNoDrugAdministrationAction">Example No DrugAdministration Action</a>
+            </td>
+            <td>
+<p>A drug administration that should not be performed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-ExampleOrganization.html" title="Organization/ExampleOrganization">Example Organization</a>
+            </td>
+            <td>
+<p>Example of a organization resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-ExampleOutcome.html" title="EvidenceVariable/ExampleOutcome">Example Outcome</a>
+            </td>
+            <td>
+<p>Example of an outcome evidence variable.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Evidence-ExampleOutcomeEvidenceSynthesis.html" title="Evidence/ExampleOutcomeEvidenceSynthesis">Example Outcome Evidence Synthesis</a>
+            </td>
+            <td>
+<p>Example Outcome Evidence Synthesis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-ExampleProcedureAction.html" title="ActivityDefinition/ExampleProcedureAction">Example Procedure Action</a>
+            </td>
+            <td>
+<p>Example of a procedure action.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Citation-ExampleRecommendationCitation.html" title="Citation/ExampleRecommendationCitation">Example Recommendation Citation</a>
+            </td>
+            <td>
+<p>Example of a Citation of a clinical practice guideline recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-ExampleRecommendationEligibilityCriteria.html" title="EvidenceVariable/ExampleRecommendationEligibilityCriteria">Example Recommendation Eligibility Criteria</a>
+            </td>
+            <td>
+<p>Example of a population element of a PICO construct that evidence is about.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-ExampleRecommendationEligibilityCriteria5Levels.html" title="EvidenceVariable/ExampleRecommendationEligibilityCriteria5Levels">Example Recommendation Eligibility Criteria</a>
+            </td>
+            <td>
+<p>Example of a population element of a PICO construct that evidence is about.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-ExampleRecommendationEligibilityCriteriaDrugs.html" title="EvidenceVariable/ExampleRecommendationEligibilityCriteriaDrugs">Example Recommendation Eligibility Criteria</a>
+            </td>
+            <td>
+<p>Example of a population element of a PICO construct that evidence is about.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ArtifactAssessment-ExampleRecommendationJustification.html" title="ArtifactAssessment/ExampleRecommendationJustification">Example Recommendation Justification</a>
+            </td>
+            <td>
+<p>Example of a recommendation justification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PlanDefinition-ExampleRecommendationPlan.html" title="PlanDefinition/ExampleRecommendationPlan">Example Recommendation plan</a>
+            </td>
+            <td>
+<p>An active recommendation plan.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Citation-ExampleStudyCitation.html" title="Citation/ExampleStudyCitation">Example Study Citation</a>
+            </td>
+            <td>
+<p>Example Study Citation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Group-ExampleStudyCohort.html" title="Group/ExampleStudyCohort">Example Study Cohort</a>
+            </td>
+            <td>
+<p>Example study cohort of 20 patients</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-ExampleStudyEligibilityCriteria.html" title="EvidenceVariable/ExampleStudyEligibilityCriteria">Example Study Eligibility Criteria</a>
+            </td>
+            <td>
+<p>Example of Study Eligbility Criteria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Evidence-ExampleStudyOutcomeEvidence.html" title="Evidence/ExampleStudyOutcomeEvidence">Example Study Outcome Evidence</a>
+            </td>
+            <td>
+<p>Example Study Outcome Evidence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-GuidelineRecommendationExample.html" title="Bundle/GuidelineRecommendationExample">Guideline Recommendation Example</a>
+            </td>
+            <td>
+<p>Example of a clinical practice guideline representation bundle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Evidence-DexamethasoneOutcomeMortality.html" title="Evidence/DexamethasoneOutcomeMortality">Mortality Outcome for Dexamethasone application</a>
+            </td>
+            <td>
+<p>Mortality Outcome for Dexamethasone application in hospitalized COVID-19 patients</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ArtifactAssessment-NoDexamethasoneRecommendationJustification.html" title="ArtifactAssessment/NoDexamethasoneRecommendationJustification">NO Dexamethasone for moderately ill COVID-19 patients</a>
+            </td>
+            <td>
+<p>No Dexamethasone in moderately ill patients with COVID-19.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-NoDexamethasoneApplication.html" title="ActivityDefinition/NoDexamethasoneApplication">No Dexamethasone Application</a>
+            </td>
+            <td>
+<p>No Application of Dexamethasone</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PlanDefinition-COVID19NonVentilatedPatientsDexamethasoneApplicationPlan.html" title="PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan">No dexamethasone application for non-ventilated COVID-19 patients</a>
+            </td>
+            <td>
+<p>No application of Dexamethasone for non-ventilated COVID-19 patients</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-PopulationCOVID19NonVentilated.html" title="EvidenceVariable/PopulationCOVID19NonVentilated">Population: COVID19 Non-Ventilated</a>
+            </td>
+            <td>
+<p>Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, not ventilated</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-PopulationCOVID19Ventilated.html" title="EvidenceVariable/PopulationCOVID19Ventilated">Population: COVID19 Ventilated</a>
+            </td>
+            <td>
+<p>Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, Ventilated</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Group-StudyCohortCorticosteroidsCOVID19.html" title="Group/StudyCohortCorticosteroidsCOVID19">Study cohort for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)</a>
+            </td>
+            <td>
+<p>Study cohort for for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EvidenceVariable-StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19.html" title="EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19">Study eligibility criteria for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)</a>
+            </td>
+            <td>
+<p>Study eligibility criteria for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Citation-SystemicCorticosteroidsForTheTreatmentOfCOVID19.html" title="Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19">Systemic corticosteroids for the treatment of COVID-19</a>
+            </td>
+            <td>
+<p>Systemic corticosteroids for the treatment of COVID-19</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Citation-COVID19IntensiveCareTreatmentGuidelineCitation.html" title="Citation/COVID19IntensiveCareTreatmentGuidelineCitation">Therapy of hospitalized COVID-19 patients</a>
+            </td>
+            <td>
+<p>Guideline for therapy of hospitalized COVID-19 patients</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PlanDefinition-ExampleRecommendation.html" title="PlanDefinition/ExampleRecommendation">recommendation</a>
+            </td>
+            <td>
+<p>Recommendation</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizin.uni-greifswald.de/">Universitätsmedizin Greifswald</a>.  Package de.netzwerk-universitaetsmedizin.ebm-cpg#1.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Oct 21, 2024 14:50+0000">2024-10-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <p style="color: white"><a name="l2531">​</a>
+       Links: <a href="toc.html">Table of Contents</a> |
+       <a href="qa.html">QA Report</a> |
+       <a href="https://github.com/CEOsys/de.netzwerk-universitaetsmedizin.ebm-cpg/issues/" target="_blank">Issues</a> |
+       <a href="https://github.com/CEOsys/de.netzwerk-universitaetsmedizin.ebm-cpg/issues/new" target="_blank">Submit an issue</a> |
+       <a href="http://hl7.org/fhir/R5//history.html" target="_blank">Version History</a> |
+       <a rel="license" href="http://hl7.org/fhir/R5/license.html"><img src="assets/images/cc-by.svg" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+</p>
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

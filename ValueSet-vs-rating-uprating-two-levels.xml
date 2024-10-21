@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-rating-uprating-two-levels"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-rating-uprating-two-levels</b></p><a name="vs-rating-uprating-two-levels"> </a><a name="hcvs-rating-uprating-two-levels"> </a><a name="vs-rating-uprating-two-levels-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-certainty-rating.html"><code>http://hl7.org/fhir/certainty-rating</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-certainty-rating.html#certainty-rating-no-change">no-change</a></td><td>no change to rating</td><td>no change to quality rating.</td></tr><tr><td><a href="CodeSystem-certainty-rating.html#certainty-rating-upcode1">upcode1</a></td><td>increase rating: +1</td><td>increase quality rating by 1.</td></tr><tr><td><a href="CodeSystem-certainty-rating.html#certainty-rating-upcode2">upcode2</a></td><td>increase rating: +2</td><td>increase quality rating by 2.</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-two-levels"/>
+  <version value="0.1.1"/>
+  <name value="RatingUpratingTwoLevels"/>
+  <title value="Rating Up Rating Two Levels"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Ratings for factors that might cause rating up the certainty"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/certainty-rating"/>
+      <concept>
+        <code value="no-change"/>
+        <display value="no change to rating"/>
+      </concept>
+      <concept>
+        <code value="upcode1"/>
+        <display value="increase rating: +1"/>
+      </concept>
+      <concept>
+        <code value="upcode2"/>
+        <display value="increase rating: +2"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

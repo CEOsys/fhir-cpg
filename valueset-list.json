@@ -1,0 +1,336 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-LOINC",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VS_MII_ICU_Code_Observation_Beatmung_LOINC",
+      "title" : "VS MII ICU Code Observation Beatmung [LOINC]",
+      "description" : "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung eingestellten oder gemessenen Parametern.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/ceosys-vs-recommendation-strength",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RecommendationStrength",
+      "title" : "Recommendation Strength",
+      "description" : "Strength of a clinical guideline recommendation.",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICO",
+      "title" : "Cochrane PICO",
+      "description" : "All codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-intervention",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICOIntervention",
+      "title" : "Cochrane PICO Intervention",
+      "description" : "All intervention codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-outcome",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICOOutcome",
+      "title" : "Cochrane PICO Outcome",
+      "description" : "All outcome codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-population",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "CochranePICOPopulation",
+      "title" : "Cochrane PICO Population",
+      "description" : "All population codes from the Cochrane PICO ontology.",
+      "systems" : ["http://data.cochrane.org/ontologies/pico/"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-combination-method",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "ActionCombinationMethod",
+      "title" : "Action Combination Method",
+      "description" : "Value set for the method used to combine actions in a PlanDefinition.",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-selection-behavior-required",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ActionSelectionBehaviorRequired",
+      "title" : "Action Selection Behavior Required",
+      "description" : "Action selection behavior with only codes that require at least one action to be performed.",
+      "systems" : ["http://hl7.org/fhir/action-selection-behavior"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-allergic-disposition-sct",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "AllergicDispositionSCT",
+      "title" : "Allergic Disposition SCT",
+      "description" : "Allergic Dispositions from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Assessment",
+      "title" : "Assessment",
+      "description" : "Assessments",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment-scales",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AssessmentScales",
+      "title" : "Assessment Scales",
+      "description" : "Codes for assessment scales (scores etc.)",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-body-positioning-snomed",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "BodyPositioningSNOMED",
+      "title" : "Body Positioning SNOMED CT",
+      "description" : "Body positioning procedure codes from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-drugs",
+      "version" : null,
+      "status" : "draft",
+      "name" : "Drugs",
+      "title" : "Drugs",
+      "description" : "Drugs",
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://www.whocc.no/atc",
+        "http://fhir.de/CodeSystem/bfarm/atc"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareType",
+      "title" : "Episode Of Care Type",
+      "description" : "Episode Of Care Type",
+      "systems" : ["http://fhir.de/CodeSystem/kontaktart-de"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-recommendation-status",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "GuidelineRecommendationStatus",
+      "title" : "Guideline Recommendation Status",
+      "description" : "Current status of a clinical practice guideline recommendation",
+      "systems" : ["http://hl7.org/fhir/cited-artifact-status-type"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-stage-classification",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "GuidelineStageClassification",
+      "title" : "Guideline Stage Classification",
+      "description" : "Stage classification according to systematics",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-mean-difference-type",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "MeanDifferenceType",
+      "title" : "Mean Difference Type",
+      "description" : "Mean difference types",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/statistic-type"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-observations",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "Observations",
+      "title" : "Observations",
+      "description" : "Observations are measurements of a patient's state of health. They are typically made by a healthcare professional, but can also be self-reported by the patient.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-procedures",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Procedures",
+      "title" : "Procedures",
+      "description" : "Procedures",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-radiologic-finding-sct",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RadiologicFindingSCT",
+      "title" : "Radiologic Finding SCT",
+      "description" : "Radiologic findings from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-acceptability",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingAcceptability",
+      "title" : "Rating Acceptability",
+      "description" : "Are the alternatives acceptable for the target population and its implementors?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-benefit-and-harms",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingBenefitAndHarms",
+      "title" : "Rating Benefit And Harms",
+      "description" : "Summary of most important benefits and harms",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-certainty-of-evidence",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingCertaintyofEvidence",
+      "title" : "Rating Certainty Of Evidence",
+      "description" : "Codes from EvidenceCertaintyRating related to certainty of evidence",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-clinical-importance",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingClinicalImportance",
+      "title" : "Clinical Importance of Outcome",
+      "description" : "Clinical Importance of Outcome",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-concern-degree",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingConcernDegree",
+      "title" : "Rating Concern Degree",
+      "description" : "Codes from EvidenceCertaintyRating related to degree of concern",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-consensus",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingConsensus",
+      "title" : "Rating Consensus",
+      "description" : "Degree of consensus reached",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/recommendation-strength"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-equity",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingEquity",
+      "title" : "Rating Equity",
+      "description" : "How do the different alternatives affect equity?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-feasibility",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingFeasibility",
+      "title" : "Rating Feasibility",
+      "description" : "How feasible will it be to implement the different alternatives? Any issues?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-preference-and-values",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingPreferenceAndValues",
+      "title" : "Rating Preference And Values",
+      "description" : "Typical patient preferences and values? Common issues or expected variability?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-resources",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingResources",
+      "title" : "Rating Resources",
+      "description" : "Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?",
+      "systems" : [
+        "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"
+      ]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-one-level",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingUpratingOneLevel",
+      "title" : "Rating Up Rating One Level",
+      "description" : "Ratings for factors that might cause rating up the certainty",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-two-levels",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RatingUpratingTwoLevels",
+      "title" : "Rating Up Rating Two Levels",
+      "description" : "Ratings for factors that might cause rating up the certainty",
+      "systems" : ["http://hl7.org/fhir/certainty-rating"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-relative-effect-type",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RelativeEffectType",
+      "title" : "Relative Effect Type",
+      "description" : "Relative effect types",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/statistic-type"]
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-substances-snomed",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "SubstancesSNOMED",
+      "title" : "Substances SNOMED CT",
+      "description" : "All substance codes from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

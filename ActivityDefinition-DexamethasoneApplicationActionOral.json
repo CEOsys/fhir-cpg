@@ -1,0 +1,86 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DexamethasoneApplicationActionOral",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DexamethasoneApplicationActionOral</b></p><a name=\"DexamethasoneApplicationActionOral\"> </a><a name=\"hcDexamethasoneApplicationActionOral\"> </a><a name=\"DexamethasoneApplicationActionOral-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-DexamethasoneApplicationActionOral.html\">ActivityDefinition DexamethasoneApplicationActionOral</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DexamethasoneApplicationActionOral</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Application of Dexamethasone: 6 mg once per day for 10 days (oral route)</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}\">Dexamethasone (substance)</span></p><blockquote><p><b>dosage</b></p><p><b>timing</b>: Count 10  times, Duration 10days , Once per 1 days</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>6 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>1 /d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/d = '/d')</span></td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-oral",
+  "version" : "1.0",
+  "name" : "DexamethasoneApplicationActionOral",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-10-21T14:50:59+00:00",
+  "publisher" : "CPGonEBMonFHIR",
+  "description" : "Application of Dexamethasone: 6 mg once per day for 10 days (oral route)",
+  "kind" : "MedicationRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "432102000",
+      "display" : "Administration of substance (procedure)"
+    }]
+  },
+  "productCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "372584003",
+      "display" : "Dexamethasone (substance)"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "code" : "C05AA09",
+      "display" : "Dexamethason"
+    }]
+  },
+  "dosage" : [{
+    "timing" : {
+      "repeat" : {
+        "count" : 10,
+        "duration" : 10,
+        "durationUnit" : "d",
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "26643006",
+        "display" : "Oral route"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 6,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "rateQuantity" : {
+        "value" : 1,
+        "unit" : "/d",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/d"
+      }
+    }]
+  }]
+}

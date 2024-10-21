@@ -1,0 +1,46 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-action-combination-method",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-action-combination-method</b></p><a name=\"vs-action-combination-method\"> </a><a name=\"hcvs-action-combination-method\"> </a><a name=\"vs-action-combination-method-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-action-combination-method.html\"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-combination-method",
+  "version" : "0.1.1",
+  "name" : "ActionCombinationMethod",
+  "title" : "Action Combination Method",
+  "status" : "draft",
+  "date" : "2024-02-16",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Value set for the method used to combine actions in a PlanDefinition.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"
+    }]
+  }
+}

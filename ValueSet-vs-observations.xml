@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-observations"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-observations</b></p><a name="vs-observations"> </a><a name="hcvs-observations"> </a><a name="vs-observations-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 363787002 (Observable entity)</li><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a> where CLASSTYPE  matches (by regex) Laboratory class|Clinical class and STATUS  = ACTIVE</li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/78030-4/">78030-4</a></td><td>Episode of care Type</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-observations"/>
+  <version value="0.1.1"/>
+  <name value="Observations"/>
+  <title value="Observations"/>
+  <status value="draft"/>
+  <date value="2024-05-14"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Observations are measurements of a patient's state of health. They are typically made by a healthcare professional, but can also be self-reported by the patient."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="363787002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="CLASSTYPE"/>
+        <op value="regex"/>
+        <value value="Laboratory class|Clinical class"/>
+      </filter>
+      <filter>
+        <property value="STATUS"/>
+        <op value="="/>
+        <value value="ACTIVE"/>
+      </filter>
+    </include>
+    <exclude>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="78030-4"/>
+        <display value="Episode of care Type"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

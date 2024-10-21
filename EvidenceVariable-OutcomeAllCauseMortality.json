@@ -1,0 +1,26 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "OutcomeAllCauseMortality",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable OutcomeAllCauseMortality</b></p><a name=\"OutcomeAllCauseMortality\"> </a><a name=\"hcOutcomeAllCauseMortality\"> </a><a name=\"OutcomeAllCauseMortality-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-OutcomeAllCauseMortality.html\">EvidenceVariable AllCauseMortality</a></p><p><b>name</b>: AllCauseMortality</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><h3>Characteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Exclude</b></td><td><b>DefinitionCodeableConcept</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td><td><span title=\"Codes:{http://snomed.info/sct 409651001}\">Mortality rate (observable entity)</span></td></tr></table><p><b>handling</b>: dichotomous variable</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/OutcomeAllCauseMortality",
+  "name" : "AllCauseMortality",
+  "status" : "active",
+  "date" : "2024-10-21T14:50:59+00:00",
+  "characteristic" : [{
+    "exclude" : false,
+    "definitionCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "409651001",
+        "display" : "Mortality rate (observable entity)"
+      }]
+    }
+  }],
+  "handling" : "dichotomous"
+}

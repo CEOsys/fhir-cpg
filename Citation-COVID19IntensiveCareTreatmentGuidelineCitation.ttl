@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/COVID19IntensiveCareTreatmentGuidelineCitation> a fhir:Citation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "COVID19IntensiveCareTreatmentGuidelineCitation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Citation COVID19IntensiveCareTreatmentGuidelineCitation</b></p><a name=\"COVID19IntensiveCareTreatmentGuidelineCitation\"> </a><a name=\"hcCOVID19IntensiveCareTreatmentGuidelineCitation\"> </a><a name=\"COVID19IntensiveCareTreatmentGuidelineCitation-en-US\"> </a><p><b>url</b>: <a href=\"Citation-COVID19IntensiveCareTreatmentGuidelineCitation.html\">Citation COVID19_Intensive_Care_Treatment_Guideline</a></p><p><b>name</b>: COVID19_Intensive_Care_Treatment_Guideline</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: <code>https://www.awmf.org/</code>/113-001</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>7.0</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type active}\">Active</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>S3-Leitlinie Stationäre Therapie von COVID-19 Patienten</p>\n</div></td></tr></table><h3>WebLocations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.awmf.org/leitlinien/detail/ll/113-001.html\">https://www.awmf.org/leitlinien/detail/ll/113-001.html</a></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/COVID19IntensiveCareTreatmentGuidelineCitation"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "COVID19_Intensive_Care_Treatment_Guideline"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:citedArtifact [
+     fhir:identifier ( [
+       fhir:system [ fhir:v "https://www.awmf.org/"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "113-001" ]
+     ] ) ;
+     fhir:version [
+       fhir:value [ fhir:v "7.0" ]
+     ] ;
+     fhir:currentState ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/cited-artifact-status-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active" ] ;
+         fhir:display [ fhir:v "Active" ]
+       ] )
+     ] ) ;
+     fhir:title ( [
+       fhir:text [ fhir:v "S3-Leitlinie Stationäre Therapie von COVID-19 Patienten" ]
+     ] ) ;
+     fhir:webLocation ( [
+       fhir:url [ fhir:v "https://www.awmf.org/leitlinien/detail/ll/113-001.html"^^xsd:anyURI ]
+     ] ) ;
+     fhir:classification ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/cited-artifact-classification-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "publication-type" ] ;
+           fhir:display [ fhir:v "Publication Type" ]
+         ] )
+       ] ;
+       fhir:classifier ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "clinical-practice-guideline" ] ;
+           fhir:display [ fhir:v "Clinical practice guideline" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

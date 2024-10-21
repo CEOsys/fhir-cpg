@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/OutcomeAllCauseMortality> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OutcomeAllCauseMortality"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable OutcomeAllCauseMortality</b></p><a name=\"OutcomeAllCauseMortality\"> </a><a name=\"hcOutcomeAllCauseMortality\"> </a><a name=\"OutcomeAllCauseMortality-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-OutcomeAllCauseMortality.html\">EvidenceVariable AllCauseMortality</a></p><p><b>name</b>: AllCauseMortality</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><h3>Characteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Exclude</b></td><td><b>DefinitionCodeableConcept</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td><td><span title=\"Codes:{http://snomed.info/sct 409651001}\">Mortality rate (observable entity)</span></td></tr></table><p><b>handling</b>: dichotomous variable</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/OutcomeAllCauseMortality"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "AllCauseMortality"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:characteristic ( [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionCodeableConcept [
+       fhir:coding ( [
+         a sct:409651001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "409651001" ] ;
+         fhir:display [ fhir:v "Mortality rate (observable entity)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:handling [ fhir:v "dichotomous"] . # 
+
+# -------------------------------------------------------------------------------------
+

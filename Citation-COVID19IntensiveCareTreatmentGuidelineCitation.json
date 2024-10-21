@@ -1,0 +1,53 @@
+{
+  "resourceType" : "Citation",
+  "id" : "COVID19IntensiveCareTreatmentGuidelineCitation",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Citation COVID19IntensiveCareTreatmentGuidelineCitation</b></p><a name=\"COVID19IntensiveCareTreatmentGuidelineCitation\"> </a><a name=\"hcCOVID19IntensiveCareTreatmentGuidelineCitation\"> </a><a name=\"COVID19IntensiveCareTreatmentGuidelineCitation-en-US\"> </a><p><b>url</b>: <a href=\"Citation-COVID19IntensiveCareTreatmentGuidelineCitation.html\">Citation COVID19_Intensive_Care_Treatment_Guideline</a></p><p><b>name</b>: COVID19_Intensive_Care_Treatment_Guideline</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: <code>https://www.awmf.org/</code>/113-001</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>7.0</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type active}\">Active</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>S3-Leitlinie Stationäre Therapie von COVID-19 Patienten</p>\n</div></td></tr></table><h3>WebLocations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.awmf.org/leitlinien/detail/ll/113-001.html\">https://www.awmf.org/leitlinien/detail/ll/113-001.html</a></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/COVID19IntensiveCareTreatmentGuidelineCitation",
+  "name" : "COVID19_Intensive_Care_Treatment_Guideline",
+  "status" : "active",
+  "date" : "2024-10-21T14:50:59+00:00",
+  "citedArtifact" : {
+    "identifier" : [{
+      "system" : "https://www.awmf.org/",
+      "value" : "113-001"
+    }],
+    "version" : {
+      "value" : "7.0"
+    },
+    "currentState" : [{
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+        "code" : "active",
+        "display" : "Active"
+      }]
+    }],
+    "title" : [{
+      "text" : "S3-Leitlinie Stationäre Therapie von COVID-19 Patienten"
+    }],
+    "webLocation" : [{
+      "url" : "https://www.awmf.org/leitlinien/detail/ll/113-001.html"
+    }],
+    "classification" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+          "code" : "publication-type",
+          "display" : "Publication Type"
+        }]
+      },
+      "classifier" : [{
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+          "code" : "clinical-practice-guideline",
+          "display" : "Clinical practice guideline"
+        }]
+      }]
+    }]
+  }
+}

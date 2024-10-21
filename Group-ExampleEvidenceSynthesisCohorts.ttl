@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/ExampleEvidenceSynthesisCohorts> a fhir:Group ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleEvidenceSynthesisCohorts"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group ExampleEvidenceSynthesisCohorts</b></p><a name=\"ExampleEvidenceSynthesisCohorts\"> </a><a name=\"hcExampleEvidenceSynthesisCohorts\"> </a><a name=\"ExampleEvidenceSynthesisCohorts-en-US\"> </a><p><b>type</b>: Person</p><p><b>membership</b>: Definitional</p><p><b>quantity</b>: 20</p><h3>Members</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Entity</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Group-ExampleStudyCohort.html\">Group: type = person; membership = definitional; quantity = 20</a></td></tr></table></div>"
+  ] ; # 
+  fhir:type [ fhir:v "person"] ; # 
+  fhir:membership [ fhir:v "definitional"] ; # 
+  fhir:quantity [ fhir:v "20"^^xsd:nonNegativeInteger] ; # 
+  fhir:member ( [
+     fhir:entity [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/ExampleStudyCohort> ;
+       fhir:reference [ fhir:v "Group/ExampleStudyCohort" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

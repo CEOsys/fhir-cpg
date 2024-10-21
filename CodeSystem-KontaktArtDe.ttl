@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/KontaktArtDe> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KontaktArtDe"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KontaktArtDe</b></p><a name=\"KontaktArtDe\"> </a><a name=\"hcKontaktArtDe\"> </a><a name=\"KontaktArtDe-en-US\"> </a><p>This case-sensitive code system <code>http://fhir.de/CodeSystem/kontaktart-de</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">begleitperson<a name=\"KontaktArtDe-begleitperson\"> </a></td><td>Begleitperson</td><td>Begleitperson definiert nach § 11 Abs. 3 SGB V</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">vorstationaer<a name=\"KontaktArtDe-vorstationaer\"> </a></td><td>Vorstationär</td><td>Vorstationärer Kontakt nach § 115 a SGB V</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">nachstationaer<a name=\"KontaktArtDe-nachstationaer\"> </a></td><td>Nachstationär</td><td>Nachstationärer Kontakt nach § 115 a SGB V</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">teilstationaer<a name=\"KontaktArtDe-teilstationaer\"> </a></td><td>Teilstationäre Behandlung</td><td>Eine teilstationäre Behandlung unterscheidet sich im Wesentlichen von einer vollstationären Behandlung durch eine regelmäßige, aber nicht zeitlich durchgehende Anwesenheit der Patientin oder des Patienten im Krankenhaus. Im Rahmen der teilstationären Behandlung kann Unterkunft und Verpflegung gewährt werden.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tagesklinik<a name=\"KontaktArtDe-tagesklinik\"> </a></td><td>Tagesklinische Behandlung</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  nachtklinik<a name=\"KontaktArtDe-nachtklinik\"> </a></td><td>Behandlung in einer Nachtklinik</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">normalstationaer<a name=\"KontaktArtDe-normalstationaer\"> </a></td><td>Normalstationär</td><td>Stationärer Aufenthalt in Abgrenzung zu Intensivstationär</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intensivstationaer<a name=\"KontaktArtDe-intensivstationaer\"> </a></td><td>Intensivstationär</td><td>Intensivstationäre Kontakte sind Kontakte mit einer Station, die zur intensivmedizinischen Behandlung im Krankenhausplan bzw. Förderungsbescheid zugelassen sind</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ub<a name=\"KontaktArtDe-ub\"> </a></td><td>Untersuchung und Behandlung</td><td>Aufenthalt auf einer Funktionsabteilung zur Durchführung spezieller diagnostischer/therapeutischer Maßnahmen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">konsil<a name=\"KontaktArtDe-konsil\"> </a></td><td>Konsil</td><td>Arztkontakte im Rahmen z.B. von Aufklärungsgesprächen, Visiten etc.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stationsaequivalent<a name=\"KontaktArtDe-stationsaequivalent\"> </a></td><td>Stationsäquivalent</td><td>Psychiatrische Krankenhäuser mit regionaler Versorgungsverpflichtung sowie Allgemeinkrankenhäuser mit selbständigen, fachärztlich geleiteten psychiatrischen Abteilungen mit regionaler Versorgungsverpflichtung können in medizinisch geeigneten Fällen, wenn eine Indikation für eine stationäre psychiatrische Behandlung vorliegt, anstelle einer vollstationären Behandlung eine stationsäquivalente psychiatrische Behandlung im häuslichen Umfeld erbringen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">operation<a name=\"KontaktArtDe-operation\"> </a></td><td>Operation</td><td>Aufenthalt in OP-Bereichen zur Durchführung von operativen Eingriffen inklusive Vor- und Nachbereitung</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.de/CodeSystem/kontaktart-de"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.5.0-ballot"] ; # 
+  fhir:name [ fhir:v "KontaktArtDe"] ; # 
+  fhir:title [ fhir:v "KontaktArtDe"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Deutschland e.V. (Technisches Komitee FHIR)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.de/technische-komitees/fhir/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Klassifizierung eines Kontaktes mit einer Gesundheitseinrichtung"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.de/ValueSet/kontaktart-de"^^xsd:anyURI ;
+     fhir:link <http://fhir.de/ValueSet/kontaktart-de>
+  ] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "begleitperson" ] ;
+     fhir:display [ fhir:v "Begleitperson" ] ;
+     fhir:definition [ fhir:v "Begleitperson definiert nach § 11 Abs. 3 SGB V" ]
+  ] [
+     fhir:code [ fhir:v "vorstationaer" ] ;
+     fhir:display [ fhir:v "Vorstationär" ] ;
+     fhir:definition [ fhir:v "Vorstationärer Kontakt nach § 115 a SGB V" ]
+  ] [
+     fhir:code [ fhir:v "nachstationaer" ] ;
+     fhir:display [ fhir:v "Nachstationär" ] ;
+     fhir:definition [ fhir:v "Nachstationärer Kontakt nach § 115 a SGB V" ]
+  ] [
+     fhir:code [ fhir:v "teilstationaer" ] ;
+     fhir:display [ fhir:v "Teilstationäre Behandlung" ] ;
+     fhir:definition [ fhir:v "Eine teilstationäre Behandlung unterscheidet sich im Wesentlichen von einer vollstationären Behandlung durch eine regelmäßige, aber nicht zeitlich durchgehende Anwesenheit der Patientin oder des Patienten im Krankenhaus. Im Rahmen der teilstationären Behandlung kann Unterkunft und Verpflegung gewährt werden." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "tagesklinik" ] ;
+       fhir:display [ fhir:v "Tagesklinische Behandlung" ]
+     ] [
+       fhir:code [ fhir:v "nachtklinik" ] ;
+       fhir:display [ fhir:v "Behandlung in einer Nachtklinik" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "normalstationaer" ] ;
+     fhir:display [ fhir:v "Normalstationär" ] ;
+     fhir:definition [ fhir:v "Stationärer Aufenthalt in Abgrenzung zu Intensivstationär" ]
+  ] [
+     fhir:code [ fhir:v "intensivstationaer" ] ;
+     fhir:display [ fhir:v "Intensivstationär" ] ;
+     fhir:definition [ fhir:v "Intensivstationäre Kontakte sind Kontakte mit einer Station, die zur intensivmedizinischen Behandlung im Krankenhausplan bzw. Förderungsbescheid zugelassen sind" ]
+  ] [
+     fhir:code [ fhir:v "ub" ] ;
+     fhir:display [ fhir:v "Untersuchung und Behandlung" ] ;
+     fhir:definition [ fhir:v "Aufenthalt auf einer Funktionsabteilung zur Durchführung spezieller diagnostischer/therapeutischer Maßnahmen" ]
+  ] [
+     fhir:code [ fhir:v "konsil" ] ;
+     fhir:display [ fhir:v "Konsil" ] ;
+     fhir:definition [ fhir:v "Arztkontakte im Rahmen z.B. von Aufklärungsgesprächen, Visiten etc." ]
+  ] [
+     fhir:code [ fhir:v "stationsaequivalent" ] ;
+     fhir:display [ fhir:v "Stationsäquivalent" ] ;
+     fhir:definition [ fhir:v "Psychiatrische Krankenhäuser mit regionaler Versorgungsverpflichtung sowie Allgemeinkrankenhäuser mit selbständigen, fachärztlich geleiteten psychiatrischen Abteilungen mit regionaler Versorgungsverpflichtung können in medizinisch geeigneten Fällen, wenn eine Indikation für eine stationäre psychiatrische Behandlung vorliegt, anstelle einer vollstationären Behandlung eine stationsäquivalente psychiatrische Behandlung im häuslichen Umfeld erbringen" ]
+  ] [
+     fhir:code [ fhir:v "operation" ] ;
+     fhir:display [ fhir:v "Operation" ] ;
+     fhir:definition [ fhir:v "Aufenthalt in OP-Bereichen zur Durchführung von operativen Eingriffen inklusive Vor- und Nachbereitung" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-rating-clinical-importance"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-rating-clinical-importance</b></p><a name="vs-rating-clinical-importance"> </a><a name="hcvs-rating-clinical-importance"> </a><a name="vs-rating-clinical-importance-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-cs-clinical-importance.html"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance</code></a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-clinical-importance"/>
+  <version value="0.1.1"/>
+  <name value="RatingClinicalImportance"/>
+  <title value="Clinical Importance of Outcome"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Clinical Importance of Outcome"/>
+  <compose>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance"/>
+    </include>
+  </compose>
+</ValueSet>

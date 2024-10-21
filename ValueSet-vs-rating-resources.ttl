@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-resources> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-rating-resources"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-rating-resources</b></p><a name=\"vs-rating-resources\"> </a><a name=\"hcvs-rating-resources\"> </a><a name=\"vs-rating-resources-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html\"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-factor-not-considered\">factor-not-considered</a></td><td>Factor not considered</td><td>Factor not considered</td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-important-issues-or-not-investigated\">important-issues-or-not-investigated</a></td><td>Important issues</td><td>Important issues, or potential issues not investigated</td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-no-important-issues\">no-important-issues</a></td><td>No important issues</td><td>No important issues with the recommended alternative</td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-important-negative-issues\">important-negative-issues</a></td><td>Important negative issues</td><td>Important negative issues</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-resources"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "RatingResources"] ; # 
+  fhir:title [ fhir:v "Rating Resources"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "factor-not-considered" ] ;
+         fhir:display [ fhir:v "Factor not considered" ]
+       ] [
+         fhir:code [ fhir:v "important-issues-or-not-investigated" ] ;
+         fhir:display [ fhir:v "Important issues" ]
+       ] [
+         fhir:code [ fhir:v "no-important-issues" ] ;
+         fhir:display [ fhir:v "No important issues" ]
+       ] [
+         fhir:code [ fhir:v "important-negative-issues" ] ;
+         fhir:display [ fhir:v "Important negative issues" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

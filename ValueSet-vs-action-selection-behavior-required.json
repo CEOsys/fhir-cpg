@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-action-selection-behavior-required",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-action-selection-behavior-required</b></p><a name=\"vs-action-selection-behavior-required\"> </a><a name=\"hcvs-action-selection-behavior-required\"> </a><a name=\"vs-action-selection-behavior-required-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html\"><code>http://hl7.org/fhir/action-selection-behavior</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-all\">all</a></td><td>All</td><td>All the actions in the group must be selected as a single unit.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-exactly-one\">exactly-one</a></td><td>Exactly One</td><td>The end user must choose one and only one of the selectable actions in the group. The user SHALL NOT choose none of the actions in the group.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-at-most-one\">at-most-one</a></td><td>At Most One</td><td>The end user may choose zero or at most one of the actions in the group.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-one-or-more\">one-or-more</a></td><td>One or More</td><td>The end user must choose a minimum of one, and as many additional as desired.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-selection-behavior-required",
+  "version" : "0.1.0",
+  "name" : "ActionSelectionBehaviorRequired",
+  "title" : "Action Selection Behavior Required",
+  "status" : "draft",
+  "date" : "2022-11-28",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Action selection behavior with only codes that require at least one action to be performed.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/action-selection-behavior",
+      "concept" : [{
+        "code" : "all",
+        "display" : "All"
+      },
+      {
+        "code" : "exactly-one",
+        "display" : "Exactly One"
+      },
+      {
+        "code" : "at-most-one",
+        "display" : "At Most One"
+      },
+      {
+        "code" : "one-or-more",
+        "display" : "One or More"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "COVID19NonVentilatedPatientsDexamethasoneApplicationPlan"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition COVID19NonVentilatedPatientsDexamethasoneApplicationPlan</b></p><a name=\"COVID19NonVentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"hcCOVID19NonVentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"COVID19NonVentilatedPatientsDexamethasoneApplicationPlan-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-COVID19DexamethasoneApplication.html\">Dexamethasone Application</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}\">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-COVID19NonVentilatedPatientsDexamethasoneApplicationPlan.html\">PlanDefinition No Dexamethasone Application for non-ventilated COVID-19 patients</a></p><p><b>version</b>: 4.0</p><p><b>name</b>: No_Dexamethasone_Application</p><p><b>title</b>: No Dexamethasone Application for non-ventilated COVID-19 patients</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationCOVID19NonVentilated.html\">Population_COVID19_NonVentilated</a></p><p><b>date</b>: 2021-12-12</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>No Dexamethasone Application for non-ventilated COVID19 patients</p>\n</div><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></td><td><a href=\"Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html\">NoDexamethasoneApplicationActivity</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "exactly" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "threshold"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-non-ventilated-patients-no-dexamethasone-application-plan"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "4.0"] ; # 
+  fhir:name [ fhir:v "No_Dexamethasone_Application"] ; # 
+  fhir:title [ fhir:v "No Dexamethasone Application for non-ventilated COVID-19 patients"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_NonVentilated"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_NonVentilated>
+  ] ; # 
+  fhir:date [ fhir:v "2021-12-12"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "CPGonEBMonFHIR"] ; # 
+  fhir:description [ fhir:v "No Dexamethasone Application for non-ventilated COVID19 patients"] ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:432102000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "432102000" ] ;
+         fhir:display [ fhir:v "Administration of substance (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-dexamethasone-application"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-dexamethasone-application>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

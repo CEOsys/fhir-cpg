@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "COVID19VentilatedPatientsDexamethasoneApplicationPlan"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition COVID19VentilatedPatientsDexamethasoneApplicationPlan</b></p><a name=\"COVID19VentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"hcCOVID19VentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"COVID19VentilatedPatientsDexamethasoneApplicationPlan-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-COVID19DexamethasoneApplication.html\">Dexamethasone Application</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}\">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-COVID19VentilatedPatientsDexamethasoneApplicationPlan.html\">PlanDefinition Dexamethasone Application in ventilated COVID-19 patients</a></p><p><b>version</b>: 4.0</p><p><b>name</b>: Dexamethasone_Application</p><p><b>title</b>: Dexamethasone Application in ventilated COVID-19 patients</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationCOVID19Ventilated.html\">Population_COVID19_Ventilated</a></p><p><b>date</b>: 2021-12-12</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients</p>\n</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href=\"Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html\">DexamethasoneApplicationActionOral</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href=\"Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html\">DexamethasoneApplicationActionIntravenous</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "exactly" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "threshold"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-ventilated-patients-dexamethasone-application-plan"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "4.0"] ; # 
+  fhir:name [ fhir:v "Dexamethasone_Application"] ; # 
+  fhir:title [ fhir:v "Dexamethasone Application in ventilated COVID-19 patients"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_Ventilated"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_Ventilated>
+  ] ; # 
+  fhir:date [ fhir:v "2021-12-12"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "CPGonEBMonFHIR"] ; # 
+  fhir:description [ fhir:v "Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients"] ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:432102000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "432102000" ] ;
+         fhir:display [ fhir:v "Administration of substance (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-oral"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-oral>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:432102000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "432102000" ] ;
+         fhir:display [ fhir:v "Administration of substance (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-intravenous"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-intravenous>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-rating-certainty-of-evidence",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-rating-certainty-of-evidence</b></p><a name=\"vs-rating-certainty-of-evidence\"> </a><a name=\"hcvs-rating-certainty-of-evidence\"> </a><a name=\"vs-rating-certainty-of-evidence-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-certainty-rating.html\"><code>http://hl7.org/fhir/certainty-rating</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-high\">high</a></td><td>High quality</td><td>High quality evidence.</td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-moderate\">moderate</a></td><td>Moderate quality</td><td>Moderate quality evidence.</td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-low\">low</a></td><td>Low quality</td><td>Low quality evidence.</td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-very-low\">very-low</a></td><td>Very low quality</td><td>Very low quality evidence.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-certainty-of-evidence",
+  "version" : "0.1.1",
+  "name" : "RatingCertaintyofEvidence",
+  "title" : "Rating Certainty Of Evidence",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Codes from EvidenceCertaintyRating related to certainty of evidence",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/certainty-rating",
+      "concept" : [{
+        "code" : "high",
+        "display" : "High quality"
+      },
+      {
+        "code" : "moderate",
+        "display" : "Moderate quality"
+      },
+      {
+        "code" : "low",
+        "display" : "Low quality"
+      },
+      {
+        "code" : "very-low",
+        "display" : "Very low quality"
+      }]
+    }]
+  }
+}

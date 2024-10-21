@@ -1,0 +1,90 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KontaktArtDe",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KontaktArtDe</b></p><a name=\"KontaktArtDe\"> </a><a name=\"hcKontaktArtDe\"> </a><a name=\"KontaktArtDe-en-US\"> </a><p>This case-sensitive code system <code>http://fhir.de/CodeSystem/kontaktart-de</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">begleitperson<a name=\"KontaktArtDe-begleitperson\"> </a></td><td>Begleitperson</td><td>Begleitperson definiert nach § 11 Abs. 3 SGB V</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">vorstationaer<a name=\"KontaktArtDe-vorstationaer\"> </a></td><td>Vorstationär</td><td>Vorstationärer Kontakt nach § 115 a SGB V</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">nachstationaer<a name=\"KontaktArtDe-nachstationaer\"> </a></td><td>Nachstationär</td><td>Nachstationärer Kontakt nach § 115 a SGB V</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">teilstationaer<a name=\"KontaktArtDe-teilstationaer\"> </a></td><td>Teilstationäre Behandlung</td><td>Eine teilstationäre Behandlung unterscheidet sich im Wesentlichen von einer vollstationären Behandlung durch eine regelmäßige, aber nicht zeitlich durchgehende Anwesenheit der Patientin oder des Patienten im Krankenhaus. Im Rahmen der teilstationären Behandlung kann Unterkunft und Verpflegung gewährt werden.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0tagesklinik<a name=\"KontaktArtDe-tagesklinik\"> </a></td><td>Tagesklinische Behandlung</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0nachtklinik<a name=\"KontaktArtDe-nachtklinik\"> </a></td><td>Behandlung in einer Nachtklinik</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">normalstationaer<a name=\"KontaktArtDe-normalstationaer\"> </a></td><td>Normalstationär</td><td>Stationärer Aufenthalt in Abgrenzung zu Intensivstationär</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">intensivstationaer<a name=\"KontaktArtDe-intensivstationaer\"> </a></td><td>Intensivstationär</td><td>Intensivstationäre Kontakte sind Kontakte mit einer Station, die zur intensivmedizinischen Behandlung im Krankenhausplan bzw. Förderungsbescheid zugelassen sind</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ub<a name=\"KontaktArtDe-ub\"> </a></td><td>Untersuchung und Behandlung</td><td>Aufenthalt auf einer Funktionsabteilung zur Durchführung spezieller diagnostischer/therapeutischer Maßnahmen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">konsil<a name=\"KontaktArtDe-konsil\"> </a></td><td>Konsil</td><td>Arztkontakte im Rahmen z.B. von Aufklärungsgesprächen, Visiten etc.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">stationsaequivalent<a name=\"KontaktArtDe-stationsaequivalent\"> </a></td><td>Stationsäquivalent</td><td>Psychiatrische Krankenhäuser mit regionaler Versorgungsverpflichtung sowie Allgemeinkrankenhäuser mit selbständigen, fachärztlich geleiteten psychiatrischen Abteilungen mit regionaler Versorgungsverpflichtung können in medizinisch geeigneten Fällen, wenn eine Indikation für eine stationäre psychiatrische Behandlung vorliegt, anstelle einer vollstationären Behandlung eine stationsäquivalente psychiatrische Behandlung im häuslichen Umfeld erbringen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">operation<a name=\"KontaktArtDe-operation\"> </a></td><td>Operation</td><td>Aufenthalt in OP-Bereichen zur Durchführung von operativen Eingriffen inklusive Vor- und Nachbereitung</td></tr></table></div>"
+  },
+  "url" : "http://fhir.de/CodeSystem/kontaktart-de",
+  "version" : "1.5.0-ballot",
+  "name" : "KontaktArtDe",
+  "title" : "KontaktArtDe",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-11-30",
+  "publisher" : "HL7 Deutschland e.V. (Technisches Komitee FHIR)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.de/technische-komitees/fhir/"
+    }]
+  }],
+  "description" : "Klassifizierung eines Kontaktes mit einer Gesundheitseinrichtung",
+  "caseSensitive" : true,
+  "valueSet" : "http://fhir.de/ValueSet/kontaktart-de",
+  "hierarchyMeaning" : "is-a",
+  "compositional" : false,
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "begleitperson",
+    "display" : "Begleitperson",
+    "definition" : "Begleitperson definiert nach § 11 Abs. 3 SGB V"
+  },
+  {
+    "code" : "vorstationaer",
+    "display" : "Vorstationär",
+    "definition" : "Vorstationärer Kontakt nach § 115 a SGB V"
+  },
+  {
+    "code" : "nachstationaer",
+    "display" : "Nachstationär",
+    "definition" : "Nachstationärer Kontakt nach § 115 a SGB V"
+  },
+  {
+    "code" : "teilstationaer",
+    "display" : "Teilstationäre Behandlung",
+    "definition" : "Eine teilstationäre Behandlung unterscheidet sich im Wesentlichen von einer vollstationären Behandlung durch eine regelmäßige, aber nicht zeitlich durchgehende Anwesenheit der Patientin oder des Patienten im Krankenhaus. Im Rahmen der teilstationären Behandlung kann Unterkunft und Verpflegung gewährt werden.",
+    "concept" : [{
+      "code" : "tagesklinik",
+      "display" : "Tagesklinische Behandlung"
+    },
+    {
+      "code" : "nachtklinik",
+      "display" : "Behandlung in einer Nachtklinik"
+    }]
+  },
+  {
+    "code" : "normalstationaer",
+    "display" : "Normalstationär",
+    "definition" : "Stationärer Aufenthalt in Abgrenzung zu Intensivstationär"
+  },
+  {
+    "code" : "intensivstationaer",
+    "display" : "Intensivstationär",
+    "definition" : "Intensivstationäre Kontakte sind Kontakte mit einer Station, die zur intensivmedizinischen Behandlung im Krankenhausplan bzw. Förderungsbescheid zugelassen sind"
+  },
+  {
+    "code" : "ub",
+    "display" : "Untersuchung und Behandlung",
+    "definition" : "Aufenthalt auf einer Funktionsabteilung zur Durchführung spezieller diagnostischer/therapeutischer Maßnahmen"
+  },
+  {
+    "code" : "konsil",
+    "display" : "Konsil",
+    "definition" : "Arztkontakte im Rahmen z.B. von Aufklärungsgesprächen, Visiten etc."
+  },
+  {
+    "code" : "stationsaequivalent",
+    "display" : "Stationsäquivalent",
+    "definition" : "Psychiatrische Krankenhäuser mit regionaler Versorgungsverpflichtung sowie Allgemeinkrankenhäuser mit selbständigen, fachärztlich geleiteten psychiatrischen Abteilungen mit regionaler Versorgungsverpflichtung können in medizinisch geeigneten Fällen, wenn eine Indikation für eine stationäre psychiatrische Behandlung vorliegt, anstelle einer vollstationären Behandlung eine stationsäquivalente psychiatrische Behandlung im häuslichen Umfeld erbringen"
+  },
+  {
+    "code" : "operation",
+    "display" : "Operation",
+    "definition" : "Aufenthalt in OP-Bereichen zur Durchführung von operativen Eingriffen inklusive Vor- und Nachbereitung"
+  }]
+}

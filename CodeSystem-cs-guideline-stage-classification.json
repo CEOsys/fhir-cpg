@@ -1,0 +1,63 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-guideline-stage-classification",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-guideline-stage-classification</b></p><a name=\"cs-guideline-stage-classification\"> </a><a name=\"hccs-guideline-stage-classification\"> </a><a name=\"cs-guideline-stage-classification-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">S3<a name=\"cs-guideline-stage-classification-S3\"> </a></td><td>Evidence- and consensus-based guideline</td><td>Representative panel, Systematic search, selection, evaluation of literature, Structured consensus building.</td></tr><tr><td style=\"white-space:nowrap\">S2e<a name=\"cs-guideline-stage-classification-S2e\"> </a></td><td>Evidence-based Guideline</td><td>Systematic search, selection, evaluation of literature</td></tr><tr><td style=\"white-space:nowrap\">S2k<a name=\"cs-guideline-stage-classification-S2k\"> </a></td><td>Consensus-based Guideline</td><td>Representative body, structured consensus building</td></tr><tr><td style=\"white-space:nowrap\">S1<a name=\"cs-guideline-stage-classification-S1\"> </a></td><td>Action recommendations from expert groups</td><td>Consensus building in an informal process</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification",
+  "version" : "0.1.1",
+  "name" : "GuidelineStageClassification",
+  "title" : "Guideline Stage Classification",
+  "status" : "active",
+  "date" : "2022-09-06",
+  "publisher" : "Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "As part of the project planning for the creation or updating of a guideline,\n    a decision should be made at an early stage about the planned level classification (\"S classification\") according to the AWMF's system of rules (1-3).\n    The S-classification scheme of the AWMF differentiates between the classes S1 treatment recommendation as well as S2e, S2k and S3 guideline.\n    The \"S\" stands for the extent of the applied systematic approach in the development process of a guideline.\n    Each class thus stands for a specific methodological concept that must be presented in a way that is comprehensible to the users.\n    The choice of class is based on the question of how much effort is appropriate and feasible.\n    The need for legitimacy for the implementation of the guideline (convincing the target group) must be taken into account.\n    When choosing a higher S-classification in the context of updating a guideline, the adaptation to the corresponding methodology has to be considered.",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "S3",
+    "display" : "Evidence- and consensus-based guideline",
+    "definition" : "Representative panel, Systematic search, selection, evaluation of literature, Structured consensus building."
+  },
+  {
+    "code" : "S2e",
+    "display" : "Evidence-based Guideline",
+    "definition" : "Systematic search, selection, evaluation of literature"
+  },
+  {
+    "code" : "S2k",
+    "display" : "Consensus-based Guideline",
+    "definition" : "Representative body, structured consensus building"
+  },
+  {
+    "code" : "S1",
+    "display" : "Action recommendations from expert groups",
+    "definition" : "Consensus building in an informal process"
+  }]
+}

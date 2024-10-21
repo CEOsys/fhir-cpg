@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-clinical-importance"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-clinical-importance</b></p><a name="cs-clinical-importance"> </a><a name="hccs-clinical-importance"> </a><a name="cs-clinical-importance-en-US"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance</code> defines the following codes in an undefined hierarchy:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style="white-space:nowrap">not-important<a name="cs-clinical-importance-not-important"> </a></td><td>Low importance for decision making</td></tr><tr><td>2</td><td style="white-space:nowrap">  1<a name="cs-clinical-importance-1"> </a></td><td>Not important</td></tr><tr><td>2</td><td style="white-space:nowrap">  2<a name="cs-clinical-importance-2"> </a></td><td>Not important</td></tr><tr><td>2</td><td style="white-space:nowrap">  3<a name="cs-clinical-importance-3"> </a></td><td>Not important</td></tr><tr><td>1</td><td style="white-space:nowrap">important<a name="cs-clinical-importance-important"> </a></td><td>Important, but not critical for decision making</td></tr><tr><td>2</td><td style="white-space:nowrap">  4<a name="cs-clinical-importance-4"> </a></td><td>Important</td></tr><tr><td>2</td><td style="white-space:nowrap">  5<a name="cs-clinical-importance-5"> </a></td><td>Important</td></tr><tr><td>2</td><td style="white-space:nowrap">  6<a name="cs-clinical-importance-6"> </a></td><td>Important</td></tr><tr><td>1</td><td style="white-space:nowrap">critical<a name="cs-clinical-importance-critical"> </a></td><td>Critical for decision making</td></tr><tr><td>2</td><td style="white-space:nowrap">  7<a name="cs-clinical-importance-7"> </a></td><td>Critical</td></tr><tr><td>2</td><td style="white-space:nowrap">  8<a name="cs-clinical-importance-8"> </a></td><td>Critical</td></tr><tr><td>2</td><td style="white-space:nowrap">  9<a name="cs-clinical-importance-9"> </a></td><td>Critical</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance"/>
+  <version value="0.1.1"/>
+  <name value="ClinicalImportance"/>
+  <title value="Clinical Importance of Outcome"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Clinical Importance of Outcome"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="not-important"/>
+    <display value="Low importance for decision making"/>
+    <concept>
+      <code value="1"/>
+      <display value="Not important"/>
+    </concept>
+    <concept>
+      <code value="2"/>
+      <display value="Not important"/>
+    </concept>
+    <concept>
+      <code value="3"/>
+      <display value="Not important"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="important"/>
+    <display value="Important, but not critical for decision making"/>
+    <concept>
+      <code value="4"/>
+      <display value="Important"/>
+    </concept>
+    <concept>
+      <code value="5"/>
+      <display value="Important"/>
+    </concept>
+    <concept>
+      <code value="6"/>
+      <display value="Important"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="critical"/>
+    <display value="Critical for decision making"/>
+    <concept>
+      <code value="7"/>
+      <display value="Critical"/>
+    </concept>
+    <concept>
+      <code value="8"/>
+      <display value="Critical"/>
+    </concept>
+    <concept>
+      <code value="9"/>
+      <display value="Critical"/>
+    </concept>
+  </concept>
+</CodeSystem>

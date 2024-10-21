@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cochrane-core-ontology"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cochrane-core-ontology</b></p><a name="cochrane-core-ontology"> </a><a name="hccochrane-core-ontology"> </a><a name="cochrane-core-ontology-en-US"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>parent</td><td>parent</td><td>code</td><td>Parent codes.</td></tr><tr><td>imported</td><td>imported</td><td>boolean</td><td>Indicates if the concept is imported from another code system.</td></tr><tr><td>root</td><td>root</td><td>boolean</td><td>Indicates if this concept is a root concept (i.e. Thing is equivalent or a direct parent)</td></tr><tr><td>deprecated</td><td>deprecated</td><td>boolean</td><td>Indicates if this concept is deprecated.</td></tr></table><p><b>Filters</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Description</b></td><td><b>Op</b></td><td><b>Value</b></td></tr><tr><td>root</td><td/><td>= </td><td>True or false.</td></tr><tr><td>deprecated</td><td/><td>= </td><td>True or false.</td></tr><tr><td>imported</td><td/><td>= </td><td>True or false</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>http://data.cochrane.org/ontologies/core/</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>parent</b></td><td><b>imported</b></td><td><b>root</b></td><td><b>deprecated</b></td></tr><tr><td style="white-space:nowrap">Concept<a name="cochrane-core-ontology-Concept"> </a></td><td><a href="#cochrane-core-ontology-Thing">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Condition<a name="cochrane-core-ontology-Condition"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">DrugCategory<a name="cochrane-core-ontology-DrugCategory"> </a></td><td><a href="#cochrane-core-ontology-InterventionCategory">InterventionCategory</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">InterventionProvider<a name="cochrane-core-ontology-InterventionProvider"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">ProcedureCategory<a name="cochrane-core-ontology-ProcedureCategory"> </a></td><td><a href="#cochrane-core-ontology-InterventionCategory">InterventionCategory</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">SpecificMetric<a name="cochrane-core-ontology-SpecificMetric"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Material<a name="cochrane-core-ontology-Material"> </a></td><td><a href="#cochrane-core-ontology-AppliedIntervention">AppliedIntervention</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Thing<a name="cochrane-core-ontology-Thing"> </a></td><td/><td>false</td><td>true</td><td>false</td></tr><tr><td style="white-space:nowrap">InterventionRationale<a name="cochrane-core-ontology-InterventionRationale"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Drug<a name="cochrane-core-ontology-Drug"> </a></td><td><a href="#cochrane-core-ontology-Material">Material</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Age<a name="cochrane-core-ontology-Age"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">AppliedIntervention<a name="cochrane-core-ontology-AppliedIntervention"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">ConceptScheme<a name="cochrane-core-ontology-ConceptScheme"> </a></td><td><a href="#cochrane-core-ontology-Thing">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">OutcomeClassification<a name="cochrane-core-ontology-OutcomeClassification"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">AssessmentScale<a name="cochrane-core-ontology-AssessmentScale"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">DeviceCategory<a name="cochrane-core-ontology-DeviceCategory"> </a></td><td><a href="#cochrane-core-ontology-InterventionCategory">InterventionCategory</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">InterventionCategory<a name="cochrane-core-ontology-InterventionCategory"> </a></td><td><a href="#cochrane-core-ontology-AppliedIntervention">AppliedIntervention</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">ModeOfDelivery<a name="cochrane-core-ontology-ModeOfDelivery"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Procedure<a name="cochrane-core-ontology-Procedure"> </a></td><td><a href="#cochrane-core-ontology-AppliedIntervention">AppliedIntervention</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">InterventionClassification<a name="cochrane-core-ontology-InterventionClassification"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Setting<a name="cochrane-core-ontology-Setting"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">AggregationMethod<a name="cochrane-core-ontology-AggregationMethod"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Sex<a name="cochrane-core-ontology-Sex"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Treatment<a name="cochrane-core-ontology-Treatment"> </a></td><td><a href="#cochrane-core-ontology-Concept">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style="white-space:nowrap">Device<a name="cochrane-core-ontology-Device"> </a></td><td><a href="#cochrane-core-ontology-Material">Material</a></td><td>false</td><td>false</td><td>false</td></tr></table></div>
+  </text>
+  <url value="http://data.cochrane.org/ontologies/core/"/>
+  <version value="2.0.1"/>
+  <name value="CochraneCoreOntology"/>
+  <title value="Cochrane Core Ontology"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <publisher value="Cochrane"/>
+  <description value="The Cochrane Core ontology describes the entities and concepts that exist in the domain of evidence based healthcare."/>
+  <valueSet value="http://data.cochrane.org/ontologies/core/?vs"/>
+  <hierarchyMeaning value="is-a"/>
+  <compositional value="false"/>
+  <versionNeeded value="false"/>
+  <content value="complete"/>
+  <count value="25"/>
+  <filter>
+    <code value="root"/>
+    <operator value="="/>
+    <value value="True or false."/>
+  </filter>
+  <filter>
+    <code value="deprecated"/>
+    <operator value="="/>
+    <value value="True or false."/>
+  </filter>
+  <filter>
+    <code value="imported"/>
+    <operator value="="/>
+    <value value="True or false"/>
+  </filter>
+  <property>
+    <code value="parent"/>
+    <description value="Parent codes."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="imported"/>
+    <description value="Indicates if the concept is imported from another code system."/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="root"/>
+    <description value="Indicates if this concept is a root concept (i.e. Thing is equivalent or a direct parent)"/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="deprecated"/>
+    <description value="Indicates if this concept is deprecated."/>
+    <type value="boolean"/>
+  </property>
+  <concept>
+    <code value="Concept"/>
+    <display value="Concept"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Thing"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Condition"/>
+    <display value="Condition"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DrugCategory"/>
+    <display value="DrugCategory"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="InterventionCategory"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="InterventionProvider"/>
+    <display value="InterventionProvider"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ProcedureCategory"/>
+    <display value="ProcedureCategory"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="InterventionCategory"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SpecificMetric"/>
+    <display value="SpecificMetric"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Material"/>
+    <display value="Material"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="AppliedIntervention"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Thing"/>
+    <display value="Thing"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="InterventionRationale"/>
+    <display value="InterventionRationale"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Drug"/>
+    <display value="Drug"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Material"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Age"/>
+    <display value="Age"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="AppliedIntervention"/>
+    <display value="AppliedIntervention"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ConceptScheme"/>
+    <display value="ConceptScheme"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Thing"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="OutcomeClassification"/>
+    <display value="OutcomeClassification"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="AssessmentScale"/>
+    <display value="AssessmentScale"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DeviceCategory"/>
+    <display value="DeviceCategory"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="InterventionCategory"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="InterventionCategory"/>
+    <display value="InterventionCategory"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="AppliedIntervention"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ModeOfDelivery"/>
+    <display value="ModeOfDelivery"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Procedure"/>
+    <display value="Procedure"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="AppliedIntervention"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="InterventionClassification"/>
+    <display value="InterventionClassification"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Setting"/>
+    <display value="Setting"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="AggregationMethod"/>
+    <display value="AggregationMethod"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Sex"/>
+    <display value="Sex"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Treatment"/>
+    <display value="Treatment"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Concept"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Device"/>
+    <display value="Device"/>
+    <property>
+      <code value="imported"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="Material"/>
+    </property>
+    <property>
+      <code value="root"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="deprecated"/>
+      <valueBoolean value="false"/>
+    </property>
+  </concept>
+</CodeSystem>

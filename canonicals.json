@@ -1,0 +1,839 @@
+[
+  {
+    "id" : "cochrane-core-ontology",
+    "type" : "CodeSystem",
+    "url" : "http://data.cochrane.org/ontologies/core/",
+    "version" : "2.0.1",
+    "name" : "CochraneCoreOntology"
+  },
+  {
+    "id" : "cochrane-pico-ontology",
+    "type" : "CodeSystem",
+    "url" : "http://data.cochrane.org/ontologies/pico/",
+    "version" : "4.0.1",
+    "name" : "CochranePICOOntology"
+  },
+  {
+    "id" : "KontaktArtDe",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.de/CodeSystem/kontaktart-de",
+    "version" : "1.5.0-ballot",
+    "name" : "KontaktArtDe"
+  },
+  {
+    "id" : "certainty-rating",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/certainty-rating",
+    "version" : "5.0.0-cibuild",
+    "name" : "EvidenceCertaintyRating",
+    "oids" : ["2.16.840.1.113883.4.642.4.1941"]
+  },
+  {
+    "id" : "cqfm-artifactComment",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-artifactComment",
+    "version" : "2.0.0",
+    "name" : "CQFMArtifactComment"
+  },
+  {
+    "id" : "synthesis-type",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.hl7.org/CodeSystem/synthesis-type",
+    "version" : "4.3.0",
+    "name" : "SynthesisType",
+    "oids" : ["2.16.840.1.113883.4.642.1.1348"]
+  },
+  {
+    "id" : "vs-mii-icu-code-observation-beatmung-loinc",
+    "type" : "ValueSet",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-LOINC",
+    "version" : "1.0.0",
+    "name" : "VS_MII_ICU_Code_Observation_Beatmung_LOINC"
+  },
+  {
+    "id" : "COVID19IntensiveCareTreatmentGuidelineCitation",
+    "type" : "Citation",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/COVID19IntensiveCareTreatmentGuidelineCitation",
+    "name" : "COVID19_Intensive_Care_Treatment_Guideline"
+  },
+  {
+    "id" : "DexamethasoneRecommendationCitation",
+    "type" : "Citation",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/DexamethasoneRecommendationCitation",
+    "name" : "DexamethasoneRecommendationCitation"
+  },
+  {
+    "id" : "ExampleGuidelineCitation",
+    "type" : "Citation",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleGuidelineCitation",
+    "name" : "ExampleGuidelineCitation"
+  },
+  {
+    "id" : "ExampleRecommendationCitation",
+    "type" : "Citation",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleRecommendationCitation",
+    "name" : "ExampleRecommendationCitation"
+  },
+  {
+    "id" : "ExampleStudyCitation",
+    "type" : "Citation",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleStudyCitation",
+    "name" : "ExampleCitation"
+  },
+  {
+    "id" : "SystemicCorticosteroidsForTheTreatmentOfCOVID19",
+    "type" : "Citation",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19",
+    "name" : "SystemicCorticosteroidsForTheTreatmentOfCOVID19"
+  },
+  {
+    "id" : "ceosys-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+    "version" : "0.1.1",
+    "name" : "CEOsysCodeSystem"
+  },
+  {
+    "id" : "ceosys-cs-recommendation-strength",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength",
+    "version" : "0.1.1",
+    "name" : "RecommendationStrength"
+  },
+  {
+    "id" : "cs-action-combination-method",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+    "version" : "0.1.0",
+    "name" : "ActionCombinationMethod"
+  },
+  {
+    "id" : "cs-clinical-importance",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance",
+    "version" : "0.1.1",
+    "name" : "ClinicalImportance"
+  },
+  {
+    "id" : "cs-evidence-to-decision-certainty-rating",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating",
+    "version" : "0.1.1",
+    "name" : "EvidenceToDecisionCertaintyRating"
+  },
+  {
+    "id" : "cs-evidence-to-decision-certainty-type",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type",
+    "version" : "0.1.1",
+    "name" : "EvidenceToDecisionCertaintyType"
+  },
+  {
+    "id" : "cs-guideline-stage-classification",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification",
+    "version" : "0.1.1",
+    "name" : "GuidelineStageClassification"
+  },
+  {
+    "id" : "DexamethasoneOutcomeMortality",
+    "type" : "Evidence",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/DexamethasoneOutcomeMortality",
+    "name" : "ExampleOutcomeEvidence"
+  },
+  {
+    "id" : "ExampleNetEffectEstimate",
+    "type" : "Evidence",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleNetEffectEstimate",
+    "name" : "NetEffectExample"
+  },
+  {
+    "id" : "ExampleOutcomeEvidenceSynthesis",
+    "type" : "Evidence",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleOutcomeEvidenceSynthesis",
+    "name" : "ExampleOutcomeEvidenceSynthesis"
+  },
+  {
+    "id" : "ExampleStudyOutcomeEvidence",
+    "type" : "Evidence",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleStudyOutcomeEvidence",
+    "name" : "ExampleStudyOutcomeEvidence"
+  },
+  {
+    "id" : "ExampleEvidenceDataSet",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleEvidenceDataSet",
+    "name" : "ExampleEvidenceDataSet"
+  },
+  {
+    "id" : "ExampleIntervention",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleIntervention",
+    "name" : "Bariatric Surgery"
+  },
+  {
+    "id" : "ExampleOutcome",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleOutcome",
+    "name" : "Mortality"
+  },
+  {
+    "id" : "ExampleStudyEligibilityCriteria",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleStudyEligibilityCriteria",
+    "name" : "ExampleStudyEligibilityCriteria"
+  },
+  {
+    "id" : "OutcomeAllCauseMortality",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/OutcomeAllCauseMortality",
+    "name" : "AllCauseMortality"
+  },
+  {
+    "id" : "StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19",
+    "name" : "StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"
+  },
+  {
+    "id" : "de.netzwerk-universitaetsmedizin.ebm-cpg",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg",
+    "version" : "1.0.2",
+    "name" : "CPGonEBMonFHIR"
+  },
+  {
+    "id" : "assessment-action",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action",
+    "version" : "0.3.1",
+    "name" : "AssessmentAction"
+  },
+  {
+    "id" : "body-positioning-action",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/body-positioning-action",
+    "version" : "0.3.1",
+    "name" : "BodyPositioningAction"
+  },
+  {
+    "id" : "ceosys-extension-artifact-assessment-publication-status",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status",
+    "version" : "0.1.0",
+    "name" : "ArtifactAssessmentPublicationStatus"
+  },
+  {
+    "id" : "ceosys-extension-artifact-assessment-version",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version",
+    "version" : "0.1.0",
+    "name" : "ArtifactAssessmentVersion"
+  },
+  {
+    "id" : "certainty-of-evidence-rating",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating",
+    "version" : "0.1.0",
+    "name" : "CertaintyOfEvidenceRating"
+  },
+  {
+    "id" : "cohorts",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cohorts",
+    "version" : "0.1.0",
+    "name" : "Cohorts"
+  },
+  {
+    "id" : "cpg-computableplandefinition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-computableplandefinition",
+    "name" : "CPGComputablePlanDefinition"
+  },
+  {
+    "id" : "cpg-recommendationdefinition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-recommendationdefinition",
+    "name" : "CPGRecommendationDefinition"
+  },
+  {
+    "id" : "cpg-shareableplandefinition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-shareableplandefinition",
+    "version" : "1.0.0",
+    "name" : "CPGShareablePlanDefinition"
+  },
+  {
+    "id" : "cpg-strategydefinition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-strategydefinition",
+    "name" : "CPGStrategyDefinition"
+  },
+  {
+    "id" : "cqf-qualityOfEvidence",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-qualityOfEvidence",
+    "version" : "4.3.0",
+    "name" : "QualityOfEvidence"
+  },
+  {
+    "id" : "cqf-strengthOfRecommendation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-strengthOfRecommendation",
+    "version" : "4.3.0",
+    "name" : "StrengthOfRecommendation"
+  },
+  {
+    "id" : "drug-administration-action",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action",
+    "version" : "0.3.1",
+    "name" : "DrugAdministrationAction"
+  },
+  {
+    "id" : "eligibility-criteria",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/eligibility-criteria",
+    "version" : "0.2.0",
+    "name" : "EligibilityCriteria"
+  },
+  {
+    "id" : "evidence-data-set",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-data-set",
+    "version" : "0.1.1",
+    "name" : "EvidenceDataSet"
+  },
+  {
+    "id" : "evidence-synthesis-cohorts",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts",
+    "version" : "0.1.0",
+    "name" : "EvidenceSynthesisCohorts"
+  },
+  {
+    "id" : "ext-action-combination-method",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method",
+    "version" : "0.1.0",
+    "name" : "ActionCombinationMethod"
+  },
+  {
+    "id" : "ext-characteristic-dosage",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-characteristic-dosage",
+    "name" : "CharacteristicDosage"
+  },
+  {
+    "id" : "ext-dosage-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition",
+    "version" : "0.1.0",
+    "name" : "DosageCondition"
+  },
+  {
+    "id" : "guideline",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline",
+    "version" : "0.2.0",
+    "name" : "Guideline"
+  },
+  {
+    "id" : "guideline-bundle",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle",
+    "version" : "0.2.0",
+    "name" : "GuidelineBundle"
+  },
+  {
+    "id" : "guideline-citation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation",
+    "version" : "0.1.0",
+    "name" : "GuidelineCitation"
+  },
+  {
+    "id" : "intervention-definition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/intervention-definition",
+    "version" : "0.1.1",
+    "name" : "InterventionDefinition"
+  },
+  {
+    "id" : "net-effect-estimate",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate",
+    "version" : "0.1.0",
+    "name" : "NetEffectEstimate"
+  },
+  {
+    "id" : "outcome-definition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition",
+    "version" : "0.1.1",
+    "name" : "OutcomeDefinition"
+  },
+  {
+    "id" : "outcome-evidence",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence",
+    "version" : "0.2.0",
+    "name" : "OutcomeEvidence"
+  },
+  {
+    "id" : "outcome-evidence-synthesis",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis",
+    "version" : "0.1.0",
+    "name" : "OutcomeEvidenceSynthesis"
+  },
+  {
+    "id" : "pico-evidence-variable",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/pico-evidence-variable",
+    "version" : "0.1.1",
+    "name" : "PICOEvidenceVariable"
+  },
+  {
+    "id" : "procedure-action",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/procedure-action",
+    "version" : "0.1.0",
+    "name" : "ProcedureAction"
+  },
+  {
+    "id" : "recommendation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation",
+    "version" : "0.1.0",
+    "name" : "Recommendation"
+  },
+  {
+    "id" : "recommendation-action",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action",
+    "version" : "0.1.1",
+    "name" : "RecommendationAction"
+  },
+  {
+    "id" : "recommendation-citation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation",
+    "version" : "0.1.0",
+    "name" : "RecommendationCitation"
+  },
+  {
+    "id" : "recommendation-eligibility-criteria",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria",
+    "version" : "0.1.1",
+    "name" : "RecommendationEligibilityCriteria"
+  },
+  {
+    "id" : "recommendation-justification",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification",
+    "version" : "0.1.0",
+    "name" : "RecommendationJustification"
+  },
+  {
+    "id" : "recommendation-plan",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan",
+    "version" : "0.3.0",
+    "name" : "RecommendationPlan"
+  },
+  {
+    "id" : "relative-time",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time",
+    "name" : "RelativeTime"
+  },
+  {
+    "id" : "shareableplandefinition",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/shareableplandefinition",
+    "version" : "5.0.0-draft-final",
+    "name" : "ShareablePlanDefinition",
+    "oids" : ["2.16.840.1.113883.4.642.5.1077"]
+  },
+  {
+    "id" : "study-citation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation",
+    "version" : "0.1.0",
+    "name" : "StudyCitation"
+  },
+  {
+    "id" : "study-cohort",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort",
+    "version" : "0.1.0",
+    "name" : "StudyCohort"
+  },
+  {
+    "id" : "study-eligibility-criteria",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria",
+    "version" : "0.1.1",
+    "name" : "StudyEligibilityCriteria"
+  },
+  {
+    "id" : "study-outcome-evidence",
+    "type" : "StructureDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence",
+    "version" : "0.1.0",
+    "name" : "StudyOutcomeEvidence"
+  },
+  {
+    "id" : "ceosys-vs-recommendation-strength",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/ceosys-vs-recommendation-strength",
+    "version" : "0.1.1",
+    "name" : "RecommendationStrength"
+  },
+  {
+    "id" : "cochrane-pico",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico",
+    "version" : "0.1.1",
+    "name" : "CochranePICO"
+  },
+  {
+    "id" : "cochrane-pico-intervention",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-intervention",
+    "version" : "0.1.1",
+    "name" : "CochranePICOIntervention"
+  },
+  {
+    "id" : "cochrane-pico-outcome",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-outcome",
+    "version" : "0.1.1",
+    "name" : "CochranePICOOutcome"
+  },
+  {
+    "id" : "cochrane-pico-population",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-population",
+    "version" : "0.1.1",
+    "name" : "CochranePICOPopulation"
+  },
+  {
+    "id" : "vs-action-combination-method",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-combination-method",
+    "version" : "0.1.1",
+    "name" : "ActionCombinationMethod"
+  },
+  {
+    "id" : "vs-action-selection-behavior-required",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-selection-behavior-required",
+    "version" : "0.1.0",
+    "name" : "ActionSelectionBehaviorRequired"
+  },
+  {
+    "id" : "vs-allergic-disposition-sct",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-allergic-disposition-sct",
+    "version" : "0.1.1",
+    "name" : "AllergicDispositionSCT"
+  },
+  {
+    "id" : "vs-assessment",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment",
+    "version" : "0.1.0",
+    "name" : "Assessment"
+  },
+  {
+    "id" : "vs-assessment-scales",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment-scales",
+    "version" : "0.1.0",
+    "name" : "AssessmentScales"
+  },
+  {
+    "id" : "vs-body-positioning-snomed",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-body-positioning-snomed",
+    "version" : "0.1.1",
+    "name" : "BodyPositioningSNOMED"
+  },
+  {
+    "id" : "vs-drugs",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-drugs",
+    "name" : "Drugs"
+  },
+  {
+    "id" : "vs-episode-of-care-type",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type",
+    "version" : "0.1.1",
+    "name" : "EpisodeOfCareType"
+  },
+  {
+    "id" : "vs-guideline-recommendation-status",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-recommendation-status",
+    "version" : "0.1.1",
+    "name" : "GuidelineRecommendationStatus"
+  },
+  {
+    "id" : "vs-guideline-stage-classification",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-stage-classification",
+    "version" : "0.1.1",
+    "name" : "GuidelineStageClassification"
+  },
+  {
+    "id" : "vs-mean-difference-type",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-mean-difference-type",
+    "version" : "0.1.1",
+    "name" : "MeanDifferenceType"
+  },
+  {
+    "id" : "vs-observations",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-observations",
+    "version" : "0.1.1",
+    "name" : "Observations"
+  },
+  {
+    "id" : "vs-procedures",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-procedures",
+    "version" : "0.1.0",
+    "name" : "Procedures"
+  },
+  {
+    "id" : "vs-radiologic-finding-sct",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-radiologic-finding-sct",
+    "version" : "0.1.1",
+    "name" : "RadiologicFindingSCT"
+  },
+  {
+    "id" : "vs-rating-acceptability",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-acceptability",
+    "version" : "0.1.1",
+    "name" : "RatingAcceptability"
+  },
+  {
+    "id" : "vs-rating-benefit-and-harms",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-benefit-and-harms",
+    "version" : "0.1.1",
+    "name" : "RatingBenefitAndHarms"
+  },
+  {
+    "id" : "vs-rating-certainty-of-evidence",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-certainty-of-evidence",
+    "version" : "0.1.1",
+    "name" : "RatingCertaintyofEvidence"
+  },
+  {
+    "id" : "vs-rating-clinical-importance",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-clinical-importance",
+    "version" : "0.1.1",
+    "name" : "RatingClinicalImportance"
+  },
+  {
+    "id" : "vs-rating-concern-degree",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-concern-degree",
+    "version" : "0.1.1",
+    "name" : "RatingConcernDegree"
+  },
+  {
+    "id" : "vs-rating-consensus",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-consensus",
+    "version" : "0.1.1",
+    "name" : "RatingConsensus"
+  },
+  {
+    "id" : "vs-rating-equity",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-equity",
+    "version" : "0.1.1",
+    "name" : "RatingEquity"
+  },
+  {
+    "id" : "vs-rating-feasibility",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-feasibility",
+    "version" : "0.1.1",
+    "name" : "RatingFeasibility"
+  },
+  {
+    "id" : "vs-rating-preference-and-values",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-preference-and-values",
+    "version" : "0.1.1",
+    "name" : "RatingPreferenceAndValues"
+  },
+  {
+    "id" : "vs-rating-resources",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-resources",
+    "version" : "0.1.1",
+    "name" : "RatingResources"
+  },
+  {
+    "id" : "vs-rating-uprating-one-level",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-one-level",
+    "version" : "0.1.1",
+    "name" : "RatingUpratingOneLevel"
+  },
+  {
+    "id" : "vs-rating-uprating-two-levels",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-two-levels",
+    "version" : "0.1.1",
+    "name" : "RatingUpratingTwoLevels"
+  },
+  {
+    "id" : "vs-relative-effect-type",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-relative-effect-type",
+    "version" : "0.1.1",
+    "name" : "RelativeEffectType"
+  },
+  {
+    "id" : "vs-substances-snomed",
+    "type" : "ValueSet",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-substances-snomed",
+    "version" : "0.1.1",
+    "name" : "SubstancesSNOMED"
+  },
+  {
+    "id" : "COVID19DexamethasoneApplication",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation",
+    "version" : "4.0",
+    "name" : "Dexamethasone_Application"
+  },
+  {
+    "id" : "COVID19NonVentilatedPatientsDexamethasoneApplicationPlan",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-non-ventilated-patients-no-dexamethasone-application-plan",
+    "version" : "4.0",
+    "name" : "No_Dexamethasone_Application"
+  },
+  {
+    "id" : "COVID19VentilatedPatientsDexamethasoneApplicationPlan",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-ventilated-patients-dexamethasone-application-plan",
+    "version" : "4.0",
+    "name" : "Dexamethasone_Application"
+  },
+  {
+    "id" : "PopulationCOVID19NonVentilated",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_NonVentilated",
+    "name" : "Population_COVID19_NonVentilated"
+  },
+  {
+    "id" : "PopulationCOVID19Ventilated",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_Ventilated",
+    "name" : "Population_COVID19_Ventilated"
+  },
+  {
+    "id" : "ExampleAssessmentAction",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/assessment-example",
+    "version" : "1.0",
+    "name" : "ExampleAssessmentAction"
+  },
+  {
+    "id" : "ExampleBodyPositioningAction",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/body-positioning-example",
+    "version" : "1.0",
+    "name" : "DrugAdministrationAction"
+  },
+  {
+    "id" : "DexamethasoneApplicationActionIntravenous",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-intravenous",
+    "version" : "1.0",
+    "name" : "DexamethasoneApplicationActionIntravenous"
+  },
+  {
+    "id" : "DexamethasoneApplicationActionOral",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-oral",
+    "version" : "1.0",
+    "name" : "DexamethasoneApplicationActionOral"
+  },
+  {
+    "id" : "ExampleDrugAdministrationAction",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/drug-administration-example",
+    "version" : "1.0",
+    "name" : "DrugAdministrationAction"
+  },
+  {
+    "id" : "NoDexamethasoneApplication",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-dexamethasone-application",
+    "version" : "1.0",
+    "name" : "NoDexamethasoneApplicationActivity"
+  },
+  {
+    "id" : "ExampleNoDrugAdministrationAction",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-drug-administration-example",
+    "version" : "1.0",
+    "name" : "DrugAdministrationAction"
+  },
+  {
+    "id" : "ExampleProcedureAction",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/procedure-example",
+    "version" : "1.0",
+    "name" : "ExampleProcedureAction"
+  },
+  {
+    "id" : "ExampleRecommendationEligibilityCriteria",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria",
+    "name" : "PopulationExample"
+  },
+  {
+    "id" : "ExampleRecommendationEligibilityCriteria5Levels",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria",
+    "name" : "PopulationExample"
+  },
+  {
+    "id" : "ExampleRecommendationEligibilityCriteriaDrugs",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria",
+    "name" : "PopulationExample"
+  },
+  {
+    "id" : "ExampleRecommendation",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation",
+    "version" : "1.0",
+    "name" : "Recommendation"
+  },
+  {
+    "id" : "ExampleRecommendationPlan",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan",
+    "version" : "1.0",
+    "name" : "RecommendationPlan"
+  }
+]

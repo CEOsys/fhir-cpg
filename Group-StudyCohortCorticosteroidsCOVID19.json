@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Group",
+  "id" : "StudyCohortCorticosteroidsCOVID19",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group StudyCohortCorticosteroidsCOVID19</b></p><a name=\"StudyCohortCorticosteroidsCOVID19\"> </a><a name=\"hcStudyCohortCorticosteroidsCOVID19\"> </a><a name=\"StudyCohortCorticosteroidsCOVID19-en-US\"> </a><p><b>type</b>: Person</p><p><b>membership</b>: Definitional</p><p><b>name</b>: StudyCohortCriteriaSystemicCorticosteroidsCOVID19</p><p><b>quantity</b>: 7898</p></div>"
+  },
+  "type" : "person",
+  "membership" : "definitional",
+  "name" : "StudyCohortCriteriaSystemicCorticosteroidsCOVID19",
+  "quantity" : 7898
+}

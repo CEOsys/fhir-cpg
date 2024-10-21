@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EvidenceVariable xmlns="http://hl7.org/fhir">
+  <id value="ExampleOutcome"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EvidenceVariable ExampleOutcome</b></p><a name="ExampleOutcome"> </a><a name="hcExampleOutcome"> </a><a name="ExampleOutcome-en-US"> </a><p><b>url</b>: <a href="EvidenceVariable-ExampleOutcome.html">EvidenceVariable Mortality</a></p><p><b>identifier</b>: <code>https://www.ceosys.de</code>/outcome-example</p><p><b>name</b>: Mortality</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 409651001}">Mortality rate (observable entity)</span></td><td> percent<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td></tr></table></blockquote><p><b>handling</b>: dichotomous variable</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleOutcome"/>
+  <identifier>
+    <system value="https://www.ceosys.de"/>
+    <value value="outcome-example"/>
+  </identifier>
+  <name value="Mortality"/>
+  <status value="active"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <characteristic>
+    <exclude value="false"/>
+    <definitionByTypeAndValue>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="409651001"/>
+          <display value="Mortality rate (observable entity)"/>
+        </coding>
+      </type>
+      <valueQuantity>
+        <unit value="percent"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="%"/>
+      </valueQuantity>
+    </definitionByTypeAndValue>
+  </characteristic>
+  <handling value="dichotomous"/>
+</EvidenceVariable>

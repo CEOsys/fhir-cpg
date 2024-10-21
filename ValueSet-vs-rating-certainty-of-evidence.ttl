@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-certainty-of-evidence> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-rating-certainty-of-evidence"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-rating-certainty-of-evidence</b></p><a name=\"vs-rating-certainty-of-evidence\"> </a><a name=\"hcvs-rating-certainty-of-evidence\"> </a><a name=\"vs-rating-certainty-of-evidence-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-certainty-rating.html\"><code>http://hl7.org/fhir/certainty-rating</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-high\">high</a></td><td>High quality</td><td>High quality evidence.</td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-moderate\">moderate</a></td><td>Moderate quality</td><td>Moderate quality evidence.</td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-low\">low</a></td><td>Low quality</td><td>Low quality evidence.</td></tr><tr><td><a href=\"CodeSystem-certainty-rating.html#certainty-rating-very-low\">very-low</a></td><td>Very low quality</td><td>Very low quality evidence.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-certainty-of-evidence"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "RatingCertaintyofEvidence"] ; # 
+  fhir:title [ fhir:v "Rating Certainty Of Evidence"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes from EvidenceCertaintyRating related to certainty of evidence"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "high" ] ;
+         fhir:display [ fhir:v "High quality" ]
+       ] [
+         fhir:code [ fhir:v "moderate" ] ;
+         fhir:display [ fhir:v "Moderate quality" ]
+       ] [
+         fhir:code [ fhir:v "low" ] ;
+         fhir:display [ fhir:v "Low quality" ]
+       ] [
+         fhir:code [ fhir:v "very-low" ] ;
+         fhir:display [ fhir:v "Very low quality" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

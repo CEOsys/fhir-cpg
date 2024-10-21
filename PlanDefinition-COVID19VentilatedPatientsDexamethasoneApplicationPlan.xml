@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="COVID19VentilatedPatientsDexamethasoneApplicationPlan"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition COVID19VentilatedPatientsDexamethasoneApplicationPlan</b></p><a name="COVID19VentilatedPatientsDexamethasoneApplicationPlan"> </a><a name="hcCOVID19VentilatedPatientsDexamethasoneApplicationPlan"> </a><a name="COVID19VentilatedPatientsDexamethasoneApplicationPlan-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-COVID19DexamethasoneApplication.html">Dexamethasone Application</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>url</b>: <a href="PlanDefinition-COVID19VentilatedPatientsDexamethasoneApplicationPlan.html">PlanDefinition Dexamethasone Application in ventilated COVID-19 patients</a></p><p><b>version</b>: 4.0</p><p><b>name</b>: Dexamethasone_Application</p><p><b>title</b>: Dexamethasone Application in ventilated COVID-19 patients</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationCOVID19Ventilated.html">Population_COVID19_Ventilated</a></p><p><b>date</b>: 2021-12-12</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients</p>
+</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href="Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html">DexamethasoneApplicationActionOral</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href="Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html">DexamethasoneApplicationActionIntravenous</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="exactly"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-ventilated-patients-dexamethasone-application-plan"/>
+  <version value="4.0"/>
+  <name value="Dexamethasone_Application"/>
+  <title value="Dexamethasone Application in ventilated COVID-19 patients"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_Ventilated"/>
+  <date value="2021-12-12"/>
+  <publisher value="CPGonEBMonFHIR"/>
+  <description value="Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients"/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="432102000"/>
+        <display value="Administration of substance (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-oral"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="432102000"/>
+        <display value="Administration of substance (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-intravenous"/>
+  </action>
+</PlanDefinition>

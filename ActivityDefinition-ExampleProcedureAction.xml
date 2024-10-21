@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="ExampleProcedureAction"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/procedure-action"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition ExampleProcedureAction</b></p><a name="ExampleProcedureAction"> </a><a name="hcExampleProcedureAction"> </a><a name="ExampleProcedureAction-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="ActivityDefinition-ExampleProcedureAction.html">ActivityDefinition ExampleProcedureAction</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: ExampleProcedureAction</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Patient}">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example of a procedure action.</p>
+</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 172703006}">Destruction of lesion of middle ear (procedure)</span></p><p><b>timing</b>: Once per 1 days</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/procedure-example"/>
+  <version value="1.0"/>
+  <name value="ExampleProcedureAction"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <publisher value="CPGonEBMonFHIR"/>
+  <description value="Example of a procedure action."/>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20240201"/>
+      <code value="172703006"/>
+      <display value="Destruction of lesion of middle ear (procedure)"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

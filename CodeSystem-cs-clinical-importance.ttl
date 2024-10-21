@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-clinical-importance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-clinical-importance</b></p><a name=\"cs-clinical-importance\"> </a><a name=\"hccs-clinical-importance\"> </a><a name=\"cs-clinical-importance-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">not-important<a name=\"cs-clinical-importance-not-important\"> </a></td><td>Low importance for decision making</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1<a name=\"cs-clinical-importance-1\"> </a></td><td>Not important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  2<a name=\"cs-clinical-importance-2\"> </a></td><td>Not important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  3<a name=\"cs-clinical-importance-3\"> </a></td><td>Not important</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">important<a name=\"cs-clinical-importance-important\"> </a></td><td>Important, but not critical for decision making</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  4<a name=\"cs-clinical-importance-4\"> </a></td><td>Important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  5<a name=\"cs-clinical-importance-5\"> </a></td><td>Important</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  6<a name=\"cs-clinical-importance-6\"> </a></td><td>Important</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">critical<a name=\"cs-clinical-importance-critical\"> </a></td><td>Critical for decision making</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  7<a name=\"cs-clinical-importance-7\"> </a></td><td>Critical</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  8<a name=\"cs-clinical-importance-8\"> </a></td><td>Critical</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  9<a name=\"cs-clinical-importance-9\"> </a></td><td>Critical</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "ClinicalImportance"] ; # 
+  fhir:title [ fhir:v "Clinical Importance of Outcome"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Clinical Importance of Outcome"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "not-important" ] ;
+     fhir:display [ fhir:v "Low importance for decision making" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Not important" ]
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "Not important" ]
+     ] [
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Not important" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "important" ] ;
+     fhir:display [ fhir:v "Important, but not critical for decision making" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "Important" ]
+     ] [
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "Important" ]
+     ] [
+       fhir:code [ fhir:v "6" ] ;
+       fhir:display [ fhir:v "Important" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "critical" ] ;
+     fhir:display [ fhir:v "Critical for decision making" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "7" ] ;
+       fhir:display [ fhir:v "Critical" ]
+     ] [
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "Critical" ]
+     ] [
+       fhir:code [ fhir:v "9" ] ;
+       fhir:display [ fhir:v "Critical" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

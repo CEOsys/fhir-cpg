@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cochrane-pico-intervention",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cochrane-pico-intervention</b></p><a name=\"cochrane-pico-intervention\"> </a><a name=\"hccochrane-pico-intervention\"> </a><a name=\"cochrane-pico-intervention-en-US\"> </a><ul><li>Include codes from<a href=\"CodeSystem-cochrane-pico-ontology.html\"><code>http://data.cochrane.org/ontologies/pico/</code></a> where concept  is-a <a href=\"CodeSystem-cochrane-pico-ontology.html#cochrane-pico-ontology-Intervention\">Intervention</a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-intervention",
+  "version" : "0.1.1",
+  "name" : "CochranePICOIntervention",
+  "title" : "Cochrane PICO Intervention",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "All intervention codes from the Cochrane PICO ontology.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://data.cochrane.org/ontologies/pico/",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "Intervention"
+      }]
+    }]
+  }
+}

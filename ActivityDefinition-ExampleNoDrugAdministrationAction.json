@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "ExampleNoDrugAdministrationAction",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition ExampleNoDrugAdministrationAction</b></p><a name=\"ExampleNoDrugAdministrationAction\"> </a><a name=\"hcExampleNoDrugAdministrationAction\"> </a><a name=\"ExampleNoDrugAdministrationAction-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-ExampleNoDrugAdministrationAction.html\">ActivityDefinition DrugAdministrationAction</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DrugAdministrationAction</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>A drug administration that should not be performed.</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>doNotPerform</b>: true</p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}\">Dexamethasone (substance)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-drug-administration-example",
+  "version" : "1.0",
+  "name" : "DrugAdministrationAction",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-10-21T14:50:59+00:00",
+  "publisher" : "CPGonEBMonFHIR",
+  "description" : "A drug administration that should not be performed.",
+  "kind" : "MedicationRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "432102000",
+      "display" : "Administration of substance (procedure)"
+    }]
+  },
+  "doNotPerform" : true,
+  "productCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "372584003",
+      "display" : "Dexamethasone (substance)"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "code" : "C05AA09",
+      "display" : "Dexamethason"
+    }]
+  }
+}

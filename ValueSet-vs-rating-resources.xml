@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-rating-resources"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-rating-resources</b></p><a name="vs-rating-resources"> </a><a name="hcvs-rating-resources"> </a><a name="vs-rating-resources-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-factor-not-considered">factor-not-considered</a></td><td>Factor not considered</td><td>Factor not considered</td></tr><tr><td><a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-important-issues-or-not-investigated">important-issues-or-not-investigated</a></td><td>Important issues</td><td>Important issues, or potential issues not investigated</td></tr><tr><td><a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-no-important-issues">no-important-issues</a></td><td>No important issues</td><td>No important issues with the recommended alternative</td></tr><tr><td><a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-important-negative-issues">important-negative-issues</a></td><td>Important negative issues</td><td>Important negative issues</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-resources"/>
+  <version value="0.1.1"/>
+  <name value="RatingResources"/>
+  <title value="Rating Resources"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?"/>
+  <compose>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"/>
+      <concept>
+        <code value="factor-not-considered"/>
+        <display value="Factor not considered"/>
+      </concept>
+      <concept>
+        <code value="important-issues-or-not-investigated"/>
+        <display value="Important issues"/>
+      </concept>
+      <concept>
+        <code value="no-important-issues"/>
+        <display value="No important issues"/>
+      </concept>
+      <concept>
+        <code value="important-negative-issues"/>
+        <display value="Important negative issues"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

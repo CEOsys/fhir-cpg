@@ -1,0 +1,574 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cochrane-pico-ontology",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cochrane-pico-ontology</b></p><a name=\"cochrane-pico-ontology\"> </a><a name=\"hccochrane-pico-ontology\"> </a><a name=\"cochrane-pico-ontology-en-US\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>parent</td><td>parent</td><td>code</td><td>Parent codes.</td></tr><tr><td>imported</td><td>imported</td><td>boolean</td><td>Indicates if the concept is imported from another code system.</td></tr><tr><td>root</td><td>root</td><td>boolean</td><td>Indicates if this concept is a root concept (i.e. Thing is equivalent or a direct parent)</td></tr><tr><td>deprecated</td><td>deprecated</td><td>boolean</td><td>Indicates if this concept is deprecated.</td></tr></table><p><b>Filters</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Description</b></td><td><b>Op</b></td><td><b>Value</b></td></tr><tr><td>root</td><td/><td>= </td><td>True or false.</td></tr><tr><td>deprecated</td><td/><td>= </td><td>True or false.</td></tr><tr><td>imported</td><td/><td>= </td><td>True or false</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>http://data.cochrane.org/ontologies/pico/</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>parent</b></td><td><b>imported</b></td><td><b>root</b></td><td><b>deprecated</b></td></tr><tr><td style=\"white-space:nowrap\">Age<a name=\"cochrane-pico-ontology-Age\"> </a></td><td>Age</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionProvider<a name=\"cochrane-pico-ontology-InterventionProvider\"> </a></td><td>InterventionProvider</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Dose<a name=\"cochrane-pico-ontology-Dose\"> </a></td><td>Dose</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">AssessmentScale<a name=\"cochrane-pico-ontology-AssessmentScale\"> </a></td><td>AssessmentScale</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Treatment<a name=\"cochrane-pico-ontology-Treatment\"> </a></td><td>Treatment</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionRationale<a name=\"cochrane-pico-ontology-InterventionRationale\"> </a></td><td>InterventionRationale</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Setting<a name=\"cochrane-pico-ontology-Setting\"> </a></td><td>Setting</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Thing<a name=\"cochrane-pico-ontology-Thing\"> </a></td><td>Thing</td><td/><td>false</td><td>true</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Outcome<a name=\"cochrane-pico-ontology-Outcome\"> </a></td><td>Outcome</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Schedule<a name=\"cochrane-pico-ontology-Schedule\"> </a></td><td>Schedule</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">OutcomeDomain<a name=\"cochrane-pico-ontology-OutcomeDomain\"> </a></td><td>OutcomeDomain</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionClassification<a name=\"cochrane-pico-ontology-InterventionClassification\"> </a></td><td>Intervention Classification</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">PICO<a name=\"cochrane-pico-ontology-PICO\"> </a></td><td>PICO</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Intervention<a name=\"cochrane-pico-ontology-Intervention\"> </a></td><td>Intervention</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">OutcomeClassification<a name=\"cochrane-pico-ontology-OutcomeClassification\"> </a></td><td>OutcomeClassification</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Population<a name=\"cochrane-pico-ontology-Population\"> </a></td><td>Population</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">OutcomeGroup<a name=\"cochrane-pico-ontology-OutcomeGroup\"> </a></td><td>OutcomeGroup</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">AppliedIntervention<a name=\"cochrane-pico-ontology-AppliedIntervention\"> </a></td><td>AppliedIntervention</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">AggregationMethod<a name=\"cochrane-pico-ontology-AggregationMethod\"> </a></td><td>AggregationMethod</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Sex<a name=\"cochrane-pico-ontology-Sex\"> </a></td><td>Sex</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">SocialContext<a name=\"cochrane-pico-ontology-SocialContext\"> </a></td><td>SocialContext</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionGroup<a name=\"cochrane-pico-ontology-InterventionGroup\"> </a></td><td>InterventionGroup</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Duration<a name=\"cochrane-pico-ontology-Duration\"> </a></td><td>Duration</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">ModeOfDelivery<a name=\"cochrane-pico-ontology-ModeOfDelivery\"> </a></td><td>ModeOfDelivery</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Condition<a name=\"cochrane-pico-ontology-Condition\"> </a></td><td>Condition</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">SpecificMetric<a name=\"cochrane-pico-ontology-SpecificMetric\"> </a></td><td>SpecificMetric</td><td><a href=\"#cochrane-pico-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr></table></div>"
+  },
+  "url" : "http://data.cochrane.org/ontologies/pico/",
+  "version" : "4.0.1",
+  "name" : "CochranePICOOntology",
+  "title" : "Cochrane PICO Ontology",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-10-21T14:50:59+00:00",
+  "publisher" : "Cochrane",
+  "description" : "The PICO ontology describes questions in evidence based healthcare with the intention of supporting the publishing of evidence as linked data.",
+  "valueSet" : "http://data.cochrane.org/ontologies/pico/?vs",
+  "hierarchyMeaning" : "is-a",
+  "compositional" : false,
+  "versionNeeded" : false,
+  "content" : "complete",
+  "count" : 26,
+  "filter" : [{
+    "code" : "root",
+    "operator" : ["="],
+    "value" : "True or false."
+  },
+  {
+    "code" : "deprecated",
+    "operator" : ["="],
+    "value" : "True or false."
+  },
+  {
+    "code" : "imported",
+    "operator" : ["="],
+    "value" : "True or false"
+  }],
+  "property" : [{
+    "code" : "parent",
+    "description" : "Parent codes.",
+    "type" : "code"
+  },
+  {
+    "code" : "imported",
+    "description" : "Indicates if the concept is imported from another code system.",
+    "type" : "boolean"
+  },
+  {
+    "code" : "root",
+    "description" : "Indicates if this concept is a root concept (i.e. Thing is equivalent or a direct parent)",
+    "type" : "boolean"
+  },
+  {
+    "code" : "deprecated",
+    "description" : "Indicates if this concept is deprecated.",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "Age",
+    "display" : "Age",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "InterventionProvider",
+    "display" : "InterventionProvider",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Dose",
+    "display" : "Dose",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "AssessmentScale",
+    "display" : "AssessmentScale",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Treatment",
+    "display" : "Treatment",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "InterventionRationale",
+    "display" : "InterventionRationale",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Setting",
+    "display" : "Setting",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Thing",
+    "display" : "Thing",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Outcome",
+    "display" : "Outcome",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Schedule",
+    "display" : "Schedule",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "OutcomeDomain",
+    "display" : "OutcomeDomain",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "InterventionClassification",
+    "display" : "Intervention Classification",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "PICO",
+    "display" : "PICO",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Intervention",
+    "display" : "Intervention",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "OutcomeClassification",
+    "display" : "OutcomeClassification",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Population",
+    "display" : "Population",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "OutcomeGroup",
+    "display" : "OutcomeGroup",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "AppliedIntervention",
+    "display" : "AppliedIntervention",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "AggregationMethod",
+    "display" : "AggregationMethod",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Sex",
+    "display" : "Sex",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "SocialContext",
+    "display" : "SocialContext",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "InterventionGroup",
+    "display" : "InterventionGroup",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Duration",
+    "display" : "Duration",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "ModeOfDelivery",
+    "display" : "ModeOfDelivery",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "Condition",
+    "display" : "Condition",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "SpecificMetric",
+    "display" : "SpecificMetric",
+    "property" : [{
+      "code" : "imported",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "Thing"
+    },
+    {
+      "code" : "root",
+      "valueBoolean" : false
+    },
+    {
+      "code" : "deprecated",
+      "valueBoolean" : false
+    }]
+  }]
+}

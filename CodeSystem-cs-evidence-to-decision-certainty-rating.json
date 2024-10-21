@@ -1,0 +1,108 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-evidence-to-decision-certainty-rating",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-evidence-to-decision-certainty-rating</b></p><a name=\"cs-evidence-to-decision-certainty-rating\"> </a><a name=\"hccs-evidence-to-decision-certainty-rating\"> </a><a name=\"cs-evidence-to-decision-certainty-rating-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">small-net-benefit<a name=\"cs-evidence-to-decision-certainty-rating-small-net-benefit\"> </a></td><td>Small net benefit</td><td>Small net benefit, or little difference between alternatives</td></tr><tr><td style=\"white-space:nowrap\">substantial-net-benefit<a name=\"cs-evidence-to-decision-certainty-rating-substantial-net-benefit\"> </a></td><td>Substantial net benefit</td><td>Substantial net benefits of the recommended alternative</td></tr><tr><td style=\"white-space:nowrap\">important-harms<a name=\"cs-evidence-to-decision-certainty-rating-important-harms\"> </a></td><td>Important harms</td><td>Important harms</td></tr><tr><td style=\"white-space:nowrap\">substantial-variability<a name=\"cs-evidence-to-decision-certainty-rating-substantial-variability\"> </a></td><td>Substantial variability</td><td>Substantial variability is expected or uncertain</td></tr><tr><td style=\"white-space:nowrap\">no-substantial-variability<a name=\"cs-evidence-to-decision-certainty-rating-no-substantial-variability\"> </a></td><td>No substantial variability</td><td>No substantial variability expected</td></tr><tr><td style=\"white-space:nowrap\">few-want-intervention<a name=\"cs-evidence-to-decision-certainty-rating-few-want-intervention\"> </a></td><td>Few want intervention</td><td>We expect few to want the intervention</td></tr><tr><td style=\"white-space:nowrap\">factor-not-considered<a name=\"cs-evidence-to-decision-certainty-rating-factor-not-considered\"> </a></td><td>Factor not considered</td><td>Factor not considered</td></tr><tr><td style=\"white-space:nowrap\">important-issues-or-not-investigated<a name=\"cs-evidence-to-decision-certainty-rating-important-issues-or-not-investigated\"> </a></td><td>Important issues</td><td>Important issues, or potential issues not investigated</td></tr><tr><td style=\"white-space:nowrap\">no-important-issues<a name=\"cs-evidence-to-decision-certainty-rating-no-important-issues\"> </a></td><td>No important issues</td><td>No important issues with the recommended alternative</td></tr><tr><td style=\"white-space:nowrap\">important-negative-issues<a name=\"cs-evidence-to-decision-certainty-rating-important-negative-issues\"> </a></td><td>Important negative issues</td><td>Important negative issues</td></tr><tr><td style=\"white-space:nowrap\">intervention-increases-inequity<a name=\"cs-evidence-to-decision-certainty-rating-intervention-increases-inequity\"> </a></td><td>Intervention increases inequity</td><td>Intervention likely increases inequity</td></tr><tr><td style=\"white-space:nowrap\">intervention-poorly-accepted<a name=\"cs-evidence-to-decision-certainty-rating-intervention-poorly-accepted\"> </a></td><td>Intervention poorly accepted</td><td>Intervention is likely poorly accepted</td></tr><tr><td style=\"white-space:nowrap\">intervention-difficult-to-implement<a name=\"cs-evidence-to-decision-certainty-rating-intervention-difficult-to-implement\"> </a></td><td>Intervention difficult to implement</td><td>Intervention is likely difficult to implement</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating",
+  "version" : "0.1.1",
+  "name" : "EvidenceToDecisionCertaintyRating",
+  "title" : "Evidence To Decision Certainty Rating",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "GRADE Evidence to Decision (EtD) Framework Certainty Ratings",
+  "content" : "complete",
+  "count" : 13,
+  "concept" : [{
+    "code" : "small-net-benefit",
+    "display" : "Small net benefit",
+    "definition" : "Small net benefit, or little difference between alternatives"
+  },
+  {
+    "code" : "substantial-net-benefit",
+    "display" : "Substantial net benefit",
+    "definition" : "Substantial net benefits of the recommended alternative"
+  },
+  {
+    "code" : "important-harms",
+    "display" : "Important harms",
+    "definition" : "Important harms"
+  },
+  {
+    "code" : "substantial-variability",
+    "display" : "Substantial variability",
+    "definition" : "Substantial variability is expected or uncertain"
+  },
+  {
+    "code" : "no-substantial-variability",
+    "display" : "No substantial variability",
+    "definition" : "No substantial variability expected"
+  },
+  {
+    "code" : "few-want-intervention",
+    "display" : "Few want intervention",
+    "definition" : "We expect few to want the intervention"
+  },
+  {
+    "code" : "factor-not-considered",
+    "display" : "Factor not considered",
+    "definition" : "Factor not considered"
+  },
+  {
+    "code" : "important-issues-or-not-investigated",
+    "display" : "Important issues",
+    "definition" : "Important issues, or potential issues not investigated"
+  },
+  {
+    "code" : "no-important-issues",
+    "display" : "No important issues",
+    "definition" : "No important issues with the recommended alternative"
+  },
+  {
+    "code" : "important-negative-issues",
+    "display" : "Important negative issues",
+    "definition" : "Important negative issues"
+  },
+  {
+    "code" : "intervention-increases-inequity",
+    "display" : "Intervention increases inequity",
+    "definition" : "Intervention likely increases inequity"
+  },
+  {
+    "code" : "intervention-poorly-accepted",
+    "display" : "Intervention poorly accepted",
+    "definition" : "Intervention is likely poorly accepted"
+  },
+  {
+    "code" : "intervention-difficult-to-implement",
+    "display" : "Intervention difficult to implement",
+    "definition" : "Intervention is likely difficult to implement"
+  }]
+}

@@ -1,0 +1,1463 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "COVID19IntensiveCareTreatmentGuidelineBundle",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle"]
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/guideline",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "COVID19IntensiveCareTreatmentGuideline",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_COVID19IntensiveCareTreatmentGuideline\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition COVID19IntensiveCareTreatmentGuideline</b></p><a name=\"COVID19IntensiveCareTreatmentGuideline\"> </a><a name=\"hcCOVID19IntensiveCareTreatmentGuideline\"> </a><a name=\"COVID19IntensiveCareTreatmentGuideline-en-US\"> </a><p><b>identifier</b>: Resource identifier/113-001</p><p><b>version</b>: 7.0</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}, {https://data.cochrane.org/concepts/ e07eN1w1Rwswg4}\">Guidelines</span></p><p><b>category</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification S3}\">Evidence- and consensus-based guideline</span></p><p><b>date</b>: 2022-03-01</p><p><b>author</b>: <a href=\"Organization-AWMFOrganization.html\">Organization Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V.</a></p><p><b>title</b>: Empfehlungen zur stationären Therapie von Patienten mit COVID-19 - Living Guideline</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-COVID19IntensiveCareTreatmentGuidelineCitation.html\">Citation COVID19_Intensive_Care_Treatment_Guideline</a></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "RI",
+            "display" : "Resource identifier"
+          }]
+        },
+        "system" : "https://www.awmf.org/",
+        "value" : "113-001"
+      }],
+      "version" : "7.0",
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+          "code" : "clinical-practice-guideline"
+        },
+        {
+          "system" : "https://data.cochrane.org/concepts/",
+          "code" : "e07eN1w1Rwswg4",
+          "display" : "Guidelines"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification",
+          "code" : "S3",
+          "display" : "Evidence- and consensus-based guideline"
+        }]
+      }],
+      "date" : "2022-03-01",
+      "author" : [{
+        "reference" : "Organization/AWMFOrganization"
+      }],
+      "title" : "Empfehlungen zur stationären Therapie von Patienten mit COVID-19 - Living Guideline",
+      "relatesTo" : [{
+        "type" : "citation",
+        "resourceReference" : {
+          "reference" : "Citation/COVID19IntensiveCareTreatmentGuidelineCitation"
+        }
+      }],
+      "section" : [{
+        "title" : "Stationäre Therapie von COVID-19 Patienten",
+        "code" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "guideline-recommendation",
+            "display" : "Clinical practice guideline recommendation"
+          }]
+        },
+        "focus" : {
+          "reference" : "PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan"
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><strong>Systemische Steroide:</strong> Bei Patienten mit COVID-19- und Sauerstoff-Bedarf (Niedrigfluss-Sauerstoff-Insufflation, High-Flow Nasal Cannula, Nichtinvasive Beatmung/CPAP, invasive Beatmung) soll eine Therapie mit systemischen Kortikosteroiden erfolgen. Die Therapie sollte mit 6 mg Dexamethason p.o. oder i.v. über zehn Tage erfolgen.</div>"
+        }
+      },
+      {
+        "title" : "Stationäre Therapie von COVID-19 Patienten",
+        "code" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "guideline-recommendation",
+            "display" : "Clinical practice guideline recommendation"
+          }]
+        },
+        "focus" : {
+          "reference" : "PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan"
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><strong>Systemische Steroide:</strong> Bei Patienten mit moderater Erkrankung (hospitalisiert ohne Notwendigkeit von Niedrigfluss-Sauerstoff-Insufflation) soll keine Therapie mit systemischen Kortikosteroiden erfolgen.</div>"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/guideline-citation",
+    "resource" : {
+      "resourceType" : "Citation",
+      "id" : "COVID19IntensiveCareTreatmentGuidelineCitation",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Citation_COVID19IntensiveCareTreatmentGuidelineCitation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Citation COVID19IntensiveCareTreatmentGuidelineCitation</b></p><a name=\"COVID19IntensiveCareTreatmentGuidelineCitation\"> </a><a name=\"hcCOVID19IntensiveCareTreatmentGuidelineCitation\"> </a><a name=\"COVID19IntensiveCareTreatmentGuidelineCitation-en-US\"> </a><p><b>name</b>: COVID19_Intensive_Care_Treatment_Guideline</p><p><b>status</b>: Active</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: <code>https://www.awmf.org/</code>/113-001</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>7.0</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type active}\">Active</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>S3-Leitlinie Stationäre Therapie von COVID-19 Patienten</p>\n</div></td></tr></table><h3>WebLocations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.awmf.org/leitlinien/detail/ll/113-001.html\">https://www.awmf.org/leitlinien/detail/ll/113-001.html</a></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "COVID19_Intensive_Care_Treatment_Guideline",
+      "status" : "active",
+      "citedArtifact" : {
+        "identifier" : [{
+          "system" : "https://www.awmf.org/",
+          "value" : "113-001"
+        }],
+        "version" : {
+          "value" : "7.0"
+        },
+        "currentState" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+            "code" : "active",
+            "display" : "Active"
+          }]
+        }],
+        "title" : [{
+          "text" : "S3-Leitlinie Stationäre Therapie von COVID-19 Patienten"
+        }],
+        "webLocation" : [{
+          "url" : "https://www.awmf.org/leitlinien/detail/ll/113-001.html"
+        }],
+        "classification" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+              "code" : "publication-type",
+              "display" : "Publication Type"
+            }]
+          },
+          "classifier" : [{
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "clinical-practice-guideline",
+              "display" : "Clinical practice guideline"
+            }]
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation",
+    "resource" : {
+      "resourceType" : "PlanDefinition",
+      "id" : "COVID19DexamethasoneApplication",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PlanDefinition_COVID19DexamethasoneApplication\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition COVID19DexamethasoneApplication</b></p><a name=\"COVID19DexamethasoneApplication\"> </a><a name=\"hcCOVID19DexamethasoneApplication\"> </a><a name=\"COVID19DexamethasoneApplication-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method one-or-more}\">One or More</span></li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-COVID19DexamethasoneApplication.html\">PlanDefinition Dexamethasone Application</a></p><p><b>version</b>: 4.0</p><p><b>name</b>: Dexamethasone_Application</p><p><b>title</b>: Dexamethasone Application</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationCOVID19Ventilated.html\">Population_COVID19_Ventilated</a></p><p><b>date</b>: 2021-12-12</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Application of Dexamethasone for ventilated patients only</p>\n</div><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system recommendation-rating}\">Recommendation rating</span></td><td><a href=\"ArtifactAssessment-DexamethasoneRecommendationJustification.html\">ArtifactAssessment: extension = v4.0,active; date = 2020-01-03; artifact[x] = -&gt;PlanDefinition Dexamethasone Application in ventilated COVID-19 patients</a></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}\">Clinical practice guideline recommendation</span></td><td><a href=\"Citation-DexamethasoneRecommendationCitation.html\">Citation DexamethasoneRecommendationCitation</a></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td><td><a href=\"Citation-COVID19IntensiveCareTreatmentGuidelineCitation.html\">Citation COVID19_Intensive_Care_Treatment_Guideline</a></td></tr></table><blockquote><p><b>action</b></p><p><b>title</b>: Dexamethasone Application</p><p><b>description</b>: </p><div><p>Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-COVID19VentilatedPatientsDexamethasoneApplicationPlan.html\">Dexamethasone Application in ventilated COVID-19 patients</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: No Dexamethasone Application</p><p><b>description</b>: </p><div><p>No Dexamethasone Application for non-ventilated COVID-19 patients</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-COVID19NonVentilatedPatientsDexamethasoneApplicationPlan.html\">No Dexamethasone Application for non-ventilated COVID-19 patients</a></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      },
+      {
+        "extension" : [{
+          "url" : "method",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+              "code" : "one-or-more"
+            }]
+          }
+        }],
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation",
+      "version" : "4.0",
+      "name" : "Dexamethasone_Application",
+      "title" : "Dexamethasone Application",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+          "code" : "workflow-definition"
+        }]
+      },
+      "status" : "active",
+      "experimental" : true,
+      "subjectCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_Ventilated",
+      "date" : "2021-12-12",
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "Application of Dexamethasone for ventilated patients only",
+      "relatedArtifact" : [{
+        "type" : "justification",
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "recommendation-rating",
+            "display" : "Recommendation rating"
+          }]
+        }],
+        "resourceReference" : {
+          "reference" : "ArtifactAssessment/DexamethasoneRecommendationJustification"
+        }
+      },
+      {
+        "type" : "citation",
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "guideline-recommendation",
+            "display" : "Clinical practice guideline recommendation"
+          }]
+        }],
+        "resourceReference" : {
+          "reference" : "Citation/DexamethasoneRecommendationCitation"
+        }
+      },
+      {
+        "type" : "citation",
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "clinical-practice-guideline",
+            "display" : "Clinical practice guideline"
+          }]
+        }],
+        "resourceReference" : {
+          "reference" : "Citation/COVID19IntensiveCareTreatmentGuidelineCitation"
+        }
+      }],
+      "action" : [{
+        "title" : "Dexamethasone Application",
+        "description" : "Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients",
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code" : "guideline-based-care"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-ventilated-patients-dexamethasone-application-plan"
+      },
+      {
+        "title" : "No Dexamethasone Application",
+        "description" : "No Dexamethasone Application for non-ventilated COVID-19 patients",
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code" : "guideline-based-care"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-non-ventilated-patients-no-dexamethasone-application-plan"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation-plan-ventilated-patients",
+    "resource" : {
+      "resourceType" : "PlanDefinition",
+      "id" : "COVID19VentilatedPatientsDexamethasoneApplicationPlan",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PlanDefinition_COVID19VentilatedPatientsDexamethasoneApplicationPlan\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition COVID19VentilatedPatientsDexamethasoneApplicationPlan</b></p><a name=\"COVID19VentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"hcCOVID19VentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"COVID19VentilatedPatientsDexamethasoneApplicationPlan-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-COVID19DexamethasoneApplication.html\">Dexamethasone Application</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}\">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-COVID19VentilatedPatientsDexamethasoneApplicationPlan.html\">PlanDefinition Dexamethasone Application in ventilated COVID-19 patients</a></p><p><b>version</b>: 4.0</p><p><b>name</b>: Dexamethasone_Application</p><p><b>title</b>: Dexamethasone Application in ventilated COVID-19 patients</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationCOVID19Ventilated.html\">Population_COVID19_Ventilated</a></p><p><b>date</b>: 2021-12-12</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients</p>\n</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href=\"Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html\">DexamethasoneApplicationActionOral</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href=\"Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html\">DexamethasoneApplicationActionIntravenous</a></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf",
+        "valueCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation"
+      },
+      {
+        "extension" : [{
+          "url" : "method",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+              "code" : "exactly"
+            }]
+          }
+        },
+        {
+          "url" : "threshold",
+          "valuePositiveInt" : 1
+        }],
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-ventilated-patients-dexamethasone-application-plan",
+      "version" : "4.0",
+      "name" : "Dexamethasone_Application",
+      "title" : "Dexamethasone Application in ventilated COVID-19 patients",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+          "code" : "eca-rule"
+        }]
+      },
+      "status" : "active",
+      "experimental" : true,
+      "subjectCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_Ventilated",
+      "date" : "2021-12-12",
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients",
+      "action" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "432102000",
+            "display" : "Administration of substance (procedure)"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-oral"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "432102000",
+            "display" : "Administration of substance (procedure)"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-intravenous"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation-plan-non-ventilated-patients",
+    "resource" : {
+      "resourceType" : "PlanDefinition",
+      "id" : "COVID19NonVentilatedPatientsDexamethasoneApplicationPlan",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PlanDefinition_COVID19NonVentilatedPatientsDexamethasoneApplicationPlan\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition COVID19NonVentilatedPatientsDexamethasoneApplicationPlan</b></p><a name=\"COVID19NonVentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"hcCOVID19NonVentilatedPatientsDexamethasoneApplicationPlan\"> </a><a name=\"COVID19NonVentilatedPatientsDexamethasoneApplicationPlan-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-COVID19DexamethasoneApplication.html\">Dexamethasone Application</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}\">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-COVID19NonVentilatedPatientsDexamethasoneApplicationPlan.html\">PlanDefinition No Dexamethasone Application for non-ventilated COVID-19 patients</a></p><p><b>version</b>: 4.0</p><p><b>name</b>: No_Dexamethasone_Application</p><p><b>title</b>: No Dexamethasone Application for non-ventilated COVID-19 patients</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationCOVID19NonVentilated.html\">Population_COVID19_NonVentilated</a></p><p><b>date</b>: 2021-12-12</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>No Dexamethasone Application for non-ventilated COVID19 patients</p>\n</div><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></td><td><a href=\"Bundle-COVID19IntensiveCareTreatmentGuidelineBundle.html\">NoDexamethasoneApplicationActivity</a></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf",
+        "valueCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-dexamethasone-recommendation"
+      },
+      {
+        "extension" : [{
+          "url" : "method",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+              "code" : "exactly"
+            }]
+          }
+        },
+        {
+          "url" : "threshold",
+          "valuePositiveInt" : 1
+        }],
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/covid19-non-ventilated-patients-no-dexamethasone-application-plan",
+      "version" : "4.0",
+      "name" : "No_Dexamethasone_Application",
+      "title" : "No Dexamethasone Application for non-ventilated COVID-19 patients",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+          "code" : "eca-rule"
+        }]
+      },
+      "status" : "active",
+      "experimental" : true,
+      "subjectCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_NonVentilated",
+      "date" : "2021-12-12",
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "No Dexamethasone Application for non-ventilated COVID19 patients",
+      "action" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "432102000",
+            "display" : "Administration of substance (procedure)"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-dexamethasone-application"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation-action-oral",
+    "resource" : {
+      "resourceType" : "ActivityDefinition",
+      "id" : "DexamethasoneApplicationActionOral",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ActivityDefinition_DexamethasoneApplicationActionOral\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DexamethasoneApplicationActionOral</b></p><a name=\"DexamethasoneApplicationActionOral\"> </a><a name=\"hcDexamethasoneApplicationActionOral\"> </a><a name=\"DexamethasoneApplicationActionOral-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-DexamethasoneApplicationActionOral.html\">ActivityDefinition DexamethasoneApplicationActionOral</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DexamethasoneApplicationActionOral</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Application of Dexamethasone: 6 mg once per day for 10 days (oral route)</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}\">Dexamethasone (substance)</span></p><blockquote><p><b>dosage</b></p><p><b>timing</b>: Count 10  times, Duration 10days , Once per 1 days</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>6 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>1 /d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/d = '/d')</span></td></tr></table></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-oral",
+      "version" : "1.0",
+      "name" : "DexamethasoneApplicationActionOral",
+      "status" : "active",
+      "experimental" : true,
+      "subjectCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/fhir-types",
+          "code" : "Patient"
+        }]
+      },
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "Application of Dexamethasone: 6 mg once per day for 10 days (oral route)",
+      "kind" : "MedicationRequest",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "432102000",
+          "display" : "Administration of substance (procedure)"
+        }]
+      },
+      "productCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "372584003",
+          "display" : "Dexamethasone (substance)"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "code" : "C05AA09",
+          "display" : "Dexamethason"
+        }]
+      },
+      "dosage" : [{
+        "timing" : {
+          "repeat" : {
+            "count" : 10,
+            "duration" : 10,
+            "durationUnit" : "d",
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "26643006",
+            "display" : "Oral route"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 6,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "rateQuantity" : {
+            "value" : 1,
+            "unit" : "/d",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "/d"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation-action-intravenous",
+    "resource" : {
+      "resourceType" : "ActivityDefinition",
+      "id" : "DexamethasoneApplicationActionIntravenous",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ActivityDefinition_DexamethasoneApplicationActionIntravenous\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DexamethasoneApplicationActionIntravenous</b></p><a name=\"DexamethasoneApplicationActionIntravenous\"> </a><a name=\"hcDexamethasoneApplicationActionIntravenous\"> </a><a name=\"DexamethasoneApplicationActionIntravenous-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-DexamethasoneApplicationActionIntravenous.html\">ActivityDefinition DexamethasoneApplicationActionIntravenous</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DexamethasoneApplicationActionIntravenous</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Application of Dexamethasone: 6 mg once per day for 10 days (intravenous route)</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}\">Dexamethasone (substance)</span></p><blockquote><p><b>dosage</b></p><p><b>timing</b>: Count 10  times, Duration 10days , Once per 1 days</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 47625008}\">Intravenous route</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>6 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>1 /d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/d = '/d')</span></td></tr></table></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/dexamethasone-application-intravenous",
+      "version" : "1.0",
+      "name" : "DexamethasoneApplicationActionIntravenous",
+      "status" : "active",
+      "experimental" : true,
+      "subjectCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/fhir-types",
+          "code" : "Patient"
+        }]
+      },
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "Application of Dexamethasone: 6 mg once per day for 10 days (intravenous route)",
+      "kind" : "MedicationRequest",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "432102000",
+          "display" : "Administration of substance (procedure)"
+        }]
+      },
+      "productCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "372584003",
+          "display" : "Dexamethasone (substance)"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "code" : "C05AA09",
+          "display" : "Dexamethason"
+        }]
+      },
+      "dosage" : [{
+        "timing" : {
+          "repeat" : {
+            "count" : 10,
+            "duration" : 10,
+            "durationUnit" : "d",
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "47625008",
+            "display" : "Intravenous route"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 6,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "rateQuantity" : {
+            "value" : 1,
+            "unit" : "/d",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "/d"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation-action-no-application",
+    "resource" : {
+      "resourceType" : "ActivityDefinition",
+      "id" : "NoDexamethasoneApplication",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ActivityDefinition_NoDexamethasoneApplication\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition NoDexamethasoneApplication</b></p><a name=\"NoDexamethasoneApplication\"> </a><a name=\"hcNoDexamethasoneApplication\"> </a><a name=\"NoDexamethasoneApplication-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-NoDexamethasoneApplication.html\">ActivityDefinition NoDexamethasoneApplicationActivity</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: NoDexamethasoneApplicationActivity</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>No Application of Dexamethasone</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>doNotPerform</b>: true</p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}\">Dexamethasone (substance)</span></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-dexamethasone-application",
+      "version" : "1.0",
+      "name" : "NoDexamethasoneApplicationActivity",
+      "status" : "active",
+      "experimental" : true,
+      "subjectCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/fhir-types",
+          "code" : "Patient"
+        }]
+      },
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "No Application of Dexamethasone",
+      "kind" : "MedicationRequest",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "432102000",
+          "display" : "Administration of substance (procedure)"
+        }]
+      },
+      "doNotPerform" : true,
+      "productCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "372584003",
+          "display" : "Dexamethasone (substance)"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "code" : "C05AA09",
+          "display" : "Dexamethason"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation-citation",
+    "resource" : {
+      "resourceType" : "Citation",
+      "id" : "DexamethasoneRecommendationCitation",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Citation_DexamethasoneRecommendationCitation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Citation DexamethasoneRecommendationCitation</b></p><a name=\"DexamethasoneRecommendationCitation\"> </a><a name=\"hcDexamethasoneRecommendationCitation\"> </a><a name=\"DexamethasoneRecommendationCitation-en-US\"> </a><p><b>name</b>: DexamethasoneRecommendationCitation</p><p><b>status</b>: Active</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: <code>https://api.magicapp.org/api/v1/recommendations</code>/98398</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>v4.0</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type active}\">Active</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Steroide</p>\n</div></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}\">Clinical practice guideline recommendation</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "DexamethasoneRecommendationCitation",
+      "status" : "active",
+      "citedArtifact" : {
+        "identifier" : [{
+          "system" : "https://api.magicapp.org/api/v1/recommendations",
+          "value" : "98398"
+        }],
+        "version" : {
+          "value" : "v4.0"
+        },
+        "currentState" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+            "code" : "active",
+            "display" : "Active"
+          }]
+        }],
+        "title" : [{
+          "text" : "Steroide"
+        }],
+        "classification" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+              "code" : "publication-type",
+              "display" : "Publication Type"
+            }]
+          },
+          "classifier" : [{
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "guideline-recommendation",
+              "display" : "Clinical practice guideline recommendation"
+            }]
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/evidence-variable-ventilated",
+    "resource" : {
+      "resourceType" : "EvidenceVariable",
+      "id" : "PopulationCOVID19Ventilated",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EvidenceVariable_PopulationCOVID19Ventilated\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationCOVID19Ventilated</b></p><a name=\"PopulationCOVID19Ventilated\"> </a><a name=\"hcPopulationCOVID19Ventilated\"> </a><a name=\"PopulationCOVID19Ventilated-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationCOVID19Ventilated.html\">EvidenceVariable Population_COVID19_Ventilated</a></p><p><b>identifier</b>: <code>https://www.ceosys.de</code>/Ventilated</p><p><b>name</b>: Population_COVID19_Ventilated</p><p><b>status</b>: Active</p><p><b>description</b>: </p><div><p>Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, Ventilated</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: covid19</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: oxy-administration-nasal-cannula</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 371907003}\">Oxygen administration by nasal cannula (procedure)</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>covid19</td><td>0 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: noninvasive-ventilation</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 428311008}\">Non-invasive ventilation (regime/therapy)</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>covid19</td><td>0 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: artificial-respiration</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>covid19</td><td>0 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote></blockquote></blockquote></div>"
+      },
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_Ventilated",
+      "identifier" : [{
+        "system" : "https://www.ceosys.de",
+        "value" : "Ventilated"
+      }],
+      "name" : "Population_COVID19_Ventilated",
+      "status" : "active",
+      "description" : "Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, Ventilated",
+      "characteristic" : [{
+        "linkId" : "covid19",
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "840539006",
+              "display" : "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+            }]
+          }
+        }
+      },
+      {
+        "exclude" : false,
+        "definitionByCombination" : {
+          "code" : "any-of",
+          "characteristic" : [{
+            "linkId" : "oxy-administration-nasal-cannula",
+            "exclude" : false,
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "71388002",
+                  "display" : "Procedure (procedure)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "371907003",
+                  "display" : "Oxygen administration by nasal cannula (procedure)"
+                }]
+              }
+            },
+            "timeFromEvent" : [{
+              "eventId" : "covid19",
+              "quantity" : {
+                "value" : 0,
+                "system" : "http://unitsofmeasure.org",
+                "code" : "d"
+              }
+            }]
+          },
+          {
+            "linkId" : "noninvasive-ventilation",
+            "exclude" : false,
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "71388002",
+                  "display" : "Procedure (procedure)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "428311008",
+                  "display" : "Non-invasive ventilation (regime/therapy)"
+                }]
+              }
+            },
+            "timeFromEvent" : [{
+              "eventId" : "covid19",
+              "quantity" : {
+                "value" : 0,
+                "system" : "http://unitsofmeasure.org",
+                "code" : "d"
+              }
+            }]
+          },
+          {
+            "linkId" : "artificial-respiration",
+            "exclude" : false,
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "71388002",
+                  "display" : "Procedure (procedure)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "40617009",
+                  "display" : "Artificial ventilation (regime/therapy)"
+                }]
+              }
+            },
+            "timeFromEvent" : [{
+              "eventId" : "covid19",
+              "quantity" : {
+                "value" : 0,
+                "system" : "http://unitsofmeasure.org",
+                "code" : "d"
+              }
+            }]
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/evidence-variable-non-ventilated",
+    "resource" : {
+      "resourceType" : "EvidenceVariable",
+      "id" : "PopulationCOVID19NonVentilated",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EvidenceVariable_PopulationCOVID19NonVentilated\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationCOVID19NonVentilated</b></p><a name=\"PopulationCOVID19NonVentilated\"> </a><a name=\"hcPopulationCOVID19NonVentilated\"> </a><a name=\"PopulationCOVID19NonVentilated-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationCOVID19NonVentilated.html\">EvidenceVariable Population_COVID19_NonVentilated</a></p><p><b>identifier</b>: <code>https://www.ceosys.de</code>/NonVentilated</p><p><b>name</b>: Population_COVID19_NonVentilated</p><p><b>status</b>: Active</p><p><b>description</b>: </p><div><p>Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, not ventilated</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: covid19</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: true</p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: oxy-administration-nasal-cannula</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 371907003}\">Oxygen administration by nasal cannula (procedure)</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>covid19</td><td>0 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: noninvasive-ventilation</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 428311008}\">Non-invasive ventilation (regime/therapy)</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>covid19</td><td>0 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: artificial-respiration</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>covid19</td><td>0 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></td></tr></table></blockquote></blockquote></blockquote></div>"
+      },
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/population/Population_COVID19_NonVentilated",
+      "identifier" : [{
+        "system" : "https://www.ceosys.de",
+        "value" : "NonVentilated"
+      }],
+      "name" : "Population_COVID19_NonVentilated",
+      "status" : "active",
+      "description" : "Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, not ventilated",
+      "characteristic" : [{
+        "linkId" : "covid19",
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "840539006",
+              "display" : "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+            }]
+          }
+        }
+      },
+      {
+        "exclude" : true,
+        "definitionByCombination" : {
+          "code" : "any-of",
+          "characteristic" : [{
+            "linkId" : "oxy-administration-nasal-cannula",
+            "exclude" : false,
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "71388002",
+                  "display" : "Procedure (procedure)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "371907003",
+                  "display" : "Oxygen administration by nasal cannula (procedure)"
+                }]
+              }
+            },
+            "timeFromEvent" : [{
+              "eventId" : "covid19",
+              "quantity" : {
+                "value" : 0,
+                "system" : "http://unitsofmeasure.org",
+                "code" : "d"
+              }
+            }]
+          },
+          {
+            "linkId" : "noninvasive-ventilation",
+            "exclude" : false,
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "71388002",
+                  "display" : "Procedure (procedure)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "428311008",
+                  "display" : "Non-invasive ventilation (regime/therapy)"
+                }]
+              }
+            },
+            "timeFromEvent" : [{
+              "eventId" : "covid19",
+              "quantity" : {
+                "value" : 0,
+                "system" : "http://unitsofmeasure.org",
+                "code" : "d"
+              }
+            }]
+          },
+          {
+            "linkId" : "artificial-respiration",
+            "exclude" : false,
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "71388002",
+                  "display" : "Procedure (procedure)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "40617009",
+                  "display" : "Artificial ventilation (regime/therapy)"
+                }]
+              }
+            },
+            "timeFromEvent" : [{
+              "eventId" : "covid19",
+              "quantity" : {
+                "value" : 0,
+                "system" : "http://unitsofmeasure.org",
+                "code" : "d"
+              }
+            }]
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/rating-outcome-mortality",
+    "resource" : {
+      "resourceType" : "ArtifactAssessment",
+      "id" : "DexamethasoneRatingOutcomeMortality",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ArtifactAssessment_DexamethasoneRatingOutcomeMortality\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ArtifactAssessment DexamethasoneRatingOutcomeMortality</b></p><a name=\"DexamethasoneRatingOutcomeMortality\"> </a><a name=\"hcDexamethasoneRatingOutcomeMortality\"> </a><a name=\"DexamethasoneRatingOutcomeMortality-en-US\"> </a><p><b>ArtifactAssessment Version</b>: v4.0</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2020-01-03</p><p><b>artifact</b>: <a href=\"Evidence-DexamethasoneOutcomeMortality.html\">Evidence ExampleOutcomeEvidence</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Overall}\">Overall certainty</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating moderate}\">Moderate quality</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-importance}\">Clinical Importance</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance 9}\">Critical</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type RiskOfBias}\">Risk of bias</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating serious-concern}\">serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Inconsistency}\">Inconsistency</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Indirectness}\">Indirectness</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Imprecision}\">Imprecision</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type PublicationBias}\">Publication bias</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version",
+        "valueString" : "v4.0"
+      },
+      {
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status",
+        "valueCode" : "active"
+      }],
+      "date" : "2020-01-03",
+      "artifactReference" : {
+        "reference" : "Evidence/DexamethasoneOutcomeMortality"
+      },
+      "content" : [{
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "Overall",
+            "display" : "Overall certainty"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "moderate",
+            "display" : "Moderate quality"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "clinical-importance",
+            "display" : "Clinical Importance"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance",
+            "code" : "9",
+            "display" : "Critical"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "RiskOfBias",
+            "display" : "Risk of bias"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "serious-concern",
+            "display" : "serious concern"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "Inconsistency",
+            "display" : "Inconsistency"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "no-concern",
+            "display" : "no serious concern"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "Indirectness",
+            "display" : "Indirectness"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "no-concern",
+            "display" : "no serious concern"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "Imprecision",
+            "display" : "Imprecision"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "no-concern",
+            "display" : "no serious concern"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "PublicationBias",
+            "display" : "Publication bias"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "no-concern",
+            "display" : "no serious concern"
+          }]
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/outcome-mortality",
+    "resource" : {
+      "resourceType" : "Evidence",
+      "id" : "DexamethasoneOutcomeMortality",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Evidence_DexamethasoneOutcomeMortality\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Evidence DexamethasoneOutcomeMortality</b></p><a name=\"DexamethasoneOutcomeMortality\"> </a><a name=\"hcDexamethasoneOutcomeMortality\"> </a><a name=\"DexamethasoneOutcomeMortality-en-US\"> </a><p><b>name</b>: ExampleOutcomeEvidence</p><p><b>status</b>: Active</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-SystemicCorticosteroidsForTheTreatmentOfCOVID19.html\">Citation SystemicCorticosteroidsForTheTreatmentOfCOVID19</a></td></tr></table><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}\">population</span></p><p><b>observed</b>: <a href=\"Group-StudyCohortCorticosteroidsCOVID19.html\">Group StudyCohortCriteriaSystemicCorticosteroidsCOVID19</a></p><p><b>intended</b>: <a href=\"EvidenceVariable-StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19.html\">EvidenceVariable StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</a></p></blockquote><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}\">measured variable</span></p><p><b>observed</b>: <a href=\"EvidenceVariable-OutcomeAllCauseMortality.html\">EvidenceVariable AllCauseMortality</a></p></blockquote><p><b>synthesisType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}\">not applicable</span></p><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Relative effect of intervention vs. comparator</p>\n</div><p><b>statisticType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/statistic-type C93152}\">Relative Risk</span></p><p><b>quantity</b>: 0.89</p><h3>SampleSizes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>NumberOfStudies</b></td><td><b>NumberOfParticipants</b></td></tr><tr><td style=\"display: none\">*</td><td>9</td><td>7930</td></tr></table><h3>AttributeEstimates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Level</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/attribute-estimate-type C53324}\">Confidence interval</span></td><td>0.95</td><td>0.8-1</td></tr></table></blockquote><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Baseline risk/result in the comparison group</p>\n</div><p><b>statisticType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/statistic-type C16726}\">Incidence</span></p><p><b>quantity</b>: 245 1/1000<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/1000 = '1/1000')</span></p></blockquote></div>"
+      },
+      "name" : "ExampleOutcomeEvidence",
+      "status" : "active",
+      "relatedArtifact" : [{
+        "type" : "citation",
+        "resourceReference" : {
+          "reference" : "Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19"
+        }
+      }],
+      "variableDefinition" : [{
+        "variableRole" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/variable-role",
+            "code" : "population"
+          }]
+        },
+        "observed" : {
+          "reference" : "Group/StudyCohortCorticosteroidsCOVID19"
+        },
+        "intended" : {
+          "reference" : "EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"
+        }
+      },
+      {
+        "variableRole" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/variable-role",
+            "code" : "measuredVariable"
+          }]
+        },
+        "observed" : {
+          "reference" : "EvidenceVariable/OutcomeAllCauseMortality"
+        }
+      }],
+      "synthesisType" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/synthesis-type",
+          "code" : "NotApplicable"
+        }]
+      },
+      "statistic" : [{
+        "description" : "Relative effect of intervention vs. comparator",
+        "statisticType" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/statistic-type",
+            "code" : "C93152",
+            "display" : "Relative Risk"
+          }]
+        },
+        "quantity" : {
+          "value" : 0.89
+        },
+        "sampleSize" : {
+          "numberOfStudies" : 9,
+          "numberOfParticipants" : 7930
+        },
+        "attributeEstimate" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/attribute-estimate-type",
+              "code" : "C53324",
+              "display" : "Confidence interval"
+            }]
+          },
+          "level" : 0.95,
+          "range" : {
+            "low" : {
+              "value" : 0.8
+            },
+            "high" : {
+              "value" : 1
+            }
+          }
+        }]
+      },
+      {
+        "description" : "Baseline risk/result in the comparison group",
+        "statisticType" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/statistic-type",
+            "code" : "C16726",
+            "display" : "Incidence"
+          }]
+        },
+        "quantity" : {
+          "value" : 245,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "1/1000"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/study-eligibility-criteria",
+    "resource" : {
+      "resourceType" : "EvidenceVariable",
+      "id" : "StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EvidenceVariable_StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</b></p><a name=\"StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19\"> </a><a name=\"hcStudyEligibilityCriteriaSystemicCorticosteroidsCOVID19\"> </a><a name=\"StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19-en-US\"> </a><p><b>name</b>: StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</p><p><b>status</b>: Active</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19",
+      "status" : "active",
+      "characteristic" : [{
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "840539006",
+              "display" : "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+            }]
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/outcome-all-cause-mortality",
+    "resource" : {
+      "resourceType" : "EvidenceVariable",
+      "id" : "OutcomeAllCauseMortality",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EvidenceVariable_OutcomeAllCauseMortality\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable OutcomeAllCauseMortality</b></p><a name=\"OutcomeAllCauseMortality\"> </a><a name=\"hcOutcomeAllCauseMortality\"> </a><a name=\"OutcomeAllCauseMortality-en-US\"> </a><p><b>name</b>: AllCauseMortality</p><p><b>status</b>: Active</p><h3>Characteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Exclude</b></td><td><b>DefinitionCodeableConcept</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td><td><span title=\"Codes:{http://snomed.info/sct 409651001}\">Mortality rate (observable entity)</span></td></tr></table><p><b>handling</b>: dichotomous variable</p></div>"
+      },
+      "name" : "AllCauseMortality",
+      "status" : "active",
+      "characteristic" : [{
+        "exclude" : false,
+        "definitionCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "409651001",
+            "display" : "Mortality rate (observable entity)"
+          }]
+        }
+      }],
+      "handling" : "dichotomous"
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/recommendation-justification",
+    "resource" : {
+      "resourceType" : "ArtifactAssessment",
+      "id" : "DexamethasoneRecommendationJustification",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ArtifactAssessment_DexamethasoneRecommendationJustification\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ArtifactAssessment DexamethasoneRecommendationJustification</b></p><a name=\"DexamethasoneRecommendationJustification\"> </a><a name=\"hcDexamethasoneRecommendationJustification\"> </a><a name=\"DexamethasoneRecommendationJustification-en-US\"> </a><p><b>ArtifactAssessment Version</b>: v4.0</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2020-01-03</p><p><b>artifact</b>: <a href=\"PlanDefinition-COVID19VentilatedPatientsDexamethasoneApplicationPlan.html\">PlanDefinition Dexamethasone Application in ventilated COVID-19 patients</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system strength}\">Strength of recommendation</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength strong-for}\">Strong for an intervention</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system consensus}\">Consensus</span></p><p><b>classifier</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/recommendation-strength strong}\">Strong</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type preference-and-values}\">Preference and values</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating factor-not-considered}\">Factor not considered</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type resources}\">Resources</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating no-important-issues}\">No important issues</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type acceptability}\">Acceptability</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating factor-not-considered}\">Factor not considered</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type feasibility}\">Feasibility</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating factor-not-considered}\">Factor not considered</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Container</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></td><td><a href=\"ArtifactAssessment-DexamethasoneRatingOutcomeMortality.html\">ArtifactAssessment: extension = v4.0,active; date = 2020-01-03; artifact[x] = -&gt;Evidence ExampleOutcomeEvidence</a></td></tr></table></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version",
+        "valueString" : "v4.0"
+      },
+      {
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status",
+        "valueCode" : "active"
+      }],
+      "date" : "2020-01-03",
+      "artifactReference" : {
+        "reference" : "PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan"
+      },
+      "content" : [{
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "strength",
+            "display" : "Strength of recommendation"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength",
+            "code" : "strong-for"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "consensus",
+            "display" : "Consensus"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/recommendation-strength",
+            "code" : "strong",
+            "display" : "Strong"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type",
+            "code" : "preference-and-values",
+            "display" : "Preference and values"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating",
+            "code" : "factor-not-considered",
+            "display" : "Factor not considered"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type",
+            "code" : "resources",
+            "display" : "Resources"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating",
+            "code" : "no-important-issues",
+            "display" : "No important issues"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type",
+            "code" : "acceptability",
+            "display" : "Acceptability"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating",
+            "code" : "factor-not-considered",
+            "display" : "Factor not considered"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type",
+            "code" : "feasibility",
+            "display" : "Feasibility"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating",
+            "code" : "factor-not-considered",
+            "display" : "Factor not considered"
+          }]
+        }]
+      },
+      {
+        "informationType" : "container",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "certainty-of-evidence-rating",
+            "display" : "Certainty of evidence rating"
+          }]
+        },
+        "relatedArtifact" : [{
+          "type" : "justification",
+          "classifier" : [{
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "certainty-of-evidence-rating",
+              "display" : "Certainty of evidence rating"
+            }]
+          }],
+          "resourceReference" : {
+            "reference" : "ArtifactAssessment/DexamethasoneRatingOutcomeMortality"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/covid19-intensive-care-treatment/dexamethasone/study-citation",
+    "resource" : {
+      "resourceType" : "Citation",
+      "id" : "SystemicCorticosteroidsForTheTreatmentOfCOVID19",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Citation_SystemicCorticosteroidsForTheTreatmentOfCOVID19\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Citation SystemicCorticosteroidsForTheTreatmentOfCOVID19</b></p><a name=\"SystemicCorticosteroidsForTheTreatmentOfCOVID19\"> </a><a name=\"hcSystemicCorticosteroidsForTheTreatmentOfCOVID19\"> </a><a name=\"SystemicCorticosteroidsForTheTreatmentOfCOVID19-en-US\"> </a><p><b>name</b>: SystemicCorticosteroidsForTheTreatmentOfCOVID19</p><p><b>status</b>: Active</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: <code>https://pubmed.ncbi.nlm.nih.gov</code>/34396514, <code>https://doi.org</code>/10.1002/14651858.CD014963, <code>https://www.ncbi.nlm.nih.gov/pmc/</code>/PMC8406706</p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Systemic corticosteroids for the treatment of COVID-19</p>\n</div></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{http://hl7.org/fhir/citation-artifact-classifier D016428}\">Journal Article</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "SystemicCorticosteroidsForTheTreatmentOfCOVID19",
+      "status" : "active",
+      "citedArtifact" : {
+        "identifier" : [{
+          "system" : "https://pubmed.ncbi.nlm.nih.gov",
+          "value" : "34396514"
+        },
+        {
+          "system" : "https://doi.org",
+          "value" : "10.1002/14651858.CD014963"
+        },
+        {
+          "system" : "https://www.ncbi.nlm.nih.gov/pmc/",
+          "value" : "PMC8406706"
+        }],
+        "title" : [{
+          "text" : "Systemic corticosteroids for the treatment of COVID-19"
+        }],
+        "classification" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+              "code" : "publication-type",
+              "display" : "Publication Type"
+            }]
+          },
+          "classifier" : [{
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/citation-artifact-classifier",
+              "code" : "D016428",
+              "display" : "Journal Article"
+            }]
+          }]
+        }]
+      }
+    }
+  }]
+}

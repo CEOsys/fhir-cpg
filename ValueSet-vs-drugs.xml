@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-drugs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-drugs</b></p><a name="vs-drugs"> </a><a name="hcvs-drugs"> </a><a name="vs-drugs-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 105590001 (Substance)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 763158003 (Medicinal product (product))</li><li>Include all codes defined in <a href="http://www.whocc.no/atc"><code>http://www.whocc.no/atc</code></a></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code></li></ul></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-drugs"/>
+  <name value="Drugs"/>
+  <title value="Drugs"/>
+  <status value="draft"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <description value="Drugs"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="105590001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="763158003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://www.whocc.no/atc"/>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+    </include>
+  </compose>
+</ValueSet>

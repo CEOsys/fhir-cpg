@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-mean-difference-type",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-mean-difference-type</b></p><a name=\"vs-mean-difference-type\"> </a><a name=\"hcvs-mean-difference-type\"> </a><a name=\"vs-mean-difference-type-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html\"><code>http://terminology.hl7.org/CodeSystem/statistic-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html#statistic-type-0000457\">0000457</a></td><td>Mean Difference</td><td>The mean difference, or difference in means, measures the absolute difference between the mean value in two different groups.</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html#statistic-type-0000100\">0000100</a></td><td>Standardized Mean Difference</td><td>Computed by forming the difference between two means, divided by an estimate of the within-group standard deviation. It is used to provide an estimatation of the effect size between two treatments when the predictor (independent variable) is categorical and the response(dependent) variable is continuous.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-mean-difference-type",
+  "version" : "0.1.1",
+  "name" : "MeanDifferenceType",
+  "title" : "Mean Difference Type",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Mean difference types",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/statistic-type",
+      "concept" : [{
+        "code" : "0000457",
+        "display" : "Mean Difference"
+      },
+      {
+        "code" : "0000100",
+        "display" : "Standardized Mean Difference"
+      }]
+    }]
+  }
+}

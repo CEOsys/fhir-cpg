@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EvidenceVariable xmlns="http://hl7.org/fhir">
+  <id value="StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EvidenceVariable StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</b></p><a name="StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"> </a><a name="hcStudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"> </a><a name="StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19-en-US"> </a><p><b>url</b>: <a href="EvidenceVariable-StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19.html">EvidenceVariable StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</a></p><p><b>name</b>: StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 404684003}">Clinical finding (finding)</span></td><td><span title="Codes:{http://snomed.info/sct 840539006}">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"/>
+  <name value="StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"/>
+  <status value="active"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <characteristic>
+    <definitionByTypeAndValue>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="404684003"/>
+          <display value="Clinical finding (finding)"/>
+        </coding>
+      </type>
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="840539006"/>
+          <display value="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+        </coding>
+      </valueCodeableConcept>
+    </definitionByTypeAndValue>
+  </characteristic>
+</EvidenceVariable>

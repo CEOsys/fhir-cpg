@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-rating-concern-degree"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-rating-concern-degree</b></p><a name="vs-rating-concern-degree"> </a><a name="hcvs-rating-concern-degree"> </a><a name="vs-rating-concern-degree-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-certainty-rating.html"><code>http://hl7.org/fhir/certainty-rating</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-certainty-rating.html#certainty-rating-no-concern">no-concern</a></td><td>no serious concern</td><td>no serious concern.</td></tr><tr><td><a href="CodeSystem-certainty-rating.html#certainty-rating-serious-concern">serious-concern</a></td><td>serious concern</td><td>serious concern.</td></tr><tr><td><a href="CodeSystem-certainty-rating.html#certainty-rating-very-serious-concern">very-serious-concern</a></td><td>very serious concern</td><td>very serious concern.</td></tr><tr><td><a href="CodeSystem-certainty-rating.html#certainty-rating-extremely-serious-concern">extremely-serious-concern</a></td><td>extremely serious concern</td><td>extremely serious concern.</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-concern-degree"/>
+  <version value="0.1.1"/>
+  <name value="RatingConcernDegree"/>
+  <title value="Rating Concern Degree"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Codes from EvidenceCertaintyRating related to degree of concern"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/certainty-rating"/>
+      <concept>
+        <code value="no-concern"/>
+        <display value="no serious concern"/>
+      </concept>
+      <concept>
+        <code value="serious-concern"/>
+        <display value="serious concern"/>
+      </concept>
+      <concept>
+        <code value="very-serious-concern"/>
+        <display value="very serious concern"/>
+      </concept>
+      <concept>
+        <code value="extremely-serious-concern"/>
+        <display value="extremely serious concern"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

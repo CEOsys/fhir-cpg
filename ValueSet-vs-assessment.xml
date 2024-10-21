@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-assessment"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-assessment</b></p><a name="vs-assessment"> </a><a name="hcvs-assessment"> </a><a name="vs-assessment-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 363787002 (Observable entity)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 363787002 (Observable entity)</li><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a> where ORDER_OBS  = ORDER</li><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a> where ORDER_OBS  = BOTH</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment"/>
+  <version value="0.1.0"/>
+  <name value="Assessment"/>
+  <title value="Assessment"/>
+  <status value="draft"/>
+  <date value="2023-10-16"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Assessments"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="363787002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/731000124108/version/20230901"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="363787002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="ORDER_OBS"/>
+        <op value="="/>
+        <value value="ORDER"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="ORDER_OBS"/>
+        <op value="="/>
+        <value value="BOTH"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

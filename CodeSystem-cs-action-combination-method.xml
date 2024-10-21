@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-action-combination-method"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-action-combination-method</b></p><a name="cs-action-combination-method"> </a><a name="hccs-action-combination-method"> </a><a name="cs-action-combination-method-en-US"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">all<a name="cs-action-combination-method-all"> </a></td><td>All</td><td>All actions must be performed.</td></tr><tr><td style="white-space:nowrap">any<a name="cs-action-combination-method-any"> </a></td><td>Any</td><td>Any action must be performed.</td></tr><tr><td style="white-space:nowrap">at-least<a name="cs-action-combination-method-at-least"> </a></td><td>At Least</td><td>At least the specified number of actions must be performed.</td></tr><tr><td style="white-space:nowrap">exactly<a name="cs-action-combination-method-exactly"> </a></td><td>Exactly</td><td>Exactly the specified number of actions must be performed.</td></tr><tr><td style="white-space:nowrap">at-most<a name="cs-action-combination-method-at-most"> </a></td><td>At Most</td><td>At most the specified number of actions must be performed.</td></tr><tr><td style="white-space:nowrap">one-or-more<a name="cs-action-combination-method-one-or-more"> </a></td><td>One or More</td><td>One or more actions must be performed.</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+  <version value="0.1.0"/>
+  <name value="ActionCombinationMethod"/>
+  <title value="Action Combination Method"/>
+  <status value="draft"/>
+  <date value="2024-02-16"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Code system for the combination of actions in a PlanDefinition."/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="all"/>
+    <display value="All"/>
+    <definition value="All actions must be performed."/>
+  </concept>
+  <concept>
+    <code value="any"/>
+    <display value="Any"/>
+    <definition value="Any action must be performed."/>
+  </concept>
+  <concept>
+    <code value="at-least"/>
+    <display value="At Least"/>
+    <definition value="At least the specified number of actions must be performed."/>
+  </concept>
+  <concept>
+    <code value="exactly"/>
+    <display value="Exactly"/>
+    <definition value="Exactly the specified number of actions must be performed."/>
+  </concept>
+  <concept>
+    <code value="at-most"/>
+    <display value="At Most"/>
+    <definition value="At most the specified number of actions must be performed."/>
+  </concept>
+  <concept>
+    <code value="one-or-more"/>
+    <display value="One or More"/>
+    <definition value="One or more actions must be performed."/>
+  </concept>
+</CodeSystem>

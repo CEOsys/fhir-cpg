@@ -1,0 +1,78 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-episode-of-care-type",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-episode-of-care-type</b></p><a name=\"vs-episode-of-care-type\"> </a><a name=\"hcvs-episode-of-care-type\"> </a><a name=\"vs-episode-of-care-type-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-KontaktArtDe.html\"><code>http://fhir.de/CodeSystem/kontaktart-de</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-vorstationaer\">vorstationaer</a></td><td>Vorstationär</td><td>Vorstationärer Kontakt nach § 115 a SGB V</td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-nachstationaer\">nachstationaer</a></td><td>Nachstationär</td><td>Nachstationärer Kontakt nach § 115 a SGB V</td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-teilstationaer\">teilstationaer</a></td><td>Teilstationäre Behandlung</td><td>Eine teilstationäre Behandlung unterscheidet sich im Wesentlichen von einer vollstationären Behandlung durch eine regelmäßige, aber nicht zeitlich durchgehende Anwesenheit der Patientin oder des Patienten im Krankenhaus. Im Rahmen der teilstationären Behandlung kann Unterkunft und Verpflegung gewährt werden.</td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-normalstationaer\">normalstationaer</a></td><td>Normalstationär</td><td>Stationärer Aufenthalt in Abgrenzung zu Intensivstationär</td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-intensivstationaer\">intensivstationaer</a></td><td>Intensivstationär</td><td>Intensivstationäre Kontakte sind Kontakte mit einer Station, die zur intensivmedizinischen Behandlung im Krankenhausplan bzw. Förderungsbescheid zugelassen sind</td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-ub\">ub</a></td><td>Untersuchung und Behandlung</td><td>Aufenthalt auf einer Funktionsabteilung zur Durchführung spezieller diagnostischer/therapeutischer Maßnahmen</td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-stationsaequivalent\">stationsaequivalent</a></td><td>Stationsäquivalent</td><td>Psychiatrische Krankenhäuser mit regionaler Versorgungsverpflichtung sowie Allgemeinkrankenhäuser mit selbständigen, fachärztlich geleiteten psychiatrischen Abteilungen mit regionaler Versorgungsverpflichtung können in medizinisch geeigneten Fällen, wenn eine Indikation für eine stationäre psychiatrische Behandlung vorliegt, anstelle einer vollstationären Behandlung eine stationsäquivalente psychiatrische Behandlung im häuslichen Umfeld erbringen</td></tr><tr><td><a href=\"CodeSystem-KontaktArtDe.html#KontaktArtDe-operation\">operation</a></td><td>Operation</td><td>Aufenthalt in OP-Bereichen zur Durchführung von operativen Eingriffen inklusive Vor- und Nachbereitung</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type",
+  "version" : "0.1.1",
+  "name" : "EpisodeOfCareType",
+  "title" : "Episode Of Care Type",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Episode Of Care Type",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.de/CodeSystem/kontaktart-de",
+      "concept" : [{
+        "code" : "vorstationaer",
+        "display" : "Vorstationär"
+      },
+      {
+        "code" : "nachstationaer",
+        "display" : "Nachstationär"
+      },
+      {
+        "code" : "teilstationaer",
+        "display" : "Teilstationäre Behandlung"
+      },
+      {
+        "code" : "normalstationaer",
+        "display" : "Normalstationär"
+      },
+      {
+        "code" : "intensivstationaer",
+        "display" : "Intensivstationär"
+      },
+      {
+        "code" : "ub",
+        "display" : "Untersuchung und Behandlung"
+      },
+      {
+        "code" : "stationsaequivalent",
+        "display" : "Stationsäquivalent"
+      },
+      {
+        "code" : "operation",
+        "display" : "Operation"
+      }]
+    }]
+  }
+}

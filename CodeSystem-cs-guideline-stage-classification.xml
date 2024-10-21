@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-guideline-stage-classification"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-guideline-stage-classification</b></p><a name="cs-guideline-stage-classification"> </a><a name="hccs-guideline-stage-classification"> </a><a name="cs-guideline-stage-classification-en-US"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">S3<a name="cs-guideline-stage-classification-S3"> </a></td><td>Evidence- and consensus-based guideline</td><td>Representative panel, Systematic search, selection, evaluation of literature, Structured consensus building.</td></tr><tr><td style="white-space:nowrap">S2e<a name="cs-guideline-stage-classification-S2e"> </a></td><td>Evidence-based Guideline</td><td>Systematic search, selection, evaluation of literature</td></tr><tr><td style="white-space:nowrap">S2k<a name="cs-guideline-stage-classification-S2k"> </a></td><td>Consensus-based Guideline</td><td>Representative body, structured consensus building</td></tr><tr><td style="white-space:nowrap">S1<a name="cs-guideline-stage-classification-S1"> </a></td><td>Action recommendations from expert groups</td><td>Consensus building in an informal process</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"/>
+  <version value="0.1.1"/>
+  <name value="GuidelineStageClassification"/>
+  <title value="Guideline Stage Classification"/>
+  <status value="active"/>
+  <date value="2022-09-06"/>
+  <publisher value="Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="As part of the project planning for the creation or updating of a guideline,&#xA;    a decision should be made at an early stage about the planned level classification (&quot;S classification&quot;) according to the AWMF's system of rules (1-3).&#xA;    The S-classification scheme of the AWMF differentiates between the classes S1 treatment recommendation as well as S2e, S2k and S3 guideline.&#xA;    The &quot;S&quot; stands for the extent of the applied systematic approach in the development process of a guideline.&#xA;    Each class thus stands for a specific methodological concept that must be presented in a way that is comprehensible to the users.&#xA;    The choice of class is based on the question of how much effort is appropriate and feasible.&#xA;    The need for legitimacy for the implementation of the guideline (convincing the target group) must be taken into account.&#xA;    When choosing a higher S-classification in the context of updating a guideline, the adaptation to the corresponding methodology has to be considered."/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="S3"/>
+    <display value="Evidence- and consensus-based guideline"/>
+    <definition value="Representative panel, Systematic search, selection, evaluation of literature, Structured consensus building."/>
+  </concept>
+  <concept>
+    <code value="S2e"/>
+    <display value="Evidence-based Guideline"/>
+    <definition value="Systematic search, selection, evaluation of literature"/>
+  </concept>
+  <concept>
+    <code value="S2k"/>
+    <display value="Consensus-based Guideline"/>
+    <definition value="Representative body, structured consensus building"/>
+  </concept>
+  <concept>
+    <code value="S1"/>
+    <display value="Action recommendations from expert groups"/>
+    <definition value="Consensus building in an informal process"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-relative-effect-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-relative-effect-type"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-relative-effect-type</b></p><a name=\"vs-relative-effect-type\"> </a><a name=\"hcvs-relative-effect-type\"> </a><a name=\"vs-relative-effect-type-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html\"><code>http://terminology.hl7.org/CodeSystem/statistic-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html#statistic-type-C93150\">C93150</a></td><td>Hazard Ratio</td><td>A measure of how often a particular event happens in one group compared to how often it happens in another group, over time. In cancer research, hazard ratios are often used in clinical trials to measure survival at any point in time in a group of patients who have been given a specific treatment compared to a control group given another treatment or a placebo. A hazard ratio of one means that there is no difference in survival between the two groups. A hazard ratio of greater than one or less than one means that survival was better in one of the groups.</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html#statistic-type-C16932\">C16932</a></td><td>Odds Ratio</td><td>The ratio of the odds of an event occurring in one group to the odds of it occurring in another group, or to a sample-based estimate of that ratio.</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html#statistic-type-C93152\">C93152</a></td><td>Relative Risk</td><td>A measure of the risk of a certain event happening in one group compared to the risk of the same event happening in another group. In cancer research, risk ratios are used in prospective (forward looking) studies, such as cohort studies and clinical trials. A risk ratio of one means there is no difference between two groups in terms of their risk of cancer, based on whether or not they were exposed to a certain substance or factor, or how they responded to two treatments being compared. A risk ratio of greater than one or of less than one usually means that being exposed to a certain substance or factor either increases (risk ratio greater than one) or decreases (risk ratio less than one) the risk of cancer, or that the treatments being compared do not have the same effects.</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-statistic-type.html#statistic-type-rate-ratio\">rate-ratio</a></td><td>Incidence Rate Ratio</td><td>A type of relative effect estimate that compares rates over time (eg events per person-years).</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-relative-effect-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "RelativeEffectType"] ; # 
+  fhir:title [ fhir:v "Relative Effect Type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Relative effect types"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/statistic-type"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "C93150" ] ;
+         fhir:display [ fhir:v "Hazard Ratio" ]
+       ] [
+         fhir:code [ fhir:v "C16932" ] ;
+         fhir:display [ fhir:v "Odds Ratio" ]
+       ] [
+         fhir:code [ fhir:v "C93152" ] ;
+         fhir:display [ fhir:v "Relative Risk" ]
+       ] [
+         fhir:code [ fhir:v "rate-ratio" ] ;
+         fhir:display [ fhir:v "Incidence Rate Ratio" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

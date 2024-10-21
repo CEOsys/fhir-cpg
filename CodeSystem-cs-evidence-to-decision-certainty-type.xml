@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-evidence-to-decision-certainty-type"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-evidence-to-decision-certainty-type</b></p><a name="cs-evidence-to-decision-certainty-type"> </a><a name="hccs-evidence-to-decision-certainty-type"> </a><a name="cs-evidence-to-decision-certainty-type-en-US"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">benefit-and-harms<a name="cs-evidence-to-decision-certainty-type-benefit-and-harms"> </a></td><td>Benefits and Harms</td><td>Summary of most important benefits and harms</td></tr><tr><td style="white-space:nowrap">preference-and-values<a name="cs-evidence-to-decision-certainty-type-preference-and-values"> </a></td><td>Preference and values</td><td>Typical patient preferences and values? Common issues or expected variability?</td></tr><tr><td style="white-space:nowrap">resources<a name="cs-evidence-to-decision-certainty-type-resources"> </a></td><td>Resources</td><td>Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?</td></tr><tr><td style="white-space:nowrap">equity<a name="cs-evidence-to-decision-certainty-type-equity"> </a></td><td>Equity</td><td>How do the different alternatives affect equity?</td></tr><tr><td style="white-space:nowrap">acceptability<a name="cs-evidence-to-decision-certainty-type-acceptability"> </a></td><td>Acceptability</td><td>Are the alternatives acceptable for the target population and its implementors?</td></tr><tr><td style="white-space:nowrap">feasibility<a name="cs-evidence-to-decision-certainty-type-feasibility"> </a></td><td>Feasibility</td><td>How feasible will it be to implement the different alternatives? Any issues?</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type"/>
+  <version value="0.1.1"/>
+  <name value="EvidenceToDecisionCertaintyType"/>
+  <title value="Evidence To Decision Certainty type"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="GRADE Evidence to Decision (EtD) Framework Certainty Type"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="benefit-and-harms"/>
+    <display value="Benefits and Harms"/>
+    <definition value="Summary of most important benefits and harms"/>
+  </concept>
+  <concept>
+    <code value="preference-and-values"/>
+    <display value="Preference and values"/>
+    <definition value="Typical patient preferences and values? Common issues or expected variability?"/>
+  </concept>
+  <concept>
+    <code value="resources"/>
+    <display value="Resources"/>
+    <definition value="Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?"/>
+  </concept>
+  <concept>
+    <code value="equity"/>
+    <display value="Equity"/>
+    <definition value="How do the different alternatives affect equity?"/>
+  </concept>
+  <concept>
+    <code value="acceptability"/>
+    <display value="Acceptability"/>
+    <definition value="Are the alternatives acceptable for the target population and its implementors?"/>
+  </concept>
+  <concept>
+    <code value="feasibility"/>
+    <display value="Feasibility"/>
+    <definition value="How feasible will it be to implement the different alternatives? Any issues?"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,9 @@
+{
+  "resourceType" : "Organization",
+  "id" : "AWMFOrganization",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization AWMFOrganization</b></p><a name=\"AWMFOrganization\"> </a><a name=\"hcAWMFOrganization\"> </a><a name=\"AWMFOrganization-en-US\"> </a><p><b>name</b>: Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V.</p></div>"
+  },
+  "name" : "Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V."
+}

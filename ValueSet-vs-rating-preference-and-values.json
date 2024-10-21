@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-rating-preference-and-values",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-rating-preference-and-values</b></p><a name=\"vs-rating-preference-and-values\"> </a><a name=\"hcvs-rating-preference-and-values\"> </a><a name=\"vs-rating-preference-and-values-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html\"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-factor-not-considered\">factor-not-considered</a></td><td>Factor not considered</td><td>Factor not considered</td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-substantial-variability\">substantial-variability</a></td><td>Substantial variability</td><td>Substantial variability is expected or uncertain</td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-no-substantial-variability\">no-substantial-variability</a></td><td>No substantial variability</td><td>No substantial variability expected</td></tr><tr><td><a href=\"CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-few-want-intervention\">few-want-intervention</a></td><td>Few want intervention</td><td>We expect few to want the intervention</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-preference-and-values",
+  "version" : "0.1.1",
+  "name" : "RatingPreferenceAndValues",
+  "title" : "Rating Preference And Values",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Typical patient preferences and values? Common issues or expected variability?",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating",
+      "concept" : [{
+        "code" : "factor-not-considered",
+        "display" : "Factor not considered"
+      },
+      {
+        "code" : "substantial-variability",
+        "display" : "Substantial variability"
+      },
+      {
+        "code" : "no-substantial-variability",
+        "display" : "No substantial variability"
+      },
+      {
+        "code" : "few-want-intervention",
+        "display" : "Few want intervention"
+      }]
+    }]
+  }
+}

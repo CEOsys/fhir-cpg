@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="ExampleRecommendationPlan"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition ExampleRecommendationPlan</b></p><a name="ExampleRecommendationPlan"> </a><a name="hcExampleRecommendationPlan"> </a><a name="ExampleRecommendationPlan-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-ExampleRecommendation.html">Recommendation</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>url</b>: <a href="PlanDefinition-ExampleRecommendationPlan.html">PlanDefinition Recommendation Plan</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: RecommendationPlan</p><p><b>title</b>: Recommendation Plan</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-ExampleRecommendationEligibilityCriteria5Levels.html">PopulationExample</a></p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example Recommendation Plan</p>
+</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>ventilator-management-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 385857005}">Ventilator care and adjustment (regime/therapy)</span></p><p><b>description</b>: <span title="Codes:">The ventilator should be set up to provide a breath reate of at least 20 and at most per minute.</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 33438-3}">Breath rate mechanical --on ventilator</span></td><td>20-24</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>lab-ddimer-concentration-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 410394004}">Lab findings surveillance (regime/therapy)</span></p><p><b>description</b>: <span title="Codes:">D-Dimer concentration shall be below 250 ng/mL</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 48066-5}">Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma</span></td><td>?-250</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href="Bundle-GuidelineRecommendationExample.html">DrugAdministrationAction</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 229824005}">Positioning patient (procedure)</span></p><p><b>goalId</b>: ventilator-management-goal</p><p><b>definition</b>: <a href="ActivityDefinition-ExampleBodyPositioningAction.html">DrugAdministrationAction</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 410210009}">Ventilator care management (procedure)</span></p><p><b>goalId</b>: ventilator-management-goal</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method one-or-more}">One or More</span></li></ul></blockquote><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 89780004}">Combined (qualifier value)</span></p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 410210009}">Ventilator care management (procedure)</span></td><td>ventilator-management-goal</td></tr></table></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="exactly"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"/>
+  <version value="1.0"/>
+  <name value="RecommendationPlan"/>
+  <title value="Recommendation Plan"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria"/>
+  <date value="2022-02-14"/>
+  <publisher value="CPGonEBMonFHIR"/>
+  <description value="Example Recommendation Plan"/>
+  <goal id="ventilator-management-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="385857005"/>
+        <display value="Ventilator care and adjustment (regime/therapy)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="The ventilator should be set up to provide a breath reate of at least 20 and at most per minute."/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="33438-3"/>
+          <display value="Breath rate mechanical --on ventilator"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="20"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </low>
+        <high>
+          <value value="24"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="/min"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <goal id="lab-ddimer-concentration-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="410394004"/>
+        <display value="Lab findings surveillance (regime/therapy)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="D-Dimer concentration shall be below 250 ng/mL"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="48066-5"/>
+          <display value="Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <high>
+          <value value="250"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="ng/mL"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="432102000"/>
+        <display value="Administration of substance (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/drug-administration-example"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="229824005"/>
+        <display value="Positioning patient (procedure)"/>
+      </coding>
+    </code>
+    <goalId value="ventilator-management-goal"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/body-positioning-example"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="410210009"/>
+        <display value="Ventilator care management (procedure)"/>
+      </coding>
+    </code>
+    <goalId value="ventilator-management-goal"/>
+  </action>
+  <action>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+      <extension url="method">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+            <code value="one-or-more"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="89780004"/>
+        <display value="Combined (qualifier value)"/>
+      </coding>
+    </code>
+    <action>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="410210009"/>
+          <display value="Ventilator care management (procedure)"/>
+        </coding>
+      </code>
+      <goalId value="ventilator-management-goal"/>
+    </action>
+  </action>
+</PlanDefinition>

@@ -1,0 +1,463 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cochrane-core-ontology> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cochrane-core-ontology"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cochrane-core-ontology</b></p><a name=\"cochrane-core-ontology\"> </a><a name=\"hccochrane-core-ontology\"> </a><a name=\"cochrane-core-ontology-en-US\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>parent</td><td>parent</td><td>code</td><td>Parent codes.</td></tr><tr><td>imported</td><td>imported</td><td>boolean</td><td>Indicates if the concept is imported from another code system.</td></tr><tr><td>root</td><td>root</td><td>boolean</td><td>Indicates if this concept is a root concept (i.e. Thing is equivalent or a direct parent)</td></tr><tr><td>deprecated</td><td>deprecated</td><td>boolean</td><td>Indicates if this concept is deprecated.</td></tr></table><p><b>Filters</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Description</b></td><td><b>Op</b></td><td><b>Value</b></td></tr><tr><td>root</td><td/><td>= </td><td>True or false.</td></tr><tr><td>deprecated</td><td/><td>= </td><td>True or false.</td></tr><tr><td>imported</td><td/><td>= </td><td>True or false</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>http://data.cochrane.org/ontologies/core/</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>parent</b></td><td><b>imported</b></td><td><b>root</b></td><td><b>deprecated</b></td></tr><tr><td style=\"white-space:nowrap\">Concept<a name=\"cochrane-core-ontology-Concept\"> </a></td><td><a href=\"#cochrane-core-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Condition<a name=\"cochrane-core-ontology-Condition\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">DrugCategory<a name=\"cochrane-core-ontology-DrugCategory\"> </a></td><td><a href=\"#cochrane-core-ontology-InterventionCategory\">InterventionCategory</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionProvider<a name=\"cochrane-core-ontology-InterventionProvider\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">ProcedureCategory<a name=\"cochrane-core-ontology-ProcedureCategory\"> </a></td><td><a href=\"#cochrane-core-ontology-InterventionCategory\">InterventionCategory</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">SpecificMetric<a name=\"cochrane-core-ontology-SpecificMetric\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Material<a name=\"cochrane-core-ontology-Material\"> </a></td><td><a href=\"#cochrane-core-ontology-AppliedIntervention\">AppliedIntervention</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Thing<a name=\"cochrane-core-ontology-Thing\"> </a></td><td/><td>false</td><td>true</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionRationale<a name=\"cochrane-core-ontology-InterventionRationale\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Drug<a name=\"cochrane-core-ontology-Drug\"> </a></td><td><a href=\"#cochrane-core-ontology-Material\">Material</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Age<a name=\"cochrane-core-ontology-Age\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">AppliedIntervention<a name=\"cochrane-core-ontology-AppliedIntervention\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">ConceptScheme<a name=\"cochrane-core-ontology-ConceptScheme\"> </a></td><td><a href=\"#cochrane-core-ontology-Thing\">Thing</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">OutcomeClassification<a name=\"cochrane-core-ontology-OutcomeClassification\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">AssessmentScale<a name=\"cochrane-core-ontology-AssessmentScale\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">DeviceCategory<a name=\"cochrane-core-ontology-DeviceCategory\"> </a></td><td><a href=\"#cochrane-core-ontology-InterventionCategory\">InterventionCategory</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionCategory<a name=\"cochrane-core-ontology-InterventionCategory\"> </a></td><td><a href=\"#cochrane-core-ontology-AppliedIntervention\">AppliedIntervention</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">ModeOfDelivery<a name=\"cochrane-core-ontology-ModeOfDelivery\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Procedure<a name=\"cochrane-core-ontology-Procedure\"> </a></td><td><a href=\"#cochrane-core-ontology-AppliedIntervention\">AppliedIntervention</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">InterventionClassification<a name=\"cochrane-core-ontology-InterventionClassification\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Setting<a name=\"cochrane-core-ontology-Setting\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">AggregationMethod<a name=\"cochrane-core-ontology-AggregationMethod\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Sex<a name=\"cochrane-core-ontology-Sex\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Treatment<a name=\"cochrane-core-ontology-Treatment\"> </a></td><td><a href=\"#cochrane-core-ontology-Concept\">Concept</a></td><td>false</td><td>false</td><td>false</td></tr><tr><td style=\"white-space:nowrap\">Device<a name=\"cochrane-core-ontology-Device\"> </a></td><td><a href=\"#cochrane-core-ontology-Material\">Material</a></td><td>false</td><td>false</td><td>false</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://data.cochrane.org/ontologies/core/"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:name [ fhir:v "CochraneCoreOntology"] ; # 
+  fhir:title [ fhir:v "Cochrane Core Ontology"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Cochrane"] ; # 
+  fhir:description [ fhir:v "The Cochrane Core ontology describes the entities and concepts that exist in the domain of evidence based healthcare."] ; # 
+  fhir:valueSet [
+     fhir:v "http://data.cochrane.org/ontologies/core/?vs"^^xsd:anyURI ;
+     fhir:link <http://data.cochrane.org/ontologies/core/?vs>
+  ] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:versionNeeded [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "25"^^xsd:nonNegativeInteger] ; # 
+  fhir:filter ( [
+     fhir:code [ fhir:v "root" ] ;
+     fhir:operator ( [ fhir:v "=" ] ) ;
+     fhir:value [ fhir:v "True or false." ]
+  ] [
+     fhir:code [ fhir:v "deprecated" ] ;
+     fhir:operator ( [ fhir:v "=" ] ) ;
+     fhir:value [ fhir:v "True or false." ]
+  ] [
+     fhir:code [ fhir:v "imported" ] ;
+     fhir:operator ( [ fhir:v "=" ] ) ;
+     fhir:value [ fhir:v "True or false" ]
+  ] ) ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "parent" ] ;
+     fhir:description [ fhir:v "Parent codes." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "imported" ] ;
+     fhir:description [ fhir:v "Indicates if the concept is imported from another code system." ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:code [ fhir:v "root" ] ;
+     fhir:description [ fhir:v "Indicates if this concept is a root concept (i.e. Thing is equivalent or a direct parent)" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:code [ fhir:v "deprecated" ] ;
+     fhir:description [ fhir:v "Indicates if this concept is deprecated." ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Concept" ] ;
+     fhir:display [ fhir:v "Concept" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Thing" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Condition" ] ;
+     fhir:display [ fhir:v "Condition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DrugCategory" ] ;
+     fhir:display [ fhir:v "DrugCategory" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "InterventionCategory" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "InterventionProvider" ] ;
+     fhir:display [ fhir:v "InterventionProvider" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ProcedureCategory" ] ;
+     fhir:display [ fhir:v "ProcedureCategory" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "InterventionCategory" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "SpecificMetric" ] ;
+     fhir:display [ fhir:v "SpecificMetric" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Material" ] ;
+     fhir:display [ fhir:v "Material" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "AppliedIntervention" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Thing" ] ;
+     fhir:display [ fhir:v "Thing" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "InterventionRationale" ] ;
+     fhir:display [ fhir:v "InterventionRationale" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Drug" ] ;
+     fhir:display [ fhir:v "Drug" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Material" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Age" ] ;
+     fhir:display [ fhir:v "Age" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "AppliedIntervention" ] ;
+     fhir:display [ fhir:v "AppliedIntervention" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ConceptScheme" ] ;
+     fhir:display [ fhir:v "ConceptScheme" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Thing" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "OutcomeClassification" ] ;
+     fhir:display [ fhir:v "OutcomeClassification" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "AssessmentScale" ] ;
+     fhir:display [ fhir:v "AssessmentScale" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DeviceCategory" ] ;
+     fhir:display [ fhir:v "DeviceCategory" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "InterventionCategory" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "InterventionCategory" ] ;
+     fhir:display [ fhir:v "InterventionCategory" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "AppliedIntervention" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ModeOfDelivery" ] ;
+     fhir:display [ fhir:v "ModeOfDelivery" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Procedure" ] ;
+     fhir:display [ fhir:v "Procedure" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "AppliedIntervention" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "InterventionClassification" ] ;
+     fhir:display [ fhir:v "InterventionClassification" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Setting" ] ;
+     fhir:display [ fhir:v "Setting" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "AggregationMethod" ] ;
+     fhir:display [ fhir:v "AggregationMethod" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Sex" ] ;
+     fhir:display [ fhir:v "Sex" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Treatment" ] ;
+     fhir:display [ fhir:v "Treatment" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Concept" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Device" ] ;
+     fhir:display [ fhir:v "Device" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "imported" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "parent" ] ;
+       fhir:value [ fhir:v "Material" ]
+     ] [
+       fhir:code [ fhir:v "root" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "deprecated" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

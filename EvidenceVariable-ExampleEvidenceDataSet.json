@@ -1,0 +1,25 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "ExampleEvidenceDataSet",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-data-set"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable ExampleEvidenceDataSet</b></p><a name=\"ExampleEvidenceDataSet\"> </a><a name=\"hcExampleEvidenceDataSet\"> </a><a name=\"ExampleEvidenceDataSet-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-ExampleEvidenceDataSet.html\">EvidenceVariable ExampleEvidenceDataSet</a></p><p><b>name</b>: ExampleEvidenceDataSet</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Dataset</p><h3>Characteristics</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DefinitionReference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Evidence-ExampleStudyOutcomeEvidence.html\">Evidence ExampleStudyOutcomeEvidence</a></td></tr></table></blockquote></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleEvidenceDataSet",
+  "name" : "ExampleEvidenceDataSet",
+  "status" : "active",
+  "date" : "2024-10-21T14:50:59+00:00",
+  "characteristic" : [{
+    "definitionByCombination" : {
+      "code" : "dataset",
+      "characteristic" : [{
+        "definitionReference" : {
+          "reference" : "Evidence/ExampleStudyOutcomeEvidence"
+        }
+      }]
+    }
+  }]
+}

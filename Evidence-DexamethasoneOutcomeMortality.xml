@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Evidence xmlns="http://hl7.org/fhir">
+  <id value="DexamethasoneOutcomeMortality"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Evidence DexamethasoneOutcomeMortality</b></p><a name="DexamethasoneOutcomeMortality"> </a><a name="hcDexamethasoneOutcomeMortality"> </a><a name="DexamethasoneOutcomeMortality-en-US"> </a><p><b>url</b>: <a href="Evidence-DexamethasoneOutcomeMortality.html">Evidence ExampleOutcomeEvidence</a></p><p><b>name</b>: ExampleOutcomeEvidence</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><h3>RelatedArtifacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style="display: none">*</td><td>Citation</td><td><a href="Citation-SystemicCorticosteroidsForTheTreatmentOfCOVID19.html">Citation SystemicCorticosteroidsForTheTreatmentOfCOVID19</a></td></tr></table><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}">population</span></p><p><b>observed</b>: <a href="Group-StudyCohortCorticosteroidsCOVID19.html">Group StudyCohortCriteriaSystemicCorticosteroidsCOVID19</a></p><p><b>intended</b>: <a href="EvidenceVariable-StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19.html">EvidenceVariable StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</a></p></blockquote><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}">measured variable</span></p><p><b>observed</b>: <a href="EvidenceVariable-OutcomeAllCauseMortality.html">EvidenceVariable AllCauseMortality</a></p></blockquote><p><b>synthesisType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}">not applicable</span></p><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Relative effect of intervention vs. comparator</p>
+</div><p><b>statisticType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/statistic-type C93152}">Relative Risk</span></p><p><b>quantity</b>: 0.89</p><h3>SampleSizes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>NumberOfStudies</b></td><td><b>NumberOfParticipants</b></td></tr><tr><td style="display: none">*</td><td>9</td><td>7930</td></tr></table><h3>AttributeEstimates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Level</b></td><td><b>Range</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/attribute-estimate-type C53324}">Confidence interval</span></td><td>0.95</td><td>0.8-1</td></tr></table></blockquote><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Baseline risk/result in the comparison group</p>
+</div><p><b>statisticType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/statistic-type C16726}">Incidence</span></p><p><b>quantity</b>: 245 1/1000<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1/1000 = '1/1000')</span></p></blockquote></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/DexamethasoneOutcomeMortality"/>
+  <name value="ExampleOutcomeEvidence"/>
+  <status value="active"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <relatedArtifact>
+    <type value="citation"/>
+    <resourceReference>
+      <reference value="Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19"/>
+    </resourceReference>
+  </relatedArtifact>
+  <variableDefinition>
+    <variableRole>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/variable-role"/>
+        <code value="population"/>
+      </coding>
+    </variableRole>
+    <observed>
+      <reference value="Group/StudyCohortCorticosteroidsCOVID19"/>
+    </observed>
+    <intended>
+      <reference value="EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19"/>
+    </intended>
+  </variableDefinition>
+  <variableDefinition>
+    <variableRole>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/variable-role"/>
+        <code value="measuredVariable"/>
+      </coding>
+    </variableRole>
+    <observed>
+      <reference value="EvidenceVariable/OutcomeAllCauseMortality"/>
+    </observed>
+  </variableDefinition>
+  <synthesisType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/synthesis-type"/>
+      <code value="NotApplicable"/>
+    </coding>
+  </synthesisType>
+  <statistic>
+    <description value="Relative effect of intervention vs. comparator"/>
+    <statisticType>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/statistic-type"/>
+        <code value="C93152"/>
+        <display value="Relative Risk"/>
+      </coding>
+    </statisticType>
+    <quantity>
+      <value value="0.89"/>
+    </quantity>
+    <sampleSize>
+      <numberOfStudies value="9"/>
+      <numberOfParticipants value="7930"/>
+    </sampleSize>
+    <attributeEstimate>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/attribute-estimate-type"/>
+          <code value="C53324"/>
+          <display value="Confidence interval"/>
+        </coding>
+      </type>
+      <level value="0.95"/>
+      <range>
+        <low>
+          <value value="0.8"/>
+        </low>
+        <high>
+          <value value="1"/>
+        </high>
+      </range>
+    </attributeEstimate>
+  </statistic>
+  <statistic>
+    <description value="Baseline risk/result in the comparison group"/>
+    <statisticType>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/statistic-type"/>
+        <code value="C16726"/>
+        <display value="Incidence"/>
+      </coding>
+    </statisticType>
+    <quantity>
+      <value value="245"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1/1000"/>
+    </quantity>
+  </statistic>
+</Evidence>

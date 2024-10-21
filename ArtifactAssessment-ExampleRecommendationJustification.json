@@ -1,0 +1,119 @@
+{
+  "resourceType" : "ArtifactAssessment",
+  "id" : "ExampleRecommendationJustification",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ArtifactAssessment ExampleRecommendationJustification</b></p><a name=\"ExampleRecommendationJustification\"> </a><a name=\"hcExampleRecommendationJustification\"> </a><a name=\"ExampleRecommendationJustification-en-US\"> </a><p><b>ArtifactAssessment Version</b>: 0.1.0</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2020-01-03</p><p><b>artifact</b>: <a href=\"PlanDefinition-ExampleRecommendationPlan.html\">PlanDefinition Recommendation Plan</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system strength}\">Strength of recommendation</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength strong-for}\">Strong for an intervention</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Overall}\">Overall certainty</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating very-low}\">Very low quality</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system consensus}\">Consensus</span></p><p><b>classifier</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/recommendation-strength strong}\">Strong</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Container</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></td><td><a href=\"ArtifactAssessment-ExampleCertaintyOfEvidenceRating.html\">ArtifactAssessment: extension = 0.1.1,active; date = 2022-03-11; artifact[x] = -&gt;Evidence ExampleStudyOutcomeEvidence</a></td></tr></table></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Container</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}\">Net effect</span></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Supported With</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}\">Net effect</span></td><td><a href=\"Evidence-ExampleNetEffectEstimate.html\">Evidence NetEffectExample</a></td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version",
+    "valueString" : "0.1.0"
+  },
+  {
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status",
+    "valueCode" : "active"
+  }],
+  "date" : "2020-01-03",
+  "artifactReference" : {
+    "reference" : "PlanDefinition/ExampleRecommendationPlan"
+  },
+  "content" : [{
+    "informationType" : "rating",
+    "type" : {
+      "coding" : [{
+        "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+        "code" : "strength",
+        "display" : "Strength of recommendation"
+      }]
+    },
+    "classifier" : [{
+      "coding" : [{
+        "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength",
+        "code" : "strong-for"
+      }]
+    }]
+  },
+  {
+    "informationType" : "rating",
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/certainty-type",
+        "code" : "Overall",
+        "display" : "Overall certainty"
+      }]
+    },
+    "classifier" : [{
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/certainty-rating",
+        "code" : "very-low",
+        "display" : "Very low quality"
+      }]
+    }]
+  },
+  {
+    "informationType" : "rating",
+    "type" : {
+      "coding" : [{
+        "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+        "code" : "consensus",
+        "display" : "Consensus"
+      }]
+    },
+    "classifier" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/recommendation-strength",
+        "code" : "strong",
+        "display" : "Strong"
+      }]
+    }]
+  },
+  {
+    "informationType" : "container",
+    "type" : {
+      "coding" : [{
+        "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+        "code" : "certainty-of-evidence-rating",
+        "display" : "Certainty of evidence rating"
+      }]
+    },
+    "relatedArtifact" : [{
+      "type" : "justification",
+      "classifier" : [{
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+          "code" : "certainty-of-evidence-rating",
+          "display" : "Certainty of evidence rating"
+        }]
+      }],
+      "resourceReference" : {
+        "reference" : "ArtifactAssessment/ExampleCertaintyOfEvidenceRating"
+      }
+    }]
+  },
+  {
+    "informationType" : "container",
+    "type" : {
+      "coding" : [{
+        "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+        "code" : "net-effect",
+        "display" : "Net effect"
+      }]
+    },
+    "relatedArtifact" : [{
+      "type" : "supported-with",
+      "classifier" : [{
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+          "code" : "net-effect",
+          "display" : "Net effect"
+        }]
+      }],
+      "resourceReference" : {
+        "reference" : "Evidence/ExampleNetEffectEstimate"
+      }
+    }]
+  }]
+}

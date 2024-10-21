@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-guideline-recommendation-status",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-guideline-recommendation-status</b></p><a name=\"vs-guideline-recommendation-status\"> </a><a name=\"hcvs-guideline-recommendation-status\"> </a><a name=\"vs-guideline-recommendation-status-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html\"><code>http://hl7.org/fhir/cited-artifact-status-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-withdrawn\">withdrawn</a></td><td>Withdrawn</td><td>The content that was not published has been removed from consideration for publishing by the submitter.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-active\">active</a></td><td>Active</td><td>The content is considered complete for its current state by the content creator.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-draft\">draft</a></td><td>Draft</td><td>The content is considered unfinished or incomplete and not representative of the current state desired by the content creator.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-archived\">archived</a></td><td>Archived</td><td>The content is retired or considered no longer current but still available as part of the public record.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-recommendation-status",
+  "version" : "0.1.1",
+  "name" : "GuidelineRecommendationStatus",
+  "title" : "Guideline Recommendation Status",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Current status of a clinical practice guideline recommendation",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+      "concept" : [{
+        "code" : "withdrawn",
+        "display" : "Withdrawn"
+      },
+      {
+        "code" : "active",
+        "display" : "Active"
+      },
+      {
+        "code" : "draft",
+        "display" : "Draft"
+      },
+      {
+        "code" : "archived",
+        "display" : "Archived"
+      }]
+    }]
+  }
+}

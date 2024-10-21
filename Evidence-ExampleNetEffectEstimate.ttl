@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleNetEffectEstimate> a fhir:Evidence ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleNetEffectEstimate"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Evidence ExampleNetEffectEstimate</b></p><a name=\"ExampleNetEffectEstimate\"> </a><a name=\"hcExampleNetEffectEstimate\"> </a><a name=\"ExampleNetEffectEstimate-en-US\"> </a><p><b>url</b>: <a href=\"Evidence-ExampleNetEffectEstimate.html\">Evidence NetEffectExample</a></p><p><b>name</b>: NetEffectExample</p><p><b>status</b>: Unknown</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><h3>VariableDefinitions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>VariableRole</b></td><td><b>Intended</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}\">measured variable</span></td><td><a href=\"EvidenceVariable-ExampleOutcome.html\">EvidenceVariable Mortality</a></td></tr></table><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Net Effect</p>\n</div><p><b>statisticType</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}\">Net Effect</span></p><p><b>quantity</b>: 1.7 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><h3>AttributeEstimates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Level</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/attribute-estimate-type C53324}\">Confidence interval</span></td><td>0.95</td><td>1.5-1.9</td></tr></table><blockquote><p><b>modelCharacteristic</b></p><p><b>code</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system relative-importance-weighting}\">Relative importance weighting for use in weighted linear combinations</span></p><p><b>value</b>: 1</p><h3>Variables</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>VariableDefinition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"EvidenceVariable-ExampleOutcome.html\">EvidenceVariable Mortality</a></td></tr></table></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleNetEffectEstimate"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "NetEffectExample"] ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:variableDefinition ( [
+     fhir:variableRole [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/variable-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "measuredVariable" ]
+       ] )
+     ] ;
+     fhir:intended [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleOutcome> ;
+       fhir:reference [ fhir:v "EvidenceVariable/ExampleOutcome" ]
+     ]
+  ] ) ; # 
+  fhir:statistic ( [
+     fhir:description [ fhir:v "Net Effect" ] ;
+     fhir:statisticType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "net-effect" ] ;
+         fhir:display [ fhir:v "Net Effect" ]
+       ] )
+     ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "1.7"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "%" ]
+     ] ;
+     fhir:attributeEstimate ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/attribute-estimate-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "C53324" ] ;
+           fhir:display [ fhir:v "Confidence interval" ]
+         ] )
+       ] ;
+       fhir:level [ fhir:v "0.95"^^xsd:decimal ] ;
+       fhir:range [
+         fhir:low [
+           fhir:value [ fhir:v "1.5"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "%" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "1.9"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "%" ]
+         ]
+       ]
+     ] ) ;
+     fhir:modelCharacteristic ( [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "relative-importance-weighting" ]
+         ] )
+       ] ;
+       fhir:value [
+         fhir:value [ fhir:v "1"^^xsd:decimal ]
+       ] ;
+       fhir:variable ( [
+         fhir:variableDefinition [
+           fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleOutcome> ;
+           fhir:reference [ fhir:v "EvidenceVariable/ExampleOutcome" ]
+         ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

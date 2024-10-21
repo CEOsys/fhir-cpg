@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Citation xmlns="http://hl7.org/fhir">
+  <id value="DexamethasoneRecommendationCitation"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Citation DexamethasoneRecommendationCitation</b></p><a name="DexamethasoneRecommendationCitation"> </a><a name="hcDexamethasoneRecommendationCitation"> </a><a name="DexamethasoneRecommendationCitation-en-US"> </a><p><b>url</b>: <a href="Citation-DexamethasoneRecommendationCitation.html">Citation DexamethasoneRecommendationCitation</a></p><p><b>name</b>: DexamethasoneRecommendationCitation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: <code>https://api.magicapp.org/api/v1/recommendations</code>/98398</p><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>v4.0</td></tr></table><p><b>currentState</b>: <span title="Codes:{http://hl7.org/fhir/cited-artifact-status-type active}">Active</span></p><h3>Titles</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td><div><p>Steroide</p>
+</div></td></tr></table><h3>Classifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}">Publication Type</span></td><td><span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}">Clinical practice guideline recommendation</span></td></tr></table></blockquote></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/DexamethasoneRecommendationCitation"/>
+  <name value="DexamethasoneRecommendationCitation"/>
+  <status value="active"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <citedArtifact>
+    <identifier>
+      <system value="https://api.magicapp.org/api/v1/recommendations"/>
+      <value value="98398"/>
+    </identifier>
+    <version>
+      <value value="v4.0"/>
+    </version>
+    <currentState>
+      <coding>
+        <system value="http://hl7.org/fhir/cited-artifact-status-type"/>
+        <code value="active"/>
+        <display value="Active"/>
+      </coding>
+    </currentState>
+    <title>
+      <text value="Steroide"/>
+    </title>
+    <classification>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/cited-artifact-classification-type"/>
+          <code value="publication-type"/>
+          <display value="Publication Type"/>
+        </coding>
+      </type>
+      <classifier>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+          <code value="guideline-recommendation"/>
+          <display value="Clinical practice guideline recommendation"/>
+        </coding>
+      </classifier>
+    </classification>
+  </citedArtifact>
+</Citation>

@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ceosys-code-system"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ceosys-code-system</b></p><a name=\"ceosys-code-system\"> </a><a name=\"hcceosys-code-system\"> </a><a name=\"ceosys-code-system-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">relative-importance-weighting<a name=\"ceosys-code-system-relative-importance-weighting\"> </a></td><td>Relative importance weighting for use in weighted linear combinations</td></tr><tr><td style=\"white-space:nowrap\">clinical-practice-guideline<a name=\"ceosys-code-system-clinical-practice-guideline\"> </a></td><td>Clinical practice guideline</td></tr><tr><td style=\"white-space:nowrap\">guideline-recommendation<a name=\"ceosys-code-system-guideline-recommendation\"> </a></td><td>Clinical practice guideline recommendation</td></tr><tr><td style=\"white-space:nowrap\">consensus<a name=\"ceosys-code-system-consensus\"> </a></td><td>Consensus</td></tr><tr><td style=\"white-space:nowrap\">strength<a name=\"ceosys-code-system-strength\"> </a></td><td>Strength of recommendation</td></tr><tr><td style=\"white-space:nowrap\">eligibility-criteria<a name=\"ceosys-code-system-eligibility-criteria\"> </a></td><td>Study Eligibility Criteria</td></tr><tr><td style=\"white-space:nowrap\">net-effect<a name=\"ceosys-code-system-net-effect\"> </a></td><td>Net effect</td></tr><tr><td style=\"white-space:nowrap\">certainty-of-evidence-rating<a name=\"ceosys-code-system-certainty-of-evidence-rating\"> </a></td><td>Certainty of evidence rating</td></tr><tr><td style=\"white-space:nowrap\">recommendation-rating<a name=\"ceosys-code-system-recommendation-rating\"> </a></td><td>Recommendation rating</td></tr><tr><td style=\"white-space:nowrap\">clinical-importance<a name=\"ceosys-code-system-clinical-importance\"> </a></td><td>Clinical Importance</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "CEOsysCodeSystem"] ; # 
+  fhir:title [ fhir:v "CEOsys Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for clinical guideline recommendation representation missing from other code systems."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "relative-importance-weighting" ] ;
+     fhir:display [ fhir:v "Relative importance weighting for use in weighted linear combinations" ]
+  ] [
+     fhir:code [ fhir:v "clinical-practice-guideline" ] ;
+     fhir:display [ fhir:v "Clinical practice guideline" ]
+  ] [
+     fhir:code [ fhir:v "guideline-recommendation" ] ;
+     fhir:display [ fhir:v "Clinical practice guideline recommendation" ]
+  ] [
+     fhir:code [ fhir:v "consensus" ] ;
+     fhir:display [ fhir:v "Consensus" ]
+  ] [
+     fhir:code [ fhir:v "strength" ] ;
+     fhir:display [ fhir:v "Strength of recommendation" ]
+  ] [
+     fhir:code [ fhir:v "eligibility-criteria" ] ;
+     fhir:display [ fhir:v "Study Eligibility Criteria" ]
+  ] [
+     fhir:code [ fhir:v "net-effect" ] ;
+     fhir:display [ fhir:v "Net effect" ]
+  ] [
+     fhir:code [ fhir:v "certainty-of-evidence-rating" ] ;
+     fhir:display [ fhir:v "Certainty of evidence rating" ]
+  ] [
+     fhir:code [ fhir:v "recommendation-rating" ] ;
+     fhir:display [ fhir:v "Recommendation rating" ]
+  ] [
+     fhir:code [ fhir:v "clinical-importance" ] ;
+     fhir:display [ fhir:v "Clinical Importance" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

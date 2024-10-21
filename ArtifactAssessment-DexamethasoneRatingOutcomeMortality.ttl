@@ -1,0 +1,149 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/DexamethasoneRatingOutcomeMortality> a fhir:ArtifactAssessment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DexamethasoneRatingOutcomeMortality"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ArtifactAssessment DexamethasoneRatingOutcomeMortality</b></p><a name=\"DexamethasoneRatingOutcomeMortality\"> </a><a name=\"hcDexamethasoneRatingOutcomeMortality\"> </a><a name=\"DexamethasoneRatingOutcomeMortality-en-US\"> </a><p><b>ArtifactAssessment Version</b>: v4.0</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2020-01-03</p><p><b>artifact</b>: <a href=\"Evidence-DexamethasoneOutcomeMortality.html\">Evidence ExampleOutcomeEvidence</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Overall}\">Overall certainty</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating moderate}\">Moderate quality</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-importance}\">Clinical Importance</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance 9}\">Critical</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type RiskOfBias}\">Risk of bias</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating serious-concern}\">serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Inconsistency}\">Inconsistency</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Indirectness}\">Indirectness</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Imprecision}\">Imprecision</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type PublicationBias}\">Publication bias</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating no-concern}\">no serious concern</span></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "v4.0" ]
+  ] [
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "active" ]
+  ] ) ; # 
+  fhir:date [ fhir:v "2020-01-03"^^xsd:date] ; # 
+  fhir:artifact [
+     a fhir:Reference ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/DexamethasoneOutcomeMortality> ;
+     fhir:reference [ fhir:v "Evidence/DexamethasoneOutcomeMortality" ]
+  ] ; # 
+  fhir:content ( [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Overall" ] ;
+         fhir:display [ fhir:v "Overall certainty" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "moderate" ] ;
+         fhir:display [ fhir:v "Moderate quality" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "clinical-importance" ] ;
+         fhir:display [ fhir:v "Clinical Importance" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "9" ] ;
+         fhir:display [ fhir:v "Critical" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RiskOfBias" ] ;
+         fhir:display [ fhir:v "Risk of bias" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "serious-concern" ] ;
+         fhir:display [ fhir:v "serious concern" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Inconsistency" ] ;
+         fhir:display [ fhir:v "Inconsistency" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "no-concern" ] ;
+         fhir:display [ fhir:v "no serious concern" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Indirectness" ] ;
+         fhir:display [ fhir:v "Indirectness" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "no-concern" ] ;
+         fhir:display [ fhir:v "no serious concern" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Imprecision" ] ;
+         fhir:display [ fhir:v "Imprecision" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "no-concern" ] ;
+         fhir:display [ fhir:v "no serious concern" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PublicationBias" ] ;
+         fhir:display [ fhir:v "Publication bias" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "no-concern" ] ;
+         fhir:display [ fhir:v "no serious concern" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

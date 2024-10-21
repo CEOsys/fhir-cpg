@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "ExampleAssessmentAction",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition ExampleAssessmentAction</b></p><a name=\"ExampleAssessmentAction\"> </a><a name=\"hcExampleAssessmentAction\"> </a><a name=\"ExampleAssessmentAction-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-ExampleAssessmentAction.html\">ActivityDefinition ExampleAssessmentAction</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: ExampleAssessmentAction</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example of an assessment action.</p>\n</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 406127006}\">Pain intensity (observable entity)</span></p><p><b>timing</b>: Once per 1 days</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/assessment-example",
+  "version" : "1.0",
+  "name" : "ExampleAssessmentAction",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-10-21T14:50:59+00:00",
+  "publisher" : "CPGonEBMonFHIR",
+  "description" : "Example of an assessment action.",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "406127006",
+      "display" : "Pain intensity (observable entity)"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

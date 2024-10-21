@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Citation xmlns="http://hl7.org/fhir">
+  <id value="ExampleRecommendationCitation"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Citation ExampleRecommendationCitation</b></p><a name="ExampleRecommendationCitation"> </a><a name="hcExampleRecommendationCitation"> </a><a name="ExampleRecommendationCitation-en-US"> </a><p><b>url</b>: <a href="Citation-ExampleRecommendationCitation.html">Citation ExampleRecommendationCitation</a></p><p><b>name</b>: ExampleRecommendationCitation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: ceoysy/exampleIdentifier</p><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>1.0-alpha1</td></tr></table><p><b>currentState</b>: <span title="Codes:{http://hl7.org/fhir/cited-artifact-status-type archived}">Archived</span></p><h3>Titles</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td><div><p>Example Citation</p>
+</div></td></tr></table><h3>Classifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}">Publication Type</span></td><td><span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}">Clinical practice guideline recommendation</span></td></tr></table></blockquote></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleRecommendationCitation"/>
+  <name value="ExampleRecommendationCitation"/>
+  <status value="active"/>
+  <date value="2024-10-21T14:50:59+00:00"/>
+  <citedArtifact>
+    <identifier>
+      <value value="ceoysy/exampleIdentifier"/>
+    </identifier>
+    <version>
+      <value value="1.0-alpha1"/>
+    </version>
+    <currentState>
+      <coding>
+        <system value="http://hl7.org/fhir/cited-artifact-status-type"/>
+        <code value="archived"/>
+        <display value="Archived"/>
+      </coding>
+    </currentState>
+    <title>
+      <text value="Example Citation"/>
+    </title>
+    <classification>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/cited-artifact-classification-type"/>
+          <code value="publication-type"/>
+          <display value="Publication Type"/>
+        </coding>
+      </type>
+      <classifier>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+          <code value="guideline-recommendation"/>
+          <display value="Clinical practice guideline recommendation"/>
+        </coding>
+      </classifier>
+    </classification>
+  </citedArtifact>
+</Citation>

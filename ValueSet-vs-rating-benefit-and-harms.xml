@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-rating-benefit-and-harms"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-rating-benefit-and-harms</b></p><a name="vs-rating-benefit-and-harms"> </a><a name="hcvs-rating-benefit-and-harms"> </a><a name="vs-rating-benefit-and-harms-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-small-net-benefit">small-net-benefit</a></td><td>Small net benefit</td><td>Small net benefit, or little difference between alternatives</td></tr><tr><td><a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-substantial-net-benefit">substantial-net-benefit</a></td><td>Substantial net benefit</td><td>Substantial net benefits of the recommended alternative</td></tr><tr><td><a href="CodeSystem-cs-evidence-to-decision-certainty-rating.html#cs-evidence-to-decision-certainty-rating-important-harms">important-harms</a></td><td>Important harms</td><td>Important harms</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-benefit-and-harms"/>
+  <version value="0.1.1"/>
+  <name value="RatingBenefitAndHarms"/>
+  <title value="Rating Benefit And Harms"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Summary of most important benefits and harms"/>
+  <compose>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"/>
+      <concept>
+        <code value="small-net-benefit"/>
+        <display value="Small net benefit"/>
+      </concept>
+      <concept>
+        <code value="substantial-net-benefit"/>
+        <display value="Substantial net benefit"/>
+      </concept>
+      <concept>
+        <code value="important-harms"/>
+        <display value="Important harms"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="AWMFOrganization"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization AWMFOrganization</b></p><a name="AWMFOrganization"> </a><a name="hcAWMFOrganization"> </a><a name="AWMFOrganization-en-US"> </a><p><b>name</b>: Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V.</p></div>
+  </text>
+  <name value="Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V."/>
+</Organization>

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleRecommendationCitation> a fhir:Citation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleRecommendationCitation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Citation ExampleRecommendationCitation</b></p><a name=\"ExampleRecommendationCitation\"> </a><a name=\"hcExampleRecommendationCitation\"> </a><a name=\"ExampleRecommendationCitation-en-US\"> </a><p><b>url</b>: <a href=\"Citation-ExampleRecommendationCitation.html\">Citation ExampleRecommendationCitation</a></p><p><b>name</b>: ExampleRecommendationCitation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: ceoysy/exampleIdentifier</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.0-alpha1</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type archived}\">Archived</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Example Citation</p>\n</div></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}\">Clinical practice guideline recommendation</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleRecommendationCitation"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "ExampleRecommendationCitation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:citedArtifact [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "ceoysy/exampleIdentifier" ]
+     ] ) ;
+     fhir:version [
+       fhir:value [ fhir:v "1.0-alpha1" ]
+     ] ;
+     fhir:currentState ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/cited-artifact-status-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "archived" ] ;
+         fhir:display [ fhir:v "Archived" ]
+       ] )
+     ] ) ;
+     fhir:title ( [
+       fhir:text [ fhir:v "Example Citation" ]
+     ] ) ;
+     fhir:classification ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/cited-artifact-classification-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "publication-type" ] ;
+           fhir:display [ fhir:v "Publication Type" ]
+         ] )
+       ] ;
+       fhir:classifier ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "guideline-recommendation" ] ;
+           fhir:display [ fhir:v "Clinical practice guideline recommendation" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Composition/COVID19IntensiveCareTreatmentGuideline> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "COVID19IntensiveCareTreatmentGuideline"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition COVID19IntensiveCareTreatmentGuideline</b></p><a name=\"COVID19IntensiveCareTreatmentGuideline\"> </a><a name=\"hcCOVID19IntensiveCareTreatmentGuideline\"> </a><a name=\"COVID19IntensiveCareTreatmentGuideline-en-US\"> </a><p><b>identifier</b>: Resource identifier/113-001</p><p><b>version</b>: 7.0</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}, {https://data.cochrane.org/concepts/ e07eN1w1Rwswg4}\">Guidelines</span></p><p><b>category</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification S3}\">Evidence- and consensus-based guideline</span></p><p><b>date</b>: 2022-03-01</p><p><b>author</b>: <a href=\"Organization-AWMFOrganization.html\">Organization Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V.</a></p><p><b>title</b>: Empfehlungen zur stationären Therapie von Patienten mit COVID-19 - Living Guideline</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-COVID19IntensiveCareTreatmentGuidelineCitation.html\">Citation COVID19_Intensive_Care_Treatment_Guideline</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RI" ] ;
+         fhir:display [ fhir:v "Resource identifier" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.awmf.org/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "113-001" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "clinical-practice-guideline" ]
+     ] [
+       fhir:system [ fhir:v "https://data.cochrane.org/concepts/"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "e07eN1w1Rwswg4" ] ;
+       fhir:display [ fhir:v "Guidelines" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "S3" ] ;
+       fhir:display [ fhir:v "Evidence- and consensus-based guideline" ]
+     ] )
+  ] ) ; # 
+  fhir:date [ fhir:v "2022-03-01"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Organization/AWMFOrganization> ;
+     fhir:reference [ fhir:v "Organization/AWMFOrganization" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Empfehlungen zur stationären Therapie von Patienten mit COVID-19 - Living Guideline"] ; # 
+  fhir:relatesTo ( [
+     fhir:type [ fhir:v "citation" ] ;
+     fhir:resourceReference [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/COVID19IntensiveCareTreatmentGuidelineCitation> ;
+       fhir:reference [ fhir:v "Citation/COVID19IntensiveCareTreatmentGuidelineCitation" ]
+     ]
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Stationäre Therapie von COVID-19 Patienten" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-recommendation" ] ;
+         fhir:display [ fhir:v "Clinical practice guideline recommendation" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan> ;
+       fhir:reference [ fhir:v "PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan" ]
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><strong>Systemische Steroide:</strong> Bei Patienten mit COVID-19- und Sauerstoff-Bedarf (Niedrigfluss-Sauerstoff-Insufflation, High-Flow Nasal Cannula, Nichtinvasive Beatmung/CPAP, invasive Beatmung) soll eine Therapie mit systemischen Kortikosteroiden erfolgen. Die Therapie sollte mit 6 mg Dexamethason p.o. oder i.v. über zehn Tage erfolgen.</div>"
+     ]
+  ] [
+     fhir:title [ fhir:v "Stationäre Therapie von COVID-19 Patienten" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-recommendation" ] ;
+         fhir:display [ fhir:v "Clinical practice guideline recommendation" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan> ;
+       fhir:reference [ fhir:v "PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan" ]
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><strong>Systemische Steroide:</strong> Bei Patienten mit moderater Erkrankung (hospitalisiert ohne Notwendigkeit von Niedrigfluss-Sauerstoff-Insufflation) soll keine Therapie mit systemischen Kortikosteroiden erfolgen.</div>"
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

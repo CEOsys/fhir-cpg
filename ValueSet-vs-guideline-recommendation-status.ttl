@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-recommendation-status> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-guideline-recommendation-status"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-guideline-recommendation-status</b></p><a name=\"vs-guideline-recommendation-status\"> </a><a name=\"hcvs-guideline-recommendation-status\"> </a><a name=\"vs-guideline-recommendation-status-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html\"><code>http://hl7.org/fhir/cited-artifact-status-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-withdrawn\">withdrawn</a></td><td>Withdrawn</td><td>The content that was not published has been removed from consideration for publishing by the submitter.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-active\">active</a></td><td>Active</td><td>The content is considered complete for its current state by the content creator.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-draft\">draft</a></td><td>Draft</td><td>The content is considered unfinished or incomplete and not representative of the current state desired by the content creator.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html#cited-artifact-status-type-archived\">archived</a></td><td>Archived</td><td>The content is retired or considered no longer current but still available as part of the public record.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-recommendation-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "GuidelineRecommendationStatus"] ; # 
+  fhir:title [ fhir:v "Guideline Recommendation Status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Current status of a clinical practice guideline recommendation"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/cited-artifact-status-type"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "withdrawn" ] ;
+         fhir:display [ fhir:v "Withdrawn" ]
+       ] [
+         fhir:code [ fhir:v "active" ] ;
+         fhir:display [ fhir:v "Active" ]
+       ] [
+         fhir:code [ fhir:v "draft" ] ;
+         fhir:display [ fhir:v "Draft" ]
+       ] [
+         fhir:code [ fhir:v "archived" ] ;
+         fhir:display [ fhir:v "Archived" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

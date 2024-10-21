@@ -1,0 +1,2232 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "de.netzwerk-universitaetsmedizin.ebm-cpg"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide de.netzwerk-universitaetsmedizin.ebm-cpg</b></p><a name=\"de.netzwerk-universitaetsmedizin.ebm-cpg\"> </a><a name=\"hcde.netzwerk-universitaetsmedizin.ebm-cpg\"> </a><a name=\"de.netzwerk-universitaetsmedizin.ebm-cpg-en-US\"> </a><h2>CPGonEBMonFHIR</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.2"] ; # 
+  fhir:name [ fhir:v "CPGonEBMonFHIR"] ; # 
+  fhir:title [ fhir:v "Clinical Practice Guidelines (CPG) on EBMonFHIR"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Universitätsmedizin Greifswald"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Universitätsmedizin Greifswald" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.medizin.uni-greifswald.de/" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "de.netzwerk-universitaetsmedizin.ebm-cpg"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "6.0.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_cpg" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.cpg" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method> ;
+         fhir:reference [ fhir:v "StructureDefinition/ext-action-combination-method" ]
+       ] ;
+       fhir:name [ fhir:v "Action Combination Method" ] ;
+       fhir:description [ fhir:v "Extension used on PlanDefinition.action to specify a method for combining the actions." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-combination-method> ;
+         fhir:reference [ fhir:v "ValueSet/vs-action-combination-method" ]
+       ] ;
+       fhir:name [ fhir:v "Action Combination Method" ] ;
+       fhir:description [ fhir:v "Value set for the method used to combine actions in a PlanDefinition." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-action-combination-method" ]
+       ] ;
+       fhir:name [ fhir:v "Action Combination Method" ] ;
+       fhir:description [ fhir:v "Code system for the combination of actions in a PlanDefinition." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-selection-behavior-required> ;
+         fhir:reference [ fhir:v "ValueSet/vs-action-selection-behavior-required" ]
+       ] ;
+       fhir:name [ fhir:v "Action Selection Behavior Required" ] ;
+       fhir:description [ fhir:v "Action selection behavior with only codes that require at least one action to be performed." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/OutcomeAllCauseMortality> ;
+         fhir:reference [ fhir:v "EvidenceVariable/OutcomeAllCauseMortality" ]
+       ] ;
+       fhir:name [ fhir:v "All-cause mortality" ] ;
+       fhir:description [ fhir:v "All-cause mortality." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-allergic-disposition-sct> ;
+         fhir:reference [ fhir:v "ValueSet/vs-allergic-disposition-sct" ]
+       ] ;
+       fhir:name [ fhir:v "Allergic Disposition SCT" ] ;
+       fhir:description [ fhir:v "Allergic Dispositions from SNOMED CT" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Organization/AWMFOrganization> ;
+         fhir:reference [ fhir:v "Organization/AWMFOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V" ] ;
+       fhir:description [ fhir:v "Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/ceosys-extension-artifact-assessment-publication-status" ]
+       ] ;
+       fhir:name [ fhir:v "ArtifactAssessment Publication Status" ] ;
+       fhir:description [ fhir:v "Adds publication status attribute to ArtifactAssessment." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version> ;
+         fhir:reference [ fhir:v "StructureDefinition/ceosys-extension-artifact-assessment-version" ]
+       ] ;
+       fhir:name [ fhir:v "ArtifactAssessment Version" ] ;
+       fhir:description [ fhir:v "Adds version attribute to Artifact Assessment." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment> ;
+         fhir:reference [ fhir:v "ValueSet/vs-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Assessment" ] ;
+       fhir:description [ fhir:v "Assessments" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action> ;
+         fhir:reference [ fhir:v "StructureDefinition/assessment-action" ]
+       ] ;
+       fhir:name [ fhir:v "Assessment Action" ] ;
+       fhir:description [ fhir:v "Definition of an assessment action." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment-scales> ;
+         fhir:reference [ fhir:v "ValueSet/vs-assessment-scales" ]
+       ] ;
+       fhir:name [ fhir:v "Assessment Scales" ] ;
+       fhir:description [ fhir:v "Codes for assessment scales (scores etc.)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/body-positioning-action> ;
+         fhir:reference [ fhir:v "StructureDefinition/body-positioning-action" ]
+       ] ;
+       fhir:name [ fhir:v "Body Positioning Action" ] ;
+       fhir:description [ fhir:v "Definition of a body positioning action as part of a recommended intervention." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-body-positioning-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/vs-body-positioning-snomed" ]
+       ] ;
+       fhir:name [ fhir:v "Body Positioning SNOMED CT" ] ;
+       fhir:description [ fhir:v "Body positioning procedure codes from SNOMED CT" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/ceosys-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "CEOsys Code System" ] ;
+       fhir:description [ fhir:v "Codes for clinical guideline recommendation representation missing from other code systems." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ArtifactAssessment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/DexamethasoneRatingOutcomeMortality> ;
+         fhir:reference [ fhir:v "ArtifactAssessment/DexamethasoneRatingOutcomeMortality" ]
+       ] ;
+       fhir:name [ fhir:v "Certainty of Evidence for outcome: mortality of Dexamethasone application" ] ;
+       fhir:description [ fhir:v "Certainty of evidence rating for mortality outcome of Dexamethasonse application recommendation" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating> ;
+         fhir:reference [ fhir:v "StructureDefinition/certainty-of-evidence-rating" ]
+       ] ;
+       fhir:name [ fhir:v "Certainty of Evidence Rating" ] ;
+       fhir:description [ fhir:v "Rating of a single outcome (evidence) underlying a clinical practice guideline recommendation" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-characteristic-dosage> ;
+         fhir:reference [ fhir:v "StructureDefinition/ext-characteristic-dosage" ]
+       ] ;
+       fhir:name [ fhir:v "Characteristic Dosage" ] ;
+       fhir:description [ fhir:v "Adds Dosage type to characteristic" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-clinical-importance> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-clinical-importance" ]
+       ] ;
+       fhir:name [ fhir:v "Clinical Importance of Outcome" ] ;
+       fhir:description [ fhir:v "Clinical Importance of Outcome" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-clinical-importance> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-clinical-importance" ]
+       ] ;
+       fhir:name [ fhir:v "Clinical Importance of Outcome" ] ;
+       fhir:description [ fhir:v "Clinical Importance of Outcome" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline> ;
+         fhir:reference [ fhir:v "StructureDefinition/guideline" ]
+       ] ;
+       fhir:name [ fhir:v "Clinical Practice Guideline" ] ;
+       fhir:description [ fhir:v "Representation of an evidence-based clinical practice guideline." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cochrane-core-ontology> ;
+         fhir:reference [ fhir:v "CodeSystem/cochrane-core-ontology" ]
+       ] ;
+       fhir:name [ fhir:v "Cochrane Core Ontology" ] ;
+       fhir:description [ fhir:v "The Cochrane Core ontology describes the entities and concepts that exist in the domain of evidence based healthcare." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico> ;
+         fhir:reference [ fhir:v "ValueSet/cochrane-pico" ]
+       ] ;
+       fhir:name [ fhir:v "Cochrane PICO" ] ;
+       fhir:description [ fhir:v "All codes from the Cochrane PICO ontology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-intervention> ;
+         fhir:reference [ fhir:v "ValueSet/cochrane-pico-intervention" ]
+       ] ;
+       fhir:name [ fhir:v "Cochrane PICO Intervention" ] ;
+       fhir:description [ fhir:v "All intervention codes from the Cochrane PICO ontology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cochrane-pico-ontology> ;
+         fhir:reference [ fhir:v "CodeSystem/cochrane-pico-ontology" ]
+       ] ;
+       fhir:name [ fhir:v "Cochrane PICO Ontology" ] ;
+       fhir:description [ fhir:v "The PICO ontology describes questions in evidence based healthcare with the intention of supporting the publishing of evidence as linked data." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-outcome> ;
+         fhir:reference [ fhir:v "ValueSet/cochrane-pico-outcome" ]
+       ] ;
+       fhir:name [ fhir:v "Cochrane PICO Outcome" ] ;
+       fhir:description [ fhir:v "All outcome codes from the Cochrane PICO ontology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/cochrane-pico-population> ;
+         fhir:reference [ fhir:v "ValueSet/cochrane-pico-population" ]
+       ] ;
+       fhir:name [ fhir:v "Cochrane PICO Population" ] ;
+       fhir:description [ fhir:v "All population codes from the Cochrane PICO ontology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cohorts> ;
+         fhir:reference [ fhir:v "StructureDefinition/cohorts" ]
+       ] ;
+       fhir:name [ fhir:v "Cohorts" ] ;
+       fhir:description [ fhir:v "The actual group observed in a study or groups of groups in an evidence synthesis." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Composition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Composition/COVID19IntensiveCareTreatmentGuideline> ;
+         fhir:reference [ fhir:v "Composition/COVID19IntensiveCareTreatmentGuideline" ]
+       ] ;
+       fhir:name [ fhir:v "COVID19 Intensive Care Treatment Guideline" ] ;
+       fhir:description [ fhir:v "COVID19 Intensive Care Treatment Guideline." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Bundle/COVID19IntensiveCareTreatmentGuidelineBundle> ;
+         fhir:reference [ fhir:v "Bundle/COVID19IntensiveCareTreatmentGuidelineBundle" ]
+       ] ;
+       fhir:name [ fhir:v "COVID19 Intensive Care Treatment Guideline" ] ;
+       fhir:description [ fhir:v "COVID19 Intensive Care Treatment Guideline (Bundle)." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-computableplandefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/cpg-computableplandefinition" ]
+       ] ;
+       fhir:name [ fhir:v "CPGComputablePlanDefinition" ] ;
+       fhir:description [ fhir:v "Defines the minimum expectations and behavior for a computable plan definition" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-recommendationdefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/cpg-recommendationdefinition" ]
+       ] ;
+       fhir:name [ fhir:v "CPGRecommendationDefinition" ] ;
+       fhir:description [ fhir:v "Profile of PlanDefinition as a Recommendation Definition for use with CPG Implementation Guide" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-shareableplandefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/cpg-shareableplandefinition" ]
+       ] ;
+       fhir:name [ fhir:v "CPGShareablePlanDefinition" ] ;
+       fhir:description [ fhir:v "Defines the minimum expectations for a shareable plan definition for use with computable guideline content. This profile derives from the ShareablePlanDefinition profile defined in the base FHIR specification, and adds support for declaring knowledge representation level and knowledge artifact capabilities." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cpg-strategydefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/cpg-strategydefinition" ]
+       ] ;
+       fhir:name [ fhir:v "CPGStrategyDefinition" ] ;
+       fhir:description [ fhir:v "Profile of PlanDefinition as a Strategy Definition for use with CPG Implementation Guide. Strategies are used to group recommendations together, typically focused on a particular condition or state within the overall guideline or pathway" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqfm-artifactComment> ;
+         fhir:reference [ fhir:v "StructureDefinition/cqfm-artifactComment" ]
+       ] ;
+       fhir:name [ fhir:v "CQFM Artifact Comment" ] ;
+       fhir:description [ fhir:v "A comment containing additional documentation, a review comment, usage guidance, or other relevant information from a particular user." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19DexamethasoneApplication> ;
+         fhir:reference [ fhir:v "PlanDefinition/COVID19DexamethasoneApplication" ]
+       ] ;
+       fhir:name [ fhir:v "Dexamethasone Application" ] ;
+       fhir:description [ fhir:v "Application of Dexamethasone for ventilated patients only" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan> ;
+         fhir:reference [ fhir:v "PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan" ]
+       ] ;
+       fhir:name [ fhir:v "Dexamethasone Application" ] ;
+       fhir:description [ fhir:v "Application of Dexamethasone: 6 mg once per day for 10 days p.o. or i.v. for ventilated COVID-19 patients" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/DexamethasoneApplicationActionIntravenous> ;
+         fhir:reference [ fhir:v "ActivityDefinition/DexamethasoneApplicationActionIntravenous" ]
+       ] ;
+       fhir:name [ fhir:v "Dexamethasone Application (Intravenous)" ] ;
+       fhir:description [ fhir:v "Application of Dexamethasone: 6 mg once per day for 10 days (intravenous route)" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/DexamethasoneApplicationActionOral> ;
+         fhir:reference [ fhir:v "ActivityDefinition/DexamethasoneApplicationActionOral" ]
+       ] ;
+       fhir:name [ fhir:v "Dexamethasone Application (Oral)" ] ;
+       fhir:description [ fhir:v "Application of Dexamethasone: 6 mg once per day for 10 days (oral route)" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ArtifactAssessment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/DexamethasoneRecommendationJustification> ;
+         fhir:reference [ fhir:v "ArtifactAssessment/DexamethasoneRecommendationJustification" ]
+       ] ;
+       fhir:name [ fhir:v "Dexamethasone for critically ill COVID-19 patients" ] ;
+       fhir:description [ fhir:v "Dexamethasone in critically ill patients with COVID-19." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/DexamethasoneRecommendationCitation> ;
+         fhir:reference [ fhir:v "Citation/DexamethasoneRecommendationCitation" ]
+       ] ;
+       fhir:name [ fhir:v "Dexamethasone Recommendation" ] ;
+       fhir:description [ fhir:v "Citation of Dexamethasone Recommenation from COVID-19 intensive care patients treatment guideline" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/ext-dosage-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Dosage Condition" ] ;
+       fhir:description [ fhir:v "Adds type/value pair to elements of datatype Dosage to express a condition on the dosage." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action> ;
+         fhir:reference [ fhir:v "StructureDefinition/drug-administration-action" ]
+       ] ;
+       fhir:name [ fhir:v "Drug Administration Action" ] ;
+       fhir:description [ fhir:v "Definition of a drug administration action as part of a recommended intervention." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-drugs> ;
+         fhir:reference [ fhir:v "ValueSet/vs-drugs" ]
+       ] ;
+       fhir:name [ fhir:v "Drugs" ] ;
+       fhir:description [ fhir:v "Drugs" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/eligibility-criteria> ;
+         fhir:reference [ fhir:v "StructureDefinition/eligibility-criteria" ]
+       ] ;
+       fhir:name [ fhir:v "Eligibility Criteria" ] ;
+       fhir:description [ fhir:v "Definition of a population (e.g. for guideline recommendation, clinical study) via the eligibility criteria." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-episode-of-care-type" ]
+       ] ;
+       fhir:name [ fhir:v "Episode Of Care Type" ] ;
+       fhir:description [ fhir:v "Episode Of Care Type" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/certainty-rating> ;
+         fhir:reference [ fhir:v "CodeSystem/certainty-rating" ]
+       ] ;
+       fhir:name [ fhir:v "Evidence Certainty Rating" ] ;
+       fhir:description [ fhir:v "The assessment of quality, confidence, or certainty." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-data-set> ;
+         fhir:reference [ fhir:v "StructureDefinition/evidence-data-set" ]
+       ] ;
+       fhir:name [ fhir:v "Evidence Data Set" ] ;
+       fhir:description [ fhir:v "Definition of the outcome used as the observed measured variable for an evidence synthesis." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts> ;
+         fhir:reference [ fhir:v "StructureDefinition/evidence-synthesis-cohorts" ]
+       ] ;
+       fhir:name [ fhir:v "Evidence Synthesis Cohorts" ] ;
+       fhir:description [ fhir:v "The actual group of Groups observed in an evidence synthesis." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-evidence-to-decision-certainty-rating" ]
+       ] ;
+       fhir:name [ fhir:v "Evidence To Decision Certainty Rating" ] ;
+       fhir:description [ fhir:v "GRADE Evidence to Decision (EtD) Framework Certainty Ratings" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-evidence-to-decision-certainty-type" ]
+       ] ;
+       fhir:name [ fhir:v "Evidence To Decision Certainty type" ] ;
+       fhir:description [ fhir:v "GRADE Evidence to Decision (EtD) Framework Certainty Type" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/ExampleAssessmentAction> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExampleAssessmentAction" ]
+       ] ;
+       fhir:name [ fhir:v "Example Assessment Action" ] ;
+       fhir:description [ fhir:v "Example of an assessment action." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/ExampleBodyPositioningAction> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExampleBodyPositioningAction" ]
+       ] ;
+       fhir:name [ fhir:v "Example Body Positioning Action" ] ;
+       fhir:description [ fhir:v "Example of a body positioning action." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/body-positioning-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/body-positioning-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ArtifactAssessment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/ExampleCertaintyOfEvidenceRating> ;
+         fhir:reference [ fhir:v "ArtifactAssessment/ExampleCertaintyOfEvidenceRating" ]
+       ] ;
+       fhir:name [ fhir:v "Example Certainty Of Evidence Rating" ] ;
+       fhir:description [ fhir:v "Example Certainty Of Evidence Rating" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/ExampleDrugAdministrationAction> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExampleDrugAdministrationAction" ]
+       ] ;
+       fhir:name [ fhir:v "Example DrugAdministration Action" ] ;
+       fhir:description [ fhir:v "A drug administration that should be performed." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleEvidenceDataSet> ;
+         fhir:reference [ fhir:v "EvidenceVariable/ExampleEvidenceDataSet" ]
+       ] ;
+       fhir:name [ fhir:v "Example Evidence Data Set" ] ;
+       fhir:description [ fhir:v "Example of an evidence data set" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-data-set"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-data-set>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/ExampleEvidenceSynthesisCohorts> ;
+         fhir:reference [ fhir:v "Group/ExampleEvidenceSynthesisCohorts" ]
+       ] ;
+       fhir:name [ fhir:v "Example Evidence Synthesis Cohorts" ] ;
+       fhir:description [ fhir:v "Example of a cohort in an evidence synthesis" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Composition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Composition/GuidelineExample> ;
+         fhir:reference [ fhir:v "Composition/GuidelineExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example Guideline" ] ;
+       fhir:description [ fhir:v "Example of a guideline resource." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleGuidelineCitation> ;
+         fhir:reference [ fhir:v "Citation/ExampleGuidelineCitation" ]
+       ] ;
+       fhir:name [ fhir:v "Example Guideline Citation" ] ;
+       fhir:description [ fhir:v "Example of a Citation of a clinical practice guideline" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleIntervention> ;
+         fhir:reference [ fhir:v "EvidenceVariable/ExampleIntervention" ]
+       ] ;
+       fhir:name [ fhir:v "Example Intervention" ] ;
+       fhir:description [ fhir:v "Example of an intervention definition." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/intervention-definition"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/intervention-definition>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Evidence" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleNetEffectEstimate> ;
+         fhir:reference [ fhir:v "Evidence/ExampleNetEffectEstimate" ]
+       ] ;
+       fhir:name [ fhir:v "Example Net Effect Estimate" ] ;
+       fhir:description [ fhir:v "Example of a net effect estimate" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/ExampleNoDrugAdministrationAction> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExampleNoDrugAdministrationAction" ]
+       ] ;
+       fhir:name [ fhir:v "Example No DrugAdministration Action" ] ;
+       fhir:description [ fhir:v "A drug administration that should not be performed." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Organization/ExampleOrganization> ;
+         fhir:reference [ fhir:v "Organization/ExampleOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "Example Organization" ] ;
+       fhir:description [ fhir:v "Example of a organization resource." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleOutcome> ;
+         fhir:reference [ fhir:v "EvidenceVariable/ExampleOutcome" ]
+       ] ;
+       fhir:name [ fhir:v "Example Outcome" ] ;
+       fhir:description [ fhir:v "Example of an outcome evidence variable." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Evidence" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleOutcomeEvidenceSynthesis> ;
+         fhir:reference [ fhir:v "Evidence/ExampleOutcomeEvidenceSynthesis" ]
+       ] ;
+       fhir:name [ fhir:v "Example Outcome Evidence Synthesis" ] ;
+       fhir:description [ fhir:v "Example Outcome Evidence Synthesis" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/ExampleProcedureAction> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExampleProcedureAction" ]
+       ] ;
+       fhir:name [ fhir:v "Example Procedure Action" ] ;
+       fhir:description [ fhir:v "Example of a procedure action." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/procedure-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/procedure-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleRecommendationCitation> ;
+         fhir:reference [ fhir:v "Citation/ExampleRecommendationCitation" ]
+       ] ;
+       fhir:name [ fhir:v "Example Recommendation Citation" ] ;
+       fhir:description [ fhir:v "Example of a Citation of a clinical practice guideline recommendation" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleRecommendationEligibilityCriteria> ;
+         fhir:reference [ fhir:v "EvidenceVariable/ExampleRecommendationEligibilityCriteria" ]
+       ] ;
+       fhir:name [ fhir:v "Example Recommendation Eligibility Criteria" ] ;
+       fhir:description [ fhir:v "Example of a population element of a PICO construct that evidence is about." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleRecommendationEligibilityCriteria5Levels> ;
+         fhir:reference [ fhir:v "EvidenceVariable/ExampleRecommendationEligibilityCriteria5Levels" ]
+       ] ;
+       fhir:name [ fhir:v "Example Recommendation Eligibility Criteria" ] ;
+       fhir:description [ fhir:v "Example of a population element of a PICO construct that evidence is about." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleRecommendationEligibilityCriteriaDrugs> ;
+         fhir:reference [ fhir:v "EvidenceVariable/ExampleRecommendationEligibilityCriteriaDrugs" ]
+       ] ;
+       fhir:name [ fhir:v "Example Recommendation Eligibility Criteria" ] ;
+       fhir:description [ fhir:v "Example of a population element of a PICO construct that evidence is about." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ArtifactAssessment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/ExampleRecommendationJustification> ;
+         fhir:reference [ fhir:v "ArtifactAssessment/ExampleRecommendationJustification" ]
+       ] ;
+       fhir:name [ fhir:v "Example Recommendation Justification" ] ;
+       fhir:description [ fhir:v "Example of a recommendation justification" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/ExampleRecommendationPlan> ;
+         fhir:reference [ fhir:v "PlanDefinition/ExampleRecommendationPlan" ]
+       ] ;
+       fhir:name [ fhir:v "Example Recommendation plan" ] ;
+       fhir:description [ fhir:v "An active recommendation plan." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleStudyCitation> ;
+         fhir:reference [ fhir:v "Citation/ExampleStudyCitation" ]
+       ] ;
+       fhir:name [ fhir:v "Example Study Citation" ] ;
+       fhir:description [ fhir:v "Example Study Citation" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/ExampleStudyCohort> ;
+         fhir:reference [ fhir:v "Group/ExampleStudyCohort" ]
+       ] ;
+       fhir:name [ fhir:v "Example Study Cohort" ] ;
+       fhir:description [ fhir:v "Example study cohort of 20 patients" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleStudyEligibilityCriteria> ;
+         fhir:reference [ fhir:v "EvidenceVariable/ExampleStudyEligibilityCriteria" ]
+       ] ;
+       fhir:name [ fhir:v "Example Study Eligibility Criteria" ] ;
+       fhir:description [ fhir:v "Example of Study Eligbility Criteria" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Evidence" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleStudyOutcomeEvidence> ;
+         fhir:reference [ fhir:v "Evidence/ExampleStudyOutcomeEvidence" ]
+       ] ;
+       fhir:name [ fhir:v "Example Study Outcome Evidence" ] ;
+       fhir:description [ fhir:v "Example Study Outcome Evidence" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/guideline-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "Guideline Bundle" ] ;
+       fhir:description [ fhir:v "Collection of all resources that represent a single clinical practice guideline." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation> ;
+         fhir:reference [ fhir:v "StructureDefinition/guideline-citation" ]
+       ] ;
+       fhir:name [ fhir:v "Guideline Citation" ] ;
+       fhir:description [ fhir:v "Citation of a clinical practice guideline" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Bundle/GuidelineRecommendationExample> ;
+         fhir:reference [ fhir:v "Bundle/GuidelineRecommendationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Guideline Recommendation Example" ] ;
+       fhir:description [ fhir:v "Example of a clinical practice guideline representation bundle." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-recommendation-status> ;
+         fhir:reference [ fhir:v "ValueSet/vs-guideline-recommendation-status" ]
+       ] ;
+       fhir:name [ fhir:v "Guideline Recommendation Status" ] ;
+       fhir:description [ fhir:v "Current status of a clinical practice guideline recommendation" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-guideline-stage-classification> ;
+         fhir:reference [ fhir:v "ValueSet/vs-guideline-stage-classification" ]
+       ] ;
+       fhir:name [ fhir:v "Guideline Stage Classification" ] ;
+       fhir:description [ fhir:v "Stage classification according to systematics" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-guideline-stage-classification" ]
+       ] ;
+       fhir:name [ fhir:v "Guideline Stage Classification" ] ;
+       fhir:description [ fhir:v "As part of the project planning for the creation or updating of a guideline,\n    a decision should be made at an early stage about the planned level classification (\"S classification\") according to the AWMF's system of rules (1-3).\n    The S-classification scheme of the AWMF differentiates between the classes S1 treatment recommendation as well as S2e, S2k and S3 guideline.\n    The \"S\" stands for the extent of the applied systematic approach in the development process of a guideline.\n    Each class thus stands for a specific methodological concept that must be presented in a way that is comprehensible to the users.\n    The choice of class is based on the question of how much effort is appropriate and feasible.\n    The need for legitimacy for the implementation of the guideline (convincing the target group) must be taken into account.\n    When choosing a higher S-classification in the context of updating a guideline, the adaptation to the corresponding methodology has to be considered." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/intervention-definition> ;
+         fhir:reference [ fhir:v "StructureDefinition/intervention-definition" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention Definition" ] ;
+       fhir:description [ fhir:v "Description of the intervention element of a PICO construct that evidence is about." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/KontaktArtDe> ;
+         fhir:reference [ fhir:v "CodeSystem/KontaktArtDe" ]
+       ] ;
+       fhir:name [ fhir:v "KontaktArtDe" ] ;
+       fhir:description [ fhir:v "Klassifizierung eines Kontaktes mit einer Gesundheitseinrichtung" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-mean-difference-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-mean-difference-type" ]
+       ] ;
+       fhir:name [ fhir:v "Mean Difference Type" ] ;
+       fhir:description [ fhir:v "Mean difference types" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Evidence" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/DexamethasoneOutcomeMortality> ;
+         fhir:reference [ fhir:v "Evidence/DexamethasoneOutcomeMortality" ]
+       ] ;
+       fhir:name [ fhir:v "Mortality Outcome for Dexamethasone application" ] ;
+       fhir:description [ fhir:v "Mortality Outcome for Dexamethasone application in hospitalized COVID-19 patients" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate> ;
+         fhir:reference [ fhir:v "StructureDefinition/net-effect-estimate" ]
+       ] ;
+       fhir:name [ fhir:v "Net Effect Estimate" ] ;
+       fhir:description [ fhir:v "The net effect is the overall expected effect of a recommendation, calculated by an importance-weighted average of the individual outcome effects" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/NoDexamethasoneApplication> ;
+         fhir:reference [ fhir:v "ActivityDefinition/NoDexamethasoneApplication" ]
+       ] ;
+       fhir:name [ fhir:v "No Dexamethasone Application" ] ;
+       fhir:description [ fhir:v "No Application of Dexamethasone" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan> ;
+         fhir:reference [ fhir:v "PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan" ]
+       ] ;
+       fhir:name [ fhir:v "No dexamethasone application for non-ventilated COVID-19 patients" ] ;
+       fhir:description [ fhir:v "No application of Dexamethasone for non-ventilated COVID-19 patients" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ArtifactAssessment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/NoDexamethasoneRecommendationJustification> ;
+         fhir:reference [ fhir:v "ArtifactAssessment/NoDexamethasoneRecommendationJustification" ]
+       ] ;
+       fhir:name [ fhir:v "NO Dexamethasone for moderately ill COVID-19 patients" ] ;
+       fhir:description [ fhir:v "No Dexamethasone in moderately ill patients with COVID-19." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-observations> ;
+         fhir:reference [ fhir:v "ValueSet/vs-observations" ]
+       ] ;
+       fhir:name [ fhir:v "Observations" ] ;
+       fhir:description [ fhir:v "Observations are measurements of a patient's state of health. They are typically made by a healthcare professional, but can also be self-reported by the patient." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition> ;
+         fhir:reference [ fhir:v "StructureDefinition/outcome-definition" ]
+       ] ;
+       fhir:name [ fhir:v "Outcome Definition" ] ;
+       fhir:description [ fhir:v "Description of the outcome element of a PICO construct that evidence is about." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence> ;
+         fhir:reference [ fhir:v "StructureDefinition/outcome-evidence" ]
+       ] ;
+       fhir:name [ fhir:v "Outcome Evidence" ] ;
+       fhir:description [ fhir:v "A single evidence for an outcome from a specific study, meta analysis or systematic review." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis> ;
+         fhir:reference [ fhir:v "StructureDefinition/outcome-evidence-synthesis" ]
+       ] ;
+       fhir:name [ fhir:v "Outcome Evidence Synthesis" ] ;
+       fhir:description [ fhir:v "A single evidence for an outcome from an evidence synthesis." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/pico-evidence-variable> ;
+         fhir:reference [ fhir:v "StructureDefinition/pico-evidence-variable" ]
+       ] ;
+       fhir:name [ fhir:v "PICO Evidence Variable" ] ;
+       fhir:description [ fhir:v "Description of the a PICO element that knowledge is about. This abstract resource is used as parent for all PICO (population, intervention, comparison, outcome) evidence variables." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/PopulationCOVID19NonVentilated> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCOVID19NonVentilated" ]
+       ] ;
+       fhir:name [ fhir:v "Population: COVID19 Non-Ventilated" ] ;
+       fhir:description [ fhir:v "Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, not ventilated" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/PopulationCOVID19Ventilated> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCOVID19Ventilated" ]
+       ] ;
+       fhir:name [ fhir:v "Population: COVID19 Ventilated" ] ;
+       fhir:description [ fhir:v "Population for guideline from https://app.magicapp.org/#/guidelines / 5691 with characteristics: COVID-19, Ventilated" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/procedure-action> ;
+         fhir:reference [ fhir:v "StructureDefinition/procedure-action" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure Action" ] ;
+       fhir:description [ fhir:v "Definition of a procedure action." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-procedures> ;
+         fhir:reference [ fhir:v "ValueSet/vs-procedures" ]
+       ] ;
+       fhir:name [ fhir:v "Procedures" ] ;
+       fhir:description [ fhir:v "Procedures" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-qualityOfEvidence> ;
+         fhir:reference [ fhir:v "StructureDefinition/cqf-qualityOfEvidence" ]
+       ] ;
+       fhir:name [ fhir:v "qualityOfEvidence" ] ;
+       fhir:description [ fhir:v "The quality of the evidence described. The code system used specifies the quality scale used to grade this evidence source while the code specifies the actual quality score (represented as a coded value) associated with the evidence." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-radiologic-finding-sct> ;
+         fhir:reference [ fhir:v "ValueSet/vs-radiologic-finding-sct" ]
+       ] ;
+       fhir:name [ fhir:v "Radiologic Finding SCT" ] ;
+       fhir:description [ fhir:v "Radiologic findings from SNOMED CT" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-acceptability> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-acceptability" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Acceptability" ] ;
+       fhir:description [ fhir:v "Are the alternatives acceptable for the target population and its implementors?" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-benefit-and-harms> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-benefit-and-harms" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Benefit And Harms" ] ;
+       fhir:description [ fhir:v "Summary of most important benefits and harms" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-certainty-of-evidence> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-certainty-of-evidence" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Certainty Of Evidence" ] ;
+       fhir:description [ fhir:v "Codes from EvidenceCertaintyRating related to certainty of evidence" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-concern-degree> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-concern-degree" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Concern Degree" ] ;
+       fhir:description [ fhir:v "Codes from EvidenceCertaintyRating related to degree of concern" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-consensus> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-consensus" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Consensus" ] ;
+       fhir:description [ fhir:v "Degree of consensus reached" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-equity> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-equity" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Equity" ] ;
+       fhir:description [ fhir:v "How do the different alternatives affect equity?" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-feasibility> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-feasibility" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Feasibility" ] ;
+       fhir:description [ fhir:v "How feasible will it be to implement the different alternatives? Any issues?" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-preference-and-values> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-preference-and-values" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Preference And Values" ] ;
+       fhir:description [ fhir:v "Typical patient preferences and values? Common issues or expected variability?" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-resources> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-resources" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Resources" ] ;
+       fhir:description [ fhir:v "Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-one-level> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-uprating-one-level" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Up Rating One Level" ] ;
+       fhir:description [ fhir:v "Ratings for factors that might cause rating up the certainty" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-uprating-two-levels> ;
+         fhir:reference [ fhir:v "ValueSet/vs-rating-uprating-two-levels" ]
+       ] ;
+       fhir:name [ fhir:v "Rating Up Rating Two Levels" ] ;
+       fhir:description [ fhir:v "Ratings for factors that might cause rating up the certainty" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation> ;
+         fhir:reference [ fhir:v "StructureDefinition/recommendation" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation" ] ;
+       fhir:description [ fhir:v "A recommendation as part of a clinical practice guideline." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/ExampleRecommendation> ;
+         fhir:reference [ fhir:v "PlanDefinition/ExampleRecommendation" ]
+       ] ;
+       fhir:name [ fhir:v "recommendation" ] ;
+       fhir:description [ fhir:v "Recommendation" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action> ;
+         fhir:reference [ fhir:v "StructureDefinition/recommendation-action" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Action" ] ;
+       fhir:description [ fhir:v "Definition of an activity that is part of an intervention in the context of a clinical practice guideline recommendation." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation> ;
+         fhir:reference [ fhir:v "StructureDefinition/recommendation-citation" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Citation" ] ;
+       fhir:description [ fhir:v "Citation of a clinical practice guideline recommendation" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria> ;
+         fhir:reference [ fhir:v "StructureDefinition/recommendation-eligibility-criteria" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Eligibility Criteria" ] ;
+       fhir:description [ fhir:v "Eligibility Criteria for a Clinical Guideline Recommendation" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification> ;
+         fhir:reference [ fhir:v "StructureDefinition/recommendation-justification" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Justification" ] ;
+       fhir:description [ fhir:v "Justification of a clinical guideline recommendation through the underlying evidence and their ratings" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan> ;
+         fhir:reference [ fhir:v "StructureDefinition/recommendation-plan" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Plan" ] ;
+       fhir:description [ fhir:v "Definition of an activity that is part of an intervention in the context of a clinical practice guideline recommendation." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/ceosys-vs-recommendation-strength> ;
+         fhir:reference [ fhir:v "ValueSet/ceosys-vs-recommendation-strength" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Strength" ] ;
+       fhir:description [ fhir:v "Strength of a clinical guideline recommendation." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength> ;
+         fhir:reference [ fhir:v "CodeSystem/ceosys-cs-recommendation-strength" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Strength" ] ;
+       fhir:description [ fhir:v "Strength of a clinical guideline recommendation." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-relative-effect-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-relative-effect-type" ]
+       ] ;
+       fhir:name [ fhir:v "Relative Effect Type" ] ;
+       fhir:description [ fhir:v "Relative effect types" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time> ;
+         fhir:reference [ fhir:v "StructureDefinition/relative-time" ]
+       ] ;
+       fhir:name [ fhir:v "RelativeTime" ] ;
+       fhir:description [ fhir:v "Timing in which the characteristic is determined." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/shareableplandefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/shareableplandefinition" ]
+       ] ;
+       fhir:name [ fhir:v "Shareable PlanDefinition" ] ;
+       fhir:description [ fhir:v "Enforces the minimum information set for the plan definition metadata required by HL7 and other organizations that share and publish plan definitions" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/cqf-strengthOfRecommendation> ;
+         fhir:reference [ fhir:v "StructureDefinition/cqf-strengthOfRecommendation" ]
+       ] ;
+       fhir:name [ fhir:v "strengthOfRecommendation" ] ;
+       fhir:description [ fhir:v "The strength of the recommendation assigned to this reference. The code system used specifies the rating scale used to rate this recommendation while the code specifies the actual recommendation rating (represented as a coded value) associated with this recommendation." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation> ;
+         fhir:reference [ fhir:v "StructureDefinition/study-citation" ]
+       ] ;
+       fhir:name [ fhir:v "Study Citation" ] ;
+       fhir:description [ fhir:v "Citation of a study from which evidence is determined." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort> ;
+         fhir:reference [ fhir:v "StructureDefinition/study-cohort" ]
+       ] ;
+       fhir:name [ fhir:v "Study Cohort" ] ;
+       fhir:description [ fhir:v "The actual group observed in a study." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/StudyCohortCorticosteroidsCOVID19> ;
+         fhir:reference [ fhir:v "Group/StudyCohortCorticosteroidsCOVID19" ]
+       ] ;
+       fhir:name [ fhir:v "Study cohort for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)" ] ;
+       fhir:description [ fhir:v "Study cohort for for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria> ;
+         fhir:reference [ fhir:v "StructureDefinition/study-eligibility-criteria" ]
+       ] ;
+       fhir:name [ fhir:v "Study Eligibility Criteria" ] ;
+       fhir:description [ fhir:v "Eligibility Criteria for a clinical study" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19> ;
+         fhir:reference [ fhir:v "EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19" ]
+       ] ;
+       fhir:name [ fhir:v "Study eligibility criteria for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)" ] ;
+       fhir:description [ fhir:v "Study eligibility criteria for Systemic corticosteroids plus standard care vs. standard care (plus/minus placebo)" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence> ;
+         fhir:reference [ fhir:v "StructureDefinition/study-outcome-evidence" ]
+       ] ;
+       fhir:name [ fhir:v "Study Outcome Evidence" ] ;
+       fhir:description [ fhir:v "A single evidence for an outcome from a primary study." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-substances-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/vs-substances-snomed" ]
+       ] ;
+       fhir:name [ fhir:v "Substances SNOMED CT" ] ;
+       fhir:description [ fhir:v "All substance codes from SNOMED CT" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/synthesis-type> ;
+         fhir:reference [ fhir:v "CodeSystem/synthesis-type" ]
+       ] ;
+       fhir:name [ fhir:v "SynthesisType" ] ;
+       fhir:description [ fhir:v "Types of combining results from a body of evidence (eg. summary data meta-analysis)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19> ;
+         fhir:reference [ fhir:v "Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19" ]
+       ] ;
+       fhir:name [ fhir:v "Systemic corticosteroids for the treatment of COVID-19" ] ;
+       fhir:description [ fhir:v "Systemic corticosteroids for the treatment of COVID-19" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/COVID19IntensiveCareTreatmentGuidelineCitation> ;
+         fhir:reference [ fhir:v "Citation/COVID19IntensiveCareTreatmentGuidelineCitation" ]
+       ] ;
+       fhir:name [ fhir:v "Therapy of hospitalized COVID-19 patients" ] ;
+       fhir:description [ fhir:v "Guideline for therapy of hospitalized COVID-19 patients" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"^^xsd:anyURI ;
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-mii-icu-code-observation-beatmung-loinc> ;
+         fhir:reference [ fhir:v "ValueSet/vs-mii-icu-code-observation-beatmung-loinc" ]
+       ] ;
+       fhir:name [ fhir:v "VS MII ICU Code Observation Beatmung [LOINC]" ] ;
+       fhir:description [ fhir:v "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung eingestellten oder gemessenen Parametern." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Clinical Practice Guidelines (CPG) on EBMonFHIR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "profiles.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Profiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "codesystems.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "codesystems.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Code Systems" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "valuesets.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "valuesets.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Value Sets" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "extensions.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "extensions.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Extensions" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Examples" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [ fhir:v "history.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "history.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "History" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2021+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "qa-preview" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "show-inherited-invariants" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "usage-stats-opt-out" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludexml" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludejsn" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludettl" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludemap" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludeexample" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://simplifier.net" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

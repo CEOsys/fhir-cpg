@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-rating-consensus"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-rating-consensus</b></p><a name="vs-rating-consensus"> </a><a name="hcvs-rating-consensus"> </a><a name="vs-rating-consensus-en-US"> </a><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.0.2/CodeSystem-recommendation-strength.html"><code>http://terminology.hl7.org/CodeSystem/recommendation-strength</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-recommendation-strength.html#recommendation-strength-strong">strong</a></td><td>Strong</td><td>Strong recommendation.</td></tr><tr><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-recommendation-strength.html#recommendation-strength-weak">weak</a></td><td>Weak</td><td>Weak recommendation.</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-rating-consensus"/>
+  <version value="0.1.1"/>
+  <name value="RatingConsensus"/>
+  <title value="Rating Consensus"/>
+  <status value="draft"/>
+  <date value="2022-09-06"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Degree of consensus reached"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/recommendation-strength"/>
+      <concept>
+        <code value="strong"/>
+        <display value="Strong"/>
+      </concept>
+      <concept>
+        <code value="weak"/>
+        <display value="Weak"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

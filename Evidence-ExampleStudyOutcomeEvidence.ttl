@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleStudyOutcomeEvidence> a fhir:Evidence ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleStudyOutcomeEvidence"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Evidence ExampleStudyOutcomeEvidence</b></p><a name=\"ExampleStudyOutcomeEvidence\"> </a><a name=\"hcExampleStudyOutcomeEvidence\"> </a><a name=\"ExampleStudyOutcomeEvidence-en-US\"> </a><p><b>url</b>: <a href=\"Evidence-ExampleStudyOutcomeEvidence.html\">Evidence ExampleStudyOutcomeEvidence</a></p><p><b>name</b>: ExampleStudyOutcomeEvidence</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-ExampleStudyCitation.html\">Citation ExampleCitation</a></td></tr></table><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}\">population</span></p><p><b>observed</b>: <a href=\"Group-ExampleStudyCohort.html\">Group: type = person; membership = definitional; quantity = 20</a></p><p><b>intended</b>: <a href=\"EvidenceVariable-ExampleStudyEligibilityCriteria.html\">EvidenceVariable ExampleStudyEligibilityCriteria</a></p></blockquote><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}\">measured variable</span></p><p><b>observed</b>: <a href=\"EvidenceVariable-ExampleOutcome.html\">EvidenceVariable Mortality</a></p></blockquote><p><b>synthesisType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}\">not applicable</span></p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/ExampleStudyOutcomeEvidence"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "ExampleStudyOutcomeEvidence"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:relatedArtifact ( [
+     fhir:type [ fhir:v "citation" ] ;
+     fhir:resourceReference [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleStudyCitation> ;
+       fhir:reference [ fhir:v "Citation/ExampleStudyCitation" ]
+     ]
+  ] ) ; # 
+  fhir:variableDefinition ( [
+     fhir:variableRole [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/variable-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "population" ]
+       ] )
+     ] ;
+     fhir:observed [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/ExampleStudyCohort> ;
+       fhir:reference [ fhir:v "Group/ExampleStudyCohort" ]
+     ] ;
+     fhir:intended [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleStudyEligibilityCriteria> ;
+       fhir:reference [ fhir:v "EvidenceVariable/ExampleStudyEligibilityCriteria" ]
+     ]
+  ] [
+     fhir:variableRole [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/variable-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "measuredVariable" ]
+       ] )
+     ] ;
+     fhir:observed [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/ExampleOutcome> ;
+       fhir:reference [ fhir:v "EvidenceVariable/ExampleOutcome" ]
+     ]
+  ] ) ; # 
+  fhir:synthesisType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/synthesis-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NotApplicable" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

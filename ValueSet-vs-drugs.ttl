@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-drugs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-drugs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-drugs</b></p><a name=\"vs-drugs\"> </a><a name=\"hcvs-drugs\"> </a><a name=\"vs-drugs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 105590001 (Substance)</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 763158003 (Medicinal product (product))</li><li>Include all codes defined in <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-drugs"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "Drugs"] ; # 
+  fhir:title [ fhir:v "Drugs"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Drugs"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "105590001" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "763158003" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/atc"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

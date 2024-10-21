@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-evidence-to-decision-certainty-type"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-evidence-to-decision-certainty-type</b></p><a name=\"cs-evidence-to-decision-certainty-type\"> </a><a name=\"hccs-evidence-to-decision-certainty-type\"> </a><a name=\"cs-evidence-to-decision-certainty-type-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">benefit-and-harms<a name=\"cs-evidence-to-decision-certainty-type-benefit-and-harms\"> </a></td><td>Benefits and Harms</td><td>Summary of most important benefits and harms</td></tr><tr><td style=\"white-space:nowrap\">preference-and-values<a name=\"cs-evidence-to-decision-certainty-type-preference-and-values\"> </a></td><td>Preference and values</td><td>Typical patient preferences and values? Common issues or expected variability?</td></tr><tr><td style=\"white-space:nowrap\">resources<a name=\"cs-evidence-to-decision-certainty-type-resources\"> </a></td><td>Resources</td><td>Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?</td></tr><tr><td style=\"white-space:nowrap\">equity<a name=\"cs-evidence-to-decision-certainty-type-equity\"> </a></td><td>Equity</td><td>How do the different alternatives affect equity?</td></tr><tr><td style=\"white-space:nowrap\">acceptability<a name=\"cs-evidence-to-decision-certainty-type-acceptability\"> </a></td><td>Acceptability</td><td>Are the alternatives acceptable for the target population and its implementors?</td></tr><tr><td style=\"white-space:nowrap\">feasibility<a name=\"cs-evidence-to-decision-certainty-type-feasibility\"> </a></td><td>Feasibility</td><td>How feasible will it be to implement the different alternatives? Any issues?</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "EvidenceToDecisionCertaintyType"] ; # 
+  fhir:title [ fhir:v "Evidence To Decision Certainty type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "GRADE Evidence to Decision (EtD) Framework Certainty Type"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "benefit-and-harms" ] ;
+     fhir:display [ fhir:v "Benefits and Harms" ] ;
+     fhir:definition [ fhir:v "Summary of most important benefits and harms" ]
+  ] [
+     fhir:code [ fhir:v "preference-and-values" ] ;
+     fhir:display [ fhir:v "Preference and values" ] ;
+     fhir:definition [ fhir:v "Typical patient preferences and values? Common issues or expected variability?" ]
+  ] [
+     fhir:code [ fhir:v "resources" ] ;
+     fhir:display [ fhir:v "Resources" ] ;
+     fhir:definition [ fhir:v "Issues with costs or resource use? For whom? Cost-benefit analysis? Implementation or other issues?" ]
+  ] [
+     fhir:code [ fhir:v "equity" ] ;
+     fhir:display [ fhir:v "Equity" ] ;
+     fhir:definition [ fhir:v "How do the different alternatives affect equity?" ]
+  ] [
+     fhir:code [ fhir:v "acceptability" ] ;
+     fhir:display [ fhir:v "Acceptability" ] ;
+     fhir:definition [ fhir:v "Are the alternatives acceptable for the target population and its implementors?" ]
+  ] [
+     fhir:code [ fhir:v "feasibility" ] ;
+     fhir:display [ fhir:v "Feasibility" ] ;
+     fhir:definition [ fhir:v "How feasible will it be to implement the different alternatives? Any issues?" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

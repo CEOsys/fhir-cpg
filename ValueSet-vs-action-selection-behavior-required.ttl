@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-selection-behavior-required> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-action-selection-behavior-required"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-action-selection-behavior-required</b></p><a name=\"vs-action-selection-behavior-required\"> </a><a name=\"hcvs-action-selection-behavior-required\"> </a><a name=\"vs-action-selection-behavior-required-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html\"><code>http://hl7.org/fhir/action-selection-behavior</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-all\">all</a></td><td>All</td><td>All the actions in the group must be selected as a single unit.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-exactly-one\">exactly-one</a></td><td>Exactly One</td><td>The end user must choose one and only one of the selectable actions in the group. The user SHALL NOT choose none of the actions in the group.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-at-most-one\">at-most-one</a></td><td>At Most One</td><td>The end user may choose zero or at most one of the actions in the group.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-action-selection-behavior.html#action-selection-behavior-one-or-more\">one-or-more</a></td><td>One or More</td><td>The end user must choose a minimum of one, and as many additional as desired.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-action-selection-behavior-required"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ActionSelectionBehaviorRequired"] ; # 
+  fhir:title [ fhir:v "Action Selection Behavior Required"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-11-28"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Netzwerk Universitätsmedizin (NUM)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Action selection behavior with only codes that require at least one action to be performed."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/action-selection-behavior"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "all" ] ;
+         fhir:display [ fhir:v "All" ]
+       ] [
+         fhir:code [ fhir:v "exactly-one" ] ;
+         fhir:display [ fhir:v "Exactly One" ]
+       ] [
+         fhir:code [ fhir:v "at-most-one" ] ;
+         fhir:display [ fhir:v "At Most One" ]
+       ] [
+         fhir:code [ fhir:v "one-or-more" ] ;
+         fhir:display [ fhir:v "One or More" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

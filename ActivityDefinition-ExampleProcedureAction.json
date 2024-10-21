@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "ExampleProcedureAction",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/procedure-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition ExampleProcedureAction</b></p><a name=\"ExampleProcedureAction\"> </a><a name=\"hcExampleProcedureAction\"> </a><a name=\"ExampleProcedureAction-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-ExampleProcedureAction.html\">ActivityDefinition ExampleProcedureAction</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: ExampleProcedureAction</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example of a procedure action.</p>\n</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 172703006}\">Destruction of lesion of middle ear (procedure)</span></p><p><b>timing</b>: Once per 1 days</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/procedure-example",
+  "version" : "1.0",
+  "name" : "ExampleProcedureAction",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-10-21T14:50:59+00:00",
+  "publisher" : "CPGonEBMonFHIR",
+  "description" : "Example of a procedure action.",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20240201",
+      "code" : "172703006",
+      "display" : "Destruction of lesion of middle ear (procedure)"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

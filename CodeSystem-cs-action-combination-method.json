@@ -1,0 +1,73 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-action-combination-method",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-action-combination-method</b></p><a name=\"cs-action-combination-method\"> </a><a name=\"hccs-action-combination-method\"> </a><a name=\"cs-action-combination-method-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">all<a name=\"cs-action-combination-method-all\"> </a></td><td>All</td><td>All actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">any<a name=\"cs-action-combination-method-any\"> </a></td><td>Any</td><td>Any action must be performed.</td></tr><tr><td style=\"white-space:nowrap\">at-least<a name=\"cs-action-combination-method-at-least\"> </a></td><td>At Least</td><td>At least the specified number of actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">exactly<a name=\"cs-action-combination-method-exactly\"> </a></td><td>Exactly</td><td>Exactly the specified number of actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">at-most<a name=\"cs-action-combination-method-at-most\"> </a></td><td>At Most</td><td>At most the specified number of actions must be performed.</td></tr><tr><td style=\"white-space:nowrap\">one-or-more<a name=\"cs-action-combination-method-one-or-more\"> </a></td><td>One or More</td><td>One or more actions must be performed.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+  "version" : "0.1.0",
+  "name" : "ActionCombinationMethod",
+  "title" : "Action Combination Method",
+  "status" : "draft",
+  "date" : "2024-02-16",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Code system for the combination of actions in a PlanDefinition.",
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "all",
+    "display" : "All",
+    "definition" : "All actions must be performed."
+  },
+  {
+    "code" : "any",
+    "display" : "Any",
+    "definition" : "Any action must be performed."
+  },
+  {
+    "code" : "at-least",
+    "display" : "At Least",
+    "definition" : "At least the specified number of actions must be performed."
+  },
+  {
+    "code" : "exactly",
+    "display" : "Exactly",
+    "definition" : "Exactly the specified number of actions must be performed."
+  },
+  {
+    "code" : "at-most",
+    "display" : "At Most",
+    "definition" : "At most the specified number of actions must be performed."
+  },
+  {
+    "code" : "one-or-more",
+    "display" : "One or More",
+    "definition" : "One or more actions must be performed."
+  }]
+}

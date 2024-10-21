@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-assessment-scales"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-assessment-scales</b></p><a name="vs-assessment-scales"> </a><a name="hcvs-assessment-scales"> </a><a name="vs-assessment-scales-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 273249006 (Assessment scales)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 273249006 (Assessment scales)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a 273249006 (Assessment scales)</li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/72514-3/">72514-3</a></td><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td></tr><tr><td><a href="https://loinc.org/54627-5/">54627-5</a></td><td>Signs and symptoms of delirium (from CAM)</td></tr></table></li><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a> where PROPERTY  = Score</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-assessment-scales"/>
+  <version value="0.1.0"/>
+  <name value="AssessmentScales"/>
+  <title value="Assessment Scales"/>
+  <status value="draft"/>
+  <date value="2023-10-13"/>
+  <publisher value="Netzwerk Universitätsmedizin (NUM)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Codes for assessment scales (scores etc.)"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="273249006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/731000124108/version/20230901"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="273249006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20240201"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="273249006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="72514-3"/>
+        <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
+      </concept>
+      <concept>
+        <code value="54627-5"/>
+        <display value="Signs and symptoms of delirium (from CAM)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="PROPERTY"/>
+        <op value="="/>
+        <value value="Score"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

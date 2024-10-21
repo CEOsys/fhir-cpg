@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Citation",
+  "id" : "ExampleStudyCitation",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Citation ExampleStudyCitation</b></p><a name=\"ExampleStudyCitation\"> </a><a name=\"hcExampleStudyCitation\"> </a><a name=\"ExampleStudyCitation-en-US\"> </a><p><b>url</b>: <a href=\"Citation-ExampleStudyCitation.html\">Citation ExampleCitation</a></p><p><b>name</b>: ExampleCitation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: ceoysy/exampleIdentifier</p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Example Citation</p>\n</div></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{http://hl7.org/fhir/citation-artifact-classifier D016428}\">Journal Article</span></td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleStudyCitation",
+  "name" : "ExampleCitation",
+  "status" : "active",
+  "date" : "2024-10-21T14:50:59+00:00",
+  "citedArtifact" : {
+    "identifier" : [{
+      "value" : "ceoysy/exampleIdentifier"
+    }],
+    "title" : [{
+      "text" : "Example Citation"
+    }],
+    "classification" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+          "code" : "publication-type",
+          "display" : "Publication Type"
+        }]
+      },
+      "classifier" : [{
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/citation-artifact-classifier",
+          "code" : "D016428",
+          "display" : "Journal Article"
+        }]
+      }]
+    }]
+  }
+}

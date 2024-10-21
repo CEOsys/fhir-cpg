@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="ExampleEvidenceSynthesisCohorts"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/evidence-synthesis-cohorts"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Group ExampleEvidenceSynthesisCohorts</b></p><a name="ExampleEvidenceSynthesisCohorts"> </a><a name="hcExampleEvidenceSynthesisCohorts"> </a><a name="ExampleEvidenceSynthesisCohorts-en-US"> </a><p><b>type</b>: Person</p><p><b>membership</b>: Definitional</p><p><b>quantity</b>: 20</p><h3>Members</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Entity</b></td></tr><tr><td style="display: none">*</td><td><a href="Group-ExampleStudyCohort.html">Group: type = person; membership = definitional; quantity = 20</a></td></tr></table></div>
+  </text>
+  <type value="person"/>
+  <membership value="definitional"/>
+  <quantity value="20"/>
+  <member>
+    <entity>
+      <reference value="Group/ExampleStudyCohort"/>
+    </entity>
+  </member>
+</Group>

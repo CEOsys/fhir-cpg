@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="ExampleRecommendation"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition ExampleRecommendation</b></p><a name="ExampleRecommendation"> </a><a name="hcExampleRecommendation"> </a><a name="ExampleRecommendation-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method at-least}">At Least</span></li><li>threshold: 2</li></ul></blockquote><p><b>url</b>: <a href="PlanDefinition-ExampleRecommendation.html">PlanDefinition Recommendation</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Recommendation</p><p><b>title</b>: Recommendation</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example Recommendation</p>
+</div><h3>RelatedArtifacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style="display: none">*</td><td>Justification</td><td><span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system recommendation-rating}">Recommendation rating</span></td><td><a href="ArtifactAssessment-ExampleRecommendationJustification.html">ArtifactAssessment: extension = 0.1.0,active; date = 2020-01-03; artifact[x] = -&gt;PlanDefinition Recommendation Plan</a></td></tr><tr><td style="display: none">*</td><td>Citation</td><td><span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}">Clinical practice guideline recommendation</span></td><td><a href="Citation-ExampleRecommendationCitation.html">Citation ExampleRecommendationCitation</a></td></tr><tr><td style="display: none">*</td><td>Citation</td><td><span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}">Clinical practice guideline</span></td><td><a href="Citation-ExampleGuidelineCitation.html">Citation ExampleGuidelineCitation</a></td></tr></table><blockquote><p><b>action</b></p><p><b>title</b>: example recommendation</p><p><b>description</b>: </p><div><p>Example recommendation</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-ExampleRecommendationPlan.html">Recommendation Plan</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: example recommendation</p><p><b>description</b>: </p><div><p>Example recommendation</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-ExampleRecommendationPlan.html">Recommendation Plan</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="at-least"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="2"/>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation"/>
+  <version value="1.0"/>
+  <name value="Recommendation"/>
+  <title value="Recommendation"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-14"/>
+  <publisher value="CPGonEBMonFHIR"/>
+  <description value="Example Recommendation"/>
+  <relatedArtifact>
+    <type value="justification"/>
+    <classifier>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="recommendation-rating"/>
+        <display value="Recommendation rating"/>
+      </coding>
+    </classifier>
+    <resourceReference>
+      <reference value="ArtifactAssessment/ExampleRecommendationJustification"/>
+    </resourceReference>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="citation"/>
+    <classifier>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="guideline-recommendation"/>
+        <display value="Clinical practice guideline recommendation"/>
+      </coding>
+    </classifier>
+    <resourceReference>
+      <reference value="Citation/ExampleRecommendationCitation"/>
+    </resourceReference>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="citation"/>
+    <classifier>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="clinical-practice-guideline"/>
+        <display value="Clinical practice guideline"/>
+      </coding>
+    </classifier>
+    <resourceReference>
+      <reference value="Citation/ExampleGuidelineCitation"/>
+    </resourceReference>
+  </relatedArtifact>
+  <action>
+    <title value="example recommendation"/>
+    <description value="Example recommendation"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"/>
+  </action>
+  <action>
+    <title value="example recommendation"/>
+    <description value="Example recommendation"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"/>
+  </action>
+</PlanDefinition>

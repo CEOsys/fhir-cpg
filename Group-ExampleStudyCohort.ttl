@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/ExampleStudyCohort> a fhir:Group ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleStudyCohort"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-cohort>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group ExampleStudyCohort</b></p><a name=\"ExampleStudyCohort\"> </a><a name=\"hcExampleStudyCohort\"> </a><a name=\"ExampleStudyCohort-en-US\"> </a><p><b>type</b>: Person</p><p><b>membership</b>: Definitional</p><p><b>quantity</b>: 20</p></div>"
+  ] ; # 
+  fhir:type [ fhir:v "person"] ; # 
+  fhir:membership [ fhir:v "definitional"] ; # 
+  fhir:quantity [ fhir:v "20"^^xsd:nonNegativeInteger] . # 
+
+# -------------------------------------------------------------------------------------
+

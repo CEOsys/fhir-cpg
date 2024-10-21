@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/DexamethasoneOutcomeMortality> a fhir:Evidence ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DexamethasoneOutcomeMortality"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Evidence DexamethasoneOutcomeMortality</b></p><a name=\"DexamethasoneOutcomeMortality\"> </a><a name=\"hcDexamethasoneOutcomeMortality\"> </a><a name=\"DexamethasoneOutcomeMortality-en-US\"> </a><p><b>url</b>: <a href=\"Evidence-DexamethasoneOutcomeMortality.html\">Evidence ExampleOutcomeEvidence</a></p><p><b>name</b>: ExampleOutcomeEvidence</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-SystemicCorticosteroidsForTheTreatmentOfCOVID19.html\">Citation SystemicCorticosteroidsForTheTreatmentOfCOVID19</a></td></tr></table><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}\">population</span></p><p><b>observed</b>: <a href=\"Group-StudyCohortCorticosteroidsCOVID19.html\">Group StudyCohortCriteriaSystemicCorticosteroidsCOVID19</a></p><p><b>intended</b>: <a href=\"EvidenceVariable-StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19.html\">EvidenceVariable StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19</a></p></blockquote><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}\">measured variable</span></p><p><b>observed</b>: <a href=\"EvidenceVariable-OutcomeAllCauseMortality.html\">EvidenceVariable AllCauseMortality</a></p></blockquote><p><b>synthesisType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}\">not applicable</span></p><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Relative effect of intervention vs. comparator</p>\n</div><p><b>statisticType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/statistic-type C93152}\">Relative Risk</span></p><p><b>quantity</b>: 0.89</p><h3>SampleSizes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>NumberOfStudies</b></td><td><b>NumberOfParticipants</b></td></tr><tr><td style=\"display: none\">*</td><td>9</td><td>7930</td></tr></table><h3>AttributeEstimates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Level</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/attribute-estimate-type C53324}\">Confidence interval</span></td><td>0.95</td><td>0.8-1</td></tr></table></blockquote><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Baseline risk/result in the comparison group</p>\n</div><p><b>statisticType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/statistic-type C16726}\">Incidence</span></p><p><b>quantity</b>: 245 1/1000<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/1000 = '1/1000')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Evidence/DexamethasoneOutcomeMortality"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "ExampleOutcomeEvidence"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:relatedArtifact ( [
+     fhir:type [ fhir:v "citation" ] ;
+     fhir:resourceReference [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19> ;
+       fhir:reference [ fhir:v "Citation/SystemicCorticosteroidsForTheTreatmentOfCOVID19" ]
+     ]
+  ] ) ; # 
+  fhir:variableDefinition ( [
+     fhir:variableRole [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/variable-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "population" ]
+       ] )
+     ] ;
+     fhir:observed [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Group/StudyCohortCorticosteroidsCOVID19> ;
+       fhir:reference [ fhir:v "Group/StudyCohortCorticosteroidsCOVID19" ]
+     ] ;
+     fhir:intended [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19> ;
+       fhir:reference [ fhir:v "EvidenceVariable/StudyEligibilityCriteriaSystemicCorticosteroidsCOVID19" ]
+     ]
+  ] [
+     fhir:variableRole [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/variable-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "measuredVariable" ]
+       ] )
+     ] ;
+     fhir:observed [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/EvidenceVariable/OutcomeAllCauseMortality> ;
+       fhir:reference [ fhir:v "EvidenceVariable/OutcomeAllCauseMortality" ]
+     ]
+  ] ) ; # 
+  fhir:synthesisType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/synthesis-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NotApplicable" ]
+     ] )
+  ] ; # 
+  fhir:statistic ( [
+     fhir:description [ fhir:v "Relative effect of intervention vs. comparator" ] ;
+     fhir:statisticType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/statistic-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C93152" ] ;
+         fhir:display [ fhir:v "Relative Risk" ]
+       ] )
+     ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "0.89"^^xsd:decimal ]
+     ] ;
+     fhir:sampleSize [
+       fhir:numberOfStudies [ fhir:v "9"^^xsd:nonNegativeInteger ] ;
+       fhir:numberOfParticipants [ fhir:v "7930"^^xsd:nonNegativeInteger ]
+     ] ;
+     fhir:attributeEstimate ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/attribute-estimate-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "C53324" ] ;
+           fhir:display [ fhir:v "Confidence interval" ]
+         ] )
+       ] ;
+       fhir:level [ fhir:v "0.95"^^xsd:decimal ] ;
+       fhir:range [
+         fhir:low [
+           fhir:value [ fhir:v "0.8"^^xsd:decimal ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "1"^^xsd:decimal ]
+         ]
+       ]
+     ] )
+  ] [
+     fhir:description [ fhir:v "Baseline risk/result in the comparison group" ] ;
+     fhir:statisticType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/statistic-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C16726" ] ;
+         fhir:display [ fhir:v "Incidence" ]
+       ] )
+     ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "245"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1/1000" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

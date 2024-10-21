@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/ExampleRecommendation> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleRecommendation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition ExampleRecommendation</b></p><a name=\"ExampleRecommendation\"> </a><a name=\"hcExampleRecommendation\"> </a><a name=\"ExampleRecommendation-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method at-least}\">At Least</span></li><li>threshold: 2</li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-ExampleRecommendation.html\">PlanDefinition Recommendation</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Recommendation</p><p><b>title</b>: Recommendation</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example Recommendation</p>\n</div><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system recommendation-rating}\">Recommendation rating</span></td><td><a href=\"ArtifactAssessment-ExampleRecommendationJustification.html\">ArtifactAssessment: extension = 0.1.0,active; date = 2020-01-03; artifact[x] = -&gt;PlanDefinition Recommendation Plan</a></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}\">Clinical practice guideline recommendation</span></td><td><a href=\"Citation-ExampleRecommendationCitation.html\">Citation ExampleRecommendationCitation</a></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td><td><a href=\"Citation-ExampleGuidelineCitation.html\">Citation ExampleGuidelineCitation</a></td></tr></table><blockquote><p><b>action</b></p><p><b>title</b>: example recommendation</p><p><b>description</b>: </p><div><p>Example recommendation</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-ExampleRecommendationPlan.html\">Recommendation Plan</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: example recommendation</p><p><b>description</b>: </p><div><p>Example recommendation</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-ExampleRecommendationPlan.html\">Recommendation Plan</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "at-least" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "threshold"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "Recommendation"] ; # 
+  fhir:title [ fhir:v "Recommendation"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-02-14"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "CPGonEBMonFHIR"] ; # 
+  fhir:description [ fhir:v "Example Recommendation"] ; # 
+  fhir:relatedArtifact ( [
+     fhir:type [ fhir:v "justification" ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "recommendation-rating" ] ;
+         fhir:display [ fhir:v "Recommendation rating" ]
+       ] )
+     ] ) ;
+     fhir:resourceReference [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/ExampleRecommendationJustification> ;
+       fhir:reference [ fhir:v "ArtifactAssessment/ExampleRecommendationJustification" ]
+     ]
+  ] [
+     fhir:type [ fhir:v "citation" ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-recommendation" ] ;
+         fhir:display [ fhir:v "Clinical practice guideline recommendation" ]
+       ] )
+     ] ) ;
+     fhir:resourceReference [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleRecommendationCitation> ;
+       fhir:reference [ fhir:v "Citation/ExampleRecommendationCitation" ]
+     ]
+  ] [
+     fhir:type [ fhir:v "citation" ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "clinical-practice-guideline" ] ;
+         fhir:display [ fhir:v "Clinical practice guideline" ]
+       ] )
+     ] ) ;
+     fhir:resourceReference [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/ExampleGuidelineCitation> ;
+       fhir:reference [ fhir:v "Citation/ExampleGuidelineCitation" ]
+     ]
+  ] ) ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "example recommendation" ] ;
+     fhir:description [ fhir:v "Example recommendation" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan>
+     ]
+  ] [
+     fhir:title [ fhir:v "example recommendation" ] ;
+     fhir:description [ fhir:v "Example recommendation" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,83 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ceosys-code-system",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ceosys-code-system</b></p><a name=\"ceosys-code-system\"> </a><a name=\"hcceosys-code-system\"> </a><a name=\"ceosys-code-system-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">relative-importance-weighting<a name=\"ceosys-code-system-relative-importance-weighting\"> </a></td><td>Relative importance weighting for use in weighted linear combinations</td></tr><tr><td style=\"white-space:nowrap\">clinical-practice-guideline<a name=\"ceosys-code-system-clinical-practice-guideline\"> </a></td><td>Clinical practice guideline</td></tr><tr><td style=\"white-space:nowrap\">guideline-recommendation<a name=\"ceosys-code-system-guideline-recommendation\"> </a></td><td>Clinical practice guideline recommendation</td></tr><tr><td style=\"white-space:nowrap\">consensus<a name=\"ceosys-code-system-consensus\"> </a></td><td>Consensus</td></tr><tr><td style=\"white-space:nowrap\">strength<a name=\"ceosys-code-system-strength\"> </a></td><td>Strength of recommendation</td></tr><tr><td style=\"white-space:nowrap\">eligibility-criteria<a name=\"ceosys-code-system-eligibility-criteria\"> </a></td><td>Study Eligibility Criteria</td></tr><tr><td style=\"white-space:nowrap\">net-effect<a name=\"ceosys-code-system-net-effect\"> </a></td><td>Net effect</td></tr><tr><td style=\"white-space:nowrap\">certainty-of-evidence-rating<a name=\"ceosys-code-system-certainty-of-evidence-rating\"> </a></td><td>Certainty of evidence rating</td></tr><tr><td style=\"white-space:nowrap\">recommendation-rating<a name=\"ceosys-code-system-recommendation-rating\"> </a></td><td>Recommendation rating</td></tr><tr><td style=\"white-space:nowrap\">clinical-importance<a name=\"ceosys-code-system-clinical-importance\"> </a></td><td>Clinical Importance</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+  "version" : "0.1.1",
+  "name" : "CEOsysCodeSystem",
+  "title" : "CEOsys Code System",
+  "status" : "draft",
+  "date" : "2022-09-06",
+  "publisher" : "Netzwerk Universitätsmedizin (NUM)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Codes for clinical guideline recommendation representation missing from other code systems.",
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "relative-importance-weighting",
+    "display" : "Relative importance weighting for use in weighted linear combinations"
+  },
+  {
+    "code" : "clinical-practice-guideline",
+    "display" : "Clinical practice guideline"
+  },
+  {
+    "code" : "guideline-recommendation",
+    "display" : "Clinical practice guideline recommendation"
+  },
+  {
+    "code" : "consensus",
+    "display" : "Consensus"
+  },
+  {
+    "code" : "strength",
+    "display" : "Strength of recommendation"
+  },
+  {
+    "code" : "eligibility-criteria",
+    "display" : "Study Eligibility Criteria"
+  },
+  {
+    "code" : "net-effect",
+    "display" : "Net effect"
+  },
+  {
+    "code" : "certainty-of-evidence-rating",
+    "display" : "Certainty of evidence rating"
+  },
+  {
+    "code" : "recommendation-rating",
+    "display" : "Recommendation rating"
+  },
+  {
+    "code" : "clinical-importance",
+    "display" : "Clinical Importance"
+  }]
+}

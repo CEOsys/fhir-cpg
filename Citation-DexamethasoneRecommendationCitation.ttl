@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/DexamethasoneRecommendationCitation> a fhir:Citation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DexamethasoneRecommendationCitation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Citation DexamethasoneRecommendationCitation</b></p><a name=\"DexamethasoneRecommendationCitation\"> </a><a name=\"hcDexamethasoneRecommendationCitation\"> </a><a name=\"DexamethasoneRecommendationCitation-en-US\"> </a><p><b>url</b>: <a href=\"Citation-DexamethasoneRecommendationCitation.html\">Citation DexamethasoneRecommendationCitation</a></p><p><b>name</b>: DexamethasoneRecommendationCitation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: <code>https://api.magicapp.org/api/v1/recommendations</code>/98398</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>v4.0</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type active}\">Active</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Steroide</p>\n</div></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}\">Clinical practice guideline recommendation</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/Citation/DexamethasoneRecommendationCitation"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "DexamethasoneRecommendationCitation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:citedArtifact [
+     fhir:identifier ( [
+       fhir:system [ fhir:v "https://api.magicapp.org/api/v1/recommendations"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "98398" ]
+     ] ) ;
+     fhir:version [
+       fhir:value [ fhir:v "v4.0" ]
+     ] ;
+     fhir:currentState ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/cited-artifact-status-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active" ] ;
+         fhir:display [ fhir:v "Active" ]
+       ] )
+     ] ) ;
+     fhir:title ( [
+       fhir:text [ fhir:v "Steroide" ]
+     ] ) ;
+     fhir:classification ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/cited-artifact-classification-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "publication-type" ] ;
+           fhir:display [ fhir:v "Publication Type" ]
+         ] )
+       ] ;
+       fhir:classifier ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "guideline-recommendation" ] ;
+           fhir:display [ fhir:v "Clinical practice guideline recommendation" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

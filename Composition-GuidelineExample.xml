@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="GuidelineExample"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition GuidelineExample</b></p><a name="GuidelineExample"> </a><a name="hcGuidelineExample"> </a><a name="GuidelineExample-en-US"> </a><p><b>identifier</b>: Resource identifier/guideline example</p><p><b>version</b>: 0.1.0</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}, {https://data.cochrane.org/concepts/ e07eN1w1Rwswg4}">Guidelines</span></p><p><b>category</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification S3}">Evidence- and consensus-based guideline</span></p><p><b>date</b>: 2022-01-28</p><p><b>author</b>: <a href="Organization-ExampleOrganization.html">Organization Example Organization</a></p><p><b>title</b>: Example Guideline</p><h3>RelatesTos</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style="display: none">*</td><td>Citation</td><td><a href="Citation-ExampleGuidelineCitation.html">Citation ExampleGuidelineCitation</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="RI"/>
+        <display value="Resource identifier"/>
+      </coding>
+    </type>
+    <system value="https://www.ceosys.de"/>
+    <value value="guideline example"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+      <code value="clinical-practice-guideline"/>
+    </coding>
+    <coding>
+      <system value="https://data.cochrane.org/concepts/"/>
+      <code value="e07eN1w1Rwswg4"/>
+      <display value="Guidelines"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"/>
+      <code value="S3"/>
+      <display value="Evidence- and consensus-based guideline"/>
+    </coding>
+  </category>
+  <date value="2022-01-28"/>
+  <author>
+    <reference value="Organization/ExampleOrganization"/>
+  </author>
+  <title value="Example Guideline"/>
+  <relatesTo>
+    <type value="citation"/>
+    <resourceReference>
+      <reference value="Citation/ExampleGuidelineCitation"/>
+    </resourceReference>
+  </relatesTo>
+  <section>
+    <title value="Example Guideline Recommendation"/>
+    <code>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="guideline-recommendation"/>
+        <display value="Clinical practice guideline recommendation"/>
+      </coding>
+    </code>
+    <focus>
+      <reference value="PlanDefinition/ExampleRecommendation"/>
+    </focus>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">This is an example guideline recommendation.</div>
+    </text>
+  </section>
+</Composition>

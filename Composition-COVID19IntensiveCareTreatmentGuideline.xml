@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="COVID19IntensiveCareTreatmentGuideline"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition COVID19IntensiveCareTreatmentGuideline</b></p><a name="COVID19IntensiveCareTreatmentGuideline"> </a><a name="hcCOVID19IntensiveCareTreatmentGuideline"> </a><a name="COVID19IntensiveCareTreatmentGuideline-en-US"> </a><p><b>identifier</b>: Resource identifier/113-001</p><p><b>version</b>: 7.0</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}, {https://data.cochrane.org/concepts/ e07eN1w1Rwswg4}">Guidelines</span></p><p><b>category</b>: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification S3}">Evidence- and consensus-based guideline</span></p><p><b>date</b>: 2022-03-01</p><p><b>author</b>: <a href="Organization-AWMFOrganization.html">Organization Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V.</a></p><p><b>title</b>: Empfehlungen zur stationären Therapie von Patienten mit COVID-19 - Living Guideline</p><h3>RelatesTos</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style="display: none">*</td><td>Citation</td><td><a href="Citation-COVID19IntensiveCareTreatmentGuidelineCitation.html">Citation COVID19_Intensive_Care_Treatment_Guideline</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="RI"/>
+        <display value="Resource identifier"/>
+      </coding>
+    </type>
+    <system value="https://www.awmf.org/"/>
+    <value value="113-001"/>
+  </identifier>
+  <version value="7.0"/>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+      <code value="clinical-practice-guideline"/>
+    </coding>
+    <coding>
+      <system value="https://data.cochrane.org/concepts/"/>
+      <code value="e07eN1w1Rwswg4"/>
+      <display value="Guidelines"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"/>
+      <code value="S3"/>
+      <display value="Evidence- and consensus-based guideline"/>
+    </coding>
+  </category>
+  <date value="2022-03-01"/>
+  <author>
+    <reference value="Organization/AWMFOrganization"/>
+  </author>
+  <title value="Empfehlungen zur stationären Therapie von Patienten mit COVID-19 - Living Guideline"/>
+  <relatesTo>
+    <type value="citation"/>
+    <resourceReference>
+      <reference value="Citation/COVID19IntensiveCareTreatmentGuidelineCitation"/>
+    </resourceReference>
+  </relatesTo>
+  <section>
+    <title value="Stationäre Therapie von COVID-19 Patienten"/>
+    <code>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="guideline-recommendation"/>
+        <display value="Clinical practice guideline recommendation"/>
+      </coding>
+    </code>
+    <focus>
+      <reference value="PlanDefinition/COVID19VentilatedPatientsDexamethasoneApplicationPlan"/>
+    </focus>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><strong>Systemische Steroide:</strong> Bei Patienten mit COVID-19- und Sauerstoff-Bedarf (Niedrigfluss-Sauerstoff-Insufflation, High-Flow Nasal Cannula, Nichtinvasive Beatmung/CPAP, invasive Beatmung) soll eine Therapie mit systemischen Kortikosteroiden erfolgen. Die Therapie sollte mit 6 mg Dexamethason p.o. oder i.v. über zehn Tage erfolgen.</div>
+    </text>
+  </section>
+  <section>
+    <title value="Stationäre Therapie von COVID-19 Patienten"/>
+    <code>
+      <coding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+        <code value="guideline-recommendation"/>
+        <display value="Clinical practice guideline recommendation"/>
+      </coding>
+    </code>
+    <focus>
+      <reference value="PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan"/>
+    </focus>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><strong>Systemische Steroide:</strong> Bei Patienten mit moderater Erkrankung (hospitalisiert ohne Notwendigkeit von Niedrigfluss-Sauerstoff-Insufflation) soll keine Therapie mit systemischen Kortikosteroiden erfolgen.</div>
+    </text>
+  </section>
+</Composition>

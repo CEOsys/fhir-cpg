@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "ExampleBodyPositioningAction",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/body-positioning-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition ExampleBodyPositioningAction</b></p><a name=\"ExampleBodyPositioningAction\"> </a><a name=\"hcExampleBodyPositioningAction\"> </a><a name=\"ExampleBodyPositioningAction-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-ExampleBodyPositioningAction.html\">ActivityDefinition DrugAdministrationAction</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DrugAdministrationAction</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example of a body positioning action.</p>\n</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 431182000}\">Placing subject in prone position (procedure)</span></p><p><b>timing</b>: Once per 1 days</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/body-positioning-example",
+  "version" : "1.0",
+  "name" : "DrugAdministrationAction",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-10-21T14:50:59+00:00",
+  "publisher" : "CPGonEBMonFHIR",
+  "description" : "Example of a body positioning action.",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "431182000",
+      "display" : "Placing subject in prone position (procedure)"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

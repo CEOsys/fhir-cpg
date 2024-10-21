@@ -1,0 +1,1159 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "GuidelineRecommendationExample",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-bundle"]
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "GuidelineExample",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_GuidelineExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition GuidelineExample</b></p><a name=\"GuidelineExample\"> </a><a name=\"hcGuidelineExample\"> </a><a name=\"GuidelineExample-en-US\"> </a><p><b>identifier</b>: Resource identifier/guideline example</p><p><b>version</b>: 0.1.0</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}, {https://data.cochrane.org/concepts/ e07eN1w1Rwswg4}\">Guidelines</span></p><p><b>category</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification S3}\">Evidence- and consensus-based guideline</span></p><p><b>date</b>: 2022-01-28</p><p><b>author</b>: <a href=\"Organization-ExampleOrganization.html\">Organization Example Organization</a></p><p><b>title</b>: Example Guideline</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-ExampleGuidelineCitation.html\">Citation ExampleGuidelineCitation</a></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "RI",
+            "display" : "Resource identifier"
+          }]
+        },
+        "system" : "https://www.ceosys.de",
+        "value" : "guideline example"
+      }],
+      "version" : "0.1.0",
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+          "code" : "clinical-practice-guideline"
+        },
+        {
+          "system" : "https://data.cochrane.org/concepts/",
+          "code" : "e07eN1w1Rwswg4",
+          "display" : "Guidelines"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification",
+          "code" : "S3",
+          "display" : "Evidence- and consensus-based guideline"
+        }]
+      }],
+      "date" : "2022-01-28",
+      "author" : [{
+        "reference" : "Organization/ExampleOrganization"
+      }],
+      "title" : "Example Guideline",
+      "relatesTo" : [{
+        "type" : "citation",
+        "resourceReference" : {
+          "reference" : "Citation/ExampleGuidelineCitation"
+        }
+      }],
+      "section" : [{
+        "title" : "Example Guideline Recommendation",
+        "code" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "guideline-recommendation",
+            "display" : "Clinical practice guideline recommendation"
+          }]
+        },
+        "focus" : {
+          "reference" : "PlanDefinition/ExampleRecommendation"
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is an example guideline recommendation.</div>"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/citation",
+    "resource" : {
+      "resourceType" : "Citation",
+      "id" : "ExampleGuidelineCitation",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/guideline-citation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Citation_ExampleGuidelineCitation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Citation ExampleGuidelineCitation</b></p><a name=\"ExampleGuidelineCitation\"> </a><a name=\"hcExampleGuidelineCitation\"> </a><a name=\"ExampleGuidelineCitation-en-US\"> </a><p><b>name</b>: ExampleGuidelineCitation</p><p><b>status</b>: Active</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: ceoysy/exampleIdentifier</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.0-alpha1</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type archived}\">Archived</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Example Citation</p>\n</div></td></tr></table><h3>WebLocations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://example.com/guideline/exampleIdentifier\">https://example.com/guideline/exampleIdentifier</a></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "ExampleGuidelineCitation",
+      "status" : "active",
+      "citedArtifact" : {
+        "identifier" : [{
+          "value" : "ceoysy/exampleIdentifier"
+        }],
+        "version" : {
+          "value" : "1.0-alpha1"
+        },
+        "currentState" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+            "code" : "archived",
+            "display" : "Archived"
+          }]
+        }],
+        "title" : [{
+          "text" : "Example Citation"
+        }],
+        "webLocation" : [{
+          "url" : "https://example.com/guideline/exampleIdentifier"
+        }],
+        "classification" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+              "code" : "publication-type",
+              "display" : "Publication Type"
+            }]
+          },
+          "classifier" : [{
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "clinical-practice-guideline",
+              "display" : "Clinical practice guideline"
+            }]
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation",
+    "resource" : {
+      "resourceType" : "PlanDefinition",
+      "id" : "ExampleRecommendation",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PlanDefinition_ExampleRecommendation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition ExampleRecommendation</b></p><a name=\"ExampleRecommendation\"> </a><a name=\"hcExampleRecommendation\"> </a><a name=\"ExampleRecommendation-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method at-least}\">At Least</span></li><li>threshold: 2</li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-ExampleRecommendation.html\">PlanDefinition Recommendation</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Recommendation</p><p><b>title</b>: Recommendation</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example Recommendation</p>\n</div><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system recommendation-rating}\">Recommendation rating</span></td><td><a href=\"ArtifactAssessment-ExampleRecommendationJustification.html\">ArtifactAssessment: extension = 0.1.0,active; date = 2020-01-03; artifact[x] = -&gt;PlanDefinition Recommendation Plan</a></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}\">Clinical practice guideline recommendation</span></td><td><a href=\"Citation-ExampleRecommendationCitation.html\">Citation ExampleRecommendationCitation</a></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system clinical-practice-guideline}\">Clinical practice guideline</span></td><td><a href=\"Citation-ExampleGuidelineCitation.html\">Citation ExampleGuidelineCitation</a></td></tr></table><blockquote><p><b>action</b></p><p><b>title</b>: example recommendation</p><p><b>description</b>: </p><div><p>Example recommendation</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-ExampleRecommendationPlan.html\">Recommendation Plan</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: example recommendation</p><p><b>description</b>: </p><div><p>Example recommendation</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-ExampleRecommendationPlan.html\">Recommendation Plan</a></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      },
+      {
+        "extension" : [{
+          "url" : "method",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+              "code" : "at-least"
+            }]
+          }
+        },
+        {
+          "url" : "threshold",
+          "valuePositiveInt" : 2
+        }],
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation",
+      "version" : "1.0",
+      "name" : "Recommendation",
+      "title" : "Recommendation",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+          "code" : "workflow-definition"
+        }]
+      },
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2022-02-14",
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "Example Recommendation",
+      "relatedArtifact" : [{
+        "type" : "justification",
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "recommendation-rating",
+            "display" : "Recommendation rating"
+          }]
+        }],
+        "resourceReference" : {
+          "reference" : "ArtifactAssessment/ExampleRecommendationJustification"
+        }
+      },
+      {
+        "type" : "citation",
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "guideline-recommendation",
+            "display" : "Clinical practice guideline recommendation"
+          }]
+        }],
+        "resourceReference" : {
+          "reference" : "Citation/ExampleRecommendationCitation"
+        }
+      },
+      {
+        "type" : "citation",
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "clinical-practice-guideline",
+            "display" : "Clinical practice guideline"
+          }]
+        }],
+        "resourceReference" : {
+          "reference" : "Citation/ExampleGuidelineCitation"
+        }
+      }],
+      "action" : [{
+        "title" : "example recommendation",
+        "description" : "Example recommendation",
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code" : "guideline-based-care"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"
+      },
+      {
+        "title" : "example recommendation",
+        "description" : "Example recommendation",
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code" : "guideline-based-care"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-plan",
+    "resource" : {
+      "resourceType" : "PlanDefinition",
+      "id" : "ExampleRecommendationPlan",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PlanDefinition_ExampleRecommendationPlan\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition ExampleRecommendationPlan</b></p><a name=\"ExampleRecommendationPlan\"> </a><a name=\"hcExampleRecommendationPlan\"> </a><a name=\"ExampleRecommendationPlan-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-ExampleRecommendation.html\">Recommendation</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}\">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>url</b>: <a href=\"PlanDefinition-ExampleRecommendationPlan.html\">PlanDefinition Recommendation Plan</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: RecommendationPlan</p><p><b>title</b>: Recommendation Plan</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-ExampleRecommendationEligibilityCriteria5Levels.html\">PopulationExample</a></p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>Example Recommendation Plan</p>\n</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>ventilator-management-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 385857005}\">Ventilator care and adjustment (regime/therapy)</span></p><p><b>description</b>: <span title=\"Codes:\">The ventilator should be set up to provide a breath reate of at least 20 and at most per minute.</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 33438-3}\">Breath rate mechanical --on ventilator</span></td><td>20-24</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>lab-ddimer-concentration-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 410394004}\">Lab findings surveillance (regime/therapy)</span></p><p><b>description</b>: <span title=\"Codes:\">D-Dimer concentration shall be below 250 ng/mL</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 48066-5}\">Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma</span></td><td>?-250</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href=\"Bundle-GuidelineRecommendationExample.html\">DrugAdministrationAction</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 229824005}\">Positioning patient (procedure)</span></p><p><b>goalId</b>: ventilator-management-goal</p><p><b>definition</b>: <a href=\"ActivityDefinition-ExampleBodyPositioningAction.html\">DrugAdministrationAction</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 410210009}\">Ventilator care management (procedure)</span></p><p><b>goalId</b>: ventilator-management-goal</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method one-or-more}\">One or More</span></li></ul></blockquote><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 89780004}\">Combined (qualifier value)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 410210009}\">Ventilator care management (procedure)</span></td><td>ventilator-management-goal</td></tr></table></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf",
+        "valueCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation"
+      },
+      {
+        "extension" : [{
+          "url" : "method",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+              "code" : "exactly"
+            }]
+          }
+        },
+        {
+          "url" : "threshold",
+          "valuePositiveInt" : 1
+        }],
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-plan/example-recommendation-plan",
+      "version" : "1.0",
+      "name" : "RecommendationPlan",
+      "title" : "Recommendation Plan",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+          "code" : "eca-rule"
+        }]
+      },
+      "status" : "active",
+      "experimental" : true,
+      "subjectCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria",
+      "date" : "2022-02-14",
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "Example Recommendation Plan",
+      "goal" : [{
+        "id" : "ventilator-management-goal",
+        "category" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "385857005",
+            "display" : "Ventilator care and adjustment (regime/therapy)"
+          }]
+        },
+        "description" : {
+          "text" : "The ventilator should be set up to provide a breath reate of at least 20 and at most per minute."
+        },
+        "target" : [{
+          "measure" : {
+            "coding" : [{
+              "system" : "http://loinc.org",
+              "code" : "33438-3",
+              "display" : "Breath rate mechanical --on ventilator"
+            }]
+          },
+          "detailRange" : {
+            "low" : {
+              "value" : 20,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "/min"
+            },
+            "high" : {
+              "value" : 24,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "/min"
+            }
+          }
+        }]
+      },
+      {
+        "id" : "lab-ddimer-concentration-goal",
+        "category" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "410394004",
+            "display" : "Lab findings surveillance (regime/therapy)"
+          }]
+        },
+        "description" : {
+          "text" : "D-Dimer concentration shall be below 250 ng/mL"
+        },
+        "target" : [{
+          "measure" : {
+            "coding" : [{
+              "system" : "http://loinc.org",
+              "code" : "48066-5",
+              "display" : "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
+            }]
+          },
+          "detailRange" : {
+            "high" : {
+              "value" : 250,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "ng/mL"
+            }
+          }
+        }]
+      }],
+      "action" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "432102000",
+            "display" : "Administration of substance (procedure)"
+          }]
+        },
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/drug-administration-example"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "229824005",
+            "display" : "Positioning patient (procedure)"
+          }]
+        },
+        "goalId" : ["ventilator-management-goal"],
+        "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/body-positioning-example"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "410210009",
+            "display" : "Ventilator care management (procedure)"
+          }]
+        },
+        "goalId" : ["ventilator-management-goal"]
+      },
+      {
+        "extension" : [{
+          "extension" : [{
+            "url" : "method",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+                "code" : "one-or-more"
+              }]
+            }
+          }],
+          "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "89780004",
+            "display" : "Combined (qualifier value)"
+          }]
+        },
+        "action" : [{
+          "code" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "410210009",
+              "display" : "Ventilator care management (procedure)"
+            }]
+          },
+          "goalId" : ["ventilator-management-goal"]
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-action",
+    "resource" : {
+      "resourceType" : "ActivityDefinition",
+      "id" : "ExampleDrugAdministrationAction",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ActivityDefinition_ExampleDrugAdministrationAction\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition ExampleDrugAdministrationAction</b></p><a name=\"ExampleDrugAdministrationAction\"> </a><a name=\"hcExampleDrugAdministrationAction\"> </a><a name=\"ExampleDrugAdministrationAction-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-ExampleDrugAdministrationAction.html\">ActivityDefinition DrugAdministrationAction</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DrugAdministrationAction</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>A drug administration that should be performed.</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}\">Dexamethasone (substance)</span></p><blockquote><p><b>dosage</b></p><blockquote><p><b>Dosage Condition</b></p><ul><li>type: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></li><li>value: ?-70</li></ul></blockquote><p><b>timing</b>: Count 10  times, Duration 10days , Once per 1 days</p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>6 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>1 /d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/d = '/d')</span></td></tr></table></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode" : "computable"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode" : "structured"
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/drug-administration-example",
+      "version" : "1.0",
+      "name" : "DrugAdministrationAction",
+      "status" : "active",
+      "experimental" : true,
+      "subjectCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/fhir-types",
+          "code" : "Patient"
+        }]
+      },
+      "publisher" : "CPGonEBMonFHIR",
+      "description" : "A drug administration that should be performed.",
+      "kind" : "MedicationRequest",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "432102000",
+          "display" : "Administration of substance (procedure)"
+        }]
+      },
+      "productCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "372584003",
+          "display" : "Dexamethasone (substance)"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "code" : "C05AA09",
+          "display" : "Dexamethason"
+        }]
+      },
+      "dosage" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://loinc.org",
+                "code" : "29463-7",
+                "display" : "Body weight"
+              }]
+            }
+          },
+          {
+            "url" : "value",
+            "valueRange" : {
+              "high" : {
+                "value" : 70,
+                "unit" : "kg",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "kg"
+              }
+            }
+          }],
+          "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"
+        }],
+        "timing" : {
+          "repeat" : {
+            "count" : 10,
+            "duration" : 10,
+            "durationUnit" : "d",
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "26643006",
+            "display" : "Oral route"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 6,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "rateQuantity" : {
+            "value" : 1,
+            "unit" : "/d",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "/d"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/population",
+    "resource" : {
+      "resourceType" : "EvidenceVariable",
+      "id" : "ExampleRecommendationEligibilityCriteria",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EvidenceVariable_ExampleRecommendationEligibilityCriteria\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable ExampleRecommendationEligibilityCriteria</b></p><a name=\"ExampleRecommendationEligibilityCriteria\"> </a><a name=\"hcExampleRecommendationEligibilityCriteria\"> </a><a name=\"ExampleRecommendationEligibilityCriteria-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-ExampleRecommendationEligibilityCriteria.html\">EvidenceVariable PopulationExample</a></p><p><b>name</b>: PopulationExample</p><p><b>status</b>: Active</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote></div>"
+      },
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-eligibility-criteria",
+      "name" : "PopulationExample",
+      "status" : "active",
+      "characteristic" : [{
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "840539006",
+              "display" : "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+            }]
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-justification",
+    "resource" : {
+      "resourceType" : "ArtifactAssessment",
+      "id" : "ExampleRecommendationJustification",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ArtifactAssessment_ExampleRecommendationJustification\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ArtifactAssessment ExampleRecommendationJustification</b></p><a name=\"ExampleRecommendationJustification\"> </a><a name=\"hcExampleRecommendationJustification\"> </a><a name=\"ExampleRecommendationJustification-en-US\"> </a><p><b>ArtifactAssessment Version</b>: 0.1.0</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2020-01-03</p><p><b>artifact</b>: <a href=\"PlanDefinition-ExampleRecommendationPlan.html\">PlanDefinition Recommendation Plan</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system strength}\">Strength of recommendation</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength strong-for}\">Strong for an intervention</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Overall}\">Overall certainty</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating very-low}\">Very low quality</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system consensus}\">Consensus</span></p><p><b>classifier</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/recommendation-strength strong}\">Strong</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Container</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></td><td><a href=\"ArtifactAssessment-ExampleCertaintyOfEvidenceRating.html\">ArtifactAssessment: extension = 0.1.1,active; date = 2022-03-11; artifact[x] = -&gt;Evidence ExampleStudyOutcomeEvidence</a></td></tr></table></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Container</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}\">Net effect</span></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Supported With</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}\">Net effect</span></td><td><a href=\"Evidence-ExampleNetEffectEstimate.html\">Evidence NetEffectExample</a></td></tr></table></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version",
+        "valueString" : "0.1.0"
+      },
+      {
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status",
+        "valueCode" : "active"
+      }],
+      "date" : "2020-01-03",
+      "artifactReference" : {
+        "reference" : "PlanDefinition/ExampleRecommendationPlan"
+      },
+      "content" : [{
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "strength",
+            "display" : "Strength of recommendation"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength",
+            "code" : "strong-for"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "Overall",
+            "display" : "Overall certainty"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "very-low",
+            "display" : "Very low quality"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "consensus",
+            "display" : "Consensus"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/recommendation-strength",
+            "code" : "strong",
+            "display" : "Strong"
+          }]
+        }]
+      },
+      {
+        "informationType" : "container",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "certainty-of-evidence-rating",
+            "display" : "Certainty of evidence rating"
+          }]
+        },
+        "relatedArtifact" : [{
+          "type" : "justification",
+          "classifier" : [{
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "certainty-of-evidence-rating",
+              "display" : "Certainty of evidence rating"
+            }]
+          }],
+          "resourceReference" : {
+            "reference" : "ArtifactAssessment/ExampleCertaintyOfEvidenceRating"
+          }
+        }]
+      },
+      {
+        "informationType" : "container",
+        "type" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "net-effect",
+            "display" : "Net effect"
+          }]
+        },
+        "relatedArtifact" : [{
+          "type" : "supported-with",
+          "classifier" : [{
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "net-effect",
+              "display" : "Net effect"
+            }]
+          }],
+          "resourceReference" : {
+            "reference" : "Evidence/ExampleNetEffectEstimate"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/certainty-of-evidence-rating",
+    "resource" : {
+      "resourceType" : "ArtifactAssessment",
+      "id" : "ExampleCertaintyOfEvidenceRating",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/certainty-of-evidence-rating"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ArtifactAssessment_ExampleCertaintyOfEvidenceRating\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ArtifactAssessment ExampleCertaintyOfEvidenceRating</b></p><a name=\"ExampleCertaintyOfEvidenceRating\"> </a><a name=\"hcExampleCertaintyOfEvidenceRating\"> </a><a name=\"ExampleCertaintyOfEvidenceRating-en-US\"> </a><p><b>ArtifactAssessment Version</b>: 0.1.1</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2022-03-11</p><p><b>artifact</b>: <a href=\"Evidence-ExampleStudyOutcomeEvidence.html\">Evidence ExampleStudyOutcomeEvidence</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Overall}\">Overall certainty</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating moderate}\">Moderate quality</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type RiskOfBias}\">Risk of bias</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating serious-concern}\">serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type Imprecision}\">Imprecision</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating serious-concern}\">serious concern</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type LargeEffect}\">Large effect</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating upcode2}\">increase rating: +2</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-type PlausibleConfounding}\">Plausible confounding</span></p><p><b>classifier</b>: <span title=\"Codes:{http://hl7.org/fhir/certainty-rating upcode1}\">increase rating: +1</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version",
+        "valueString" : "0.1.1"
+      },
+      {
+        "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status",
+        "valueCode" : "active"
+      }],
+      "date" : "2022-03-11",
+      "artifactReference" : {
+        "reference" : "Evidence/ExampleStudyOutcomeEvidence"
+      },
+      "content" : [{
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "Overall",
+            "display" : "Overall certainty"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "moderate",
+            "display" : "Moderate quality"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "RiskOfBias",
+            "display" : "Risk of bias"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "serious-concern",
+            "display" : "serious concern"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "Imprecision",
+            "display" : "Imprecision"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "serious-concern",
+            "display" : "serious concern"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "LargeEffect",
+            "display" : "Large effect"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "upcode2",
+            "display" : "increase rating: +2"
+          }]
+        }]
+      },
+      {
+        "informationType" : "rating",
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-type",
+            "code" : "PlausibleConfounding",
+            "display" : "Plausible confounding"
+          }]
+        },
+        "classifier" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/certainty-rating",
+            "code" : "upcode1",
+            "display" : "increase rating: +1"
+          }]
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/study-outcome-evidence",
+    "resource" : {
+      "resourceType" : "Evidence",
+      "id" : "ExampleStudyOutcomeEvidence",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-outcome-evidence"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Evidence_ExampleStudyOutcomeEvidence\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Evidence ExampleStudyOutcomeEvidence</b></p><a name=\"ExampleStudyOutcomeEvidence\"> </a><a name=\"hcExampleStudyOutcomeEvidence\"> </a><a name=\"ExampleStudyOutcomeEvidence-en-US\"> </a><p><b>name</b>: ExampleStudyOutcomeEvidence</p><p><b>status</b>: Active</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-ExampleStudyCitation.html\">Citation ExampleCitation</a></td></tr></table><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}\">population</span></p><p><b>observed</b>: <a href=\"Group-ExampleStudyCohort.html\">Group: type = person; membership = definitional; quantity = 20</a></p><p><b>intended</b>: <a href=\"EvidenceVariable-ExampleStudyEligibilityCriteria.html\">EvidenceVariable ExampleStudyEligibilityCriteria</a></p></blockquote><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}\">measured variable</span></p><p><b>observed</b>: <a href=\"EvidenceVariable-ExampleOutcome.html\">EvidenceVariable Mortality</a></p></blockquote><p><b>synthesisType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}\">not applicable</span></p></div>"
+      },
+      "name" : "ExampleStudyOutcomeEvidence",
+      "status" : "active",
+      "relatedArtifact" : [{
+        "type" : "citation",
+        "resourceReference" : {
+          "reference" : "Citation/ExampleStudyCitation"
+        }
+      }],
+      "variableDefinition" : [{
+        "variableRole" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/variable-role",
+            "code" : "population"
+          }]
+        },
+        "observed" : {
+          "reference" : "Group/ExampleStudyCohort"
+        },
+        "intended" : {
+          "reference" : "EvidenceVariable/ExampleStudyEligibilityCriteria"
+        }
+      },
+      {
+        "variableRole" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/variable-role",
+            "code" : "measuredVariable"
+          }]
+        },
+        "observed" : {
+          "reference" : "EvidenceVariable/ExampleOutcome"
+        }
+      }],
+      "synthesisType" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/synthesis-type",
+          "code" : "NotApplicable"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/outcome-evidence-synthesis",
+    "resource" : {
+      "resourceType" : "Evidence",
+      "id" : "ExampleOutcomeEvidenceSynthesis",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-evidence-synthesis"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Evidence_ExampleOutcomeEvidenceSynthesis\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Evidence ExampleOutcomeEvidenceSynthesis</b></p><a name=\"ExampleOutcomeEvidenceSynthesis\"> </a><a name=\"hcExampleOutcomeEvidenceSynthesis\"> </a><a name=\"ExampleOutcomeEvidenceSynthesis-en-US\"> </a><p><b>name</b>: ExampleOutcomeEvidenceSynthesis</p><p><b>status</b>: Active</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Citation</td><td><a href=\"Citation-ExampleStudyCitation.html\">Citation ExampleCitation</a></td></tr></table><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role population}\">population</span></p><p><b>observed</b>: <a href=\"Group-ExampleEvidenceSynthesisCohorts.html\">Group: type = person; membership = definitional; quantity = 20</a></p><p><b>intended</b>: <a href=\"EvidenceVariable-ExampleStudyEligibilityCriteria.html\">EvidenceVariable ExampleStudyEligibilityCriteria</a></p></blockquote><blockquote><p><b>variableDefinition</b></p><p><b>variableRole</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}\">measured variable</span></p><p><b>observed</b>: <a href=\"EvidenceVariable-ExampleOutcome.html\">EvidenceVariable Mortality</a></p></blockquote><p><b>synthesisType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/synthesis-type NotApplicable}\">not applicable</span></p></div>"
+      },
+      "name" : "ExampleOutcomeEvidenceSynthesis",
+      "status" : "active",
+      "relatedArtifact" : [{
+        "type" : "citation",
+        "resourceReference" : {
+          "reference" : "Citation/ExampleStudyCitation"
+        }
+      }],
+      "variableDefinition" : [{
+        "variableRole" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/variable-role",
+            "code" : "population"
+          }]
+        },
+        "observed" : {
+          "reference" : "Group/ExampleEvidenceSynthesisCohorts"
+        },
+        "intended" : {
+          "reference" : "EvidenceVariable/ExampleStudyEligibilityCriteria"
+        }
+      },
+      {
+        "variableRole" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/variable-role",
+            "code" : "measuredVariable"
+          }]
+        },
+        "observed" : {
+          "reference" : "EvidenceVariable/ExampleOutcome"
+        }
+      }],
+      "synthesisType" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/synthesis-type",
+          "code" : "NotApplicable"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/study-eligbility-criteria",
+    "resource" : {
+      "resourceType" : "EvidenceVariable",
+      "id" : "ExampleStudyEligibilityCriteria",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-eligibility-criteria"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EvidenceVariable_ExampleStudyEligibilityCriteria\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable ExampleStudyEligibilityCriteria</b></p><a name=\"ExampleStudyEligibilityCriteria\"> </a><a name=\"hcExampleStudyEligibilityCriteria\"> </a><a name=\"ExampleStudyEligibilityCriteria-en-US\"> </a><p><b>name</b>: ExampleStudyEligibilityCriteria</p><p><b>status</b>: Active</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "ExampleStudyEligibilityCriteria",
+      "status" : "active",
+      "characteristic" : [{
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "840539006",
+              "display" : "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+            }]
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/study-citation",
+    "resource" : {
+      "resourceType" : "Citation",
+      "id" : "ExampleStudyCitation",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/study-citation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Citation_ExampleStudyCitation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Citation ExampleStudyCitation</b></p><a name=\"ExampleStudyCitation\"> </a><a name=\"hcExampleStudyCitation\"> </a><a name=\"ExampleStudyCitation-en-US\"> </a><p><b>name</b>: ExampleCitation</p><p><b>status</b>: Active</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: ceoysy/exampleIdentifier</p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Example Citation</p>\n</div></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{http://hl7.org/fhir/citation-artifact-classifier D016428}\">Journal Article</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "ExampleCitation",
+      "status" : "active",
+      "citedArtifact" : {
+        "identifier" : [{
+          "value" : "ceoysy/exampleIdentifier"
+        }],
+        "title" : [{
+          "text" : "Example Citation"
+        }],
+        "classification" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+              "code" : "publication-type",
+              "display" : "Publication Type"
+            }]
+          },
+          "classifier" : [{
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/citation-artifact-classifier",
+              "code" : "D016428",
+              "display" : "Journal Article"
+            }]
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/outcome",
+    "resource" : {
+      "resourceType" : "EvidenceVariable",
+      "id" : "ExampleOutcome",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/outcome-definition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"EvidenceVariable_ExampleOutcome\"> </a><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable ExampleOutcome</b></p><a name=\"ExampleOutcome\"> </a><a name=\"hcExampleOutcome\"> </a><a name=\"ExampleOutcome-en-US\"> </a><p><b>identifier</b>: <code>https://www.ceosys.de</code>/outcome-example</p><p><b>name</b>: Mortality</p><p><b>status</b>: Active</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 409651001}\">Mortality rate (observable entity)</span></td><td> percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table></blockquote><p><b>handling</b>: dichotomous variable</p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.ceosys.de",
+        "value" : "outcome-example"
+      }],
+      "name" : "Mortality",
+      "status" : "active",
+      "characteristic" : [{
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "409651001",
+              "display" : "Mortality rate (observable entity)"
+            }]
+          },
+          "valueQuantity" : {
+            "unit" : "percent",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "%"
+          }
+        }
+      }],
+      "handling" : "dichotomous"
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/recommendation-citation",
+    "resource" : {
+      "resourceType" : "Citation",
+      "id" : "ExampleRecommendationCitation",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Citation_ExampleRecommendationCitation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Citation ExampleRecommendationCitation</b></p><a name=\"ExampleRecommendationCitation\"> </a><a name=\"hcExampleRecommendationCitation\"> </a><a name=\"ExampleRecommendationCitation-en-US\"> </a><p><b>name</b>: ExampleRecommendationCitation</p><p><b>status</b>: Active</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: ceoysy/exampleIdentifier</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.0-alpha1</td></tr></table><p><b>currentState</b>: <span title=\"Codes:{http://hl7.org/fhir/cited-artifact-status-type archived}\">Archived</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td><div><p>Example Citation</p>\n</div></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/cited-artifact-classification-type publication-type}\">Publication Type</span></td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system guideline-recommendation}\">Clinical practice guideline recommendation</span></td></tr></table></blockquote></div>"
+      },
+      "name" : "ExampleRecommendationCitation",
+      "status" : "active",
+      "citedArtifact" : {
+        "identifier" : [{
+          "value" : "ceoysy/exampleIdentifier"
+        }],
+        "version" : {
+          "value" : "1.0-alpha1"
+        },
+        "currentState" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+            "code" : "archived",
+            "display" : "Archived"
+          }]
+        }],
+        "title" : [{
+          "text" : "Example Citation"
+        }],
+        "classification" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+              "code" : "publication-type",
+              "display" : "Publication Type"
+            }]
+          },
+          "classifier" : [{
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "guideline-recommendation",
+              "display" : "Clinical practice guideline recommendation"
+            }]
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/guidelines/guideline-example/net-effect-estimate",
+    "resource" : {
+      "resourceType" : "Evidence",
+      "id" : "ExampleNetEffectEstimate",
+      "meta" : {
+        "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/net-effect-estimate"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Evidence_ExampleNetEffectEstimate\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Evidence ExampleNetEffectEstimate</b></p><a name=\"ExampleNetEffectEstimate\"> </a><a name=\"hcExampleNetEffectEstimate\"> </a><a name=\"ExampleNetEffectEstimate-en-US\"> </a><p><b>name</b>: NetEffectExample</p><p><b>status</b>: Unknown</p><h3>VariableDefinitions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>VariableRole</b></td><td><b>Intended</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/variable-role measuredVariable}\">measured variable</span></td><td><a href=\"EvidenceVariable-ExampleOutcome.html\">EvidenceVariable Mortality</a></td></tr></table><blockquote><p><b>statistic</b></p><p><b>description</b>: </p><div><p>Net Effect</p>\n</div><p><b>statisticType</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system net-effect}\">Net Effect</span></p><p><b>quantity</b>: 1.7 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><h3>AttributeEstimates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Level</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/attribute-estimate-type C53324}\">Confidence interval</span></td><td>0.95</td><td>1.5-1.9</td></tr></table><blockquote><p><b>modelCharacteristic</b></p><p><b>code</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system relative-importance-weighting}\">Relative importance weighting for use in weighted linear combinations</span></p><p><b>value</b>: 1</p><h3>Variables</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>VariableDefinition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"EvidenceVariable-ExampleOutcome.html\">EvidenceVariable Mortality</a></td></tr></table></blockquote></blockquote></div>"
+      },
+      "name" : "NetEffectExample",
+      "status" : "unknown",
+      "variableDefinition" : [{
+        "variableRole" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/variable-role",
+            "code" : "measuredVariable"
+          }]
+        },
+        "intended" : {
+          "reference" : "EvidenceVariable/ExampleOutcome"
+        }
+      }],
+      "statistic" : [{
+        "description" : "Net Effect",
+        "statisticType" : {
+          "coding" : [{
+            "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+            "code" : "net-effect",
+            "display" : "Net Effect"
+          }]
+        },
+        "quantity" : {
+          "value" : 1.7,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        },
+        "attributeEstimate" : [{
+          "type" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/attribute-estimate-type",
+              "code" : "C53324",
+              "display" : "Confidence interval"
+            }]
+          },
+          "level" : 0.95,
+          "range" : {
+            "low" : {
+              "value" : 1.5,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "%"
+            },
+            "high" : {
+              "value" : 1.9,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "%"
+            }
+          }
+        }],
+        "modelCharacteristic" : [{
+          "code" : {
+            "coding" : [{
+              "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+              "code" : "relative-importance-weighting"
+            }]
+          },
+          "value" : {
+            "value" : 1
+          },
+          "variable" : [{
+            "variableDefinition" : {
+              "reference" : "EvidenceVariable/ExampleOutcome"
+            }
+          }]
+        }]
+      }]
+    }
+  }]
+}

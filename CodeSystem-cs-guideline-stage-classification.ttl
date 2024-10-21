@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-guideline-stage-classification"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-guideline-stage-classification</b></p><a name=\"cs-guideline-stage-classification\"> </a><a name=\"hccs-guideline-stage-classification\"> </a><a name=\"cs-guideline-stage-classification-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">S3<a name=\"cs-guideline-stage-classification-S3\"> </a></td><td>Evidence- and consensus-based guideline</td><td>Representative panel, Systematic search, selection, evaluation of literature, Structured consensus building.</td></tr><tr><td style=\"white-space:nowrap\">S2e<a name=\"cs-guideline-stage-classification-S2e\"> </a></td><td>Evidence-based Guideline</td><td>Systematic search, selection, evaluation of literature</td></tr><tr><td style=\"white-space:nowrap\">S2k<a name=\"cs-guideline-stage-classification-S2k\"> </a></td><td>Consensus-based Guideline</td><td>Representative body, structured consensus building</td></tr><tr><td style=\"white-space:nowrap\">S1<a name=\"cs-guideline-stage-classification-S1\"> </a></td><td>Action recommendations from expert groups</td><td>Consensus building in an informal process</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "shareable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "publishable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-guideline-stage-classification"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "GuidelineStageClassification"] ; # 
+  fhir:title [ fhir:v "Guideline Stage Classification"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften (AWMF) e.V"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "As part of the project planning for the creation or updating of a guideline,\n    a decision should be made at an early stage about the planned level classification (\"S classification\") according to the AWMF's system of rules (1-3).\n    The S-classification scheme of the AWMF differentiates between the classes S1 treatment recommendation as well as S2e, S2k and S3 guideline.\n    The \"S\" stands for the extent of the applied systematic approach in the development process of a guideline.\n    Each class thus stands for a specific methodological concept that must be presented in a way that is comprehensible to the users.\n    The choice of class is based on the question of how much effort is appropriate and feasible.\n    The need for legitimacy for the implementation of the guideline (convincing the target group) must be taken into account.\n    When choosing a higher S-classification in the context of updating a guideline, the adaptation to the corresponding methodology has to be considered."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "S3" ] ;
+     fhir:display [ fhir:v "Evidence- and consensus-based guideline" ] ;
+     fhir:definition [ fhir:v "Representative panel, Systematic search, selection, evaluation of literature, Structured consensus building." ]
+  ] [
+     fhir:code [ fhir:v "S2e" ] ;
+     fhir:display [ fhir:v "Evidence-based Guideline" ] ;
+     fhir:definition [ fhir:v "Systematic search, selection, evaluation of literature" ]
+  ] [
+     fhir:code [ fhir:v "S2k" ] ;
+     fhir:display [ fhir:v "Consensus-based Guideline" ] ;
+     fhir:definition [ fhir:v "Representative body, structured consensus building" ]
+  ] [
+     fhir:code [ fhir:v "S1" ] ;
+     fhir:display [ fhir:v "Action recommendations from expert groups" ] ;
+     fhir:definition [ fhir:v "Consensus building in an informal process" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

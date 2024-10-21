@@ -1,0 +1,155 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/NoDexamethasoneRecommendationJustification> a fhir:ArtifactAssessment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NoDexamethasoneRecommendationJustification"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-justification>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ArtifactAssessment NoDexamethasoneRecommendationJustification</b></p><a name=\"NoDexamethasoneRecommendationJustification\"> </a><a name=\"hcNoDexamethasoneRecommendationJustification\"> </a><a name=\"NoDexamethasoneRecommendationJustification-en-US\"> </a><p><b>ArtifactAssessment Version</b>: v4.0</p><p><b>ArtifactAssessment Publication Status</b>: active</p><p><b>date</b>: 2020-01-03</p><p><b>artifact</b>: <a href=\"PlanDefinition-COVID19NonVentilatedPatientsDexamethasoneApplicationPlan.html\">PlanDefinition No Dexamethasone Application for non-ventilated COVID-19 patients</a></p><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system strength}\">Strength of recommendation</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength strong-for}\">Strong for an intervention</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system consensus}\">Consensus</span></p><p><b>classifier</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/recommendation-strength strong}\">Strong</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type preference-and-values}\">Preference and values</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating factor-not-considered}\">Factor not considered</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type resources}\">Resources</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating no-important-issues}\">No important issues</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type acceptability}\">Acceptability</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating factor-not-considered}\">Factor not considered</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Rating</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type feasibility}\">Feasibility</span></p><p><b>classifier</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating factor-not-considered}\">Factor not considered</span></p></blockquote><blockquote><p><b>content</b></p><p><b>informationType</b>: Container</p><p><b>type</b>: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td><td><b>ResourceReference</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system certainty-of-evidence-rating}\">Certainty of evidence rating</span></td><td><a href=\"ArtifactAssessment-DexamethasoneRatingOutcomeMortality.html\">ArtifactAssessment: extension = v4.0,active; date = 2020-01-03; artifact[x] = -&gt;Evidence ExampleOutcomeEvidence</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-version"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "v4.0" ]
+  ] [
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ceosys-extension-artifact-assessment-publication-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "active" ]
+  ] ) ; # 
+  fhir:date [ fhir:v "2020-01-03"^^xsd:date] ; # 
+  fhir:artifact [
+     a fhir:Reference ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan> ;
+     fhir:reference [ fhir:v "PlanDefinition/COVID19NonVentilatedPatientsDexamethasoneApplicationPlan" ]
+  ] ; # 
+  fhir:content ( [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "strength" ] ;
+         fhir:display [ fhir:v "Strength of recommendation" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-cs-recommendation-strength"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "strong-for" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "consensus" ] ;
+         fhir:display [ fhir:v "Consensus" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/recommendation-strength"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "strong" ] ;
+         fhir:display [ fhir:v "Strong" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "preference-and-values" ] ;
+         fhir:display [ fhir:v "Preference and values" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "factor-not-considered" ] ;
+         fhir:display [ fhir:v "Factor not considered" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "resources" ] ;
+         fhir:display [ fhir:v "Resources" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "no-important-issues" ] ;
+         fhir:display [ fhir:v "No important issues" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "acceptability" ] ;
+         fhir:display [ fhir:v "Acceptability" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "factor-not-considered" ] ;
+         fhir:display [ fhir:v "Factor not considered" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "rating" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "feasibility" ] ;
+         fhir:display [ fhir:v "Feasibility" ]
+       ] )
+     ] ;
+     fhir:classifier ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-evidence-to-decision-certainty-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "factor-not-considered" ] ;
+         fhir:display [ fhir:v "Factor not considered" ]
+       ] )
+     ] )
+  ] [
+     fhir:informationType [ fhir:v "container" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "certainty-of-evidence-rating" ] ;
+         fhir:display [ fhir:v "Certainty of evidence rating" ]
+       ] )
+     ] ;
+     fhir:relatedArtifact ( [
+       fhir:type [ fhir:v "justification" ] ;
+       fhir:classifier ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "certainty-of-evidence-rating" ] ;
+           fhir:display [ fhir:v "Certainty of evidence rating" ]
+         ] )
+       ] ) ;
+       fhir:resourceReference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ArtifactAssessment/DexamethasoneRatingOutcomeMortality> ;
+         fhir:reference [ fhir:v "ArtifactAssessment/DexamethasoneRatingOutcomeMortality" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

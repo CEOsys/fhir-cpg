@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ActivityDefinition/NoDexamethasoneApplication> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NoDexamethasoneApplication"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition NoDexamethasoneApplication</b></p><a name=\"NoDexamethasoneApplication\"> </a><a name=\"hcNoDexamethasoneApplication\"> </a><a name=\"NoDexamethasoneApplication-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-NoDexamethasoneApplication.html\">ActivityDefinition NoDexamethasoneApplicationActivity</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: NoDexamethasoneApplicationActivity</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-10-21 14:50:59+0000</p><p><b>publisher</b>: CPGonEBMonFHIR</p><p><b>description</b>: </p><div><p>No Application of Dexamethasone</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>doNotPerform</b>: true</p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372584003}, {http://fhir.de/CodeSystem/bfarm/atc C05AA09}\">Dexamethasone (substance)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/example/recommendation-action/no-dexamethasone-application"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "NoDexamethasoneApplicationActivity"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2024-10-21T14:50:59+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "CPGonEBMonFHIR"] ; # 
+  fhir:description [ fhir:v "No Application of Dexamethasone"] ; # 
+  fhir:kind [ fhir:v "MedicationRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:432102000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "432102000" ] ;
+       fhir:display [ fhir:v "Administration of substance (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:doNotPerform [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:product [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:372584003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "372584003" ] ;
+       fhir:display [ fhir:v "Dexamethasone (substance)" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C05AA09" ] ;
+       fhir:display [ fhir:v "Dexamethason" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

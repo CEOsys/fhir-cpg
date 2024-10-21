@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/synthesis-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "synthesis-type"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2022-05-28T13:47:40.239+11:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem synthesis-type</b></p><a name=\"synthesis-type\"> </a><a name=\"hcsynthesis-type\"> </a><a name=\"synthesis-type-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2022-05-28 13:47:40+1100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R5/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/synthesis-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">std-MA<a name=\"synthesis-type-std-MA\"> </a></td><td>summary data meta-analysis</td><td>A meta-analysis of the summary data of estimates from individual studies or data sets.</td></tr><tr><td style=\"white-space:nowrap\">IPD-MA<a name=\"synthesis-type-IPD-MA\"> </a></td><td>individual patient data meta-analysis</td><td>A meta-analysis of the individual participant data from individual studies or data sets.</td></tr><tr><td style=\"white-space:nowrap\">indirect-NMA<a name=\"synthesis-type-indirect-NMA\"> </a></td><td>indirect network meta-analysis</td><td>An indirect meta-analysis derived from 2 or more direct comparisons in a network meta-analysis.</td></tr><tr><td style=\"white-space:nowrap\">combined-NMA<a name=\"synthesis-type-combined-NMA\"> </a></td><td>combined direct plus indirect network meta-analysis</td><td>An composite meta-analysis derived from direct comparisons and indirect comparisons in a network meta-analysis.</td></tr><tr><td style=\"white-space:nowrap\">range<a name=\"synthesis-type-range\"> </a></td><td>range of results</td><td>A range of results across a body of evidence.</td></tr><tr><td style=\"white-space:nowrap\">classification<a name=\"synthesis-type-classification\"> </a></td><td>classifcation of results</td><td>An approach describing a body of evidence by categorically classifying individual studies (eg 3 studies showed beneft and 2 studied found no effect).</td></tr><tr><td style=\"white-space:nowrap\">NotApplicable<a name=\"synthesis-type-NotApplicable\"> </a></td><td>not applicable</td><td>Not applicable because the evidence is not from a synthesis but from a single study. Used fo explicitly state that it's not a synthesis.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cds" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "trial-use" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/synthesis-type"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1348" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "4.3.0"] ; # 
+  fhir:name [ fhir:v "SynthesisType"] ; # 
+  fhir:title [ fhir:v "SynthesisType"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-12-28T16:55:11+11:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@lists.hl7.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of combining results from a body of evidence (eg. summary data meta-analysis)."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://hl7.org/fhir/ValueSet/synthesis-type"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/synthesis-type>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "std-MA" ] ;
+     fhir:display [ fhir:v "summary data meta-analysis" ] ;
+     fhir:definition [ fhir:v "A meta-analysis of the summary data of estimates from individual studies or data sets." ]
+  ] [
+     fhir:code [ fhir:v "IPD-MA" ] ;
+     fhir:display [ fhir:v "individual patient data meta-analysis" ] ;
+     fhir:definition [ fhir:v "A meta-analysis of the individual participant data from individual studies or data sets." ]
+  ] [
+     fhir:code [ fhir:v "indirect-NMA" ] ;
+     fhir:display [ fhir:v "indirect network meta-analysis" ] ;
+     fhir:definition [ fhir:v "An indirect meta-analysis derived from 2 or more direct comparisons in a network meta-analysis." ]
+  ] [
+     fhir:code [ fhir:v "combined-NMA" ] ;
+     fhir:display [ fhir:v "combined direct plus indirect network meta-analysis" ] ;
+     fhir:definition [ fhir:v "An composite meta-analysis derived from direct comparisons and indirect comparisons in a network meta-analysis." ]
+  ] [
+     fhir:code [ fhir:v "range" ] ;
+     fhir:display [ fhir:v "range of results" ] ;
+     fhir:definition [ fhir:v "A range of results across a body of evidence." ]
+  ] [
+     fhir:code [ fhir:v "classification" ] ;
+     fhir:display [ fhir:v "classifcation of results" ] ;
+     fhir:definition [ fhir:v "An approach describing a body of evidence by categorically classifying individual studies (eg 3 studies showed beneft and 2 studied found no effect)." ]
+  ] [
+     fhir:code [ fhir:v "NotApplicable" ] ;
+     fhir:display [ fhir:v "not applicable" ] ;
+     fhir:definition [ fhir:v "Not applicable because the evidence is not from a synthesis but from a single study. Used fo explicitly state that it's not a synthesis." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
